@@ -1,0 +1,15 @@
+.home-latest-article-each {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 960px) {
+    margin-bottom: 80px;
+  }
+
+  .home-latest-article-caption {
+    margin-top: 50px;
+
+    .btn-link-forward {
+      border-bottom: none;
+    }
+  }
+}

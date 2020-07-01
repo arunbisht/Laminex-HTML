@@ -1,0 +1,20 @@
+.component-content-wrapper {
+  margin-bottom: 80px;
+
+  p {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    width: 100%;
+  }
+
+  h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  a:not(.btn) {
+    font-weight: 500;
+    padding-bottom: 0.25rem;
+    color: $link-color !important;
+    border-bottom: 1px dotted $link-color;
+  }
+}

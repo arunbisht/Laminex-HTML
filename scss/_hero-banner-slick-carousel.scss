@@ -1,0 +1,103 @@
+.hero-banner-carousel-container-wrapper {
+  background-color: $hero-banner-slick-carousel-bg-color;
+  color: $hero-banner-slick-carousel-text-color;
+  position: relative;
+}
+
+.hero-banner-slick-carousel-content-wrapper {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+
+  .btn-link-forward {
+    color: $hero-banner-slick-carousel-text-color;
+    margin-top: 1rem;
+    margin-bottom: 2.9375rem;
+
+    &:hover {
+      border-bottom-color: $hero-banner-slick-carousel-text-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    max-width: 90%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 70%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    margin: 2rem 5rem 2rem 0;
+  }
+
+  @media screen and (max-width: 959.98px) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin: 2rem 0 0;
+  }
+}
+
+.hero-banner-slick-carousel-nav {
+  position: absolute;
+  right: 0;
+  bottom: -1.5rem;
+  background: $hero-banner-slick-carousel-nav-bg-color;
+  overflow: hidden;
+  width: 9.5rem;
+
+  > .slick-arrow {
+    color: $arrow-color;
+    width: 50%;
+    height: 2.9375rem;
+    z-index: 3;
+    padding: 0.9375rem 0;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  > .slick-dots {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-align: center;
+    width: 9.5rem;
+    height: 2.9375rem;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    z-index: 2;
+
+    li {
+      height: 2.9375rem;
+      line-height: 2.9375rem;
+
+      &:not(.slick-active) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    bottom: auto;
+    top: 14.875rem;
+  }
+}

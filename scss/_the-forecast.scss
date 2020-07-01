@@ -1,0 +1,76 @@
+.the-forecast-wrapper {
+  @media screen and (max-width: 767px) {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .title-wrapper {
+    padding-right: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+      -ms-flex: 0 0 $the-forecast-title-tab-width;
+      flex: 0 0 $the-forecast-title-tab-width;
+      max-width: $the-forecast-title-tab-width;
+    }
+    @media screen and (min-width: 960px) {
+      -ms-flex: 0 0 $the-forecast-title-width;
+      flex: 0 0 $the-forecast-title-width;
+      max-width: $the-forecast-title-width;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+  .the-forecast-artile-wrapper {
+    padding-left: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+      -ms-flex: 0 0 calc(100% - #{$the-forecast-title-tab-width});
+      flex: 0 0 calc(100% - #{$the-forecast-title-tab-width});
+      max-width: calc(100% - #{$the-forecast-title-tab-width});
+    }
+    @media screen and (min-width: 960px) {
+      -ms-flex: 0 0 calc(100% - #{$the-forecast-title-width});
+      flex: 0 0 calc(100% - #{$the-forecast-title-width});
+      max-width: calc(100% - #{$the-forecast-title-width});
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+    }
+
+    > a {
+      display: block;
+    }
+  }
+
+  .the-forecast-artile-title {
+    margin-top: 16px;
+    @media screen and (min-width: 960px) {
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 960px) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.the-forecast-artile-content-wrapper {
+  &:hover {
+    .btn-link-forward {
+      border-bottom-width: 2px;
+      border-bottom-color: currentColor;
+
+      &:after {
+        right: -1.625rem;
+      }
+    }
+  }
+}
