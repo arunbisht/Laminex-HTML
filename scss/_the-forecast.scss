@@ -1,4 +1,8 @@
 .the-forecast-wrapper {
+  .article-feature-title-secondary {
+    color: $secondary-color;
+  }
+
   @media screen and (max-width: 767px) {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -14,6 +18,7 @@
       -ms-flex: 0 0 $the-forecast-title-tab-width;
       flex: 0 0 $the-forecast-title-tab-width;
       max-width: $the-forecast-title-tab-width;
+      padding-top: 5%;
     }
     @media screen and (min-width: 960px) {
       -ms-flex: 0 0 $the-forecast-title-width;

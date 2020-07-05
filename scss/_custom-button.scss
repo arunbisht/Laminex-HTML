@@ -1,7 +1,7 @@
 .btn-link-forward {
   font-weight: bold;
   line-height: 1.43;
-  padding: 0 1.375rem 0 0;
+  padding: 0;
   width: auto;
   position: relative;
   border-bottom: 2px solid transparent;
@@ -24,13 +24,24 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     content: "";
-    right: 0;
+    right: -1.375rem;
   }
 
   &:hover {
     border-bottom-width: 2px;
     &::after {
       right: -1.625rem;
+    }
+  }
+}
+
+.back-btn {
+  .txt {
+    font-weight: bold;
+    font-size: 14px;
+    &:before {
+      float: left;
+      padding: 4px 9px 0 0;
     }
   }
 }

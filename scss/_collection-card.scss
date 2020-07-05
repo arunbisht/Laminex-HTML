@@ -59,4 +59,8 @@
       transform: scale(1, 1.02);
     }
   }
+
+  &.no-bg {
+    background-color: transparent;
+  }
 }

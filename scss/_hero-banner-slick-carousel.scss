@@ -2,6 +2,10 @@
   background-color: $hero-banner-slick-carousel-bg-color;
   color: $hero-banner-slick-carousel-text-color;
   position: relative;
+
+  &.light-grey-bg {
+    background-color: $blog-hero-banner-slick-carousel-bg-color;
+  }
 }
 
 .hero-banner-slick-carousel-content-wrapper {
@@ -44,7 +48,9 @@
     margin: 2rem 0 0;
   }
 }
-
+.hero-banner-slick-carousel {
+  overflow: hidden;
+}
 .hero-banner-slick-carousel-nav {
   position: absolute;
   right: 0;
