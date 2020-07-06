@@ -1,0 +1,91 @@
+.help-and-support-wrapper {
+  color: $quick-link-text-color;
+}
+.quick-links-wrapper {
+  padding-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+  }
+  @media screen and (min-width: 960px) {
+    padding-top: 54px;
+  }
+
+  .quick-links-item {
+    margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 960px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .quick-links-svg-wrapper {
+    border-width: 1px;
+    border-color: $quick-link-text-color;
+    border-style: solid;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0.625rem;
+    }
+    @media screen and (min-width: 960px) {
+      border-width: 2px;
+      height: 6.5rem;
+      width: 6.5rem;
+    }
+  }
+  .quick-links-media {
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      height: 1.375rem;
+      width: 1.375rem;
+      @media screen and (min-width: 960px) {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+  }
+
+  .quick-links-body {
+    .title {
+      margin-bottom: 0;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0.25rem;
+      }
+    }
+    .caption {
+      margin-bottom: 0;
+      font-size: 0.8125rem;
+      line-height: 1.5384615385;
+      @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 12.875rem;
+        font-size: 0.875rem;
+        line-height: 1.7142857143;
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-left: 0.625rem;
+    }
+  }
+
+  .quick-links-body-bottom {
+    @media screen and (min-width: 768px) {
+      margin-top: 0.625rem;
+    }
+  }
+}

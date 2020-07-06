@@ -1,12 +1,10 @@
-.get-inspired-blog-wrapper {
-  .section-wrapper {
-    margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 40px;
-    }
-    @media screen and (min-width: 960px) {
-      margin-bottom: 80px;
-    }
+.section-wrapper {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 960px) {
+    margin-bottom: 80px;
   }
 }
 
