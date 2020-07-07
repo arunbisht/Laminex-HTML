@@ -8,6 +8,7 @@
   border-radius: 0;
 
   &:after {
+    content: "\E002";
     font-family: "font-icons" !important;
     speak: none;
     font-style: normal;
@@ -23,7 +24,6 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    content: "";
     right: -1.375rem;
   }
 

@@ -8,6 +8,17 @@
   }
 }
 
+.home-hr {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 960px) {
+    padding-bottom: 80px;
+  }
+}
+
 .get-inspired-blog-content-wrapper {
   .posted-on {
     font-size: 12px;

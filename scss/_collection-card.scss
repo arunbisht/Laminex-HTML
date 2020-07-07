@@ -1,3 +1,21 @@
+.colour-collection-projects-slider-wrapper {
+  .btn-wrapper {
+    margin-top: 12px;
+    .btn {
+      width: 100%;
+      max-width: 18.75rem;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 24px;
+      .btn {
+        max-width: 15.625rem;
+      }
+    }
+    @media screen and (min-width: 960px) {
+      margin-top: 32px;
+    }
+  }
+}
 .collection-card-wrapper {
   background-color: $collection-card-caption-bg-color;
   color: $collection-card-caption-text-color;
@@ -14,6 +32,54 @@
   transform: translateZ(0);
   overflow: hidden;
   will-change: transform;
+
+  > a {
+    color: inherit;
+  }
+
+  .scandinavian & {
+    background-color: #d0ebe8;
+  }
+  .industrial & {
+    background-color: #726e66;
+    color: #fff;
+  }
+  .coastal & {
+    background-color: #b98a56;
+    color: #fff;
+  }
+  .hamptons & {
+    background-color: #e1dee1;
+  }
+  .glamour & {
+    background-color: #4a4946;
+    color: #fff;
+  }
+  .vintage & {
+    background-color: #00a4c0;
+    color: #fff;
+  }
+  .mineral & {
+    background-color: #d4a543;
+    color: #fff;
+  }
+  .modern-and-co & {
+    background-color: #e9e9e9;
+  }
+  .noir & {
+    background-color: #3b3c40;
+    color: #fff;
+  }
+  .natural & {
+    background-color: #bfa188;
+    color: #fff;
+  }
+  .inner-urban & {
+    background-color: #c3c4c5;
+  }
+  .zen & {
+    background-color: #f6f5f4;
+  }
 
   .media-wrapper {
     position: relative;
