@@ -1,0 +1,89 @@
+.contact-form-wrapper {
+  background-color: $primary-color;
+  padding-bottom: 2.1875rem;
+  @media screen and (min-width: 960px) {
+    padding-top: 4.6875rem;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 6.25rem;
+  }
+
+  .form-group {
+    label {
+      color: $text-color;
+      display: block;
+      margin-bottom: 0.3125rem;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      letter-spacing: 1.4px;
+      font-weight: bold;
+      font-family: "Brown Std New";
+
+      &.form-check {
+        padding-left: 2rem;
+        position: relative;
+
+        .form-check-input {
+          margin-left: 0;
+          position: absolute;
+          left: 8px;
+        }
+      }
+    }
+
+    a {
+      color: $link-color;
+      border-bottom: 1px dotted $link-color;
+    }
+
+    .form-control {
+      display: block;
+      min-height: 3.125rem;
+      width: 100%;
+      padding: 0.6875rem 0.9375rem;
+      color: $contact-form-control-text-color;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #dbd8d5;
+      border-radius: 0.1875rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      line-height: 1.8461538462;
+      letter-spacing: 1.3px;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:not([multiple]) {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHRpdGxlPmNoZXZyb24tc21hbGwtZG93bjwvdGl0bGU+PHBhdGggc3R5bGU9ImZpbGw6IzVmNjI2MzsiIGQ9Ik0xNiwyNC4zN2EyLjgyLDIuODIsMCwwLDEtMi0uODJMMi44MiwxMi40MmEyLjgxLDIuODEsMCwwLDEsNC00TDE2LDE3LjU5bDkuMjQtOS4xNGEyLjgxLDIuODEsMCwxLDEsNCw0TDE4LDIzLjU1QTIuODQsMi44NCwwLDAsMSwxNiwyNC4zN1oiLz48L3N2Zz4K);
+        background-origin: content-box;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 0.5625rem 0.5625rem;
+      }
+
+      option {
+        color: $secondary-color;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .btn-black {
+    &:hover {
+      color: #fff;
+      background-color: $link-color;
+      border-color: $link-color;
+    }
+
+    &:active {
+      color: #fff;
+      background-color: #232325;
+      border-color: #1c1d1f;
+    }
+  }
+}
