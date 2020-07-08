@@ -37,7 +37,7 @@
       cursor: pointer;
 
       &:after {
-        content: "";
+        content: "\e024";
         display: block;
         position: absolute;
         top: 0;
@@ -60,19 +60,19 @@
 
       &:not(.collapsed) {
         &:after {
-          content: "";
+          content: "\e01e";
         }
       }
 
       &:hover {
         &:after {
-          content: "";
+          content: "\e023";
           color: $accordion-text-color;
         }
 
         &:not(.collapsed) {
           &:after {
-            content: "";
+            content: "\e01d";
             color: $accordion-text-color;
           }
         }

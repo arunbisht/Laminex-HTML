@@ -2,6 +2,7 @@ $primary-color: #f4efea !default;
 $secondary-color: #929596 !default;
 $light-grey-color: #e9e9e9 !default;
 $text-color: #454849 !default;
+$secondary-text-color: #3b3c40 !default;
 $link-color: #827167 !default;
 
 $hero-banner-slick-carousel-bg-color: #f6f5f4 !default;
@@ -21,10 +22,10 @@ $the-forecast-title-tab-width: 300px !default;
 $pagination-size: 34px !default;
 $pagination-active-border-color: $link-color !default;
 
-$quick-link-text-color: #3b3c40 !default;
+$quick-link-text-color: $secondary-text-color !default;
 $accordion-border-color: #d5d5d5 !default;
-$accordion-text-color: #3b3c40 !default;
+$accordion-text-color: $secondary-text-color !default;
 
-$section-intro-description-text-color: #3b3c40 !default;
+$section-intro-description-text-color: $secondary-text-color !default;
 
-$contact-form-control-text-color: #3b3c40 !default;
+$contact-form-control-text-color: $secondary-text-color !default;

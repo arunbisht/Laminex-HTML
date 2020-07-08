@@ -54,6 +54,12 @@
         -ms-flex: 0 0 44%;
         flex: 0 0 44%;
       }
+      @media screen and (min-width: 1920px) {
+        max-width: 34%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 34%;
+        flex: 0 0 34%;
+      }
     }
     .banner-content-heading {
       margin-bottom: 1rem;
