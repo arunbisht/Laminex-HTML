@@ -6,6 +6,55 @@
   &.light-grey-bg {
     background-color: $blog-hero-banner-slick-carousel-bg-color;
   }
+
+  &.scandinavian {
+    background-color: $scandinavian-bg-color;
+    color: $scandinavian-text-color;
+  }
+  &.industrial {
+    background-color: $industrial-bg-color;
+    color: $industrial-text-color;
+  }
+  &.coastal {
+    background-color: $coastal-bg-color;
+    color: $coastal-text-color;
+  }
+  &.hamptons {
+    background-color: $hamptons-bg-color;
+    color: $hamptons-text-color;
+  }
+  &.glamour {
+    background-color: $glamour-bg-color;
+    color: $glamour-text-color;
+  }
+  &.vintage {
+    background-color: $vintage-bg-color;
+    color: $vintage-text-color;
+  }
+  &.mineral {
+    background-color: $mineral-bg-color;
+    color: $mineral-text-color;
+  }
+  &.modern-and-co {
+    background-color: $modern-and-co-bg-color;
+    color: $modern-and-co-text-color;
+  }
+  &.noir {
+    background-color: $noir-bg-color;
+    color: $noir-text-color;
+  }
+  &.natural {
+    background-color: $natural-bg-color;
+    color: $natural-text-color;
+  }
+  &.inner-urban {
+    background-color: $inner-urban-bg-color;
+    color: $inner-urban-text-color;
+  }
+  &.zen {
+    background-color: $zen-bg-color;
+    color: $zen-text-color;
+  }
 }
 
 .hero-banner-slick-carousel-content-wrapper {

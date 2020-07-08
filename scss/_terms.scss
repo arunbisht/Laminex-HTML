@@ -1,0 +1,15 @@
+.terms-content-wrapper {
+  color: $secondary-text-color;
+
+  p {
+    font-weight: 300;
+    width: 100%;
+  }
+
+  h4,
+  p,
+  ol,
+  ul {
+    margin-bottom: 1.5rem;
+  }
+}

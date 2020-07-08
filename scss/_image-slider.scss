@@ -1,0 +1,28 @@
+.image-slider-wrapper {
+  .image-slider {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 960px) {
+      margin-bottom: 16px;
+    }
+    .image-slider-item {
+      padding: 0.625rem 0 0.9375rem;
+      position: relative;
+      margin: 0 0.46875rem;
+
+      @media screen and (min-width: 960px) {
+        margin: 0 0.75rem;
+      }
+      @media screen and (min-width: 1440px) {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+.sample-order-handler {
+  .media-wrapper {
+    display: inline-block;
+  }
+}

@@ -38,47 +38,52 @@
   }
 
   .scandinavian & {
-    background-color: #d0ebe8;
+    background-color: $scandinavian-bg-color;
+    color: $scandinavian-text-color;
   }
   .industrial & {
-    background-color: #726e66;
-    color: #fff;
+    background-color: $industrial-bg-color;
+    color: $industrial-text-color;
   }
   .coastal & {
-    background-color: #b98a56;
-    color: #fff;
+    background-color: $coastal-bg-color;
+    color: $coastal-text-color;
   }
   .hamptons & {
-    background-color: #e1dee1;
+    background-color: $hamptons-bg-color;
+    color: $hamptons-text-color;
   }
   .glamour & {
-    background-color: #4a4946;
-    color: #fff;
+    background-color: $glamour-bg-color;
+    color: $glamour-text-color;
   }
   .vintage & {
-    background-color: #00a4c0;
-    color: #fff;
+    background-color: $vintage-bg-color;
+    color: $vintage-text-color;
   }
   .mineral & {
-    background-color: #d4a543;
-    color: #fff;
+    background-color: $mineral-bg-color;
+    color: $mineral-text-color;
   }
   .modern-and-co & {
-    background-color: #e9e9e9;
+    background-color: $modern-and-co-bg-color;
+    color: $modern-and-co-text-color;
   }
   .noir & {
-    background-color: #3b3c40;
-    color: #fff;
+    background-color: $noir-bg-color;
+    color: $noir-text-color;
   }
   .natural & {
-    background-color: #bfa188;
-    color: #fff;
+    background-color: $natural-bg-color;
+    color: $natural-text-color;
   }
   .inner-urban & {
-    background-color: #c3c4c5;
+    background-color: $inner-urban-bg-color;
+    color: $inner-urban-text-color;
   }
   .zen & {
-    background-color: #f6f5f4;
+    background-color: $zen-bg-color;
+    color: $zen-text-color;
   }
 
   .media-wrapper {
