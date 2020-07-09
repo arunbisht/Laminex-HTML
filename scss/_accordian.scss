@@ -147,3 +147,124 @@
     line-height: 1.7777777778;
   }
 }
+
+.tab-accordion-nav {
+  .tab-nav-link,
+  .nav-item.show .tab-nav-link,
+  .tab-nav-link.active {
+    border: none;
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+
+    + .nav-item {
+      margin-left: 0;
+    }
+  }
+
+  .tab-nav-link {
+    cursor: pointer;
+    margin: 0 1rem;
+    padding: 0.625rem 0;
+    display: block;
+
+    h5 {
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+  }
+
+  .nav-item.show .tab-nav-link,
+  .tab-nav-link.active,
+  .tab-nav-link:hover {
+    box-shadow: inset 0 -2px 0 $link-color;
+  }
+}
+
+.tab-accordion-content {
+  margin-top: 0;
+
+  .accordion-trigger {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #f4efea;
+    border: 1px solid #d5d5d5;
+    border-left-width: 0;
+    border-right-width: 0;
+    cursor: pointer;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: relative;
+
+    .tab-accordion-collapse-icon {
+      font-size: 0.625rem;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      line-height: 0.5;
+    }
+
+    .icon--chevron-small-up {
+      display: block;
+    }
+    .icon--chevron-small-down {
+      display: none;
+    }
+
+    &.collapsed {
+      background-color: #fff;
+      border-bottom-color: transparent;
+      .icon--chevron-small-up {
+        display: none;
+      }
+      .icon--chevron-small-down {
+        display: block;
+      }
+    }
+  }
+
+  .accordion-content {
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.tab-accordion-body {
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 44px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 960px) {
+    padding-top: 57.6px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .swatch-tiles {
+    > .row {
+      @media screen and (min-width: 768px) {
+        margin-bottom: 22.4px;
+      }
+      @media screen and (min-width: 960px) {
+        margin-bottom: 44.8px;
+      }
+    }
+  }
+}
