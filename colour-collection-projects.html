@@ -66,10 +66,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/Chris-Connell-bedroom-304x434.jpg"
                       alt="Laminex bedroom designed by Chris Connell"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/Chris-Connell-bedroom-304x434.jpg"
+                      alt="Laminex bedroom designed by Chris Connell"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -86,10 +93,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/Laminex-Coastal-White-Kitchen-304x434.jpg"
                       alt="White kitchen in coastal style"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/Laminex-Coastal-White-Kitchen-304x434.jpg"
+                      alt="White kitchen in coastal style"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -106,10 +120,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/Chris-Connell-kitchen-dining-portrait-304x434.jpg"
                       alt="Kitchen design by Chris Connell"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/Chris-Connell-kitchen-dining-portrait-304x434.jpg"
+                      alt="Kitchen design by Chris Connell"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -126,10 +147,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/Chris-Connell-retail-shelves-304x434.jpg"
                       alt="Retail interior design by Chris Connell"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/Chris-Connell-retail-shelves-304x434.jpg"
+                      alt="Retail interior design by Chris Connell"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -146,10 +174,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/John-Crooks-Industrial-Cabinetry-304x434.jpg"
                       alt="Modern industrial style home"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/John-Crooks-Industrial-Cabinetry-304x434.jpg"
+                      alt="Modern industrial style home"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -166,10 +201,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/Laminex-Minerals-Kitchen-304x434.jpg"
                       alt="Glamour style kitchen by Olivia Cirocco"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/Laminex-Minerals-Kitchen-304x434.jpg"
+                      alt="Glamour style kitchen by Olivia Cirocco"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -186,10 +228,17 @@
               <a href="javascript:;">
                 <div class="d-block">
                   <div class="media-wrapper">
+                    <!-- Desktop Image -->
                     <img
                       src="./images/Laminex-GIA-Neutrals-Kitchen-304x434.jpg"
                       alt="Colour Collection kitchen by Olivia Cirocco"
-                      class="img-fluid"
+                      class="img-fluid d-none d-sm-block"
+                    />
+                    <!-- Mobile Image -->
+                    <img
+                      src="./images/Laminex-GIA-Neutrals-Kitchen-304x434.jpg"
+                      alt="Colour Collection kitchen by Olivia Cirocco"
+                      class="img-fluid d-block d-sm-none"
                     />
                   </div>
                   <div class="caption-wrapper h5 text-center">
@@ -581,6 +630,31 @@
             '<span class="slick-next"><i class="icon--arrow-small-left"></i><span class="sr-only">Next</span></span>',
           appendArrows: $(".colour-collection-projects-slider-nav"),
           appendDots: $(".colour-collection-projects-slider-dots"),
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 360,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              },
+            },
+          ],
         });
       });
     </script>
