@@ -284,6 +284,47 @@
           </div>
         </div>
       </div>
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="image-slider-wrapper">
+            <div class="image-slider">
+              <div class="image-slider-item">
+                <img
+                  src="./images/Coastal-Bathroom-Vanity-Coastal-Home-Project-1410x987.jpg"
+                  alt="elwood"
+                />
+              </div>
+              <div class="image-slider-item">
+                <img
+                  src="./images/Coastal-Project-White-Cabinetry-304x434.jpg"
+                  alt="living"
+                />
+              </div>
+              <div class="image-slider-item">
+                <img
+                  src="./images/Coastal-Kitchen-Coastal-Home-Project-1410x987.jpg"
+                  alt="calcutta"
+                />
+              </div>
+              <div class="image-slider-item">
+                <img
+                  src="./images/Coastal-Project-Bathroom-304x434.jpg"
+                  alt="living"
+                />
+              </div>
+              <div class="image-slider-item">
+                <img
+                  src="./images/Coastal-Project-Servery-Outdoor-304x434.jpg"
+                  alt="kitchen"
+                />
+              </div>
+            </div>
+            <div class="colour-collection-projects-slider-nav">
+              <div class="colour-collection-projects-slider-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="section-wrapper get-inspired-blog-related-wrapper">
         <div class="container">
           <div class="row">
@@ -817,6 +858,35 @@
     <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
     <script>
       $(document).ready(function () {
+        $(".image-slider").each(function (i, _this) {
+          $(_this).slick({
+            autoplay: false,
+            arrows: true,
+            dots: true,
+            slidesToShow: 1,
+            centerMode: false,
+            variableWidth: true,
+            prevArrow:
+              '<span class="slick-prev"><i class="icon--arrow-small-right"></i><span class="sr-only">Prev</span></span>',
+            nextArrow:
+              '<span class="slick-next"><i class="icon--arrow-small-left"></i><span class="sr-only">Next</span></span>',
+            appendArrows: $(_this).siblings(
+              ".colour-collection-projects-slider-nav"
+            ),
+            appendDots: $(_this)
+              .siblings(".colour-collection-projects-slider-nav")
+              .children(".colour-collection-projects-slider-dots"),
+            // responsive: [
+            //   {
+            //     breakpoint: 768,
+            //     settings: {
+            //       arrows: false,
+            //       dots: false,
+            //     },
+            //   },
+            // ],
+          });
+        });
         $(".blog-slider").each(function (i, _this) {
           $(_this).slick({
             autoplay: $(_this).attr("data-autoplay") == "true",
