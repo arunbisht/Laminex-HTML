@@ -26,6 +26,16 @@
       }
     }
   }
+
+  &.link-black {
+    .blog-latest-wrapper & {
+      .home-latest-article-caption {
+        a {
+          color: $secondary-text-color;
+        }
+      }
+    }
+  }
 }
 
 .home-latest-article-category-wrapper {

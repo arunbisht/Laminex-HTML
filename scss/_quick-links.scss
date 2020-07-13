@@ -43,7 +43,8 @@
     }
   }
   .quick-links-media {
-    svg {
+    svg,
+    img {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -90,6 +91,18 @@
   .quick-links-body-bottom {
     @media screen and (min-width: 768px) {
       margin-top: 0.625rem;
+    }
+  }
+}
+
+.help-support-title-wrapper {
+  @media screen and (max-width: 767px) {
+    .page-title.dashboard-title {
+      padding: 44px 0;
+
+      h3 {
+        text-align: center;
+      }
     }
   }
 }
