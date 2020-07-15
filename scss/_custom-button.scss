@@ -32,7 +32,21 @@
     &::after {
       right: -1.625rem;
     }
+      &.btn-link-backward:hover{
+          &::after {
+          left: -1.625rem;
+        }
+
+      }
   }
+    &.btn-link-backward{
+        margin-left: 1.25rem;
+        &:after{
+            content: "\E003";
+            left: -1.375rem;
+            right: auto;
+        }
+    }
 }
 
 .back-btn {
@@ -44,4 +58,10 @@
       padding: 4px 9px 0 0;
     }
   }
+}
+.btn-primary{
+    &.green:hover{
+    background-color: #507035;
+    border-color: #5c7561;
+}
 }
