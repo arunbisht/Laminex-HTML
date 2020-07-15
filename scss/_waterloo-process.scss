@@ -1,0 +1,37 @@
+.waterloo-process-wrapper {
+  color: $secondary-text-color;
+
+  .our-brand-slider {
+    .our-brand-slider-item {
+      @media screen and (max-width: 767px) {
+        text-align: center;
+
+        > a {
+          display: inline-block;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.field-text {
+  h5 {
+    text-decoration: none;
+  }
+}
+
+.order-now-button-wrapper {
+  .btn-next-process {
+    display: block;
+    min-height: 3.125rem;
+    width: 100%;
+    padding: 0.6875rem 0.9375rem;
+    color: $secondary-text-color;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid $accordion-border-color;
+    border-radius: 0.1875rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+}
