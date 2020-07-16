@@ -103,6 +103,7 @@
 
   .media-wrapper {
     position: relative;
+    background-color: $inspiration-media-bg-color;
 
     img {
       max-width: none;
@@ -323,22 +324,29 @@
 
     > a {
       position: absolute;
-      border: 1px solid #3b3c40;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: $inspiration-nav-text-color;
+      // border: 1px solid #3b3c40;
       cursor: pointer;
-      opacity: 0.34;
-      padding: 0.5rem 0.75rem 0.25rem;
-      border-radius: 50%;
+      padding: 36px 0.75rem;
+      min-width: 90px;
+      // border-radius: 50%;
+      font-family: "BrownStd", sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.33;
+      letter-spacing: 1.4px;
 
       &.nav-prev {
-        left: 20px;
+        left: 0;
       }
 
       &.nav-next {
-        right: 20px;
+        right: 0;
       }
 
       &:hover {
-        opacity: 1;
+        background-color: rgba(255, 255, 255, 1);
       }
     }
   }
