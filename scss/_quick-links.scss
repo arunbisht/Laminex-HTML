@@ -80,6 +80,16 @@
       }
     }
 
+    @media screen and (min-width: 768px) {
+      max-width: 60%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 100%;
+    }
+
     @media screen and (max-width: 767px) {
       -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -88,9 +98,17 @@
     }
   }
 
+  .quick-links-body-top {
+    @media screen and (min-width: 768px) {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+    }
+  }
+
   .quick-links-body-bottom {
     @media screen and (min-width: 768px) {
-      margin-top: 0.625rem;
+      // margin-top: 0.625rem;
     }
   }
 }
