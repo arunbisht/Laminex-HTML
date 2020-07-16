@@ -1,80 +1,102 @@
  .location-content {
-     .location-content-head{
+     .location-content-head {
          border-bottom: 2px solid #e3e3e3;
          padding-top: 1rem;
          margin-bottom: 22px;
          padding-bottom: 24px;
          padding-bottom: 45px;
          margin-bottom: 39.008px;
-    }
+     }
+
      .location-content-body-top {
          margin-bottom: 16px;
+
          @media screen and (min-width: 768px) {
              margin-bottom: 32px;
-        }
-    }
+         }
+     }
+
      .field-locationbusinessname {
          margin-bottom: .25rem;
-    }
-     .field-locationlogo{
+     }
+
+     .field-locationlogo {
          .location-content-logo {
              max-height: 4.5625rem;
              width: auto;
              max-width: auto;
-        }
-    }
+         }
+     }
+
      .location-content-feature {
          margin-bottom: 36px;
+
          @media screen and (min-width: 768px) {
              margin-bottom: 32px;
-        }
+         }
+
          @media screen and (min-width: 960px) {
              margin-bottom: 0;
-        }
-    }
+         }
+     }
+
      .location-content-sub-heading {
          margin-bottom: 1rem;
-    }
-     .location-content-features-list{
+     }
+
+     .location-content-features-list {
          margin-bottom: 24px;
+
          @media screen and (min-width: 768px) {
              margin-bottom: 21.28px;
-        }
+         }
+
          @media screen and (min-width: 960px) {
              margin-bottom: 25.6px;
-        }
-    }
-     .location-content-composition{
+         }
+     }
+
+     .location-content-composition {
          font-size: .8125rem;
          line-height: 1.5384615385;
+
          @media screen and (min-width: 768px) {
              font-size: 1rem;
              line-height: 1.75;
-        }
-    }
+         }
+     }
+
      .location-content-description {
          margin-bottom: 22px;
+
          @media screen and (min-width: 768px) {
              margin-bottom: 32px;
-        }
+         }
+
          @media screen and (min-width: 960px) {
              margin-bottom: 43px;
-        }
-    }
-     .location-col{
+         }
+     }
+
+     .location-col {
          margin-bottom: 16px;
+
          @media screen and (min-width: 768px) {
              margin-bottom: 32px;
-        }
-         @media screen and (min-width: 960px) {
-        }
-    }
+         }
+
+         @media screen and (min-width: 960px) {}
+     }
+
      .address-item {
          margin-bottom: .75rem;
+
          @media screen and (min-width: 960px) {
              margin-bottom: .5rem;
-        }
-         &:before, & > a:before{
+         }
+
+         &:before,
+         & > a:before {
              font-family: 'font-icons-new' !important;
              font-size: 1rem;
              top: 3px;
@@ -89,45 +111,83 @@
              float: left;
              margin-right: .75rem;
              position: relative;
+
              @media screen and (min-width: 768px) {
                  font-size: 1.1875rem;
                  top: 4px;
-            }
-        }
-         a{
+             }
+         }
+
+         a {
              font-size: .8125rem;
              line-height: 1.5384615385;
+
              @media screen and (min-width: 768px) {
                  font-size: 1rem;
                  line-height: 1.75;
-            }
-        }
+             }
+         }
+
          &.location-content-address::before {
              content: "\e01b";
-        }
-         &.field-locationphonenumber > a::before{
+         }
+
+         &.field-locationphonenumber > a::before {
              content: "\e020";
-        }
-         &.field-locationwebsite > a::before{
+         }
+
+         &.field-locationwebsite > a::before {
              content: "\e011";
-        }
-         &.field-locationemail > a::before{
+         }
+
+         &.field-locationemail > a::before {
              content: "\e00f";
-        }
-    }
-     .field-locationphonenumber, .field-locationfaxnumber, .field-locationwebsite, .field-locationemail {
+         }
+     }
+
+     .field-locationphonenumber,
+     .field-locationfaxnumber,
+     .field-locationwebsite,
+     .field-locationemail {
          font-size: 1rem;
          color: #5f6263;
          display: block;
          line-height: 1.54;
          margin-bottom: .75rem;
+
          @media screen and (min-width: 960px) {
              margin-bottom: .5rem;
-        }
-    }
-}
+         }
+     }
+ }
+
  address {
      margin-bottom: 1rem;
      font-style: normal;
      line-height: inherit;
-}
+ }
+.gallery-slider{
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+             padding-left: 2rem;
+         padding-right: 2rem;
+         }
+    @media screen and (min-width: 960px) {
+             padding-left: 4rem;
+         padding-right: 4rem;
+         }
+    .image-slider-media{
+        max-height: 11.75rem;
+    width: auto !important;
+        @media screen and (min-width: 768px) {
+             max-height: 18.625rem;
+         }
+        @media screen and (min-width: 960px) {
+             max-height: 21.75rem;
+         }
+        @media screen and (min-width: 1100px) {
+             max-height: 27.125rem;
+         }
+    }
+     }
