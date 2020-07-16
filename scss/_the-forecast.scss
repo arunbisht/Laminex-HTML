@@ -58,7 +58,7 @@
 
   .the-forecast-artile-title {
     margin-top: 16px;
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 12px;
     }
     @media screen and (min-width: 960px) {
@@ -79,3 +79,75 @@
     }
   }
 }
+
+/* New Forecast section styling */
+.the-forecast-wrapper{
+    &.alt{
+        background-color: $hero-banner-slick-carousel-bg-color;
+        .forecast-title-wrapper{
+            padding: 1.25rem 1.875rem 1.25rem 1.25rem;
+            color: $secondary-text-color;
+             @media screen and (min-width: 768px) {
+                  
+                }
+            @media screen and (min-width: 960px) {
+                  padding:4.0625rem;
+                }
+            
+            h2{
+                letter-spacing: -0.5px;
+                line-height: 1.22;
+                @media screen and (min-width: 768px) {
+                  font-size: 2.25rem;
+                }
+            }
+        }
+        .page-tags{
+            margin-bottom: 1rem;
+            a{
+                margin: 0;
+                &.tag{
+                    background-color: $new-tag-color-altbg-color;
+                    border-color: $new-tag-color-altbg-color;
+                    color: $new-tag-color-text-color;
+                }
+            }
+        }
+    }
+}
+.page-title-tags{
+    text-align: center;
+    h1{
+        color: $secondary-text-color;
+        margin: 1.25rem 0;
+        @media screen and (min-width: 960px) {
+          margin-bottom: 2rem;
+        }
+    }
+    .page-tags{
+        margin-bottom: 1.875rem;
+        @media screen and (min-width: 768px) {
+          margin-bottom: 2rem;
+        }
+    }
+}
+.page-tags{
+        a{
+            font-size: 11px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 4px;
+            padding:4px 15px;
+            &.tag{
+                color: $natural-text-color;
+                background-color: $new-tag-color;
+                border: 1px solid $new-tag-color;
+                &.viewmore{
+                    background-color: $natural-text-color;
+                    color: $new-tag-color-text-color;
+                    border-color:$new-tag-border-color;
+                }
+            }
+        }
+    }
+
