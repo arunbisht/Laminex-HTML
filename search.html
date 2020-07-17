@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/captcha_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/all_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/laminex_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/addons_responsive.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/mediaelementplayer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/common.css"
+    />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div class="">
+      <div
+        class="search-products-outer updated-search-products-outer"
+        style="display: block;"
+      >
+        <div class="container">
+          <div class="search-for-products col-12">
+            <form
+              name="search_form_"
+              method="get"
+              action="/search/"
+              id="productSearchForm"
+            >
+              <i
+                class="icon--search"
+                title="Search for products or content"
+              ></i>
+              <input
+                type="search"
+                placeholder="Type your search keywords"
+                name="text"
+                class="js-product-search-input-field form-control form-control ui-autocomplete-input"
+                data-options='{"autocompleteUrl" : "/search/autocomplete/ProductSearchBox","minCharactersBeforeRequest" : "3","waitTimeBeforeRequest" : "500","displayProductImages" : true,"productSearchRequest" : true}'
+                autocomplete="off"
+              />
+              <a href="#" class="search-input-cross"
+                ><img
+                  src="/_ui/responsive/theme-laminex/images/svg/cross-grey.svg"
+              /></a>
+            </form>
+
+            <div class="invalid-search" style="display: none;">
+              <div>
+                <img
+                  class="invalid-search-icon"
+                  title=""
+                  alt=""
+                  src="https://store.test.laminex.com.au/medias/help.svg?context=bWFzdGVyfGltYWdlc3wyNTUyfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2gwNS9oM2QvaDAwLzg4MTk2MDg3ODA4MzAuc3ZnfDc4MTUxYzcwMzBlNDc2NzU4ZTQ0MWFiNDIwMDA1YmFkZGJjYWQ2Y2MyMzk1OTYxNDhjMDM2MGJhMGE5YjZiMDc"
+                />
+                Sorry we don’t seem to have this product – please check your
+                search keywords or
+                <a
+                  href="https://www.laminex.com.au/about-laminex/contact-us"
+                  target="_blank"
+                  >speak to us.</a
+                >
+              </div>
+            </div>
+
+            <ul
+              class="autocomplete-product-search-results"
+              style="display: block;"
+            >
+              <li class="title">Inspiration and resources</li>
+              <li class="divider"></li>
+              <li class="search-result">
+                <a href="javascript:;" data-product-code="AU1003225">
+                  <div class="prod-name">
+                    <span class="name">Polar White</span>
+                    <span class="type">Aquapanel Gloss</span> in
+                    <span class="tag">Articles</span>
+                  </div>
+                </a>
+              </li>
+              <li class="search-result">
+                <a href="javascript:;" data-product-code="AU1002210">
+                  <div class="prod-name">
+                    <span class="name">Polar White</span>
+                    <span class="type">Natural Decorated White MDF</span> in
+                    <span class="tag">Gallery</span>
+                  </div>
+                </a>
+              </li>
+              <li class="search-result">
+                <a href="javascript:;" data-product-code="AU1002281">
+                  <div class="prod-name">
+                    <span class="name">Polar White</span>
+                    <span class="type">Flint Decorboard</span> in
+                    <span class="tag">Blog</span>
+                  </div>
+                </a>
+              </li>
+              <li class="search-result">
+                <a href="javascript:;" data-product-code="AU1002358">
+                  <div class="prod-name">
+                    <span class="name">Polar White</span>
+                    <span class="type">Nuance Impression</span> in
+                    <span class="tag">Blog</span>
+                  </div>
+                </a>
+              </li>
+              <li class="search-result">
+                <a href="javascript:;" data-product-code="AU1002906">
+                  <div class="prod-name">
+                    <span class="name">Polar White</span>
+                    <span class="type">Diamond Gloss Laminate</span> in
+                    <span class="tag">Blog</span>
+                  </div>
+                </a>
+              </li>
+              <li class="title">Products</li>
+              <li class="divider"></li>
+              <li class="search-products odd">
+                <div class="products-media-wrapper">
+                  <!-- Desktop Image -->
+                  <img
+                    src="./images/Swatch-Alaskan-192x274.jpg"
+                    alt="Polar White Aquapanel Gloss"
+                    class="d-none d-sm-block"
+                  />
+                  <!-- Mobile Image -->
+                  <img
+                    src="./images/Swatch-Alaskan-192x274.jpg"
+                    alt="Polar White Aquapanel Gloss"
+                    class="d-block d-sm-none"
+                  />
+                </div>
+                <div class="products-content-wrapper prod-name">
+                  <span class="name">Polar White</span>
+                  <span class="type">Aquapanel Gloss</span>
+                </div>
+              </li>
+              <li class="search-products even">
+                <div class="products-media-wrapper">
+                  <!-- Desktop Image -->
+                  <img
+                    src="./images/Swatch-Alpine-Mist192x274.jpg"
+                    alt="Polar White Natural Decorated White MDF"
+                    class="d-none d-sm-block"
+                  />
+                  <!-- Mobile Image -->
+                  <img
+                    src="./images/Swatch-Alpine-Mist192x274.jpg"
+                    alt="Polar White Natural Decorated White MDF"
+                    class="d-block d-sm-none"
+                  />
+                </div>
+                <div class="products-content-wrapper prod-name">
+                  <span class="name">Polar White</span>
+                  <span class="type">Natural Decorated White MDF</span>
+                </div>
+              </li>
+              <li class="search-products odd">
+                <div class="products-media-wrapper">
+                  <!-- Desktop Image -->
+                  <img
+                    src="./images/Swatch-Aquamarine-192x274.jpg"
+                    alt="Polar White Flint Decorboard"
+                    class="d-none d-sm-block"
+                  />
+                  <!-- Mobile Image -->
+                  <img
+                    src="./images/Swatch-Aquamarine-192x274.jpg"
+                    alt="Polar White Flint Decorboard"
+                    class="d-block d-sm-none"
+                  />
+                </div>
+                <div class="products-content-wrapper prod-name">
+                  <span class="name">Polar White</span>
+                  <span class="type">Flint Decorboard</span>
+                </div>
+              </li>
+              <li class="search-products even">
+                <div class="products-media-wrapper">
+                  <!-- Desktop Image -->
+                  <img
+                    src="./images/Swatch-Essastone-Calcite-192x274.jpg"
+                    alt="Polar White Nuance Impression"
+                    class="d-none d-sm-block"
+                  />
+                  <!-- Mobile Image -->
+                  <img
+                    src="./images/Swatch-Essastone-Calcite-192x274.jpg"
+                    alt="Polar White Nuance Impression"
+                    class="d-block d-sm-none"
+                  />
+                </div>
+                <div class="products-content-wrapper prod-name">
+                  <span class="name">Polar White</span>
+                  <span class="type">Nuance Impression</span>
+                </div>
+              </li>
+              <li class="search-products odd">
+                <div class="products-media-wrapper">
+                  <!-- Desktop Image -->
+                  <img
+                    src="./images/Swatch-Essastone-Caolino-192x274.jpg"
+                    alt="Polar White Diamond Gloss Laminate"
+                    class="d-none d-sm-block"
+                  />
+                  <!-- Mobile Image -->
+                  <img
+                    src="./images/Swatch-Essastone-Caolino-192x274.jpg"
+                    alt="Polar White Diamond Gloss Laminate"
+                    class="d-block d-sm-none"
+                  />
+                </div>
+                <div class="products-content-wrapper prod-name">
+                  <span class="name">Polar White</span>
+                  <span class="type">Diamond Gloss Laminate</span>
+                </div>
+              </li>
+              <li class="text-center">
+                <a href="javascript:;" class="btn btn-secondary">
+                  Show more
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var dataLayer = [];
+    </script>
+    <script type="text/javascript">
+      function trackAddToCart(products) {
+        dataLayer.push({
+          event: "addToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSampleAddToCart(products) {
+        dataLayer.push({
+          event: "sampleAddToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackOrderSummaryClick(orderStatus) {
+        dataLayer.push({
+          event: "checkOrder",
+          orderStatus: orderStatus,
+        });
+      }
+
+      function trackUserLoggedIn(userStatus) {
+        dataLayer.push({
+          loggedInStatus: userStatus,
+        });
+      }
+
+      function trackPhoneNoClick(userStatus) {}
+
+      function trackRegisterLoginClick(userStatus) {
+        dataLayer.push({
+          event: "accountAction",
+          accountAction: userStatus,
+        });
+      }
+
+      function trackSampleOrderClick(products, range) {
+        dataLayer.push({
+          event: "sampleProductClick",
+          ecommerce: {
+            click: {
+              actionField: { list: range },
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalRegistration(aboutMe) {
+        dataLayer.push({
+          event: "signUpButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              aboutMe: aboutMe,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalSkip() {
+        dataLayer.push({
+          event: "skipButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackSignupModalLogin() {
+        dataLayer.push({
+          event: "signInButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackRemoveCart(
+        entryProductCode,
+        entryProductName,
+        entryProductPrice,
+        entryInitialQuantity,
+        entrySkuCode
+      ) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode, //string
+                  name: entryProductName, //string
+                  price: entryProductPrice, //currency
+                  quantity: entryInitialQuantity, //number
+                  sku: entrySkuCode,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveFullCart(cartData) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleCart(
+        entryProductCode,
+        entryProductName,
+        entryProductBrand,
+        entryProductPrice,
+        entryInitialQuantity,
+        entryProductCategory,
+        entrySkuCode,
+        entryProductColor,
+        entryProductFinish,
+        entryProductSize,
+        entryProductStock,
+        dimension10
+      ) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode,
+                  name: entryProductName,
+                  brand: entryProductBrand,
+                  price: entryProductPrice,
+                  quantity: entryInitialQuantity,
+                  category: entryProductCategory,
+                  variant: "",
+                  coupon: "",
+                  position: "",
+                  dimension2: entrySkuCode,
+                  dimension3: entryProductColor,
+                  dimension4: entryProductFinish,
+                  dimension5: entryProductSize,
+                  dimension6: "",
+                  dimension7: entryProductStock,
+                  dimension9: "sample",
+                  dimension10: dimension10,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleFullCart(cartData) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackProductClick(
+        productCode,
+        productName,
+        productBrand,
+        productQuantity,
+        productRange,
+        substrate,
+        position,
+        sku,
+        productColour,
+        productFinish,
+        sheetSize,
+        thickness
+      ) {
+        dataLayer.push({
+          event: "productClick",
+          ecommerce: {
+            click: {
+              actionField: {
+                list: "",
+                products: [
+                  {
+                    id: productCode,
+                    name: productName,
+                    brand: productBrand,
+                    price: "0",
+                    quantity: productQuantity,
+                    category: productRange,
+                    variant: substrate,
+                    coupon: "",
+                    position: position,
+                    dimension2: sku,
+                    dimension3: productColour,
+                    dimension4: productFinish,
+                    dimension5: sheetSize,
+                    dimension6: thickness,
+                  },
+                ],
+              },
+            },
+          },
+        });
+      }
+
+      function trackExternalSiteLinkClick(href, title) {
+        dataLayer.push({
+          event: "externalLink",
+          "data-component": "external site link", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": title,
+          elementUrl: href, //within the built-in settings of GTM this is the name of the existing variable
+        });
+      }
+
+      function trackNavigationLinkClick(navigationLabel) {
+        dataLayer.push({
+          event: "navigation",
+          "data-component": "navigation", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": navigationLabel,
+          "data-label": navigationLabel,
+        });
+      }
+
+      function trackUserDetails() {
+        dataLayer.push({
+          event: "navigationLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackInternalSiteLinkClick(href) {
+        dataLayer.push({
+          event: "internalSiteLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              url: href,
+            },
+          },
+        });
+      }
+
+      function trackOnlineChatUsage(interactionType) {
+        dataLayer.push({
+          event: "onlineChat",
+          chatInteraction: interactionType,
+        });
+      }
+
+      function trackCheckoutSteps() {
+        dataLayer.push({
+          event: "checkout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackSampleCheckoutSteps() {
+        dataLayer.push({
+          event: "sampleCheckout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+
+      var ACC = { config: {} };
+      ACC.config.contextPath = "";
+      ACC.config.encodedContextPath = "";
+      ACC.config.commonResourcePath = "/_ui/responsive/common";
+      ACC.config.themeResourcePath = "/_ui/responsive/theme-laminex";
+      ACC.config.siteResourcePath = "/_ui/responsive/site-laminexAU";
+      ACC.config.rootPath = "/_ui/responsive";
+      ACC.config.CSRFToken = "df32ee24-3b6e-434e-bd20-0d698e13efe1";
+      ACC.pwdStrengthVeryWeak = "Very weak";
+      ACC.pwdStrengthWeak = "Weak";
+      ACC.pwdStrengthMedium = "Medium";
+      ACC.pwdStrengthStrong = "Strong";
+      ACC.pwdStrengthVeryStrong = "Very strong";
+      ACC.pwdStrengthUnsafePwd = "password.strength.unsafepwd";
+      ACC.pwdStrengthTooShortPwd = "Too short";
+      ACC.pwdStrengthMinCharText = "Minimum length is %d characters";
+      ACC.accessibilityLoading = "Loading... Please wait...";
+      ACC.accessibilityStoresLoaded = "Stores loaded";
+      ACC.config.googleApiKey = "";
+      ACC.config.googleApiVersion = "3.7";
+
+      ACC.autocompleteUrl = "/search/autocompleteSecure";
+
+      ACC.config.loginUrl = "/login";
+
+      ACC.config.authenticationStatusUrl = "/authentication/status";
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      ACC.addons = {}; //JS holder for addons properties
+
+      ACC.addons.smarteditaddon = [];
+
+      ACC.addons.laminexassistedservicesstorefront = [];
+
+      ACC.addons.laminexcaptchaaddon = [];
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript" src="./js/generatedVariables.js"></script>
+    <script type="text/javascript" src="./js/all_responsive.js"></script>
+    <script type="text/javascript" src="./js/addons_responsive.js"></script>
+    <script type="text/javascript" src="./js/captcha_responsive.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="./js/addthis_widget.js#pubid=ra-5b831d89c6f7ebdc"
+    ></script>
+
+    <script type="text/javascript" src="./js/masonry.min.js"></script>
+    <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/mediaelement-and-player.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>
