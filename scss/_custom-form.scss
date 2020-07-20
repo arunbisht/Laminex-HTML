@@ -29,7 +29,6 @@
   .fr-grid-td {
     display: block;
   }
-
   .fr-section-title {
     margin-bottom: 3rem;
   }
@@ -121,5 +120,24 @@
     &:focus {
       box-shadow: 0 0 0 0 rgba(59, 60, 64, 0.5);
     }
+  }
+
+  .alert {
+    &.xforms-group {
+      display: none;
+    }
+  }
+
+  .navbar,
+  .xforms-template,
+  .xforms-help-panel,
+  .xbl-fr-error-summary,
+  .xforms-disabled {
+    display: none;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
