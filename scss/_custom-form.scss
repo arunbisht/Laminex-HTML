@@ -132,12 +132,36 @@
   .xforms-template,
   .xforms-help-panel,
   .xbl-fr-error-summary,
-  .xforms-disabled {
+  .xforms-disabled,
+  .fr-section-title {
     display: none;
   }
 
   .container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .fr-border {
+    border: none;
+    background: transparent;
+    margin: 0;
+  }
+
+  .orbeon {
+    .xbl-fr-section {
+      background: transparent;
+    }
+
+    .xforms-invalid {
+      > .xforms-alert.xforms-active {
+        background: transparent;
+        border: none;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
   }
 }
