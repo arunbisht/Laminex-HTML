@@ -424,4 +424,20 @@
       }
     }
   }
+
+  &.light-theme {
+    .inspiration-content-nav {
+      > a {
+        border: 1px solid rgba($accordion-border-color, 0.8);
+
+        &.nav-prev {
+          border-left: none;
+        }
+
+        &.nav-next {
+          border-right: none;
+        }
+      }
+    }
+  }
 }
