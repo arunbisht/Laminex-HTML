@@ -50,69 +50,71 @@
 
   <body>
     <div class="get-inspired-blog-wrapper">
-        
-    <div class="section-wrapper article-feature-wrapper">
+      <div class="section-wrapper article-feature-wrapper">
         <div class="container">
-        <div class="page-title-tags">
+          <div class="page-title-tags">
             <h1>What Facinates You?</h1>
             <div class="page-tags">
-                <div class="tags-list">
+              <div class="tags-list">
                 <a class="tag" href="javascript:;">All categories</a>
                 <a class="tag" href="javascript:;">colour</a>
                 <a class="tag" href="javascript:;">trends</a>
                 <a class="tag" href="javascript:;">products</a>
                 <a class="tag" href="javascript:;">living</a>
-                <a class="tag viewmore" href="javascript:;">View all tags</a>
-                </div>
-                <div class="tags-list tags-list-more">
+                <a class="tag viewmore" href="javascript:;">
+                  <span class="all-tag-text">View all tags</span>
+                  <span class="less-tag-text">View less tags</span>
+                </a>
+              </div>
+              <div class="tags-list tags-list-more">
                 <a class="tag" href="javascript:;">colour</a>
                 <a class="tag" href="javascript:;">trends</a>
                 <a class="tag" href="javascript:;">products</a>
                 <a class="tag" href="javascript:;">living</a>
-                    <a class="tag" href="javascript:;">colour</a>
+                <a class="tag" href="javascript:;">colour</a>
                 <a class="tag" href="javascript:;">trends</a>
-                </div>
+              </div>
             </div>
-        </div>
+          </div>
           <div class="the-forecast-wrapper alt d-flex">
-              <div class="forecast-image d-flex col-12 col-sm-7 order-sm-1 p-0">
-                  <div class="the-forecast-artile-wrappers">
-              <a href="javascript:;">
-                <!-- Desktop Image -->
-                <img
-                  src="./images/blog-forecast.jpg"
-                  alt="Kitchen design in 2018 is all about richer colours, customisation and convenience."
-                  class="img-fluid d-none d-sm-block"
-                />
-                <!-- Mobile Image -->
-                <img
-                  src="./images/blog-forecast.jpg"
-                  alt="Kitchen design in 2018 is all about richer colours, customisation and convenience."
-                  class="img-fluid d-block d-sm-none"
-                />
-                
-              </a>
+            <div class="forecast-image d-flex col-12 col-sm-7 order-sm-1 p-0">
+              <div class="the-forecast-artile-wrappers">
+                <a href="javascript:;">
+                  <!-- Desktop Image -->
+                  <img
+                    src="./images/blog-forecast.jpg"
+                    alt="Kitchen design in 2018 is all about richer colours, customisation and convenience."
+                    class="img-fluid d-none d-sm-block"
+                  />
+                  <!-- Mobile Image -->
+                  <img
+                    src="./images/blog-forecast.jpg"
+                    alt="Kitchen design in 2018 is all about richer colours, customisation and convenience."
+                    class="img-fluid d-block d-sm-none"
+                  />
+                </a>
               </div>
-            
-            
             </div>
-              <div class="forecast-title d-flex col-12 col-sm-5 order-sm-0 justify-content-sm-end p-0">
-                  <div class="forecast-title-wrapper">
-                      <div class="page-tags">
-                        <a class="tag" href="javascript:;">Trends</a>
-                    </div>
-                      <h2 class="h3 title">
-                        Kitchen design in 2018 is all about richer colours, customisation and convenience.
-                      </h2>
-                      <p>
-                      Lorem ipsum dolor sit amet pellentesque mattis odio velit. Vestibulum eros ante, dictum scelerisque
-                      </p>
-                      <a class="btn btn-link btn-link-forward">
-                    Read more
-                  </a>
-                    </div>
+            <div
+              class="forecast-title d-flex col-12 col-sm-5 order-sm-0 justify-content-sm-end p-0"
+            >
+              <div class="forecast-title-wrapper">
+                <div class="page-tags">
+                  <a class="tag" href="javascript:;">Trends</a>
+                </div>
+                <h2 class="h3 title">
+                  Kitchen design in 2018 is all about richer colours,
+                  customisation and convenience.
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet pellentesque mattis odio velit.
+                  Vestibulum eros ante, dictum scelerisque
+                </p>
+                <a class="btn btn-link btn-link-forward">
+                  Read more
+                </a>
               </div>
-              
+            </div>
           </div>
         </div>
       </div>
@@ -837,7 +839,11 @@
     <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
     <script>
       $(document).ready(function () {
-          
+        $("body").on("click", ".page-tags .viewmore", function (e) {
+          e.preventDefault();
+          $(this).closest(".page-tags").find(".tags-list-more").toggle();
+          $(this).toggleClass("all-tags");
+        });
       });
     </script>
   </body>
