@@ -103,7 +103,7 @@
       &.btn-prev-page,
       &.btn-next-page {
         a {
-          font-family: "font-icons" !important;
+          font-family: "font-icons-new" !important;
           font-style: normal;
           font-weight: normal;
           font-variant: normal;
@@ -115,17 +115,63 @@
       &.btn-prev-page {
         a {
           &:before {
-            content: "";
+            content: "\e003";
           }
         }
       }
       &.btn-next-page {
         a {
           &:before {
-            content: "";
+            content: "\e002";
           }
         }
       }
+    }
+  }
+
+  > a,
+  > span {
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: $pagination-size;
+    width: $pagination-size;
+    line-height: $pagination-size;
+    padding: 1px;
+    margin: 0 3px;
+    display: block;
+    color: $link-color !important;
+    display: inline-block;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    &.jp-current {
+      border: 1px solid $pagination-active-border-color;
+      cursor: default;
+    }
+  }
+
+  .jp-previous,
+  .jp-next {
+    font-family: "font-icons-new" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .jp-previous {
+    &:before {
+      content: "\e003";
+    }
+  }
+  .jp-next {
+    &:before {
+      content: "\e002";
     }
   }
 }

@@ -134,7 +134,7 @@
       <div class="section-wrapper blog-latest-wrapper">
         <div class="container">
           <div class="home-latest-wrapper">
-            <div class="row">
+            <div class="row" id="blogItems">
               <div class="col-md-6 col-sm-12">
                 <div class="home-latest-article-each">
                   <div class="home-latest-article-item">
@@ -172,7 +172,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="home-latest-article-each">
+                <div class="home-latest-article-each blog-post-item">
                   <div class="home-latest-article-item">
                     <a href="javascript:;">
                       <!-- Desktop Image -->
@@ -244,7 +244,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="home-latest-article-each">
+                <div class="home-latest-article-each blog-post-item">
                   <div class="home-latest-article-item">
                     <a href="javascript:;">
                       <!-- Desktop Image -->
@@ -280,7 +280,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="home-latest-article-each">
+                <div class="home-latest-article-each blog-post-item">
                   <div class="home-latest-article-item">
                     <a href="javascript:;">
                       <!-- Desktop Image -->
@@ -316,7 +316,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="home-latest-article-each">
+                <div class="home-latest-article-each blog-post-item">
                   <div class="home-latest-article-item">
                     <a href="javascript:;">
                       <!-- Desktop Image -->
@@ -352,7 +352,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="home-latest-article-each">
+                <div class="home-latest-article-each blog-post-item">
                   <div class="home-latest-article-item">
                     <a href="javascript:;">
                       <!-- Desktop Image -->
@@ -389,7 +389,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="home-latest-article-each">
+                <div class="home-latest-article-each blog-post-item">
                   <div class="home-latest-article-item">
                     <a href="javascript:;">
                       <!-- Desktop Image -->
@@ -425,25 +425,7 @@
                 </div>
               </div>
             </div>
-            <div class="blog-pagination-wrapper text-center">
-              <ul class="pagination">
-                <li class="pag-prev btn-prev-page">
-                  <a aria-label="Previous">
-                    <span aria-hidden="true"> </span>
-                  </a>
-                </li>
-                <li class="numeros btn-numbered-page active"><a>1</a></li>
-                <li class="numeros btn-numbered-page"><a>2</a></li>
-                <li class="numeros btn-numbered-page"><a>3</a></li>
-                <li class="numeros btn-numbered-page"><a>4</a></li>
-                <li class="numeros btn-numbered-page"><a>5</a></li>
-                <li class="numeros btn-numbered-page"><a>6</a></li>
-                <li class="numeros btn-numbered-page"><a>7</a></li>
-                <li class="pag-next btn-next-page">
-                  <a aria-label="Next"> <span aria-hidden="true"> </span></a>
-                </li>
-              </ul>
-            </div>
+            <div class="blog-pagination-wrapper text-center clearfix"></div>
           </div>
         </div>
       </div>
@@ -848,10 +830,33 @@
       src="./js/addthis_widget.js#pubid=ra-5b831d89c6f7ebdc"
     ></script>
 
-    <script type="text/javascript" src="./js/masonry.min.js"></script>
-    <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="./js/jPages.min.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $(".blog-pagination-wrapper").jPages({
+          containerID: "blogItems",
+          perPage: 7,
+          startPage: 1,
+          startRange: 1,
+          midRange: 10,
+          endRange: 1,
+          previous: "",
+          next: "",
+          first: false,
+          last: false,
+          minHeight: false,
+          callback: function () {
+            if (
+              $(".blog-pagination-wrapper .jp-previous").hasClass(
+                "jp-disabled"
+              ) &&
+              $(".blog-pagination-wrapper .jp-next").hasClass("jp-disabled")
+            ) {
+              $(".blog-pagination-wrapper").hide();
+            }
+          },
+        });
+      });
     </script>
   </body>
 </html>
