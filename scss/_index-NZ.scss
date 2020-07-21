@@ -1,0 +1,24 @@
+.nz{
+    .hero-banner-carousel-container-wrapper {
+        background: none;
+        .hero-banner-slick-carousel-item{
+            background-color: $hero-banner-slick-carousel-bg-color;
+        }
+    }
+    .quick-links-wrapper {
+        background-color: $quicklinks-bgNZ;
+        .quick-links{
+            -ms-flex-pack: center !important;
+    justify-content: center !important;
+        }
+        .caption{
+            letter-spacing: -0.5px;
+        }
+    }
+    .our-brands{
+        .component-content-wrapper{
+            margin-bottom:0;
+        }
+    }
+}
+
