@@ -6,6 +6,10 @@
   @media screen and (max-width: 767px) {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
+    .the-forecast-artile-wrappers {
+      width: 100%;
+    }
   }
 
   .title-wrapper {
