@@ -1,0 +1,40 @@
+.micromoment-promotion-wrapper {
+  .media-wrapper {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+  .content-wrapper {
+    .caption {
+      color: $secondary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    .heading {
+      margin-bottom: 8px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+      }
+      @media screen and (min-width: 960px) {
+        margin-bottom: 32px;
+      }
+    }
+
+    p,
+    .p {
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+      line-height: 1.7142857143;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 48px;
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+      @media screen and (min-width: 960px) {
+        margin-bottom: 32px;
+        font-size: 1.125rem;
+        line-height: 1.7777777778;
+      }
+    }
+  }
+}
