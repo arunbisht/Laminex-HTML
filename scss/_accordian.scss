@@ -35,6 +35,7 @@
       color: inherit !important;
       position: relative;
       cursor: pointer;
+      -webkit-appearance: none;
 
       &:after {
         content: "\e024";
@@ -199,6 +200,7 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
     position: relative;
+    -webkit-appearance: none;
 
     .tab-accordion-collapse-icon {
       font-size: 0.625rem;
