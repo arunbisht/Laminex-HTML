@@ -75,14 +75,16 @@
         }
 
         &.search-products {
-          margin: 0.688rem -0.688rem 0;
-          padding: 0.75rem 0.688rem;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -ms-flex-align: center;
-          align-items: center;
+          > a {
+            margin: 0.688rem -0.688rem 0;
+            padding: 0.75rem 0.688rem;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: center;
+            align-items: center;
+          }
 
           &.even {
             background-color: $search-result-product-bg-color;
