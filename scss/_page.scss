@@ -2,13 +2,27 @@
   .quick-links-wrapper {
     display: none;
   }
+
+  .hero-banner-section-wrapper {
+    margin-bottom: 25px;
+  }
 }
 
-.page-conditionsOfUsePage {
+.page-tradeCustomerRegistrationPage {
   .laminex-rich-text-component {
     &.col-md-8 {
       flex: 0 0 100%;
       max-width: 100%;
     }
+  }
+}
+
+.social-share-section-wrapper {
+  margin-top: 8px;
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+  }
+  @media screen and (min-width: 960px) {
+    margin-top: 32px;
   }
 }
