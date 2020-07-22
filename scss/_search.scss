@@ -144,3 +144,157 @@
     }
   }
 }
+
+.search-result-header-wrapper {
+  .accordionTabHeader {
+    &.active {
+      color: $link-color;
+    }
+  }
+}
+.search-result-body-wrapper {
+  position: relative;
+
+  &:before {
+    content: "";
+    background-color: $accordion-border-color;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: -1px;
+  }
+
+  .description-wrapper {
+    padding-bottom: 15px;
+    p {
+      font-family: "Maison Neue", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.71;
+      color: $secondary-text-color;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .tab-accordion-content {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+
+      .accordion-trigger {
+        background-color: #fff;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+
+.product-listing-wrapper {
+  .product-listing-item {
+    margin-bottom: 1rem;
+
+    .media-wrapper {
+      position: relative;
+      background-color: #ffffff;
+
+      img {
+        z-index: 0;
+        width: 100%;
+      }
+
+      .sample-order-trigger {
+        position: absolute;
+        z-index: 1;
+        margin: initial;
+        cursor: pointer;
+        display: block;
+        width: 18px;
+        height: 21px;
+        right: 9px;
+        top: 9px;
+
+        @media screen and (min-width: 768px) {
+          width: 18px;
+          height: 21px;
+          right: 10px;
+          top: 10px;
+        }
+
+        @media screen and (min-width: 960px) {
+          width: 25px;
+          height: 29px;
+          right: 12px;
+          top: 12px;
+        }
+      }
+    }
+
+    .caption-wrapper {
+      padding: 1rem 0 1rem;
+    }
+
+    .caption-tag {
+      font-family: "Maison Neue", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.71;
+      color: $link-color;
+    }
+
+    .caption-title {
+      font-family: "BrownStd", sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.5;
+      color: $secondary-text-color;
+    }
+
+    .caption-description {
+      font-family: "Maison Neue", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.71;
+      color: $secondary-text-color;
+    }
+  }
+}
+
+.technical-resources-wrapper {
+  .technical-resources-item {
+    margin-bottom: 30px;
+  }
+
+  .has-media {
+    .media-wrapper {
+      -ms-flex: 0 0 119px;
+      flex: 0 0 119px;
+      max-width: 119px;
+    }
+
+    .content-wrapper {
+      -ms-flex: 0 0 calc(100% - 119px);
+      flex: 0 0 calc(100% - 119px);
+      max-width: calc(100% - 119px);
+    }
+  }
+
+  .content-wrapper {
+    .content-title {
+      font-family: "BrownStd", sans-serif;
+      font-size: 1.125rem;
+      font-weight: bold;
+      line-height: 1.33;
+      color: $link-color;
+      margin-bottom: 3px;
+    }
+    .content-description {
+      font-family: "Maison Neue", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.71;
+      color: $secondary-text-color;
+    }
+  }
+}
