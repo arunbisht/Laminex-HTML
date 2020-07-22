@@ -1,0 +1,39 @@
+.get-inspired {
+    .hero-banner-carousel-container {
+        padding-bottom: 1.375rem;
+    }
+
+    .hero-banner-slick-carousel-content-wrapper {
+        @media screen and (min-width:768px) and (max-width:959px) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .hero-banner-slick-carousel-heading {
+        margin-bottom: 1rem;
+    }
+
+    .fb-rich-text {
+        p {
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .micromoment-promotion-wrapper {
+        .media-wrapper {
+            @media screen and (min-width: 960px) {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 48.5%;
+                flex: 0 0 48.5%;
+                max-width: 48.5%;
+            }
+        }
+        @media (max-width: 767.98px) {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+}
