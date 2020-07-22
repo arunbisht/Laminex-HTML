@@ -1,0 +1,14 @@
+.page-newsLetterSignUpPage {
+  .quick-links-wrapper {
+    display: none;
+  }
+}
+
+.page-conditionsOfUsePage {
+  .laminex-rich-text-component {
+    &.col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
