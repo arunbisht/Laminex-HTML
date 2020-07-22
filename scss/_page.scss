@@ -2,9 +2,12 @@
   .quick-links-wrapper {
     display: none;
   }
+
   .section-wrapper {
-    clear: both;
-    margin-bottom: 25px;
+    &.hero-banner-section-wrapper {
+      clear: both;
+      margin-bottom: 25px;
+    }
   }
 }
 
