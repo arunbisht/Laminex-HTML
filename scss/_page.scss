@@ -2,8 +2,8 @@
   .quick-links-wrapper {
     display: none;
   }
-
-  .hero-banner-section-wrapper {
+  .section-wrapper {
+    clear: both;
     margin-bottom: 25px;
   }
 }
@@ -18,11 +18,12 @@
 }
 
 .social-share-section-wrapper {
-  margin-top: 8px;
+  clear: both;
+  margin-bottom: 8px;
   @media screen and (min-width: 768px) {
-    margin-top: 16px;
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 960px) {
-    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
