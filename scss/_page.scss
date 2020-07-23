@@ -1,0 +1,32 @@
+.page-newsLetterSignUpPage {
+  .quick-links-wrapper {
+    display: none;
+  }
+
+  .section-wrapper {
+    &.hero-banner-section-wrapper {
+      clear: both;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.page-tradeCustomerRegistrationPage {
+  .laminex-rich-text-component {
+    &.col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.social-share-section-wrapper {
+  clear: both;
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 960px) {
+    margin-bottom: 32px;
+  }
+}
