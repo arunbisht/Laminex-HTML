@@ -1,0 +1,33 @@
+.browse-product-title {
+  margin-bottom: 50px;
+}
+
+.browse-product-wrapper {
+  .swatches-grid-item {
+    margin-bottom: 40px;
+
+    &.gallery-slider-item {
+      margin-bottom: 0;
+    }
+
+    .next-btn {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .swatch-tiles__body-top {
+      margin-top: 1rem;
+    }
+  }
+
+  .home-hr {
+    margin-top: 0;
+  }
+
+  .colour-collection-projects-slider {
+    @media screen and (max-width: 768px) {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
+  }
+}
