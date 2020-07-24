@@ -20,5 +20,20 @@
             margin-bottom:0;
         }
     }
+    .the-forecast-artile-title{
+        font-weight: bold;
+    }
+    .section-heading{
+        margin-bottom: 8px;
+        @media screen and (min-width: 768px){
+            margin-bottom: 16px;
+        }
+        @media screen and (min-width: 960px){
+            margin-bottom: 32px;
+        }
+    }
+    .collection-card-wrapper{
+        background: $bg-white;
+    }
 }
 
