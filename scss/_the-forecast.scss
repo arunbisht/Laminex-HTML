@@ -3,13 +3,8 @@
     color: $secondary-color;
   }
 
-  @media screen and (max-width: 767px) {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-
-    .the-forecast-artile-wrappers {
-      width: 100%;
-    }
+  .the-forecast-artile-wrappers {
+    width: 100%;
   }
 
   .title-wrapper {
@@ -116,6 +111,16 @@
         }
       }
     }
+  }
+
+  @media screen and (max-width: 960px) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
   }
 }
 .page-title-tags {

@@ -1,4 +1,5 @@
-.colour-collection-projects-slider {
+.colour-collection-projects-slider,
+.gallery-slider-items {
   margin-bottom: 16px;
 
   .slick-track {
@@ -8,7 +9,8 @@
     display: flex !important;
   }
 
-  .colour-collection-projects-slider-item {
+  .colour-collection-projects-slider-item,
+  .gallery-slider-item {
     position: relative;
     padding: 0.625rem 0.46875rem 0.9375rem;
     height: inherit;
