@@ -1,7 +1,12 @@
-.hero-banner-carousel-container-wrapper {
+.hero-banner-carousel-container-wrapper,
+.hero-banner-slick-carousel-item {
   background-color: $hero-banner-slick-carousel-bg-color;
   color: $hero-banner-slick-carousel-text-color;
   position: relative;
+
+  &.transparent-bg {
+    background-color: transparent;
+  }
 
   &.light-grey-bg {
     background-color: $blog-hero-banner-slick-carousel-bg-color;
