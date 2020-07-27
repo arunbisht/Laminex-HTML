@@ -32,21 +32,20 @@
     &::after {
       right: -1.625rem;
     }
-      &.btn-link-backward:hover{
-          &::after {
-          left: -1.625rem;
-        }
-
+    &.btn-link-backward:hover {
+      &::after {
+        left: -1.625rem;
       }
-  }
-    &.btn-link-backward{
-        margin-left: 1.25rem;
-        &:after{
-            content: "\E003";
-            left: -1.375rem;
-            right: auto;
-        }
     }
+  }
+  &.btn-link-backward {
+    margin-left: 1.25rem;
+    &:after {
+      content: "\E003";
+      left: -1.375rem;
+      right: auto;
+    }
+  }
 }
 
 .back-btn {
@@ -59,20 +58,31 @@
     }
   }
 }
-.btn-primary{
-    &.green:hover{
+.btn-primary {
+  &.green:hover {
     background-color: #507035;
     border-color: #5c7561;
-}
+  }
 }
 
 /* Common anchor link style*/
 
 a:not(.btn) {
-    &.link{
-      font-weight: 500;
-      padding-bottom: 0.25rem;
-      color: $link-color;
-        border-bottom: 1px dotted $link-color;
-    }
+  &.link {
+    font-weight: 500;
+    padding-bottom: 0.25rem;
+    color: $link-color;
+    border-bottom: 1px dotted $link-color;
+  }
+}
+
+.btn--micro {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem !important;
+}
+
+@media screen and (max-width: 960px) {
+  .facet-filters.show {
+    z-index: 10000;
+  }
 }
