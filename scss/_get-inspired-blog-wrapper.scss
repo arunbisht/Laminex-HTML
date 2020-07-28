@@ -109,7 +109,7 @@
     margin-bottom: 1rem;
   }
   img {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 
@@ -140,4 +140,16 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
+}
+
+.get-inspired-blog-get-look-wrapper {
+  h5,
+  .h5 {
+    text-decoration: inherit;
+    margin-bottom: 1rem;
+  }
+}
+
+.main__inner-wrapper {
+  clear: both;
 }
