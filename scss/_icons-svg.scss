@@ -1,0 +1,28 @@
+.siteHeader_StoreCheckout {
+        background-image: url('/-/media/Project/Fletcher-Building/Laminex/Laminex NZ/Cart-Images//cart-checkout.svg') !important;
+        width: 22px !important;
+        height: 22px !important;
+        background-size: 100% 100% !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+    }
+    .siteHeader_StoreCheckout:hover {
+        background-image: url('/-/media/Project/Fletcher-Building/Laminex/Laminex NZ/Cart-Images//cart-checkout-hover.svg') !important;
+    }
+    .fb-rich-text a:not(.btn), .accordion .field-content a:not(.btn) {
+        font-weight: 500;
+        color: #906549;
+        border-bottom: 1px dotted #906549;
+        padding-bottom: 0.25rem;
+    }
+     .siteHeader_BasketCheckout {
+        background-image: url('/-/media/Project/Fletcher-Building/Laminex/Laminex NZ/Cart-Images//sample-basket-new.svg') !important;
+        width: 22px !important;
+        height: 22px !important;
+        background-size: 100% 100% !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+    }
+    .siteHeader_BasketCheckout:hover {
+        background-image: url('/-/media/Project/Fletcher-Building/Laminex/Laminex NZ/Cart-Images//sample-basket-hover-new.svg') !important;
+    }

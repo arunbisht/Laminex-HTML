@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Navigation</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/captcha_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/all_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/laminex_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/addons_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/common.css"
+    />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body class="primary-navmenu">
+      <header class="siteHeader-sticky sticky">
+      <div id="header" class="siteHeader">
+          <div class="row">
+     <div class="siteHeader-logo col-4 col-sm-3 col-md-2 col-lg-3 order-0 order-sm-1 order-md-1 order-lg-1">
+<a title="Logo" href="/"><img class="logo" src="./images/laminex-logo-nz.svg" alt="Laminex"></a><span class="image-caption field-imagecaption"></span>
+</div>
+          
+          <div class="component container-fluid col-8 col-sm-12 col-md-3 col-lg-2 order-1 order-sm-first order-md-4 offset-md-0 order-lg-4 siteHeader__wrapper">
+    <div class="component-content">
+
+
+<div class="component link-list siteHeader-menu col-10 col-sm-11 col-md-12 order-1 order-sm-1 offset-sm-0 order-md-0 offset-md-0 order-lg-0">
+
+        <ul>
+                        <li title="Search for products or content" class="item0 odd first">
+                            <div>
+                                <a id="primary-search" href="javascript:;" class="primary-search icon-new--search" data-toggle="collapse" data-variantfieldname="Link">
+                                    <span>Search</span>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li title="Where to Buy" class="item1 even">
+<div>
+<a href="https://www.laminex.co.nz/locator-tool" class="siteHeader-Locator icon-new--location">
+<span>locator-tool</span></a></div>                        </li>
+                            <li title="Sample Cart" class="item2 odd">
+<div>
+<a href="https://store.laminex.co.nz/cart/sample" class="siteHeader-Swatch icon-new--sample-basket">
+<span>Sample Cart</span></a></div>                            </li>
+
+
+        <li title="Login to My Account" class="item1 even show-on-stick d-none">
+<div>
+<a href="/auth/Account/Login" class="siteHeader-tradeLogin">
+<span>LOGIN</span></a></div>            </li></ul>
+</div>
+
+
+<div class="component link siteHeader__toggler col-2 col-sm-1 order-2 order-sm-1">
+    <div class="component-content">
+
+<div class="field-link"><a data-target="#siteHeader__nav--secondary" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="siteHeader__nav--secondary" data-variantitemid="{1B9D77D0-AA9B-45F7-B85F-E2A7A61D7948}" data-variantfieldname="Link" aria-expanded="false">toggle</a></div>    </div>
+</div>    </div>
+</div>
+              
+              <div class="component link-list siteHeader-quickLinks col-12 col-sm-5 col-md-12 col-lg-12 order-3 offset-sm-4 order-md-0 offset-md-0 order-lg-0">
+    <div class="component-content">
+       
+       
+        <ul id="link-login-order">
+            <li title="Quick Order" class="item0 odd first">
+            </li>
+            <li title="Login to My Account" class="item1 even">
+<div>
+<a href="/auth/Account/Login" class="siteHeader-tradeLogin icon-new--user">
+<span>LOGIN</span></a></div>            </li>
+            <script type="text/javascript">
+    $(document).ready(function () {
+        document.body.addEventListener('click', function (evt) {
+            if (evt.target.className === 'my-account') {
+                var text = evt.target.text.toLowerCase();
+                if (["logout", "log out"].indexOf(text) > -1) {
+                    evt.preventDefault();
+                    $.ajax({
+                        url: $("#hybrisUrl").val(),
+                        dataType: "jsonp",
+                        success: function (data) {
+                            console.log("data" + data);
+                            window.location.href = "/auth/Account/logout";
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            console.log("jqXHR " + jqXHR);
+                            window.location.href = "/auth/Account/logout";
+                        }
+                    });
+
+                }
+            }
+        }, false);
+    });
+</script>
+
+        </ul>
+    </div>
+</div>
+              
+              <div class="component siteHeader-nav-primary col-12 col-md-7 col-lg-7 order-4 order-md-3 order-lg-3 navigation-main navigation-main-vertical">
+        <nav class="navbar-expand-md">
+            <ul>
+                    <li>
+                            <a title="Browse Products" id="siteHeader__primary--0" href="#siteHeader__nav--0" data-toggle="collapse">Browse Products</a>
+
+                    </li>
+                    <li>
+                            <a title="Trade &amp; Specifier Resources" id="siteHeader__primary--1" href="#siteHeader__nav--1" data-toggle="collapse">Trade &amp; Specifier Resources</a>
+
+                    </li>
+                    <li>
+                            <a title="About Laminex" id="siteHeader__primary--2" href="#siteHeader__nav--2" data-toggle="collapse">About Laminex</a>
+
+                    </li>
+            </ul>
+        </nav>
+    </div>
+              </div>
+          </div>
+      </header>
+    
+      
+   
+
+    <script type="text/javascript">
+      var dataLayer = [];
+    </script>
+    <script type="text/javascript">
+      function trackAddToCart(products) {
+        dataLayer.push({
+          event: "addToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSampleAddToCart(products) {
+        dataLayer.push({
+          event: "sampleAddToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackOrderSummaryClick(orderStatus) {
+        dataLayer.push({
+          event: "checkOrder",
+          orderStatus: orderStatus,
+        });
+      }
+
+      function trackUserLoggedIn(userStatus) {
+        dataLayer.push({
+          loggedInStatus: userStatus,
+        });
+      }
+
+      function trackPhoneNoClick(userStatus) {}
+
+      function trackRegisterLoginClick(userStatus) {
+        dataLayer.push({
+          event: "accountAction",
+          accountAction: userStatus,
+        });
+      }
+
+      function trackSampleOrderClick(products, range) {
+        dataLayer.push({
+          event: "sampleProductClick",
+          ecommerce: {
+            click: {
+              actionField: { list: range },
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalRegistration(aboutMe) {
+        dataLayer.push({
+          event: "signUpButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              aboutMe: aboutMe,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalSkip() {
+        dataLayer.push({
+          event: "skipButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackSignupModalLogin() {
+        dataLayer.push({
+          event: "signInButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackRemoveCart(
+        entryProductCode,
+        entryProductName,
+        entryProductPrice,
+        entryInitialQuantity,
+        entrySkuCode
+      ) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode, //string
+                  name: entryProductName, //string
+                  price: entryProductPrice, //currency
+                  quantity: entryInitialQuantity, //number
+                  sku: entrySkuCode,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveFullCart(cartData) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleCart(
+        entryProductCode,
+        entryProductName,
+        entryProductBrand,
+        entryProductPrice,
+        entryInitialQuantity,
+        entryProductCategory,
+        entrySkuCode,
+        entryProductColor,
+        entryProductFinish,
+        entryProductSize,
+        entryProductStock,
+        dimension10
+      ) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode,
+                  name: entryProductName,
+                  brand: entryProductBrand,
+                  price: entryProductPrice,
+                  quantity: entryInitialQuantity,
+                  category: entryProductCategory,
+                  variant: "",
+                  coupon: "",
+                  position: "",
+                  dimension2: entrySkuCode,
+                  dimension3: entryProductColor,
+                  dimension4: entryProductFinish,
+                  dimension5: entryProductSize,
+                  dimension6: "",
+                  dimension7: entryProductStock,
+                  dimension9: "sample",
+                  dimension10: dimension10,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleFullCart(cartData) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackProductClick(
+        productCode,
+        productName,
+        productBrand,
+        productQuantity,
+        productRange,
+        substrate,
+        position,
+        sku,
+        productColour,
+        productFinish,
+        sheetSize,
+        thickness
+      ) {
+        dataLayer.push({
+          event: "productClick",
+          ecommerce: {
+            click: {
+              actionField: {
+                list: "",
+                products: [
+                  {
+                    id: productCode,
+                    name: productName,
+                    brand: productBrand,
+                    price: "0",
+                    quantity: productQuantity,
+                    category: productRange,
+                    variant: substrate,
+                    coupon: "",
+                    position: position,
+                    dimension2: sku,
+                    dimension3: productColour,
+                    dimension4: productFinish,
+                    dimension5: sheetSize,
+                    dimension6: thickness,
+                  },
+                ],
+              },
+            },
+          },
+        });
+      }
+
+      function trackExternalSiteLinkClick(href, title) {
+        dataLayer.push({
+          event: "externalLink",
+          "data-component": "external site link", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": title,
+          elementUrl: href, //within the built-in settings of GTM this is the name of the existing variable
+        });
+      }
+
+      function trackNavigationLinkClick(navigationLabel) {
+        dataLayer.push({
+          event: "navigation",
+          "data-component": "navigation", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": navigationLabel,
+          "data-label": navigationLabel,
+        });
+      }
+
+      function trackUserDetails() {
+        dataLayer.push({
+          event: "navigationLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackInternalSiteLinkClick(href) {
+        dataLayer.push({
+          event: "internalSiteLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              url: href,
+            },
+          },
+        });
+      }
+
+      function trackOnlineChatUsage(interactionType) {
+        dataLayer.push({
+          event: "onlineChat",
+          chatInteraction: interactionType,
+        });
+      }
+
+      function trackCheckoutSteps() {
+        dataLayer.push({
+          event: "checkout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackSampleCheckoutSteps() {
+        dataLayer.push({
+          event: "sampleCheckout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+
+      var ACC = { config: {} };
+      ACC.config.contextPath = "";
+      ACC.config.encodedContextPath = "";
+      ACC.config.commonResourcePath = "/_ui/responsive/common";
+      ACC.config.themeResourcePath = "/_ui/responsive/theme-laminex";
+      ACC.config.siteResourcePath = "/_ui/responsive/site-laminexAU";
+      ACC.config.rootPath = "/_ui/responsive";
+      ACC.config.CSRFToken = "df32ee24-3b6e-434e-bd20-0d698e13efe1";
+      ACC.pwdStrengthVeryWeak = "Very weak";
+      ACC.pwdStrengthWeak = "Weak";
+      ACC.pwdStrengthMedium = "Medium";
+      ACC.pwdStrengthStrong = "Strong";
+      ACC.pwdStrengthVeryStrong = "Very strong";
+      ACC.pwdStrengthUnsafePwd = "password.strength.unsafepwd";
+      ACC.pwdStrengthTooShortPwd = "Too short";
+      ACC.pwdStrengthMinCharText = "Minimum length is %d characters";
+      ACC.accessibilityLoading = "Loading... Please wait...";
+      ACC.accessibilityStoresLoaded = "Stores loaded";
+      ACC.config.googleApiKey = "";
+      ACC.config.googleApiVersion = "3.7";
+
+      ACC.autocompleteUrl = "/search/autocompleteSecure";
+
+      ACC.config.loginUrl = "/login";
+
+      ACC.config.authenticationStatusUrl = "/authentication/status";
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      ACC.addons = {}; //JS holder for addons properties
+
+      ACC.addons.smarteditaddon = [];
+
+      ACC.addons.laminexassistedservicesstorefront = [];
+
+      ACC.addons.laminexcaptchaaddon = [];
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript" src="./js/generatedVariables.js"></script>
+    <script type="text/javascript" src="./js/all_responsive.js"></script>
+    <script type="text/javascript" src="./js/addons_responsive.js"></script>
+    <script type="text/javascript" src="./js/captcha_responsive.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="./js/addthis_widget.js#pubid=ra-5b831d89c6f7ebdc"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".colour-collection-projects-slider").each(function (i, _this) {
+          $(_this).slick({
+            autoplay: false,
+            arrows: false,
+            dots: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            centerMode: false,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  centerMode: true,
+                  slidesToShow: 2,
+                },
+              },
+              {
+                breakpoint: 360,
+                settings: {
+                  centerMode: true,
+                  slidesToShow: 1,
+                },
+              },
+            ],
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
