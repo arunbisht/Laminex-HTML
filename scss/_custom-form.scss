@@ -108,7 +108,7 @@
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
         &:focus {
-          border-color: $link-color !important;
+          border-color: $link-color-new !important;
         }
       }
 
@@ -191,8 +191,8 @@
 
           &:hover {
             color: #fff !important;
-            background-color: $link-color !important;
-            border-color: $link-color !important;
+            background-color: $link-color-new !important;
+            border-color: $link-color-new !important;
           }
 
           &:active {
