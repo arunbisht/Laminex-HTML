@@ -1,13 +1,19 @@
 .row {
+  margin-right: -4px !important;
+  margin-left: -4px !important;
+
   > .span12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 4px;
     padding-right: 4px;
+    margin-left: 0 !important;
   }
 
   @media screen and (min-width: 768px) {
+    margin-right: -8px !important;
+    margin-left: -8px !important;
     > .span12 {
       padding-left: 8px;
       padding-right: 8px;
@@ -15,6 +21,8 @@
   }
 
   @media screen and (min-width: 960px) {
+    margin-right: -16px !important;
+    margin-left: -16px !important;
     > .span12 {
       padding-left: 16px;
       padding-right: 16px;
@@ -180,14 +188,22 @@
     }
 
     .fr-buttons {
+      margin-top: 3rem;
+      display: block;
+
       .xforms-trigger {
         .btn {
           width: 100%;
           cursor: pointer;
           color: #fff !important;
-          background-color: $secondary-text-color !important;
-          border-color: $secondary-text-color !important;
+          background: $secondary-text-color !important;
+          border: 1px solid $secondary-text-color !important;
           margin-left: 0;
+          padding: 0.813rem 2.7578rem;
+          border-radius: 0;
+          font-family: "Brown Std New";
+          font-size: 0.875rem;
+          line-height: 1.25rem;
 
           &:hover {
             color: #fff !important;
