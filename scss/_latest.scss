@@ -22,10 +22,22 @@
 
     .home-latest-article-caption {
       a {
-        color: $link-color;
+        color: $secondary-text-color;
 
         &:hover {
-          color: darken($link-color, 15%);
+          color: darken($secondary-text-color, 15%);
+        }
+      }
+
+      .title {
+        a {
+          a {
+            color: $link-color;
+
+            &:hover {
+              color: darken($link-color, 15%);
+            }
+          }
         }
       }
     }

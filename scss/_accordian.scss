@@ -139,17 +139,19 @@
 }
 
 .section-intro-description {
-  color: $section-intro-description-text-color;
-  margin-bottom: 0;
-  font-size: 0.875rem;
-  line-height: 1.7142857143;
-  @media screen and (min-width: 768px) {
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-  @media screen and (min-width: 960px) {
-    font-size: 1.125rem;
-    line-height: 1.7777777778;
+  p {
+    color: $section-intro-description-text-color;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    line-height: 1.7142857143;
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    @media screen and (min-width: 960px) {
+      font-size: 1.125rem;
+      line-height: 1.7777777778;
+    }
   }
 }
 
