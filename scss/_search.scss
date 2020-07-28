@@ -34,6 +34,9 @@
       padding-left: 0.688rem;
       padding: 0.688rem;
       border-radius: 3px;
+      height: auto;
+      max-height: 65vh;
+      overflow: auto;
 
       @media screen and (max-width: 767px) {
         width: calc(100% - 2.5rem);

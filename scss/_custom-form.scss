@@ -275,10 +275,15 @@
     a {
       color: $link-color-new;
       border-bottom: 1px dotted $link-color-new;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($link-color-new, 5%);
+      }
     }
 
     .form-privacy-policy {
-      margin-top: -3rem;
+      margin-top: -3rem !important;
       lable,
       span {
         font-family: "Maison Neue", sans-serif;
@@ -290,7 +295,7 @@
 
     .form-signup-option {
       label {
-        margin-bottom: 0.3125rem;
+        margin-bottom: 0.3125rem !important;
       }
 
       lable,
