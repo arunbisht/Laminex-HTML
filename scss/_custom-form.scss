@@ -271,5 +271,38 @@
         }
       }
     }
+
+    a {
+      color: $link-color-new;
+      border-bottom: 1px dotted $link-color-new;
+    }
+
+    .form-privacy-policy {
+      margin-top: -3rem;
+      lable,
+      span {
+        font-family: "Maison Neue", sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        color: $secondary-text-color;
+      }
+    }
+
+    .form-signup-option {
+      label {
+        margin-bottom: 0.3125rem;
+      }
+
+      lable,
+      span {
+        font-family: "Brown Std New", sans-serif;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        letter-spacing: 1.4px;
+        font-weight: bold;
+        color: $text-color;
+        text-transform: uppercase;
+      }
+    }
   }
 }
