@@ -57,6 +57,20 @@
     //   margin-bottom: 3rem;
     // }
 
+    .fr-mode-new,
+    .fr-mode-edit,
+    .fr-mode-test,
+    .xforms-dialog {
+      .xforms-required {
+        &.xforms,
+        .xforms-label {
+          &:before {
+            display: none !important;
+          }
+        }
+      }
+    }
+
     .fr-grid-td {
       margin-bottom: 3rem;
       position: relative;
@@ -170,25 +184,25 @@
         .btn {
           width: 100%;
           cursor: pointer;
-          color: #fff;
-          background-color: $noir-bg-color;
-          border-color: $noir-bg-color;
+          color: #fff !important;
+          background-color: $secondary-text-color !important;
+          border-color: $secondary-text-color !important;
           margin-left: 0;
 
           &:hover {
-            color: #fff;
-            background-color: $link-color;
-            border-color: $link-color;
+            color: #fff !important;
+            background-color: $link-color !important;
+            border-color: $link-color !important;
           }
 
           &:active {
-            color: #fff;
-            background-color: darken($noir-bg-color, 10%);
-            border-color: darken($noir-bg-color, 12.5%);
+            color: #fff !important;
+            background-color: darken($secondary-text-color, 10%) !important;
+            border-color: darken($secondary-text-color, 12.5%) !important;
           }
 
           &:focus {
-            box-shadow: 0 0 0 0 rgba(59, 60, 64, 0.5);
+            box-shadow: 0 0 0 0 rgba($secondary-text-color, 0.5);
           }
         }
       }
@@ -211,7 +225,8 @@
     .xforms-help-panel,
     .xbl-fr-error-summary,
     .xforms-disabled,
-    .fr-section-title {
+    .fr-section-title,
+    .xforms-hidden {
       display: none;
     }
 
