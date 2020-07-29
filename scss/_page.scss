@@ -1,8 +1,10 @@
-.page-newsLetterSignUpPage {
+.page-newsLetterSignUpPage,
+.page-technicalEnquiryPage {
   .quick-links-wrapper {
     display: none;
   }
-
+}
+.page-newsLetterSignUpPage {
   .section-wrapper {
     &.hero-banner-section-wrapper {
       clear: both;
@@ -30,6 +32,6 @@
     margin-bottom: 32px;
   }
 }
-.ovh{
-    overflow: hidden;
+.ovh {
+  overflow: hidden;
 }

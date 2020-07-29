@@ -2,7 +2,7 @@
     <defs>
         <path id="a" d="M0 0h121.008v23.598H0z"/>
     </defs>
-    <g fill="none" fill-rule="evenodd" opacity=".5" transform="translate(0 .47)">
+    <g fill="#333" fill-rule="evenodd" transform="translate(0 .47)">
         <mask id="b" fill="#fff">
             <use xlink:href="#a"/>
         </mask>
