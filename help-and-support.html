@@ -409,11 +409,10 @@
             <div class="row justify-content-center">
               <div class="col-md-8">
                 <div class="accordion accordion-items" id="faqAccordian">
-                  <div class="accordion-item">
+                  <div class="accordion-item active">
                     <div
-                      class="text-left collapsed accordion-title accordion-trigger"
+                      class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-toggle="collapse"
                       data-target="#faqAccordian1"
                       aria-expanded="true"
                       aria-controls="faqAccordian1"
@@ -424,7 +423,7 @@
                         </span>
                       </h6>
                     </div>
-                    <div class="accordion-content collapse" id="faqAccordian1">
+                    <div class="accordion-content" id="faqAccordian1">
                       <p class="p2">
                         To set up an account, you need to be registered with us.
                         Please contact your Sales Rep to confirm registration.
@@ -477,9 +476,8 @@
                   </div>
                   <div class="accordion-item">
                     <div
-                      class="text-left collapsed accordion-title accordion-trigger"
+                      class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-toggle="collapse"
                       data-target="#faqAccordian2"
                       aria-expanded="true"
                       aria-controls="faqAccordian2"
@@ -490,7 +488,10 @@
                         </span>
                       </h6>
                     </div>
-                    <div class="accordion-content collapse" id="faqAccordian2">
+                    <div
+                      class="accordion-content custom-accordion-content"
+                      id="faqAccordian2"
+                    >
                       <p class="p2">
                         To login you need to be registered user. If you're a
                         registered user, simply follow the below steps to
@@ -526,9 +527,8 @@
                   </div>
                   <div class="accordion-item">
                     <div
-                      class="text-left collapsed accordion-title accordion-trigger"
+                      class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-toggle="collapse"
                       data-target="#faqAccordian3"
                       aria-expanded="true"
                       aria-controls="faqAccordian3"
@@ -540,7 +540,10 @@
                         </span>
                       </h6>
                     </div>
-                    <div class="accordion-content collapse" id="faqAccordian3">
+                    <div
+                      class="accordion-content custom-accordion-content"
+                      id="faqAccordian3"
+                    >
                       <p class="p2">
                         Please contact us on 132 136&nbsp; to request access for
                         additional users.
@@ -549,9 +552,8 @@
                   </div>
                   <div class="accordion-item">
                     <div
-                      class="text-left collapsed accordion-title accordion-trigger"
+                      class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-toggle="collapse"
                       data-target="#faqAccordian4"
                       aria-expanded="true"
                       aria-controls="faqAccordian4"
@@ -562,7 +564,10 @@
                         </span>
                       </h6>
                     </div>
-                    <div class="accordion-content collapse" id="faqAccordian4">
+                    <div
+                      class="accordion-content custom-accordion-content"
+                      id="faqAccordian4"
+                    >
                       <ol>
                         <li>
                           <p class="p2">
@@ -599,9 +604,8 @@
                   </div>
                   <div class="accordion-item">
                     <div
-                      class="text-left collapsed accordion-title accordion-trigger"
+                      class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-toggle="collapse"
                       data-target="#faqAccordian5"
                       aria-expanded="true"
                       aria-controls="faqAccordian5"
@@ -612,7 +616,10 @@
                         </span>
                       </h6>
                     </div>
-                    <div class="accordion-content collapse" id="faqAccordian5">
+                    <div
+                      class="accordion-content custom-accordion-content"
+                      id="faqAccordian5"
+                    >
                       <p class="p2">
                         Once you’ve submitted your order in Checkout, you will
                         see an order confirmation page. This confirms your order
@@ -625,9 +632,8 @@
                   </div>
                   <div class="accordion-item">
                     <div
-                      class="text-left collapsed accordion-title accordion-trigger"
+                      class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-toggle="collapse"
                       data-target="#faqAccordian6"
                       aria-expanded="true"
                       aria-controls="faqAccordian6"
@@ -639,7 +645,10 @@
                         </span>
                       </h6>
                     </div>
-                    <div class="accordion-content collapse" id="faqAccordian6">
+                    <div
+                      class="accordion-content custom-accordion-content"
+                      id="faqAccordian6"
+                    >
                       <p class="p2">
                         If the product you’re looking for is out of stock in
                         your Branch/DC (or if you need more stock than is
@@ -1019,7 +1028,12 @@
     <script>
       $(document).ready(function () {
         $("body").on("click", ".accordion-trigger", function () {
-          $(this).closest(".accordion-item").toggleClass("active");
+          // $(this).closest(".accordion-item").toggleClass("active");
+          $(this)
+            .siblings(".accordion-content")
+            .slideToggle()
+            .closest(".accordion-item")
+            .toggleClass("active");
         });
       });
     </script>

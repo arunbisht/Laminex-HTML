@@ -7,6 +7,10 @@
 
   .home-latest-article-item {
     margin-bottom: 10px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .home-latest-article-caption {
@@ -22,10 +26,20 @@
 
     .home-latest-article-caption {
       a {
-        color: $link-color;
+        color: $link-color-new;
 
         &:hover {
-          color: darken($link-color, 15%);
+          color: darken($link-color-new, 15%);
+        }
+      }
+
+      .title {
+        a {
+          color: $link-color-new;
+
+          &:hover {
+            color: darken($link-color-new, 15%);
+          }
         }
       }
     }
@@ -45,7 +59,7 @@
 .home-latest-article-category-wrapper {
   .trend-tag {
     font-family: "Maison Neue";
-    color: $link-color;
+    color: $link-color-new;
     background-color: $primary-color;
     font-size: 11px;
     padding: 2px 13.5px;
@@ -73,7 +87,7 @@
 
     li {
       display: inline-block;
-      color: $link-color;
+      color: $link-color-new;
 
       a {
         text-decoration: none;
@@ -86,7 +100,7 @@
         padding: 1px;
         margin: 0 3px;
         display: block;
-        color: $link-color;
+        color: $link-color-new;
 
         &:hover {
           background-color: $primary-color;
@@ -141,7 +155,7 @@
     padding: 1px;
     margin: 0 3px;
     display: block;
-    color: $link-color !important;
+    color: $link-color-new !important;
     display: inline-block;
 
     &:hover {

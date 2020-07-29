@@ -34,6 +34,9 @@
       padding-left: 0.688rem;
       padding: 0.688rem;
       border-radius: 3px;
+      height: auto;
+      max-height: 65vh;
+      overflow: auto;
 
       @media screen and (max-width: 767px) {
         width: calc(100% - 2.5rem);
@@ -113,7 +116,7 @@
           }
 
           .tag {
-            color: $link-color;
+            color: $link-color-new;
             font-weight: bold;
           }
         }
@@ -133,8 +136,8 @@
       font-weight: bold;
 
       a {
-        color: $link-color;
-        border-bottom: 1px dotted $link-color;
+        color: $link-color-new;
+        border-bottom: 1px dotted $link-color-new;
       }
 
       .invalid-search-icon {
@@ -148,7 +151,7 @@
 .search-result-header-wrapper {
   .accordionTabHeader {
     &.active {
-      color: $link-color;
+      color: $link-color-new;
     }
   }
 }
@@ -240,7 +243,7 @@
       font-size: 0.875rem;
       font-weight: 500;
       line-height: 1.71;
-      color: $link-color;
+      color: $link-color-new;
     }
 
     .caption-title {
@@ -286,7 +289,7 @@
       font-size: 1.125rem;
       font-weight: bold;
       line-height: 1.33;
-      color: $link-color;
+      color: $link-color-new;
       margin-bottom: 3px;
     }
     .content-description {

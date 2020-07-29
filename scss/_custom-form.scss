@@ -1,13 +1,19 @@
 .row {
+  margin-right: -4px !important;
+  margin-left: -4px !important;
+
   > .span12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 4px;
     padding-right: 4px;
+    margin-left: 0 !important;
   }
 
   @media screen and (min-width: 768px) {
+    margin-right: -8px !important;
+    margin-left: -8px !important;
     > .span12 {
       padding-left: 8px;
       padding-right: 8px;
@@ -15,6 +21,8 @@
   }
 
   @media screen and (min-width: 960px) {
+    margin-right: -16px !important;
+    margin-left: -16px !important;
     > .span12 {
       padding-left: 16px;
       padding-right: 16px;
@@ -57,6 +65,20 @@
     //   margin-bottom: 3rem;
     // }
 
+    .fr-mode-new,
+    .fr-mode-edit,
+    .fr-mode-test,
+    .xforms-dialog {
+      .xforms-required {
+        &.xforms,
+        .xforms-label {
+          &:before {
+            display: none !important;
+          }
+        }
+      }
+    }
+
     .fr-grid-td {
       margin-bottom: 3rem;
       position: relative;
@@ -94,7 +116,7 @@
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
         &:focus {
-          border-color: $link-color !important;
+          border-color: $link-color-new !important;
         }
       }
 
@@ -166,29 +188,37 @@
     }
 
     .fr-buttons {
+      margin-top: 3rem;
+      display: block;
+
       .xforms-trigger {
         .btn {
           width: 100%;
           cursor: pointer;
-          color: #fff;
-          background-color: $noir-bg-color;
-          border-color: $noir-bg-color;
+          color: #fff !important;
+          background: $secondary-text-color !important;
+          border: 1px solid $secondary-text-color !important;
           margin-left: 0;
+          padding: 0.813rem 2.7578rem;
+          border-radius: 0;
+          font-family: "Brown Std New";
+          font-size: 0.875rem;
+          line-height: 1.25rem;
 
           &:hover {
-            color: #fff;
-            background-color: $link-color;
-            border-color: $link-color;
+            color: #fff !important;
+            background-color: $link-color-new !important;
+            border-color: $link-color-new !important;
           }
 
           &:active {
-            color: #fff;
-            background-color: darken($noir-bg-color, 10%);
-            border-color: darken($noir-bg-color, 12.5%);
+            color: #fff !important;
+            background-color: darken($secondary-text-color, 10%) !important;
+            border-color: darken($secondary-text-color, 12.5%) !important;
           }
 
           &:focus {
-            box-shadow: 0 0 0 0 rgba(59, 60, 64, 0.5);
+            box-shadow: 0 0 0 0 rgba($secondary-text-color, 0.5);
           }
         }
       }
@@ -211,7 +241,8 @@
     .xforms-help-panel,
     .xbl-fr-error-summary,
     .xforms-disabled,
-    .fr-section-title {
+    .fr-section-title,
+    .xforms-hidden {
       display: none;
     }
 
@@ -238,6 +269,44 @@
         &:before {
           display: none;
         }
+      }
+    }
+
+    a {
+      color: $link-color-new;
+      border-bottom: 1px dotted $link-color-new;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($link-color-new, 5%);
+      }
+    }
+
+    .form-privacy-policy {
+      margin-top: -3rem !important;
+      lable,
+      span {
+        font-family: "Maison Neue", sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+        color: $secondary-text-color;
+      }
+    }
+
+    .form-signup-option {
+      label {
+        margin-bottom: 0.3125rem !important;
+      }
+
+      lable,
+      span {
+        font-family: "Brown Std New", sans-serif;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        letter-spacing: 1.4px;
+        font-weight: bold;
+        color: $text-color;
+        text-transform: uppercase;
       }
     }
   }

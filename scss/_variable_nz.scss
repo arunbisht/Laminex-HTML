@@ -3,14 +3,17 @@ $secondary-color: #929596 !default;
 $light-grey-color: #e9e9e9 !default;
 $text-color: #454849 !default;
 $secondary-text-color: #3b3c40 !default;
-$link-color: #5c7561 !default;
+$link-color-new: #5c7561 !default;
+$anchor-color: #5c7561 !default;
+$anchor-color-nz: #5c7561 !default;
 $danger-color: #d0021b !default;
+$style-palette-peach: #f3f4f2 !default;
 
 $hero-banner-slick-carousel-bg-color: #f6f5f4 !default;
 $blog-hero-banner-slick-carousel-bg-color: $light-grey-color !default;
 $hero-banner-slick-carousel-text-color: $text-color !default;
 $hero-banner-slick-carousel-nav-bg-color: $primary-color !default;
-$arrow-color: $link-color !default;
+$arrow-color: $link-color-new !default;
 
 $collection-card-caption-bg-color: $light-grey-color !default;
 $collection-card-caption-text-color: $text-color !default;
@@ -21,7 +24,7 @@ $the-forecast-title-width: 330px !default;
 $the-forecast-title-tab-width: 300px !default;
 
 $pagination-size: 34px !default;
-$pagination-active-border-color: $link-color !default;
+$pagination-active-border-color: $link-color-new !default;
 
 $quick-link-text-color: $secondary-text-color !default;
 $accordion-border-color: #d5d5d5 !default;
@@ -68,3 +71,9 @@ $search-placeholder-text-color: #a79d97 !default;
 $search-result-text-color: #5f6263 !default;
 $search-result-product-bg-color: #fafafa !default;
 $quicklinks-bgNZ: #f3f4f2 !default;
+$bg-white: #ffffff !default;
+
+$footer-social-icon-border-color: #cccccc !default;
+$footer-social-icon-hover-bg-color: #222327 !default;
+
+$footer-mobile-arrow-color: #a79d97 !default;
