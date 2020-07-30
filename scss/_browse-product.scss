@@ -18,6 +18,10 @@
     .swatch-tiles__body-top {
       margin-top: 1rem;
     }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 
   .home-hr {
@@ -28,6 +32,86 @@
     @media screen and (max-width: 768px) {
       margin-left: -1.25rem;
       margin-right: -1.25rem;
+    }
+  }
+
+  .page-title.browse-by-product-title {
+    .btn-wrapper {
+      .btn.btn-secondary {
+        width: auto;
+        padding-left: 35px;
+        padding-right: 35px;
+        min-width: 256px;
+
+        & + .btn {
+          margin-left: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+          display: block;
+
+          & + .btn {
+            margin-left: 0;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .choose-category {
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 1099.98px) {
+        display: block;
+
+        .column {
+          &,
+          &:first-child,
+          &:nth-child(4) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section.expore-latest {
+    padding-top: 0;
+  }
+
+  .section-wrapper {
+    .btn-top-spacing {
+      margin-top: 2rem;
+    }
+    .btn {
+      min-width: 304px;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        min-width: 1px;
+      }
+    }
+  }
+
+  .explore-by-brand-section {
+    @media screen and (min-width: 960px) {
+      .row {
+        margin-left: -25px !important;
+        margin-right: -25px !important;
+
+        > [class*="col-"] {
+          padding-left: 25px !important;
+          padding-right: 25px !important;
+        }
+      }
+    }
+  }
+
+  .gallery-slider-items {
+    margin-bottom: 0;
+    .gallery-slider-item {
+      padding: 0;
     }
   }
 }
