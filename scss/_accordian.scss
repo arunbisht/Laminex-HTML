@@ -7,7 +7,7 @@
     }
 
     &.active {
-      background-color: $primary-color;
+      background-color: $accordion-active-bg-color;
       .accordion-trigger {
         &:after {
           content: "\e01e";
