@@ -1032,6 +1032,7 @@
           $(this)
             .siblings(".accordion-content")
             .slideToggle()
+            .toggleClass("custom-accordion-content")
             .closest(".accordion-item")
             .toggleClass("active");
         });

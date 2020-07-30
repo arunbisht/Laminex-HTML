@@ -8,6 +8,18 @@
 
     &.active {
       background-color: $primary-color;
+      .accordion-trigger {
+        &:after {
+          content: "\e01e";
+        }
+
+        &:hover {
+          &:after {
+            content: "\e01d";
+            color: $accordion-text-color;
+          }
+        }
+      }
     }
 
     @media screen and (min-width: 768px) {
@@ -59,11 +71,11 @@
         -moz-osx-font-smoothing: grayscale;
       }
 
-      &:not(.collapsed) {
-        &:after {
-          content: "\e01e";
-        }
-      }
+      // &:not(.collapsed) {
+      //   &:after {
+      //     content: "\e01e";
+      //   }
+      // }
 
       &:hover {
         &:after {
@@ -71,12 +83,12 @@
           color: $accordion-text-color;
         }
 
-        &:not(.collapsed) {
-          &:after {
-            content: "\e01d";
-            color: $accordion-text-color;
-          }
-        }
+        // &:not(.collapsed) {
+        //   &:after {
+        //     content: "\e01d";
+        //     color: $accordion-text-color;
+        //   }
+        // }
       }
     }
 
