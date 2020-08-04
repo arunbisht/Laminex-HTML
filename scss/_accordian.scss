@@ -7,7 +7,19 @@
     }
 
     &.active {
-      background-color: $primary-color;
+      background-color: $accordion-active-bg-color;
+      .accordion-trigger {
+        &:after {
+          content: "\e01e";
+        }
+
+        &:hover {
+          &:after {
+            content: "\e01d";
+            color: $accordion-text-color;
+          }
+        }
+      }
     }
 
     @media screen and (min-width: 768px) {
@@ -59,11 +71,11 @@
         -moz-osx-font-smoothing: grayscale;
       }
 
-      &:not(.collapsed) {
-        &:after {
-          content: "\e01e";
-        }
-      }
+      // &:not(.collapsed) {
+      //   &:after {
+      //     content: "\e01e";
+      //   }
+      // }
 
       &:hover {
         &:after {
@@ -71,12 +83,12 @@
           color: $accordion-text-color;
         }
 
-        &:not(.collapsed) {
-          &:after {
-            content: "\e01d";
-            color: $accordion-text-color;
-          }
-        }
+        // &:not(.collapsed) {
+        //   &:after {
+        //     content: "\e01d";
+        //     color: $accordion-text-color;
+        //   }
+        // }
       }
     }
 
@@ -93,13 +105,13 @@
   }
 
   .accordion-content {
-    margin: 0.9375rem 0 0;
-    padding: 0 1.25rem 0.9375rem;
+    margin: 0;
+    padding: 0.9375rem 1.25rem 0.9375rem;
     color: $accordion-text-color;
 
     @media screen and (min-width: 768px) {
-      margin: 2rem 0 0;
-      padding: 0 1.25rem 1.25rem;
+      margin: 0;
+      padding: 2rem 1.25rem 1.25rem;
     }
 
     p {

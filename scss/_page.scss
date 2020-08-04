@@ -1,15 +1,17 @@
-.page-newsLetterSignUpPage {
-  .quick-links-wrapper {
-    display: none;
-  }
-
-  .section-wrapper {
-    &.hero-banner-section-wrapper {
-      clear: both;
-      margin-bottom: 25px;
-    }
-  }
-}
+// .page-newsLetterSignUpPage,
+// .page-technicalEnquiryPage {
+//   .quick-links-wrapper {
+//     display: none;
+//   }
+// }
+// .page-newsLetterSignUpPage {
+//   .section-wrapper {
+//     &.hero-banner-section-wrapper {
+//       clear: both;
+//       margin-bottom: 25px;
+//     }
+//   }
+// }
 
 .page-tradeCustomerRegistrationPage {
   .laminex-rich-text-component {
@@ -30,6 +32,6 @@
     margin-bottom: 32px;
   }
 }
-.ovh{
-    overflow: hidden;
+.ovh {
+  overflow: hidden;
 }

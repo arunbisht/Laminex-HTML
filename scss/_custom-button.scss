@@ -46,6 +46,11 @@
       right: auto;
     }
   }
+
+  &:hover,
+  &:focus {
+    color: initial !important;
+  }
 }
 
 .back-btn {
