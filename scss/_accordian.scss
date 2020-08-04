@@ -226,6 +226,19 @@
     }
   }
 
+  .nav-item {
+    &:first-child {
+      .tab-nav-link {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      .tab-nav-link {
+        margin-right: 0;
+      }
+    }
+  }
+
   .nav-item.show .tab-nav-link,
   .tab-nav-link.active,
   .tab-nav-link:hover {
