@@ -157,6 +157,10 @@
 .search-result-header-wrapper {
   position: relative;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+  }
+
   &:before {
     content: "";
     background-color: $accordion-border-color;
