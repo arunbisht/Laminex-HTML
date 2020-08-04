@@ -286,6 +286,23 @@
       display: block;
     }
   }
+
+  @media screen and (max-width: 960px) and (min-width: 768px) {
+    &.tab-content {
+      > .tab-pane {
+        display: none !important;
+        opacity: 0 !important;
+
+        &.active {
+          display: block !important;
+        }
+
+        &.fade.show {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
 }
 
 .tab-accordion-body {
