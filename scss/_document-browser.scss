@@ -1,0 +1,79 @@
+.document-browser-wrapper {
+  background-color: #fff;
+  color: $secondary-text-color;
+
+  .document-browser-caption {
+    margin-bottom: 50px;
+  }
+  .search-wrapper {
+    .form-title {
+      font-size: 0.75rem;
+      line-height: 1.33;
+      letter-spacing: 1.4px;
+    }
+  }
+  .search-form {
+    margin-bottom: 30px;
+    .input-wrapper,
+    .btn-wrapper {
+      width: 100%;
+      position: relative;
+    }
+
+    .input-wrapper {
+      -ms-flex: 0 0 calc(100% - #{$document-browser-search-btn-width});
+      flex: 0 0 calc(100% - #{$document-browser-search-btn-width});
+      max-width: calc(100% - #{$document-browser-search-btn-width});
+    }
+
+    .btn-wrapper {
+      -ms-flex: 0 0 $document-browser-search-btn-width;
+      flex: 0 0 $document-browser-search-btn-width;
+      max-width: $document-browser-search-btn-width;
+      padding-left: 10px;
+    }
+
+    .input-icon {
+      position: absolute;
+      font-size: 1.375rem;
+      color: $search-result-text-color;
+      height: 50px;
+      line-height: 58px;
+      width: 40px;
+      text-align: center;
+
+      &:after {
+        content: "";
+        width: 1px;
+        height: 32px;
+        background-color: $search-placeholder-text-color;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 9px;
+      }
+    }
+
+    .form-control {
+      border-color: $accordion-border-color;
+      border-radius: 3px;
+      color: $link-color-new;
+      height: 50px;
+      padding-left: 50px;
+    }
+
+    .search-input-cross {
+      top: 12px;
+    }
+
+    .btn {
+      border-radius: 4px;
+
+      .icon--search {
+        font-size: 1.0625rem;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+    }
+  }
+}
