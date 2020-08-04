@@ -119,6 +119,9 @@
                 align-items: center;
                 width: 100%;
                 margin: 1.875rem 0;
+                &:last-child{
+                    margin-bottom: 0;
+                }
 
                 &:nth-child(even) {
                     .vertical-scroll-body {
