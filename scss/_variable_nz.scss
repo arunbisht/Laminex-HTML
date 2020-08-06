@@ -4,6 +4,7 @@ $light-grey-color: #e9e9e9 !default;
 $text-color: #454849 !default;
 $secondary-text-color: #3b3c40 !default;
 $link-color-new: #5c7561 !default;
+$link-color-light: #858e81 !default;
 $anchor-color: #5c7561 !default;
 $anchor-color-nz: #5c7561 !default;
 $danger-color: #d0021b !default;
@@ -67,7 +68,7 @@ $new-tag-color-altbg-color: #e1e4e0 !default;
 $new-tag-border-color: #ced2cb !default;
 
 $search-border-color: #c6a590 !default;
-$search-placeholder-text-color: #a79d97 !default;
+$search-placeholder-text-color: $link-color-light !default;
 $search-result-text-color: #5f6263 !default;
 $search-result-product-bg-color: #fafafa !default;
 $quicklinks-bgNZ: #f3f4f2 !default;
@@ -76,7 +77,7 @@ $bg-white: #ffffff !default;
 $footer-social-icon-border-color: #cccccc !default;
 $footer-social-icon-hover-bg-color: #222327 !default;
 
-$footer-mobile-arrow-color: #a79d97 !default;
+$footer-mobile-arrow-color: $link-color-light !default;
 $footer-top-bg-color: $style-palette-peach !default;
 $footer-top-top-padding: 50px !default;
 $footer-top-bottom-padding: 25px !default;
@@ -89,3 +90,11 @@ $accordion-active-bg-color: $style-palette-peach !default;
 
 $document-resources-item-divider-color: $style-palette-peach !default;
 $document-resources-item-color: $secondary-text-color !default;
+$document-browser-search-btn-width: 109px !default;
+$document-browser-search-item-btn-border-color: $link-color-light !default;
+
+$search-filter-item-border-color: #f3f4f2 !default;
+$search-filter-item-gutter-space: 6px !default;
+$search-filter-item-btn-width: 116px !default;
+$search-filter-item-size-width: 90px !default;
+$search-filter-item-meta-width: 182px !default;

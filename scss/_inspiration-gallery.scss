@@ -90,6 +90,8 @@
 }
 
 .inspiration-content-wrapper {
+  background-color: #fff;
+  color: $secondary-text-color;
   @media screen and (min-width: 960px) {
     overflow: hidden;
     height: 100vh;
@@ -436,4 +438,8 @@
       }
     }
   }
+}
+
+.facet-filters {
+  color: $secondary-text-color;
 }
