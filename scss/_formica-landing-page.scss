@@ -1,24 +1,27 @@
 /* CSS Document */
-ovh-x{
+.ovh-x{
     overflow-x: hidden;
 }
 .brand-page{
     font-family: "Helvetica Neue";
     font-weight: 400;
-    .navbar{
-        padding:0;
+
+    .navbar {
+        padding: 0;
         float: none;
     }
-    .logo{
+
+    .logo {
         float: none;
         margin: 1.1875rem 0;
+
         img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-}
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
     }
-    &.brand-theme{
+    .brand-theme{
         color: $text-black;
         &.formica{
         .secondary-navbar{
@@ -117,16 +120,14 @@ ovh-x{
         .btn-top-spacing{
             margin-top: 3.125rem;
         }
+        
         .home-newsletter-wrapper{
-            p{
-                font-size: 1.5rem;
-                line-height: 1.5;
-                font-weight: 700;
+            .home-newsletter-media-wrapper{
+                margin: 0;
             }
             .home-newsletter-content-wrapper{
                 max-width: 450px;
-                padding-left:1.75rem;
-                padding-right:1.75rem;
+                padding:1.75rem;
                 text-align: center;
                 .title{
                 font-size: 1.5rem;
@@ -134,15 +135,22 @@ ovh-x{
                 font-weight: 700;
                 margin-bottom: 0.5rem;
             }
+                p{
+                font-size: 1.125rem;
+                line-height: 1.5;
+                font-weight: 700;
+            }
                 @media screen and (min-width:960px){
-                    padding-left:0;
-                padding-right:0;
+                    padding:0;
                     text-align: left;
                     .title{
                 font-size: 3rem;
                 line-height: 1.17;
                 font-weight: 700;
                 margin-bottom: 1.25rem;
+            }
+                    p{
+                font-size: 1.5rem;
             }
                 }
                 
