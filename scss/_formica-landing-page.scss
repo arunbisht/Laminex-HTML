@@ -1,0 +1,308 @@
+/* CSS Document */
+ovh-x{
+    overflow-x: hidden;
+}
+.brand-page{
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    .navbar{
+        padding:0;
+        float: none;
+    }
+    .logo{
+        float: none;
+        margin: 1.1875rem 0;
+        img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+    }
+    &.brand-theme{
+        color: $text-black;
+        &.formica{
+        .secondary-navbar{
+            background: $brand-theme-color;
+        }
+        .title, .browse-product-title{
+            color: $brand-theme-color;
+        }
+        .link, .next-btn{
+            color: $text-black;
+        }
+            .home-newsletter-wrapper{
+                background: $brand-banner-bg;
+            }
+        }
+        .navbar{
+            .navbar-nav{
+                flex-direction: row;
+                .nav-item{
+                    padding-right: 2.25rem;
+                    .nav-link{
+                        display:block;
+                        padding:1.875rem 0;
+                        color:$text-white;
+                        font-size:1.0625rem;
+                        line-height: 1.25;
+                        text-decoration:none;
+                        font-family: "Helvetica Neue";
+                        &:hover{
+                            border-bottom: none;
+                        }
+                    }
+                    &:hover > .submenu {
+                    display:inherit;
+                        opacity: 1;
+                        visibility: visible;
+                        }
+                }
+                .submenu{
+                    background: $bg-white;
+                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
+            position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    z-index: 1;
+            top: 100%;
+                    transition: all 2s ease;
+                    &:before{
+                        content: "";
+                        width: 100%;
+                        background: $bg-white;
+                        top: 0;
+                        position: absolute;
+                        z-index: -1;
+                        height: 100%;
+                        left: 0;
+                        padding: 0 1000em;
+                        margin: 0 -1000em;
+                        transition: all 1s;
+                    }
+                    a{
+                       font-size:1.0625rem; 
+                        color: $text-black;
+                        font-weight: 400;
+                        line-height: initial;
+                        border-bottom: 2px solid transparent;
+                        padding-bottom: 3px;
+                        &:hover{
+                            border-bottom-color: $text-black;
+                        }
+                    }
+                }
+            }
+        }
+        .home-hr{
+            border-top:1px solid $text-black;
+            margin: 0;
+        }
+        .link{
+            border-bottom: 1px dashed $text-black;
+            font-weight: 400;
+        }
+        .browse-product-title{
+            font-size: 2rem;
+            line-height: 1.38;
+            margin-bottom: 4.375rem;
+        }
+        .next-btn{
+            font-size: 1.375rem;
+            line-height: 1.64;
+            padding-top: 7px;
+        }
+        .btn-top-spacing{
+            margin-top: 3.125rem;
+        }
+        .home-newsletter-wrapper{
+            p{
+                font-size: 1.5rem;
+                line-height: 1.5;
+                font-weight: 700;
+            }
+            .home-newsletter-content-wrapper{
+                max-width: 450px;
+                padding-left:1.75rem;
+                padding-right:1.75rem;
+                text-align: center;
+                .title{
+                font-size: 1.5rem;
+                line-height: 1.17;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+                @media screen and (min-width:960px){
+                    padding-left:0;
+                padding-right:0;
+                    text-align: left;
+                    .title{
+                font-size: 3rem;
+                line-height: 1.17;
+                font-weight: 700;
+                margin-bottom: 1.25rem;
+            }
+                }
+                
+            }
+        }
+        .home-newsletter-content-wrapper{
+            .title{
+                font-size: 2rem;
+            line-height: 1.38;
+                margin-bottom: 2rem;
+            }
+        }
+        .home-newsletter-wrapper-new {
+            .home-newsletter-row{
+                .home-newsletter-media-col{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .btn{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .colour-collection-projects-slider-nav{
+            .slick-arrow{
+                color: $text-black;
+                opacity: 1;
+            }
+            .colour-collection-projects-slider-dots{
+                .slick-dots{
+                    li{
+                        &.slick-active {
+                  background-color: $text-black!important;
+                }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+        
+
+        /* Media Queries
+--------------------------------------------- */
+
+        @media all and (max-width : 768px) {
+
+            #logo {
+                display: block;
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                float: none;
+            }
+
+            nav {
+                margin: 0;
+            }
+
+            /* Hide the navigation menu by default */
+            /* Also hide the  */
+            .toggle + a,
+            .menu {
+                display: none;
+            }
+
+            /* Stylinf the toggle lable */
+            .toggle {
+                display: block;
+                background-color: #254441;
+                padding:14px 20px;
+                color:#FFF;
+                font-size:17px;
+                text-decoration:none;
+                border:none;
+            }
+
+            .toggle:hover {
+                background-color: #000000;
+            }
+
+            /* Display Dropdown when clicked on Parent Lable */
+            [id^=drop]:checked + ul {
+                display: block;
+            }
+
+            /* Change menu item's width to 100% */
+            nav ul li {
+                display: block;
+                width: 100%;
+            }
+
+            nav ul ul .toggle,
+            nav ul ul a {
+                padding: 0 40px;
+            }
+
+            nav ul ul ul a {
+                padding: 0 80px;
+            }
+
+            nav a:hover,
+            nav ul ul ul a {
+                background-color: #000000;
+            }
+
+            nav ul li ul li .toggle,
+            nav ul ul a,
+            nav ul ul ul a {
+                padding:14px 20px;
+                color:#FFF;
+                font-size:17px;
+            }
+
+
+            nav ul li ul li .toggle,
+            nav ul ul a {
+                background-color: #212121;
+            }
+
+            /* Hide Dropdowns by Default */
+            nav ul ul {
+                float: none;
+                position:static;
+                color: #ffffff;
+                /* has to be the same number as the "line-height" of "nav a" */
+            }
+
+            /* Hide menus on hover */
+            nav ul ul li:hover > ul,
+            nav ul li:hover > ul {
+                display: none;
+            }
+
+            /* Fisrt Tier Dropdown */
+            nav ul ul li {
+                display: block;
+                width: 100%;
+            }
+
+            nav ul ul ul li {
+                position: static;
+                /* has to be the same number as the "width" of "nav ul ul li" */
+
+            }
+
+        }
+
+        @media all and (max-width : 330px) {
+
+            nav ul li {
+                display:block;
+                width: 94%;
+            }
+
+        }
