@@ -185,9 +185,13 @@
 .section-intro-description {
   p {
     color: $section-intro-description-text-color;
-    margin-bottom: 0;
     font-size: 0.875rem;
     line-height: 1.7142857143;
+
+    &:only-child {
+      margin-bottom: 0;
+    }
+
     @media screen and (min-width: 768px) {
       font-size: 1rem;
       line-height: 1.75;
