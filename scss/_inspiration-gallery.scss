@@ -442,4 +442,9 @@
 
 .facet-filters {
   color: $secondary-text-color;
+
+  .custom-input {
+    font-size: 0.875rem;
+    line-height: 1.71;
+  }
 }
