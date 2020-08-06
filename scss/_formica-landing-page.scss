@@ -21,6 +21,19 @@
             height: auto;
         }
     }
+    p{
+            font-size: 0.875rem;
+            line-height: 1.5;
+        font-weight: 400;
+        }
+    @media screen and (min-width:960px){
+        p{
+                font-size: 1.125rem;
+                line-height: 1.5;
+                font-weight: 700;
+            }
+    }
+}
     .brand-theme{
         color: $text-black;
         &.formica{
@@ -135,11 +148,7 @@
                 font-weight: 700;
                 margin-bottom: 0.5rem;
             }
-                p{
-                font-size: 1.125rem;
-                line-height: 1.5;
-                font-weight: 700;
-            }
+                
                 @media screen and (min-width:960px){
                     padding:0;
                     text-align: left;
@@ -191,7 +200,7 @@
             }
         }
     }
-}
+
 
 
 .toggle,
