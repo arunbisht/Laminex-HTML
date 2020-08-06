@@ -1,3 +1,17 @@
+.home-newsletter-wrapper {
+  @media screen and (min-width: 768px) {
+    &.right-img {
+      .home-newsletter-content-col {
+        -ms-flex-order: 1;
+        order: 1;
+      }
+      .home-newsletter-media-wrapper {
+        -ms-flex-order: 2;
+        order: 2;
+      }
+    }
+  }
+}
 .home-newsletter-media-wrapper {
   img {
     width: 100%;
