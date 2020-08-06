@@ -9,15 +9,15 @@
 
   .title-wrapper {
     padding-right: 15px;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+    -ms-flex: 0 0 125px;
+    flex: 0 0 125px;
+    max-width: 125px;
+    padding-top: 5%;
 
     @media screen and (min-width: 768px) {
       -ms-flex: 0 0 $the-forecast-title-tab-width;
       flex: 0 0 $the-forecast-title-tab-width;
       max-width: $the-forecast-title-tab-width;
-      padding-top: 5%;
     }
     @media screen and (min-width: 960px) {
       -ms-flex: 0 0 $the-forecast-title-width;
@@ -28,13 +28,14 @@
     @media screen and (max-width: 767px) {
       padding-right: 0;
       margin-bottom: 16px;
+      padding-right: 10px;
     }
   }
   .the-forecast-artile-wrapper {
     padding-left: 15px;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+    -ms-flex: 0 0 calc(100% - 125px);
+    flex: 0 0 calc(100% - 125px);
+    max-width: calc(100% - 125px);
     @media screen and (min-width: 768px) {
       -ms-flex: 0 0 calc(100% - #{$the-forecast-title-tab-width});
       flex: 0 0 calc(100% - #{$the-forecast-title-tab-width});
@@ -121,6 +122,7 @@
   @media screen and (max-width: 767px) {
     margin-left: -1.25rem;
     margin-right: -1.25rem;
+    padding-left: 1.25rem;
   }
 }
 .page-title-tags {

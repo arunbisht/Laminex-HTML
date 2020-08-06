@@ -84,10 +84,56 @@ a:not(.btn) {
 .btn--micro {
   border-radius: 0.25rem;
   padding: 0.375rem 0.75rem !important;
+
+  .facet-filters & {
+    border-radius: 0;
+    padding: 2px 0 !important;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .facet-filters.show {
     z-index: 10000;
+  }
+}
+
+.btn-brand {
+  background-color: $link-color-new;
+  border-color: $link-color-new;
+  color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-primary-link {
+  padding: 0 0 2px;
+  color: $link-color-new;
+  border-bottom: 1px solid $link-color-new;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+  outline: 0 none;
+  box-shadow: none !important;
+}
+
+.show-more-less-btn {
+  .more {
+    display: none;
+  }
+  .less {
+    display: inline;
+  }
+  &.collapsed {
+    .more {
+      display: inline;
+    }
+    .less {
+      display: none;
+    }
   }
 }

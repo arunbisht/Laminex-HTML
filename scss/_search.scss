@@ -148,15 +148,18 @@
   }
 }
 
-.search-result-header-wrapper {
-  .accordionTabHeader {
-    &.active {
-      color: $link-color-new;
-    }
-  }
-}
+.search-result-header-wrapper,
 .search-result-body-wrapper {
+  background-color: #fff;
+  color: $secondary-text-color;
+}
+
+.search-result-header-wrapper {
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+  }
 
   &:before {
     content: "";
@@ -166,9 +169,35 @@
     height: 1px;
     left: 0;
     right: 0;
-    top: -1px;
+    bottom: 0;
   }
+  .accordionTabHeader {
+    &.active {
+      color: $link-color-new;
+    }
+  }
+  &.search-result-header-au {
+    &:before {
+      display: none;
+    }
+    .nav-tabs {
+      border-bottom: none;
+    }
 
+    .accordionTabHeader {
+      border: 1px solid $accordion-border-color;
+    }
+
+    .tab-accordion-nav {
+      .tab-nav-link {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+.search-result-body-wrapper {
   .description-wrapper {
     padding-bottom: 15px;
     p {
@@ -195,6 +224,7 @@
 }
 
 .product-listing-wrapper {
+  color: $secondary-text-color;
   .product-listing-item {
     margin-bottom: 1rem;
 
@@ -265,6 +295,7 @@
 }
 
 .technical-resources-wrapper {
+  color: $secondary-text-color;
   .technical-resources-item {
     margin-bottom: 30px;
   }
@@ -298,6 +329,64 @@
       font-weight: 300;
       line-height: 1.71;
       color: $secondary-text-color;
+    }
+  }
+}
+
+.document-resources-wrapper {
+  color: $secondary-text-color;
+
+  .document-resources-meta {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.71;
+
+    .brand {
+      font-weight: bold;
+    }
+
+    .date {
+      margin-left: 25px;
+    }
+
+    @media screen and (max-width: 767px) {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      .brand,
+      .date {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .document-resources-btn-wrapper {
+    .btn {
+      width: auto;
+      min-width: 116px;
+    }
+  }
+
+  .document-resources-item {
+    .content-wrapper {
+      border-bottom: 2px solid $document-resources-item-divider-color;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+
+      h5 {
+        a {
+          color: $document-resources-item-color;
+        }
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 15px;
+          a {
+            color: $link-color-new;
+          }
+        }
+      }
     }
   }
 }
