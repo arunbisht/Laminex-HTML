@@ -112,10 +112,12 @@
                     aria-controls="Search Filter"
                     class="btn btn-secondary collapsed search-filter-btn"
                   >
-                    Filter by brand
                     <i class="icon--chevron-small-down"></i>
+                    <span class="show">Show</span>
+                    <span class="hide">Hide</span>
+                    Filters
                   </a>
-                  <a
+                  <!-- <a
                     href="#searchFilterByDocumentType"
                     data-toggle="collapse"
                     role="button"
@@ -125,7 +127,7 @@
                   >
                     Filter by document type
                     <i class="icon--chevron-small-down"></i>
-                  </a>
+                  </a> -->
                 </div>
                 <div
                   class="search-filter-facet-wrapper"
@@ -136,902 +138,1210 @@
                     id="searchFilterByBrand"
                     data-parent="#documentSearchFilter"
                   >
-                    <div class="searchFilterByBrandMoreItems collapse show">
-                      <ul class="search-filter-facet-items list-unstyled row">
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                    <div class="document-search-filter-item">
+                      <h6>Brand</h6>
+                      <div class="searchFilterByBrandMoreItems collapse show">
+                        <ul class="search-filter-facet-items list-unstyled row">
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="collapse show-more-items searchFilterByBrandMoreItems"
+                      >
+                        <ul class="search-filter-facet-items list-unstyled row">
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Formica
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Laminex
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Essastone
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a
+                        href="javascript:;"
+                        data-toggle="collapse"
+                        data-target=".searchFilterByBrandMoreItems"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="showMore"
+                        class="show-more-less-btn collapsed btn btn-primary-link"
+                      >
+                        Show
+                        <span class="more">More</span>
+                        <span class="less">Less</span>
+                      </a>
                     </div>
-                    <div
-                      class="collapse show-more-items searchFilterByBrandMoreItems"
-                      id="searchFilterByBrandMoreItems"
-                    >
-                      <ul class="search-filter-facet-items list-unstyled row">
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                    <div class="document-search-filter-item">
+                      <h6>Document Type</h6>
+                      <div class="searchFilterByTypeMoreItems collapse show">
+                        <ul class="search-filter-facet-items list-unstyled row">
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Technical data sheets
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Brochures
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Guides
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Colour matches
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Care and maintenance guides
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Warranties
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Matrices
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                MSDS
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Videos
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Deletions
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Technical data sheets
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Brochures
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Guides
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Colour matches
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                        <li class="item col-lg-3 col-md-6">
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Care and maintenance guides
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Formica
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Warranties
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Matrices
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                MSDS
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Laminex
-                            </label>
-                          </div>
-                          <div
-                            class="facet-checkbox-group__checkbox-wrap facet-value"
-                          >
-                            <input
-                              type="checkbox"
-                              class="position-absolute custom-input__control"
-                            />
-                            <label
-                              for="facetName"
-                              class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Videos
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
                             >
-                              Essastone
-                            </label>
-                          </div>
-                        </li>
-                      </ul>
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Deletions
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="collapse show-more-items searchFilterByTypeMoreItems"
+                      >
+                        <ul class="search-filter-facet-items list-unstyled row">
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Technical data sheets
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Brochures
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Guides
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Colour matches
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Care and maintenance guides
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Warranties
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Matrices
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                MSDS
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Videos
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Deletions
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Technical data sheets
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Brochures
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Guides
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Colour matches
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Care and maintenance guides
+                              </label>
+                            </div>
+                          </li>
+                          <li class="item col-lg-3 col-md-6">
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Warranties
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Matrices
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                MSDS
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control checked"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Videos
+                              </label>
+                            </div>
+                            <div
+                              class="facet-checkbox-group__checkbox-wrap facet-value"
+                            >
+                              <input
+                                type="checkbox"
+                                class="position-absolute custom-input__control"
+                              />
+                              <label
+                                for="facetName"
+                                class="custom-input custom-input--label custom-input--checkbox text-capitalize"
+                              >
+                                Deletions
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <a
+                        href="javascript:;"
+                        data-toggle="collapse"
+                        data-target=".searchFilterByTypeMoreItems"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="showMore"
+                        class="show-more-less-btn collapsed btn btn-primary-link"
+                      >
+                        Show
+                        <span class="more">More</span>
+                        <span class="less">Less</span>
+                      </a>
                     </div>
-                    <a
-                      href="javascript:;"
-                      data-toggle="collapse"
-                      data-target=".searchFilterByBrandMoreItems"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls="showMore"
-                      class="show-more-less-btn collapsed btn btn-primary-link"
-                    >
-                      Show
-                      <span class="more">More</span>
-                      <span class="less">Less</span>
-                    </a>
-                  </div>
-                  <div
-                    class="collapse"
-                    id="searchFilterByDocumentType"
-                    data-parent="#documentSearchFilter"
-                  >
-                    <ul class="search-filter-facet-items list-unstyled row">
-                      <li class="item col-lg-3 col-md-6">
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Technical data sheets
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Brochures
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Guides
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Colour matches
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Care and maintenance guides
-                          </label>
-                        </div>
-                      </li>
-                      <li class="item col-lg-3 col-md-6">
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Warranties
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Matrices
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            MSDS
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Videos
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Deletions
-                          </label>
-                        </div>
-                      </li>
-                      <li class="item col-lg-3 col-md-6">
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Technical data sheets
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Brochures
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Guides
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Colour matches
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Care and maintenance guides
-                          </label>
-                        </div>
-                      </li>
-                      <li class="item col-lg-3 col-md-6">
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Warranties
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Matrices
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            MSDS
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control checked"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Videos
-                          </label>
-                        </div>
-                        <div
-                          class="facet-checkbox-group__checkbox-wrap facet-value"
-                        >
-                          <input
-                            type="checkbox"
-                            class="position-absolute custom-input__control"
-                          />
-                          <label
-                            for="facetName"
-                            class="custom-input custom-input--label custom-input--checkbox text-capitalize"
-                          >
-                            Deletions
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -1667,7 +1977,42 @@
                 </div>
               </div>
             </div>
-            <div>Paination</div>
+            <div class="pagination-container pagination-alignmnet pagination-left">
+              <div class="pagination-toolbar">
+                <div class="helper clearfix hidden-md hidden-lg"></div>
+                <div class="sort-refine-bar y-toolbar__wrapper">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-grid">
+                      <li class="page-item pagination-prev disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <i class="icon--arrow-small-right"></i>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link"
+                          href="/search?q=polar%3Arelevance&amp;page=1"
+                          >2</a
+                        >
+                      </li>
+                      <li class="page-item pagination-next">
+                        <a
+                          class="page-link"
+                          href="/search?q=polar%3Arelevance&amp;page=1"
+                          aria-label="Next"
+                          rel="next"
+                        >
+                          <i class="icon--arrow-small-left"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
