@@ -1,0 +1,2581 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quick Order</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/captcha_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/all_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/laminex_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/addons_responsive.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/mediaelementplayer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/common.css"
+    />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <script type="text/javascript">
+      var dataLayer = [];
+    </script>
+
+    <script type="text/javascript">
+      function trackAddToCart(products) {
+        dataLayer.push({
+          event: "addToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSampleAddToCart(products) {
+        dataLayer.push({
+          event: "sampleAddToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackOrderSummaryClick(orderStatus) {
+        dataLayer.push({
+          event: "checkOrder",
+          orderStatus: orderStatus,
+        });
+      }
+
+      function trackUserLoggedIn(userStatus) {
+        dataLayer.push({
+          loggedInStatus: userStatus,
+        });
+      }
+
+      function trackPhoneNoClick(userStatus) {}
+
+      function trackRegisterLoginClick(userStatus) {
+        dataLayer.push({
+          event: "accountAction",
+          accountAction: userStatus,
+        });
+      }
+
+      function trackSampleOrderClick(products, range) {
+        dataLayer.push({
+          event: "sampleProductClick",
+          ecommerce: {
+            click: {
+              actionField: { list: range },
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalRegistration(aboutMe) {
+        dataLayer.push({
+          event: "signUpButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              aboutMe: aboutMe,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalSkip() {
+        dataLayer.push({
+          event: "skipButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackSignupModalLogin() {
+        dataLayer.push({
+          event: "signInButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackRemoveCart(
+        entryProductCode,
+        entryProductName,
+        entryProductPrice,
+        entryInitialQuantity,
+        entrySkuCode
+      ) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode, //string
+                  name: entryProductName, //string
+                  price: entryProductPrice, //currency
+                  quantity: entryInitialQuantity, //number
+                  sku: entrySkuCode,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveFullCart(cartData) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleCart(
+        entryProductCode,
+        entryProductName,
+        entryProductBrand,
+        entryProductPrice,
+        entryInitialQuantity,
+        entryProductCategory,
+        entrySkuCode,
+        entryProductColor,
+        entryProductFinish,
+        entryProductSize,
+        entryProductStock,
+        dimension10
+      ) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode,
+                  name: entryProductName,
+                  brand: entryProductBrand,
+                  price: entryProductPrice,
+                  quantity: entryInitialQuantity,
+                  category: entryProductCategory,
+                  variant: "",
+                  coupon: "",
+                  position: "",
+                  dimension2: entrySkuCode,
+                  dimension3: entryProductColor,
+                  dimension4: entryProductFinish,
+                  dimension5: entryProductSize,
+                  dimension6: "",
+                  dimension7: entryProductStock,
+                  dimension9: "sample",
+                  dimension10: dimension10,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleFullCart(cartData) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackProductClick(
+        productCode,
+        productName,
+        productBrand,
+        productQuantity,
+        productRange,
+        substrate,
+        position,
+        sku,
+        productColour,
+        productFinish,
+        sheetSize,
+        thickness
+      ) {
+        dataLayer.push({
+          event: "productClick",
+          ecommerce: {
+            click: {
+              actionField: {
+                list: "",
+                products: [
+                  {
+                    id: productCode,
+                    name: productName,
+                    brand: productBrand,
+                    price: "0",
+                    quantity: productQuantity,
+                    category: productRange,
+                    variant: substrate,
+                    coupon: "",
+                    position: position,
+                    dimension2: sku,
+                    dimension3: productColour,
+                    dimension4: productFinish,
+                    dimension5: sheetSize,
+                    dimension6: thickness,
+                  },
+                ],
+              },
+            },
+          },
+        });
+      }
+
+      function trackExternalSiteLinkClick(href, title) {
+        dataLayer.push({
+          event: "externalLink",
+          "data-component": "external site link", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": title,
+          elementUrl: href, //within the built-in settings of GTM this is the name of the existing variable
+        });
+      }
+
+      function trackNavigationLinkClick(navigationLabel) {
+        dataLayer.push({
+          event: "navigation",
+          "data-component": "navigation", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": navigationLabel,
+          "data-label": navigationLabel,
+        });
+      }
+
+      function trackUserDetails() {
+        dataLayer.push({
+          event: "navigationLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackInternalSiteLinkClick(href) {
+        dataLayer.push({
+          event: "internalSiteLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              url: href,
+            },
+          },
+        });
+      }
+
+      function trackOnlineChatUsage(interactionType) {
+        dataLayer.push({
+          event: "onlineChat",
+          chatInteraction: interactionType,
+        });
+      }
+
+      function trackCheckoutSteps() {
+        dataLayer.push({
+          event: "checkout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackSampleCheckoutSteps() {
+        dataLayer.push({
+          event: "sampleCheckout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      id="quickOrder"
+      class="account-section"
+      data-grid-confirm-message="Navigating away from this page will result in losing the data you have entered!"
+    >
+      <div class="account-section-content">
+        <div class="js-quick-order-container quick-order-container">
+          <div class="quick-order-container">
+            <input
+              type="hidden"
+              value="pickup"
+              class="selectedDeliveryMethod"
+            />
+            <input
+              type="hidden"
+              value="949"
+              class="selectedDeliveryAddressId"
+            />
+            <input type="hidden" value="pickup" class="defaultDeliveryMethod" />
+            <div class="quick-order-table-header">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="thead">
+                      <div class="th item">
+                        Substrate
+                      </div>
+                      <div class="th face">
+                        Face
+                      </div>
+
+                      <div class="th size">
+                        Size
+                      </div>
+                      <div class="th thickness">
+                        Thickness
+
+                        <span class="quick-order-thickness-unit">
+                          (mm)
+                        </span>
+                      </div>
+                      <div class="th project-name">
+                        Project Name
+                      </div>
+
+                      <div class="th qty">
+                        Qty
+                      </div>
+                      <div class="th price">
+                        Price (Ex GST)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade modal-deliveryOptions delivery-method-modal"
+              tabindex="-1"
+              role="dialog"
+              style="z-index: 100000;"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      id="js-clear-cart-button"
+                    >
+                      <i class="icon--x-close"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="clearfix product-row">
+                      <div class="col-figCaption">
+                        <h4>Please select your delivery method.</h4>
+
+                        <div class="product-notification">
+                          <div class="delivery-method-notification">
+                            <p>
+                              <span class="icon-delivery-message"
+                                ><i class="icon--alert"></i
+                              ></span>
+                              <b
+                                >Important note: Only 1 delivery method or
+                                address can be selected per order.</b
+                              >
+                              The delivery method and/or address you select will
+                              be applied to all products in your cart, please be
+                              aware that changing your delivery method/address
+                              may change the availability dates of the products
+                              already in your cart.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="radio-inline">
+                          <input
+                            type="radio"
+                            name="deliveryMethod"
+                            id="delivery"
+                            class="delivery-method-radio"
+                          />
+                          <label for="delivery">
+                            <div class="product-delivery-info">
+                              <i class="icon-car"></i> Deliver to a selected
+                              address
+                            </div>
+                          </label>
+                          <div class="delivery-radio-content">
+                            <div class="input-form">
+                              <label>SELECT ADDRESS</label>
+                            </div>
+                            <select
+                              id="delivery-address1"
+                              class="select-options select-delivery selecty-applied"
+                              style="display: none;"
+                            >
+                              <option
+                                class="address"
+                                value="2"
+                                selected="selected"
+                                >BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
+                                CHATSWOOD NSW, 2057</option
+                              >
+                              <option class="address" value="3"
+                                >BILLS BOARD FACTORY PTY LTD, MLP, 20B WALTHAM
+                                STREET, ARTARMON NSW, 2064</option
+                              >
+                              <option class="address" value="4"
+                                >BILLS BOARD CAIRNS, 20 BEACH LANE, CAIRNS QLD,
+                                4870</option
+                              >
+                              <option class="address" value="5"
+                                >BILLS BOARD BAYSWATER, 301 CANTERBURY RD,
+                                BAYSWATER VIC, 3153</option
+                              >
+                            </select>
+                            <div class="selecty">
+                              <a class="selecty-selected"
+                                >BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
+                                CHATSWOOD NSW, 2057</a
+                              >
+                              <ul class="selecty-options">
+                                <li
+                                  data-value="2"
+                                  data-index="0"
+                                  class="selected"
+                                >
+                                  BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
+                                  CHATSWOOD NSW, 2057
+                                </li>
+                                <li data-value="3" data-index="1" class="">
+                                  BILLS BOARD FACTORY PTY LTD, MLP, 20B WALTHAM
+                                  STREET, ARTARMON NSW, 2064
+                                </li>
+                                <li data-value="4" data-index="2" class="">
+                                  BILLS BOARD CAIRNS, 20 BEACH LANE, CAIRNS QLD,
+                                  4870
+                                </li>
+                                <li data-value="5" data-index="3" class="">
+                                  BILLS BOARD BAYSWATER, 301 CANTERBURY RD,
+                                  BAYSWATER VIC, 3153
+                                </li>
+                              </ul>
+                            </div>
+                            <input
+                              type="hidden"
+                              value="2"
+                              class="selectedAddressId"
+                            />
+                            <div class="product-msg">
+                              <p>
+                                Need to add a new delivery address?
+                                <a href="#"> Get in touch </a> with our customer
+                                service team
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="radio-inline pickup-method">
+                          <input
+                            type="radio"
+                            name="deliveryMethod"
+                            id="pickup"
+                            class="delivery-method-radio"
+                          />
+                          <label for="pickup">
+                            <div class="product-delivery-info">
+                              <i
+                                class="icon--quick-order"
+                                title="Quick Order"
+                              ></i>
+                              Pick up at the nearest location
+                            </div>
+                          </label>
+                          <div class="delivery-radio-content">
+                            <div class="input-form">
+                              <label>SELECT ADDRESS</label>
+                            </div>
+                            <select
+                              id="pickup-address"
+                              class="select-options select-pickup selecty-applied"
+                              style="display: none;"
+                            >
+                              <option
+                                class="address"
+                                value="949"
+                                selected="selected"
+                                >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
+                                PEMULWUY NSW, 2145</option
+                              >
+                              <option class="address" value="967"
+                                >Pickup: LMX Townsville, QLD, 14-28 Corporate
+                                Crescent, GARBUTT QLD, 4814</option
+                              >
+                              <option class="address" value="992"
+                                >Pickup: LMX Melbourne DC, VIC, 130 Sharps Road,
+                                MELBOURNE AIRPORT VIC, 3045</option
+                              >
+                            </select>
+                            <div class="selecty">
+                              <a class="selecty-selected"
+                                >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
+                                PEMULWUY NSW, 2145</a
+                              >
+                              <ul class="selecty-options">
+                                <li
+                                  data-value="949"
+                                  data-index="0"
+                                  class="selected"
+                                >
+                                  Pickup: LMX Sydney DC, NSW, 2 Foundation
+                                  Place, PEMULWUY NSW, 2145
+                                </li>
+                                <li data-value="967" data-index="1" class="">
+                                  Pickup: LMX Townsville, QLD, 14-28 Corporate
+                                  Crescent, GARBUTT QLD, 4814
+                                </li>
+                                <li data-value="992" data-index="2" class="">
+                                  Pickup: LMX Melbourne DC, VIC, 130 Sharps
+                                  Road, MELBOURNE AIRPORT VIC, 3045
+                                </li>
+                              </ul>
+                            </div>
+                            <input
+                              type="hidden"
+                              value="949"
+                              class="selectedAddressId"
+                            />
+                          </div>
+                        </div>
+                        <div class="btn-wrapper">
+                          <button
+                            class="btn btn-primary delivery-method-apply"
+                            id="apply"
+                            data-dismiss="modal"
+                            aria-label="Apply"
+                          >
+                            Apply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-order-table-body">
+              <div class="container">
+                <div class="row">
+                  <div class="tbody quick-order-table-body-div">
+                    <div class="delivery-method" style="display: block;">
+                      Delivery method: <b><span>Pick up</span></b>
+                      <a href="javascript:void(0)" class="js-delivery-method"
+                        >Edit</a
+                      >
+                    </div>
+
+                    <div class="header-error-message">
+                      <div
+                        class="search-info new-search-info no-product-added-message"
+                        style="display: none;"
+                      >
+                        You have no products added please add a product to
+                        proceed to cart.
+                      </div>
+                      <div
+                        class="search-info new-search-info limit-exceed-error-message"
+                        style="display: none;"
+                      >
+                        Sorry, a maximum of 25 products can be added at a time
+                        in Quick Order. Please move these products to your cart
+                        so you can continue shopping.
+                      </div>
+                      <div
+                        class="search-info new-search-info erp-technical-error"
+                        style="display: none;"
+                      >
+                        Sorry we've encountered a technical problem. Please
+                        <a
+                          href="https://www.laminex.com.au/about-laminex/contact-us"
+                          target="_blank"
+                          >contact us</a
+                        >
+                        for further assistance.
+                      </div>
+                      <div
+                        class="search-info new-search-info product-method-pickup product-deliver-method"
+                        style="display: none;"
+                      >
+                        Some products are not available for delivery. Please
+                        change your delivery method to pick up or
+                        <a
+                          href="#"
+                          class="remove-invalid-delivery-method-products"
+                          >remove all unavailable items.</a
+                        >
+                      </div>
+                      <div
+                        class="search-info new-search-info product-method-delivery product-deliver-method"
+                        style="display: none;"
+                      >
+                        Some products are not available for pickup. Please
+                        change your delivery method to delivery or
+                        <a
+                          href="#"
+                          class="remove-invalid-delivery-method-products"
+                          >remove all unavailable items.</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="tr-quickOrder">
+                      <div class="tr tr-quickOrderWrapper">
+                        <input
+                          type="hidden"
+                          value=""
+                          class="selectedDeliveryType"
+                        />
+                        <input
+                          type="hidden"
+                          value=""
+                          class="selectedDeliveryDate"
+                        />
+                        <input
+                          type="hidden"
+                          value=""
+                          class="selectedDispatchDate"
+                        />
+                        <input
+                          type="hidden"
+                          value=""
+                          class="availableDeliveryDate"
+                        />
+                        <input
+                          type="hidden"
+                          value=""
+                          class="availableDispatchDate"
+                        />
+                        <input
+                          type="hidden"
+                          value=""
+                          class="trackEarliestDate"
+                        />
+                        <input type="hidden" value="0" class="entrynumber" />
+                        <input
+                          type="hidden"
+                          class="currentSite"
+                          value="laminexAU"
+                        />
+                        <input
+                          type="hidden"
+                          value="1"
+                          class="orderQuantityMultiple"
+                        />
+                        <input
+                          type="hidden"
+                          value="true"
+                          class="skuOrderable"
+                        />
+                        <input
+                          type="hidden"
+                          value="laminexAU"
+                          class="currentSite"
+                        />
+                        <input
+                          type="hidden"
+                          value="FAST"
+                          class="deliveryTypePreference"
+                        />
+
+                        <input
+                          type="hidden"
+                          value=""
+                          class="productDeliveryMethod"
+                        />
+                        <div class="td item au-item">
+                          <img
+                            src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-40Wx60H?context=bWFzdGVyfGltYWdlc3wxMjY1fGltYWdlL2pwZWd8aW1hZ2VzL2g3NS9oODIvaDAwLzg4Mjg4ODcxNzExMDIuanBnfDA5ZTMyYmUyN2ZlMDA3NGJkMmM5YjNmY2QyZjdlZDM1MGUyYmNlNDFjZjNmN2U5YWU4NzQ4MzgxMWM5YjQ0YzE"
+                            alt=""
+                            title=""
+                            class="image--loading swatch-tiles__media img-fluid"
+                          />
+                          <div class="prod-desc">
+                            <div class="prod-name">
+                              <div class="prod-name-tag-code-wrapper">
+                                <span
+                                  >Laminex Polar White Diamond Gloss
+                                  DiamondGloss DS</span
+                                >
+                                <div class="product-code">973904</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="td item item-only-desktop">
+                          <div class="prod-desc">
+                            <div class="prod-name">
+                              <div class="substrate substrate-desktop tablerow">
+                                <input
+                                  type="hidden"
+                                  value="1"
+                                  class="loopindex"
+                                />
+                                <select
+                                  id="select1"
+                                  class="select-options selecty-applied"
+                                  style="display: none;"
+                                >
+                                  <option value="" disabled="disabled"
+                                    >Select</option
+                                  >
+                                  <option
+                                    value='{"productcode":"973904","isLastDropdown":false}'
+                                    selected="selected"
+                                    >MDF MR E0</option
+                                  >
+                                  <option disabled="disabled"
+                                    >Different substrates and thickness may have
+                                    different size and stock
+                                    availability.</option
+                                  >
+                                </select>
+                                <div class="selecty">
+                                  <a class="selecty-selected">MDF MR E0</a>
+                                  <ul class="selecty-options">
+                                    <li
+                                      data-value=""
+                                      data-index="0"
+                                      class="disabled"
+                                    >
+                                      Select
+                                    </li>
+                                    <li
+                                      data-value='{"productcode":"973904","isLastDropdown":false}'
+                                      data-index="1"
+                                      class="selected"
+                                    >
+                                      MDF MR E0
+                                    </li>
+                                    <li
+                                      data-value="Different substrates and thickness may have different size and stock availability."
+                                      data-index="2"
+                                      class="disabled"
+                                    >
+                                      Different substrates and thickness may
+                                      have different size and stock
+                                      availability.
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <input
+                              type="hidden"
+                              value="AU1003225"
+                              class="baseproduct-code"
+                            />
+                            <input
+                              type="hidden"
+                              value="Polar White"
+                              class="baseproduct-name"
+                            />
+                          </div>
+                        </div>
+
+                        <div
+                          class="td substrate substrate-not-desktop tablerow"
+                        >
+                          <h3 class="mobile-table-heading">substrate</h3>
+                          <input type="hidden" value="1" class="loopindex" />
+                          <select
+                            id="select1"
+                            class="select-options selecty-applied"
+                            style="display: none;"
+                          >
+                            <option value="" disabled="disabled">Select</option>
+                            <option
+                              value='{"productcode":"973904","isLastDropdown":false}'
+                              selected="selected"
+                              >MDF MR E0</option
+                            >
+                            <option disabled="disabled"
+                              >Different substrates and thickness may have
+                              different size and stock availability.</option
+                            >
+                          </select>
+                          <div class="selecty">
+                            <a class="selecty-selected">MDF MR E0</a>
+                            <ul class="selecty-options">
+                              <li data-value="" data-index="0" class="disabled">
+                                Select
+                              </li>
+                              <li
+                                data-value='{"productcode":"973904","isLastDropdown":false}'
+                                data-index="1"
+                                class="selected"
+                              >
+                                MDF MR E0
+                              </li>
+                              <li
+                                data-value="Different substrates and thickness may have different size and stock availability."
+                                data-index="2"
+                                class="disabled"
+                              >
+                                Different substrates and thickness may have
+                                different size and stock availability.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="td face tablerow">
+                          <h3 class="mobile-table-heading">Face</h3>
+                          <select
+                            id="select2"
+                            class="select-options selecty-applied"
+                            style="display: none;"
+                          >
+                            <option value="" disabled="disabled">Select</option>
+                            <option value="Double sided" selected="selected"
+                              >Double sided</option
+                            >
+                            <option disabled="disabled"
+                              >Different substrates and thickness may have
+                              different size and stock availability.</option
+                            >
+                          </select>
+                          <div class="selecty">
+                            <a class="selecty-selected">Double sided</a>
+                            <ul class="selecty-options">
+                              <li data-value="" data-index="0" class="disabled">
+                                Select
+                              </li>
+                              <li
+                                data-value="Double sided"
+                                data-index="1"
+                                class="selected"
+                              >
+                                Double sided
+                              </li>
+                              <li
+                                data-value="Different substrates and thickness may have different size and stock availability."
+                                data-index="2"
+                                class="disabled"
+                              >
+                                Different substrates and thickness may have
+                                different size and stock availability.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="td size tablerow">
+                          <h3 class="mobile-table-heading">size</h3>
+                          <input type="hidden" value="2" class="loopindex" />
+                          <select
+                            id="select4"
+                            class="select-options selecty-applied"
+                            style="display: none;"
+                          >
+                            <option value="" disabled="disabled">Select</option>
+                            <option
+                              value='{"productcode":"973904","isLastDropdown":false}'
+                              selected="selected"
+                              >3585mm x 1200mm</option
+                            >
+                            <option disabled="disabled"
+                              >Different substrates and thickness may have
+                              different size and stock availability.</option
+                            >
+                          </select>
+                          <div class="selecty">
+                            <a class="selecty-selected">3585mm x 1200mm</a>
+                            <ul class="selecty-options">
+                              <li data-value="" data-index="0" class="disabled">
+                                Select
+                              </li>
+                              <li
+                                data-value='{"productcode":"973904","isLastDropdown":false}'
+                                data-index="1"
+                                class="selected"
+                              >
+                                3585mm x 1200mm
+                              </li>
+                              <li
+                                data-value="Different substrates and thickness may have different size and stock availability."
+                                data-index="2"
+                                class="disabled"
+                              >
+                                Different substrates and thickness may have
+                                different size and stock availability.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="td thickness tablerow">
+                          <h3 class="mobile-table-heading">thickness</h3>
+                          <input type="hidden" value="3" class="loopindex" />
+                          <select
+                            id="select7"
+                            class="select-options selecty-applied"
+                            style="display: none;"
+                          >
+                            <option value="" disabled="disabled">Select</option>
+                            <option
+                              value='{"productcode":"973904","isLastDropdown":true}'
+                              selected="selected"
+                              >18.000</option
+                            >
+                            <option disabled="disabled"
+                              >Different substrates and thickness may have
+                              different size and stock availability.</option
+                            >
+                          </select>
+                          <div class="selecty">
+                            <a class="selecty-selected">18.000</a>
+                            <ul class="selecty-options">
+                              <li data-value="" data-index="0" class="disabled">
+                                Select
+                              </li>
+                              <li
+                                data-value='{"productcode":"973904","isLastDropdown":true}'
+                                data-index="1"
+                                class="selected"
+                              >
+                                18.000
+                              </li>
+                              <li
+                                data-value="Different substrates and thickness may have different size and stock availability."
+                                data-index="2"
+                                class="disabled"
+                              >
+                                Different substrates and thickness may have
+                                different size and stock availability.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="td project-name col hide-on-mobile">
+                          <h3 class="mobile-table-heading">
+                            Project Name
+                          </h3>
+                          <input
+                            type="hidden"
+                            value=""
+                            class="js-quick-order-prevValue"
+                          />
+                          <input
+                            class="js-quick-order-project-name"
+                            type="text"
+                            maxlength="70"
+                          />
+                        </div>
+
+                        <div class="td p-0 show-on-mobile mb-0">
+                          <div class="td project-name">
+                            <h3 class="mobile-table-heading">
+                              Project Name
+                            </h3>
+                            <input
+                              type="hidden"
+                              value=""
+                              class="js-quick-order-prevValue"
+                            />
+                            <input
+                              class="js-quick-order-project-name"
+                              type="text"
+                              maxlength="70"
+                            />
+                          </div>
+                        </div>
+                        <div class="td qty my-qty">
+                          <h3 class="mobile-table-heading">
+                            Qty
+                          </h3>
+
+                          <input
+                            type="hidden"
+                            class="futurestock"
+                            value="Enter a quantity to see availability and estimated delivery dates"
+                          />
+
+                          <input
+                            type="text"
+                            class="js-quick-order-qty disable-paste js-qty-input zero-stock"
+                            value="0"
+                            maxlength="5"
+                            autocomplete="off"
+                            autocorrect="off"
+                            data-update-date="false"
+                            data-html="true"
+                            data-placement="bottom"
+                            data-updated="false"
+                            data-prevqty="0"
+                            title=""
+                            data-minqty=""
+                            data-multipleqty=""
+                            data-original-title="Enter a quantity to see availability and estimated delivery dates"
+                            data-container=".quick-order-container"
+                            data-toggle="tooltip"
+                            erp-error="false"
+                          />
+                          <input
+                            type="hidden"
+                            class="orderQuantityMultipleError1"
+                            value="The quantity of the product can only be in the multiples of 1."
+                          />
+
+                          <div
+                            class="price-details1"
+                            style="visibility: visible;"
+                          >
+                            <h3 class="mobile-table-heading"></h3>
+                            <div class="stockLevel" style="display: none;">
+                              <span></span>
+                              in branch
+                            </div>
+                            <div
+                              class="warehouseStockLevel"
+                              style="display: block;"
+                            >
+                              <span><i class="icon--alert"></i>0</span>
+                              in DC
+                            </div>
+                            <div class="not-in-stock" style="display: none;">
+                              <i class="icon--information"></i>
+                              Not in stock
+                            </div>
+                            <div class="speak-to-us" style="display: none;">
+                              <i class="icon--phone"></i>
+                              <span
+                                ><a
+                                  href="https://www.laminex.com.au/about-laminex/contact-us"
+                                  target="_blank"
+                                  >Speak to us
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="td price">
+                          <div
+                            class="price-details2 price-for-desktop"
+                            style="visibility: visible;"
+                          >
+                            <h3 class="mobile-table-heading">
+                              PRICE (EX GST)
+                            </h3>
+                            <div id="price" class="priceValue">
+                              <span>$431.84</span>
+                              per Sheet
+                            </div>
+
+                            <div class="areaPrice">
+                              <span class="price-span">$100.38</span>
+                              per
+                              <span class="unit-span">m2</span>
+                            </div>
+                          </div>
+                          <div class="price-details3">
+                            <div class="display-inline-block">
+                              <div class="prod-price-wrapper">
+                                <div class="prod-price blank-price">_</div>
+                              </div>
+                              <div
+                                class="prod-price-text"
+                                style="visibility: hidden;"
+                              >
+                                ex GST
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="price-edit-delete"
+                            style="display: inherit; letter-spacing: -10px;"
+                          >
+                            <a
+                              href="#"
+                              class="js-add-duplicate-quick-order-row duplicate-product-quick-order icon-duplicate"
+                              data-product-code="973904"
+                              data-container=".quick-order-container"
+                              data-placement="bottom"
+                              data-toggle="tooltip"
+                              title=""
+                              data-original-title="Repeat"
+                            ></a>
+                            <a
+                              href="#"
+                              class="js-remove-quick-order-row"
+                              data-product-code="973904"
+                              ><i class="icon--trash"></i
+                            ></a>
+                          </div>
+                        </div>
+
+                        <div class="line-error-message">
+                          <div
+                            class="out-of-stock-message"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              Product not available locally, please contact us
+                              via webchat or on 132 136 or remove to proceed to
+                              cart.
+                            </p>
+                          </div>
+
+                          <div
+                            class="no-quantity-selected-message"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              You have products with no quantity selected please
+                              add or remove products to proceed to cart.
+                            </p>
+                          </div>
+                          <div
+                            class="forward-delivery-date-error"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              Please note forward order dates can only be
+                              selected within a year.
+                            </p>
+                          </div>
+                          <div
+                            class="not-all-dropdown-selected-message"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              Required information is missing. Please update or
+                              <a
+                                href="https://www.laminex.com.au/about-laminex/contact-us"
+                                target="_blank"
+                                >contact us</a
+                              >
+                              for assistance.
+                            </p>
+                          </div>
+
+                          <div
+                            class="erp-technical-line-error"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              Sorry we've encountered a technical problem with
+                              some products, please delete the highlighted
+                              products and continue or
+                              <a
+                                href="https://www.laminex.com.au/about-laminex/contact-us"
+                                target="_blank"
+                                >contact us</a
+                              >
+                              for further assistance.
+                            </p>
+                          </div>
+
+                          <div
+                            class="order-quantity-multiple-invalid"
+                            style="display: none;"
+                          >
+                            <p class="errormsg"></p>
+                          </div>
+                          <div
+                            class="product-orderable-error"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              You are trying to order a restricted product. To
+                              proceed to cart with your other products, please
+                              remove this item or
+                              <a
+                                href="https://www.laminex.com.au/about-laminex/contact-us"
+                                target="_blank"
+                                >contact us
+                              </a>
+                              for assistance.
+                            </p>
+                          </div>
+                          <div
+                            class="product-method-pickup product-deliver-method"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              This product is for pick up only, please remove
+                              from your order or change method of delivery.
+                            </p>
+                          </div>
+                          <div
+                            class="product-method-delivery product-deliver-method"
+                            style="display: none;"
+                          >
+                            <p class="errormsg">
+                              This product is not available from your pick up
+                              location, please remove from your order or change
+                              method of delivery.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="quick-product-availability"></div>
+                      <div
+                        class="show-more-less-wrapper"
+                        style="display: none;"
+                      >
+                        <a href="javascript:;" class="show-more-item"
+                          >See more <i class="icon--chevron-small-down"></i
+                        ></a>
+                        <a href="javascript:;" class="show-less-item"
+                          >See less <i class="icon--chevron-small-up"></i
+                        ></a>
+                      </div>
+                      <!-- Modal -->
+                      <div
+                        class="modal fade modal-deliveryOptions quickOrder-modal-deliveryOptions deliveryOptions_0"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                                id="js-clear-cart-button"
+                              >
+                                <i class="icon--x-close"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="clearfix product-row">
+                                <div class="col-fig">
+                                  <img
+                                    src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-304Wx434H-132Wx188H?context=bWFzdGVyfGltYWdlc3wxNzg1fGltYWdlL2pwZWd8aW1hZ2VzL2g4Mi9oMDYvaDAwLzg4Mjg4ODcyNjk0MDYuanBnfGEwNjEzYzI1MGZhNGM0ZmUxYWRlYzE5ZDc1NDAwY2E4YjdjYWY4YzI4NDE4Njg0NGU3MWJkOTM4ZjEyZmU4YjI"
+                                    alt=""
+                                    title=""
+                                    class="image--loading swatch-tiles__media img-fluid"
+                                  />
+                                  <!-- 							<img src="/_ui/responsive/theme-laminex/images/No-Image-Default-40Wx60H.jpg" alt="image" class="product-fig"/> -->
+                                </div>
+                                <div class="col-figCaption">
+                                  <div class="product-brand">Laminex</div>
+                                  <h4>
+                                    Laminex Polar White Diamond Gloss
+                                    DiamondGloss DS
+                                  </h4>
+                                  <p class="product-range">COLOUR CODE: 205</p>
+                                  <div class="product-notification">
+                                    <div
+                                      class="delivery-branch"
+                                      style="display: none;"
+                                    >
+                                      <p><span></span> in Branch</p>
+                                    </div>
+                                    <div class="delivery-DC">
+                                      <p>
+                                        <span
+                                          ><i class="icon--alert"></i>0</span
+                                        >
+                                        in DC
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="product-detail">
+                                    <div class="radio-inline">
+                                      <input
+                                        type="radio"
+                                        name="optradio_0"
+                                        id="optradio1_0"
+                                        class="fast"
+                                      />
+                                      <label for="optradio1_0">
+                                        <span></span>
+                                        <div
+                                          class="radio-content fast-delivery-info"
+                                        ></div>
+                                      </label>
+                                    </div>
+                                    <div class="radio-inline">
+                                      <input
+                                        type="radio"
+                                        name="optradio_0"
+                                        id="optradio2_0"
+                                        class="full"
+                                      />
+                                      <label for="optradio2_0"
+                                        ><span></span>
+                                        <div class="radio-content">
+                                          <div
+                                            class="product-delivery-info full-delivery-info"
+                                          ></div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="radio-inline">
+                                      <input
+                                        type="radio"
+                                        name="optradio_0"
+                                        id="optradio3_0"
+                                        class="forward"
+                                      />
+                                      <label for="optradio3_0">
+                                        <span></span>
+                                        <div class="radio-content deliveryDate">
+                                          <div class="row">
+                                            <div class="col-deliveryDate">
+                                              <div class="radio-inline">
+                                                <input
+                                                  type="radio"
+                                                  name="orderDate_0"
+                                                  id="dateradio1_0"
+                                                  class="deliveryDateRadio"
+                                                />
+                                                <label for="dateradio1_0"
+                                                  >DELIVERY DATE</label
+                                                >
+                                                <span class="popover2">
+                                                  <i
+                                                    class="icon--information"
+                                                  ></i>
+                                                  <span class="popover-text"
+                                                    >Selecting a delivery date
+                                                    will determine the estimated
+                                                    delivery date for these
+                                                    products. Please be aware,
+                                                    if you select a Delivery
+                                                    Date early in a month, the
+                                                    order may be dispatched and
+                                                    invoiced in the previous
+                                                    month due to the transit
+                                                    times.</span
+                                                  >
+                                                </span>
+                                              </div>
+                                              <div class="deliveryDatepicker">
+                                                <input
+                                                  class="js-datepickerInput delivery-date"
+                                                  type="text"
+                                                  readonly=""
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-deliveryDate">
+                                              <div class="radio-inline">
+                                                <input
+                                                  type="radio"
+                                                  name="orderDate_0"
+                                                  id="dateradio2_0"
+                                                  class="dispatchDateRadio"
+                                                />
+                                                <label for="dateradio2_0"
+                                                  >DISPATCH DATE</label
+                                                >
+                                                <span class="popover2">
+                                                  <i
+                                                    class="icon--information"
+                                                  ></i>
+                                                  <span class="popover-text"
+                                                    >Selecting a dispatch date
+                                                    will determine the date your
+                                                    products are estimated to be
+                                                    sent (rather than received.)
+                                                  </span>
+                                                </span>
+                                              </div>
+                                              <div class="deliveryDatepicker">
+                                                <input
+                                                  class="js-datepickerInput dispatch-date"
+                                                  type="text"
+                                                  readonly=""
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="radio-content forward-delivery-info"
+                                        ></div>
+                                        <br />
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="product-msg">
+                                    <p>
+                                      Please be aware that once your order is
+                                      placed, orders can only be changed or
+                                      updated via the Customer Service team by
+                                      phone at 132 136 or via online chat.
+                                    </p>
+                                    <p>
+                                      <span style="font-weight: bold;"> </span>
+                                    </p>
+                                  </div>
+                                  <div class="btn-wrapper">
+                                    <button
+                                      class="btn btn-primary apply-selection quickOrder-availability-apply"
+                                      id="apply"
+                                      data-dismiss="modal"
+                                      aria-label="Apply"
+                                    >
+                                      Apply
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-order-product-search-wrapper">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="quick-order-product-search ui-front">
+                      <form>
+                        <i
+                          class="icon--search"
+                          title="Search for products or content"
+                        ></i>
+                        <input
+                          type="search"
+                          placeholder="Type your search keywords"
+                          class="js-search-input-field form-control form-control ui-autocomplete-input"
+                          data-options='{"autocompleteUrl" : "/search/autocomplete/SearchBox","minCharactersBeforeRequest" : "3","waitTimeBeforeRequest" : "500","displayProductImages" : true,"productSearchRequest" : false}'
+                          autocomplete="off"
+                        />
+                      </form>
+
+                      <div class="keyword-enter-suggestion">
+                        Find relevant product faster by including keywords like
+                        brand, colour, range and finish.
+                      </div>
+
+                      <div class="invalid-search" style="display: none;">
+                        <div>
+                          Sorry we don’t seem to have this product – please
+                          check your search keywords or
+                          <a
+                            href="https://www.laminex.com.au/about-laminex/contact-us"
+                            target="_blank"
+                            >speak to us.</a
+                          >
+                        </div>
+                      </div>
+
+                      <ul
+                        class="autocomplete-search-results mCustomScrollbar _mCS_1 mCS_no_scrollbar"
+                        style="display: none;"
+                      ></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="final-product-price">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-right">
+                    <div class="total-text">
+                      TOTAL
+                    </div>
+                    <div class="final-price">$0.00</div>
+                    <div class="gst">
+                      Price excludes GST and logistics fee
+                    </div>
+
+                    <input type="hidden" id="cartPageUrl" value="/cart" />
+                    <input type="hidden" id="maxLimit" value="25" />
+                    <button
+                      id="js-add-to-cart-quick-order-btn-bottom"
+                      class="btn btn-primary"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+
+                  <div class="fop-container col-md-9 col-right">
+                    <div class="container">
+                      <h3 class="component-title">
+                        Frequently Ordered Products
+                      </h3>
+                      <div class="component image-slider">
+                        <div class="component-content">
+                          <div class="row">
+                            <div class="image-slider__col col-12">
+                              <div
+                                class="image-slider__wrapper js-image-slider-wrapper slick-initialized slick-slider slick-dotted"
+                              >
+                                <div class="slick-list">
+                                  <div
+                                    class="slick-track"
+                                    style="
+                                      opacity: 1;
+                                      width: 4032px;
+                                      transform: translate3d(0px, 0px, 0px);
+                                    "
+                                  >
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide slick-current slick-active"
+                                      data-slick-index="0"
+                                      aria-hidden="false"
+                                      tabindex="0"
+                                      role="tabpanel"
+                                      id="slick-slide00"
+                                      aria-describedby="slick-slide-control00"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="706838"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Trade Essentials TE White
+                                                  Decortext Whiteboard MR</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="706838"
+                                                  id="706838"
+                                                  tabindex="0"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                706838
+                                              </div>
+                                              <div class="product-size">
+                                                Particleboard MR, 2400mm x
+                                                1200mm, 16.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide slick-active"
+                                      data-slick-index="1"
+                                      aria-hidden="false"
+                                      tabindex="0"
+                                      role="tabpanel"
+                                      id="slick-slide01"
+                                      aria-describedby="slick-slide-control01"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="706839"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Trade Essentials TE White
+                                                  Decortext Whiteboard MR</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="706839"
+                                                  id="706839"
+                                                  tabindex="0"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                706839
+                                              </div>
+                                              <div class="product-size">
+                                                Particleboard MR, 3600mm x
+                                                1800mm, 16.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide slick-active"
+                                      data-slick-index="2"
+                                      aria-hidden="false"
+                                      tabindex="0"
+                                      role="tabpanel"
+                                      id="slick-slide02"
+                                      aria-describedby="slick-slide-control02"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="706840"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Trade Essentials TE White
+                                                  Decortext Whiteboard MR</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="706840"
+                                                  id="706840"
+                                                  tabindex="0"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                706840
+                                              </div>
+                                              <div class="product-size">
+                                                Particleboard MR, 2400mm x
+                                                1800mm, 16.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="3"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide03"
+                                      aria-describedby="slick-slide-control03"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="730915"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Trade Essentials TE White
+                                                  Decortext Whiteboard MR</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="730915"
+                                                  id="730915"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                730915
+                                              </div>
+                                              <div class="product-size">
+                                                Particleboard MR, 2400mm x
+                                                1200mm, 25.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="4"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide04"
+                                      aria-describedby="slick-slide-control04"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="906493"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="906493"
+                                                  id="906493"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                906493
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 2400mm x 1200mm,
+                                                18.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="5"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide05"
+                                      aria-describedby="slick-slide-control05"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="942864"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="942864"
+                                                  id="942864"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                942864
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 3600mm x 1200mm,
+                                                18.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="6"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide06"
+                                      aria-describedby="slick-slide-control06"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="948034"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="948034"
+                                                  id="948034"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                948034
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 2400mm x 1800mm,
+                                                18.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="7"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide07"
+                                      aria-describedby="slick-slide-control07"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="948052"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="948052"
+                                                  id="948052"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                948052
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 2400mm x 1200mm,
+                                                25.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="8"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide08"
+                                      aria-describedby="slick-slide-control08"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="948059"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="948059"
+                                                  id="948059"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                948059
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 2400mm x 1200mm,
+                                                16.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="9"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide09"
+                                      aria-describedby="slick-slide-control09"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="948075"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="948075"
+                                                  id="948075"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                948075
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 3600mm x 1800mm,
+                                                18.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="10"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide010"
+                                      aria-describedby="slick-slide-control010"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="948117"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex White Satin Colour
+                                                  Collection</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="948117"
+                                                  id="948117"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                948117
+                                              </div>
+                                              <div class="product-size">
+                                                MDF MR E0, 3600mm x 1800mm,
+                                                16.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      data-slick-index="11"
+                                      aria-hidden="true"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide011"
+                                      aria-describedby="slick-slide-control011"
+                                      style="width: 336px;"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="991506"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="https://store.test.laminex.com.au/medias/p-LG-S302-Opal-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjA2fGltYWdlL2pwZWd8aW1hZ2VzL2hlYy9oYWMvaDAwLzg4NDUyMTg2NzY3NjYuanBnfGJiNjI0YzdiYjA4MjA1ZDBhZWEzNzA5ZGI1M2UzNWQzYWM4NmY0MTA5N2M1Y2RmODQ1ZmFjNzdlZWZjZDg5NTE"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >LG HI-MACS Opal HI-MACS</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="991506"
+                                                  id="991506"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                991506
+                                              </div>
+                                              <div class="product-size">
+                                                No Substrate, 3680mm x 760mm,
+                                                12.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="image-slider__controls text-center">
+                                <div class="image-slider__direction-wrapper">
+                                  <span
+                                    class="image-slider__direction image-slider__direction--prev slick-arrow slick-disabled"
+                                    aria-disabled="true"
+                                    style=""
+                                  ></span>
+                                  <div class="image-slider__nav d-inline-block">
+                                    <ul
+                                      class="image-slider__nav-items list-unstyled d-flex mb-0"
+                                      role="tablist"
+                                      style=""
+                                    >
+                                      <li
+                                        class="slick-active"
+                                        role="presentation"
+                                      >
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control00"
+                                          aria-controls="slick-slide00"
+                                          aria-label="1 of 4"
+                                          tabindex="0"
+                                          aria-selected="true"
+                                        >
+                                          1
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control01"
+                                          aria-controls="slick-slide01"
+                                          aria-label="2 of 4"
+                                          tabindex="-1"
+                                        >
+                                          2
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control02"
+                                          aria-controls="slick-slide02"
+                                          aria-label="3 of 4"
+                                          tabindex="-1"
+                                        >
+                                          3
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control03"
+                                          aria-controls="slick-slide03"
+                                          aria-label="4 of 4"
+                                          tabindex="-1"
+                                        >
+                                          4
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control04"
+                                          aria-controls="slick-slide04"
+                                          aria-label="5 of 4"
+                                          tabindex="-1"
+                                        >
+                                          5
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control05"
+                                          aria-controls="slick-slide05"
+                                          aria-label="6 of 4"
+                                          tabindex="-1"
+                                        >
+                                          6
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control06"
+                                          aria-controls="slick-slide06"
+                                          aria-label="7 of 4"
+                                          tabindex="-1"
+                                        >
+                                          7
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control07"
+                                          aria-controls="slick-slide07"
+                                          aria-label="8 of 4"
+                                          tabindex="-1"
+                                        >
+                                          8
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control08"
+                                          aria-controls="slick-slide08"
+                                          aria-label="9 of 4"
+                                          tabindex="-1"
+                                        >
+                                          9
+                                        </button>
+                                      </li>
+                                      <li role="presentation">
+                                        <button
+                                          type="button"
+                                          role="tab"
+                                          id="slick-slide-control09"
+                                          aria-controls="slick-slide09"
+                                          aria-label="10 of 4"
+                                          tabindex="-1"
+                                        >
+                                          10
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <span
+                                    class="image-slider__direction image-slider__direction--next slick-arrow"
+                                    aria-disabled="false"
+                                    style=""
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script type="text/javascript" language="javascript">
+                    dataLayer.push({
+                      ecommerce: {
+                        impressions: [
+                          {
+                            id: "706838",
+                            name: "W/board MR 16 Dec 2400x1200",
+                            category: "Whiteboard MR",
+                            position: "1",
+                          },
+
+                          {
+                            id: "706839",
+                            name: "W/board MR 16 Dec 3600x1800",
+                            category: "Whiteboard MR",
+                            position: "2",
+                          },
+
+                          {
+                            id: "706840",
+                            name: "W/board MR 16 Dec 2400x1800",
+                            category: "Whiteboard MR",
+                            position: "3",
+                          },
+
+                          {
+                            id: "730915",
+                            name: "W/board MR 25 Dec 2400x1200",
+                            category: "Whiteboard MR",
+                            position: "4",
+                          },
+
+                          {
+                            id: "906493",
+                            name: "LWE0 18 Sat White 2400x1200",
+                            category: "Colour Collection",
+                            position: "5",
+                          },
+
+                          {
+                            id: "942864",
+                            name: "LWE0 18 Sat White 3600x1200",
+                            category: "Colour Collection",
+                            position: "6",
+                          },
+
+                          {
+                            id: "948034",
+                            name: "LWE0 18 Sat White 2400x1800",
+                            category: "Colour Collection",
+                            position: "7",
+                          },
+
+                          {
+                            id: "948052",
+                            name: "LWE0 25 Sat White 2400x1200",
+                            category: "Colour Collection",
+                            position: "8",
+                          },
+
+                          {
+                            id: "948059",
+                            name: "LWE0 16 Sat White 2400x1200",
+                            category: "Colour Collection",
+                            position: "9",
+                          },
+
+                          {
+                            id: "948075",
+                            name: "LWE0 18 Sat White 3600x1800",
+                            category: "Colour Collection",
+                            position: "10",
+                          },
+
+                          {
+                            id: "948117",
+                            name: "LWE0 16 Sat White 3600x1800",
+                            category: "Colour Collection",
+                            position: "11",
+                          },
+
+                          {
+                            id: "991506",
+                            name: "HI-MACS 12 Opal 3680x760",
+                            category: "HI-MACS",
+                            position: "12",
+                          },
+                        ],
+                      },
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+
+      var ACC = { config: {} };
+      ACC.config.contextPath = "";
+      ACC.config.encodedContextPath = "";
+      ACC.config.commonResourcePath = "/_ui/responsive/common";
+      ACC.config.themeResourcePath = "/_ui/responsive/theme-laminex";
+      ACC.config.siteResourcePath = "/_ui/responsive/site-laminexAU";
+      ACC.config.rootPath = "/_ui/responsive";
+      ACC.config.CSRFToken = "df32ee24-3b6e-434e-bd20-0d698e13efe1";
+      ACC.pwdStrengthVeryWeak = "Very weak";
+      ACC.pwdStrengthWeak = "Weak";
+      ACC.pwdStrengthMedium = "Medium";
+      ACC.pwdStrengthStrong = "Strong";
+      ACC.pwdStrengthVeryStrong = "Very strong";
+      ACC.pwdStrengthUnsafePwd = "password.strength.unsafepwd";
+      ACC.pwdStrengthTooShortPwd = "Too short";
+      ACC.pwdStrengthMinCharText = "Minimum length is %d characters";
+      ACC.accessibilityLoading = "Loading... Please wait...";
+      ACC.accessibilityStoresLoaded = "Stores loaded";
+      ACC.config.googleApiKey = "";
+      ACC.config.googleApiVersion = "3.7";
+
+      ACC.autocompleteUrl = "/search/autocompleteSecure";
+
+      ACC.config.loginUrl = "/login";
+
+      ACC.config.authenticationStatusUrl = "/authentication/status";
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      ACC.addons = {}; //JS holder for addons properties
+
+      ACC.addons.smarteditaddon = [];
+
+      ACC.addons.laminexassistedservicesstorefront = [];
+
+      ACC.addons.laminexcaptchaaddon = [];
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript" src="./js/generatedVariables.js"></script>
+    <script type="text/javascript" src="./js/all_responsive.js"></script>
+    <script type="text/javascript" src="./js/addons_responsive.js"></script>
+    <script type="text/javascript" src="./js/captcha_responsive.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="./js/addthis_widget.js#pubid=ra-5b831d89c6f7ebdc"
+    ></script>
+
+    <script type="text/javascript" src="./js/masonry.min.js"></script>
+    <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/mediaelement-and-player.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>
