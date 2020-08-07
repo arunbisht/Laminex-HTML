@@ -66,4 +66,40 @@
       letter-spacing: 1.3px;
     }
   }
+
+  .item {
+    width: 21.537%;
+  }
+  .description {
+    width: 20.208%;
+  }
+  .project-name {
+    width: 11.5%;
+  }
+
+  @media screen and (max-width: 1099.98px) {
+    .cart-table-body {
+      .tbody {
+        .tr {
+          .td {
+            width: 25%;
+          }
+        }
+      }
+    }
+    .qty,
+    .price {
+      width: 25% !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .face {
+      width: 100% !important;
+    }
+    .qty,
+    .price {
+      width: 50% !important;
+    }
+  }
 }
