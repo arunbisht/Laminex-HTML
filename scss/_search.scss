@@ -106,13 +106,14 @@
           font-weight: 300;
 
           .name {
-            color: $secondary-text-color;
+            color: $secondary-color;
             font-weight: bold;
           }
 
-          .type {
-            color: $secondary-color;
+          .search-results-highlight {
+            color: $secondary-text-color;
             font-weight: bold;
+            font-style: normal;
           }
 
           .tag {
