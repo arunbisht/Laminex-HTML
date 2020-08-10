@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Product Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/captcha_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/all_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/laminex_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/addons_responsive.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/mediaelementplayer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/common.css"
+    />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <script type="text/javascript">
+      var dataLayer = [];
+    </script>
+
+    <script type="text/javascript">
+      function trackAddToCart(products) {
+        dataLayer.push({
+          event: "addToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSampleAddToCart(products) {
+        dataLayer.push({
+          event: "sampleAddToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackOrderSummaryClick(orderStatus) {
+        dataLayer.push({
+          event: "checkOrder",
+          orderStatus: orderStatus,
+        });
+      }
+
+      function trackUserLoggedIn(userStatus) {
+        dataLayer.push({
+          loggedInStatus: userStatus,
+        });
+      }
+
+      function trackPhoneNoClick(userStatus) {}
+
+      function trackRegisterLoginClick(userStatus) {
+        dataLayer.push({
+          event: "accountAction",
+          accountAction: userStatus,
+        });
+      }
+
+      function trackSampleOrderClick(products, range) {
+        dataLayer.push({
+          event: "sampleProductClick",
+          ecommerce: {
+            click: {
+              actionField: { list: range },
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalRegistration(aboutMe) {
+        dataLayer.push({
+          event: "signUpButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              aboutMe: aboutMe,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalSkip() {
+        dataLayer.push({
+          event: "skipButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackSignupModalLogin() {
+        dataLayer.push({
+          event: "signInButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackRemoveCart(
+        entryProductCode,
+        entryProductName,
+        entryProductPrice,
+        entryInitialQuantity,
+        entrySkuCode
+      ) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode, //string
+                  name: entryProductName, //string
+                  price: entryProductPrice, //currency
+                  quantity: entryInitialQuantity, //number
+                  sku: entrySkuCode,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveFullCart(cartData) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleCart(
+        entryProductCode,
+        entryProductName,
+        entryProductBrand,
+        entryProductPrice,
+        entryInitialQuantity,
+        entryProductCategory,
+        entrySkuCode,
+        entryProductColor,
+        entryProductFinish,
+        entryProductSize,
+        entryProductStock,
+        dimension10
+      ) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode,
+                  name: entryProductName,
+                  brand: entryProductBrand,
+                  price: entryProductPrice,
+                  quantity: entryInitialQuantity,
+                  category: entryProductCategory,
+                  variant: "",
+                  coupon: "",
+                  position: "",
+                  dimension2: entrySkuCode,
+                  dimension3: entryProductColor,
+                  dimension4: entryProductFinish,
+                  dimension5: entryProductSize,
+                  dimension6: "",
+                  dimension7: entryProductStock,
+                  dimension9: "sample",
+                  dimension10: dimension10,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleFullCart(cartData) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackProductClick(
+        productCode,
+        productName,
+        productBrand,
+        productQuantity,
+        productRange,
+        substrate,
+        position,
+        sku,
+        productColour,
+        productFinish,
+        sheetSize,
+        thickness
+      ) {
+        dataLayer.push({
+          event: "productClick",
+          ecommerce: {
+            click: {
+              actionField: {
+                list: "",
+                products: [
+                  {
+                    id: productCode,
+                    name: productName,
+                    brand: productBrand,
+                    price: "0",
+                    quantity: productQuantity,
+                    category: productRange,
+                    variant: substrate,
+                    coupon: "",
+                    position: position,
+                    dimension2: sku,
+                    dimension3: productColour,
+                    dimension4: productFinish,
+                    dimension5: sheetSize,
+                    dimension6: thickness,
+                  },
+                ],
+              },
+            },
+          },
+        });
+      }
+
+      function trackExternalSiteLinkClick(href, title) {
+        dataLayer.push({
+          event: "externalLink",
+          "data-component": "external site link", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": title,
+          elementUrl: href, //within the built-in settings of GTM this is the name of the existing variable
+        });
+      }
+
+      function trackNavigationLinkClick(navigationLabel) {
+        dataLayer.push({
+          event: "navigation",
+          "data-component": "navigation", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": navigationLabel,
+          "data-label": navigationLabel,
+        });
+      }
+
+      function trackUserDetails() {
+        dataLayer.push({
+          event: "navigationLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackInternalSiteLinkClick(href) {
+        dataLayer.push({
+          event: "internalSiteLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              url: href,
+            },
+          },
+        });
+      }
+
+      function trackOnlineChatUsage(interactionType) {
+        dataLayer.push({
+          event: "onlineChat",
+          chatInteraction: interactionType,
+        });
+      }
+
+      function trackCheckoutSteps() {
+        dataLayer.push({
+          event: "checkout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackSampleCheckoutSteps() {
+        dataLayer.push({
+          event: "sampleCheckout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="dashboard-container">
+      <div class="container">
+        <div class="page-wrapper product-detail product-detail-wrapper">
+          <input type="hidden" id="skuCode" value="AU1001672" />
+          <input type="hidden" id="baseProductCode" value="" />
+          <input type="hidden" id="baseProductName" value="Olympia Yellow" />
+          <div class="section-left">
+            <div class="slider-wrapper">
+              <input type="hidden" id="zoomImageExists" value="" />
+
+              <div class="slider-desktop">
+                <section class="product-img">
+                  <div
+                    class="zoom-section"
+                    style="overflow: hidden; position: relative;"
+                  >
+                    <ul class="slider-control">
+                      <li class="zoom-in"></li>
+                      <li class="zoom-out"></li>
+                      <li class="share-icon">
+                        <ul class="slider-control-social-share custom-dropdown">
+                          <li>
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div
+                              class="addthis_inline_share_toolbox"
+                              data-url="https://store.laminex.com.au/Brand/Laminex/Olympia-Yellow/p/AU1001672?referer=%2Fbrowse%2Fcolor%3FcategoryCode%3Dcolor%26q%3D%253arelevance%253aallCategories%253aDMG_BRBOL%253aallCategories%253aC_378"
+                              data-title="Olympia Yellow | Laminex | Brand"
+                              style="clear: both;"
+                            >
+                              <div
+                                id="atstbx2"
+                                class="at-resp-share-element at-style-responsive addthis-smartlayers addthis-animated at4-show"
+                                aria-labelledby="at-6a4aec8d-d144-46ee-8887-8590a1f76ba6"
+                                role="region"
+                              >
+                                <span
+                                  id="at-6a4aec8d-d144-46ee-8887-8590a1f76ba6"
+                                  class="at4-visually-hidden"
+                                  >AddThis Sharing Buttons</span
+                                >
+                                <div class="at-share-btn-elements">
+                                  <a
+                                    role="button"
+                                    tabindex="0"
+                                    class="at-icon-wrapper at-share-btn at-svc-facebook"
+                                    style="
+                                      background-color: rgb(250, 247, 246);
+                                      border-radius: 24px;
+                                    "
+                                    ><span class="at4-visually-hidden"
+                                      >Share to Facebook</span
+                                    ><span
+                                      class="at-icon-wrapper"
+                                      style="
+                                        line-height: 32px;
+                                        height: 32px;
+                                        width: 32px;
+                                      "
+                                      ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 32 32"
+                                        version="1.1"
+                                        role="img"
+                                        aria-labelledby="at-svg-facebook-1"
+                                        style="
+                                          fill: rgb(34, 34, 34);
+                                          width: 32px;
+                                          height: 32px;
+                                        "
+                                        class="at-icon at-icon-facebook"
+                                      >
+                                        <title id="at-svg-facebook-1">
+                                          Facebook
+                                        </title>
+                                        <g>
+                                          <path
+                                            d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z"
+                                            fill-rule="evenodd"
+                                          ></path>
+                                        </g></svg></span></a
+                                  ><a
+                                    role="button"
+                                    tabindex="0"
+                                    class="at-icon-wrapper at-share-btn at-svc-twitter"
+                                    style="
+                                      background-color: rgb(250, 247, 246);
+                                      border-radius: 24px;
+                                    "
+                                    ><span class="at4-visually-hidden"
+                                      >Share to Twitter</span
+                                    ><span
+                                      class="at-icon-wrapper"
+                                      style="
+                                        line-height: 32px;
+                                        height: 32px;
+                                        width: 32px;
+                                      "
+                                      ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 32 32"
+                                        version="1.1"
+                                        role="img"
+                                        aria-labelledby="at-svg-twitter-2"
+                                        style="
+                                          fill: rgb(34, 34, 34);
+                                          width: 32px;
+                                          height: 32px;
+                                        "
+                                        class="at-icon at-icon-twitter"
+                                      >
+                                        <title id="at-svg-twitter-2">
+                                          Twitter
+                                        </title>
+                                        <g>
+                                          <path
+                                            d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336"
+                                            fill-rule="evenodd"
+                                          ></path>
+                                        </g></svg></span></a
+                                  ><a
+                                    role="button"
+                                    tabindex="0"
+                                    class="at-icon-wrapper at-share-btn at-svc-email"
+                                    style="
+                                      background-color: rgb(250, 247, 246);
+                                      border-radius: 24px;
+                                    "
+                                    ><span class="at4-visually-hidden"
+                                      >Share to Email</span
+                                    ><span
+                                      class="at-icon-wrapper"
+                                      style="
+                                        line-height: 32px;
+                                        height: 32px;
+                                        width: 32px;
+                                      "
+                                      ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 32 32"
+                                        version="1.1"
+                                        role="img"
+                                        aria-labelledby="at-svg-email-3"
+                                        style="
+                                          fill: rgb(34, 34, 34);
+                                          width: 32px;
+                                          height: 32px;
+                                        "
+                                        class="at-icon at-icon-email"
+                                      >
+                                        <title id="at-svg-email-3">Email</title>
+                                        <g>
+                                          <g fill-rule="evenodd"></g>
+                                          <path
+                                            d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"
+                                          ></path>
+                                          <path
+                                            d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"
+                                          ></path>
+                                        </g></svg></span></a
+                                  ><a
+                                    role="button"
+                                    tabindex="0"
+                                    class="at-icon-wrapper at-share-btn at-svc-pinterest_share"
+                                    style="
+                                      background-color: rgb(250, 247, 246);
+                                      border-radius: 24px;
+                                    "
+                                    ><span class="at4-visually-hidden"
+                                      >Share to Pinterest</span
+                                    ><span
+                                      class="at-icon-wrapper"
+                                      style="
+                                        line-height: 32px;
+                                        height: 32px;
+                                        width: 32px;
+                                      "
+                                      ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 32 32"
+                                        version="1.1"
+                                        role="img"
+                                        aria-labelledby="at-svg-pinterest_share-4"
+                                        style="
+                                          fill: rgb(34, 34, 34);
+                                          width: 32px;
+                                          height: 32px;
+                                        "
+                                        class="at-icon at-icon-pinterest_share"
+                                      >
+                                        <title id="at-svg-pinterest_share-4">
+                                          Pinterest
+                                        </title>
+                                        <g>
+                                          <path
+                                            d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z"
+                                            fill-rule="evenodd"
+                                          ></path>
+                                        </g></svg></span></a
+                                  ><a
+                                    role="button"
+                                    tabindex="0"
+                                    class="at-icon-wrapper at-share-btn at-svc-linkedin"
+                                    style="
+                                      background-color: rgb(250, 247, 246);
+                                      border-radius: 24px;
+                                    "
+                                    ><span class="at4-visually-hidden"
+                                      >Share to LinkedIn</span
+                                    ><span
+                                      class="at-icon-wrapper"
+                                      style="
+                                        line-height: 32px;
+                                        height: 32px;
+                                        width: 32px;
+                                      "
+                                      ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 32 32"
+                                        version="1.1"
+                                        role="img"
+                                        aria-labelledby="at-svg-linkedin-5"
+                                        style="
+                                          fill: rgb(34, 34, 34);
+                                          width: 32px;
+                                          height: 32px;
+                                        "
+                                        class="at-icon at-icon-linkedin"
+                                      >
+                                        <title id="at-svg-linkedin-5">
+                                          LinkedIn
+                                        </title>
+                                        <g>
+                                          <path
+                                            d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z"
+                                            fill-rule="evenodd"
+                                          ></path>
+                                        </g></svg></span
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li
+                        class="expand-pdp-img-wrapper featured-products-wrapper"
+                        style="display: none;"
+                      >
+                        <a href="javascript:;" class="showFeaturedProducts">
+                          <span class="expand-icon-text expand-icon-text-new"
+                            >See featured products</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                    <div
+                      class="main-image panzoom"
+                      id="productImg"
+                      style="
+                        transform: none;
+                        transform-origin: 50% 50%;
+                        height: 774.078px;
+                      "
+                    >
+                      <img
+                        src="https://store.laminex.com.au/medias/p-LX-Olympia-Yellow-RGB-1200x1200-LR.jpg-1200Wx979H?context=bWFzdGVyfGltYWdlc3w1MTk2MXxpbWFnZS9qcGVnfGg3My9oODcvODg2Njc0NjQwMDc5OC9wX0xYX09seW1waWFfWWVsbG93X1JHQl8xMjAweDEyMDBfTFIuanBnXzEyMDBXeDk3OUh8ZWMxYjM0YzYyYjg3Y2FkN2M3MDU0NGY1YzBjZWYzMmRhYzRmZmQ1ZDJhZTY4ZTY5MmFlYzQ2MDY1ZTczMzU1YQ"
+                        alt=""
+                        data-main-gallery-index="0"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade product-img-modal"
+                    id="productImgModal"
+                  >
+                    <div
+                      class="product-img-modal-overlay"
+                      data-dismiss="modal"
+                      aria-hidden="true"
+                    ></div>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <i class="icon--x-close" aria-hidden="true"></i>
+                    </button>
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div
+                            class="zoom-section"
+                            style="overflow: hidden; position: relative;"
+                          >
+                            <ul class="slider-control">
+                              <li class="zoom-in"></li>
+                              <li class="zoom-out"></li>
+                              <li class="share-icon">
+                                <ul
+                                  class="slider-control-social-share custom-dropdown"
+                                >
+                                  <li>
+                                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                                    <div
+                                      class="addthis_inline_share_toolbox"
+                                      data-url="https://store.laminex.com.au/Brand/Laminex/Olympia-Yellow/p/AU1001672?referer=%2Fbrowse%2Fcolor%3FcategoryCode%3Dcolor%26q%3D%253arelevance%253aallCategories%253aDMG_BRBOL%253aallCategories%253aC_378"
+                                      data-title="Olympia Yellow | Laminex | Brand"
+                                      style="clear: both;"
+                                    >
+                                      <div
+                                        id="atstbx3"
+                                        class="at-resp-share-element at-style-responsive addthis-smartlayers addthis-animated at4-show"
+                                        aria-labelledby="at-920055b1-66c5-4704-91eb-d0cea1b15c3e"
+                                        role="region"
+                                      >
+                                        <span
+                                          id="at-920055b1-66c5-4704-91eb-d0cea1b15c3e"
+                                          class="at4-visually-hidden"
+                                          >AddThis Sharing Buttons</span
+                                        >
+                                        <div class="at-share-btn-elements">
+                                          <a
+                                            role="button"
+                                            tabindex="0"
+                                            class="at-icon-wrapper at-share-btn at-svc-facebook"
+                                            style="
+                                              background-color: rgb(
+                                                250,
+                                                247,
+                                                246
+                                              );
+                                              border-radius: 24px;
+                                            "
+                                            ><span class="at4-visually-hidden"
+                                              >Share to Facebook</span
+                                            ><span
+                                              class="at-icon-wrapper"
+                                              style="
+                                                line-height: 32px;
+                                                height: 32px;
+                                                width: 32px;
+                                              "
+                                              ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                viewBox="0 0 32 32"
+                                                version="1.1"
+                                                role="img"
+                                                aria-labelledby="at-svg-facebook-6"
+                                                style="
+                                                  fill: rgb(34, 34, 34);
+                                                  width: 32px;
+                                                  height: 32px;
+                                                "
+                                                class="at-icon at-icon-facebook"
+                                              >
+                                                <title id="at-svg-facebook-6">
+                                                  Facebook
+                                                </title>
+                                                <g>
+                                                  <path
+                                                    d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z"
+                                                    fill-rule="evenodd"
+                                                  ></path>
+                                                </g></svg></span></a
+                                          ><a
+                                            role="button"
+                                            tabindex="0"
+                                            class="at-icon-wrapper at-share-btn at-svc-twitter"
+                                            style="
+                                              background-color: rgb(
+                                                250,
+                                                247,
+                                                246
+                                              );
+                                              border-radius: 24px;
+                                            "
+                                            ><span class="at4-visually-hidden"
+                                              >Share to Twitter</span
+                                            ><span
+                                              class="at-icon-wrapper"
+                                              style="
+                                                line-height: 32px;
+                                                height: 32px;
+                                                width: 32px;
+                                              "
+                                              ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                viewBox="0 0 32 32"
+                                                version="1.1"
+                                                role="img"
+                                                aria-labelledby="at-svg-twitter-7"
+                                                style="
+                                                  fill: rgb(34, 34, 34);
+                                                  width: 32px;
+                                                  height: 32px;
+                                                "
+                                                class="at-icon at-icon-twitter"
+                                              >
+                                                <title id="at-svg-twitter-7">
+                                                  Twitter
+                                                </title>
+                                                <g>
+                                                  <path
+                                                    d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336"
+                                                    fill-rule="evenodd"
+                                                  ></path>
+                                                </g></svg></span></a
+                                          ><a
+                                            role="button"
+                                            tabindex="0"
+                                            class="at-icon-wrapper at-share-btn at-svc-email"
+                                            style="
+                                              background-color: rgb(
+                                                250,
+                                                247,
+                                                246
+                                              );
+                                              border-radius: 24px;
+                                            "
+                                            ><span class="at4-visually-hidden"
+                                              >Share to Email</span
+                                            ><span
+                                              class="at-icon-wrapper"
+                                              style="
+                                                line-height: 32px;
+                                                height: 32px;
+                                                width: 32px;
+                                              "
+                                              ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                viewBox="0 0 32 32"
+                                                version="1.1"
+                                                role="img"
+                                                aria-labelledby="at-svg-email-8"
+                                                style="
+                                                  fill: rgb(34, 34, 34);
+                                                  width: 32px;
+                                                  height: 32px;
+                                                "
+                                                class="at-icon at-icon-email"
+                                              >
+                                                <title id="at-svg-email-8">
+                                                  Email
+                                                </title>
+                                                <g>
+                                                  <g fill-rule="evenodd"></g>
+                                                  <path
+                                                    d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"
+                                                  ></path>
+                                                  <path
+                                                    d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"
+                                                  ></path>
+                                                </g></svg></span></a
+                                          ><a
+                                            role="button"
+                                            tabindex="0"
+                                            class="at-icon-wrapper at-share-btn at-svc-pinterest_share"
+                                            style="
+                                              background-color: rgb(
+                                                250,
+                                                247,
+                                                246
+                                              );
+                                              border-radius: 24px;
+                                            "
+                                            ><span class="at4-visually-hidden"
+                                              >Share to Pinterest</span
+                                            ><span
+                                              class="at-icon-wrapper"
+                                              style="
+                                                line-height: 32px;
+                                                height: 32px;
+                                                width: 32px;
+                                              "
+                                              ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                viewBox="0 0 32 32"
+                                                version="1.1"
+                                                role="img"
+                                                aria-labelledby="at-svg-pinterest_share-9"
+                                                style="
+                                                  fill: rgb(34, 34, 34);
+                                                  width: 32px;
+                                                  height: 32px;
+                                                "
+                                                class="at-icon at-icon-pinterest_share"
+                                              >
+                                                <title
+                                                  id="at-svg-pinterest_share-9"
+                                                >
+                                                  Pinterest
+                                                </title>
+                                                <g>
+                                                  <path
+                                                    d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z"
+                                                    fill-rule="evenodd"
+                                                  ></path>
+                                                </g></svg></span></a
+                                          ><a
+                                            role="button"
+                                            tabindex="0"
+                                            class="at-icon-wrapper at-share-btn at-svc-linkedin"
+                                            style="
+                                              background-color: rgb(
+                                                250,
+                                                247,
+                                                246
+                                              );
+                                              border-radius: 24px;
+                                            "
+                                            ><span class="at4-visually-hidden"
+                                              >Share to LinkedIn</span
+                                            ><span
+                                              class="at-icon-wrapper"
+                                              style="
+                                                line-height: 32px;
+                                                height: 32px;
+                                                width: 32px;
+                                              "
+                                              ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                viewBox="0 0 32 32"
+                                                version="1.1"
+                                                role="img"
+                                                aria-labelledby="at-svg-linkedin-10"
+                                                style="
+                                                  fill: rgb(34, 34, 34);
+                                                  width: 32px;
+                                                  height: 32px;
+                                                "
+                                                class="at-icon at-icon-linkedin"
+                                              >
+                                                <title id="at-svg-linkedin-10">
+                                                  LinkedIn
+                                                </title>
+                                                <g>
+                                                  <path
+                                                    d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z"
+                                                    fill-rule="evenodd"
+                                                  ></path>
+                                                </g></svg></span
+                                          ></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="download-icon">
+                                <a href="javascript:;"></a>
+                              </li>
+                            </ul>
+                            <div
+                              class="main-image panzoom"
+                              style="
+                                transform: none;
+                                transform-origin: 50% 50%;
+                                height: 774.078px;
+                              "
+                            >
+                              <img
+                                src=""
+                                alt=""
+                                class="img-fluid"
+                                id="modal-img"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Show slider when there are more than 1 gallery image -->
+                </section>
+                <div class="slider-footer"></div>
+              </div>
+
+              <div class="slider-device">
+                <div class="component style-card">
+                  <div class="component-content">
+                    <div class="row">
+                      <div class="image-slider__col col-12">
+                        <div
+                          class="image-slider__wrapper slick-slider-single slick-initialized slick-slider slick-dotted"
+                        >
+                          <div class="slick-list">
+                            <div
+                              class="slick-track"
+                              style="
+                                opacity: 1;
+                                width: 0px;
+                                transform: translate3d(0px, 0px, 0px);
+                              "
+                            >
+                              <div
+                                class="image-slider__item d-inline-block slick-slide slick-current slick-active"
+                                data-slick-index="0"
+                                aria-hidden="false"
+                                tabindex="0"
+                                role="tabpanel"
+                                id="slick-slide00"
+                                aria-describedby="slick-slide-control00"
+                                style="width: 0px;"
+                              >
+                                <div
+                                  class="image-slider__item-inner image-slider__item-inner--scaling"
+                                >
+                                  <div
+                                    class="style-palette--industrial palette"
+                                    style="
+                                      overflow: hidden;
+                                      position: relative;
+                                    "
+                                  >
+                                    <a
+                                      class="d-block img-wrap"
+                                      href="javascript:void(0)"
+                                      tabindex="0"
+                                      style="
+                                        transform: none;
+                                        transform-origin: 50% 50%;
+                                        overflow: hidden;
+                                        position: relative;
+                                      "
+                                      ><span
+                                        class="d-block img-wrap"
+                                        style="
+                                          transform: none;
+                                          transform-origin: 50% 50%;
+                                        "
+                                      >
+                                        <img
+                                          class="img-fluid"
+                                          src="https://store.laminex.com.au/medias/p-LX-Olympia-Yellow-RGB-1200x1200-LR.jpg-768Wx739H?context=bWFzdGVyfGltYWdlc3wyNzMzM3xpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDg2L2gwMC84ODI2NjgwMDgyNDYyLmpwZ3w4YTliZGE4YzhkNDA0NGM1MTBlNGZhZGYzZTM3ZjgzYmExMTlmOGNiMDQzM2Q4ZTY5YzQ2MGI2ZDM2MjNhMmU3"
+                                          alt=""
+                                          data-main-image-shadow="false"
+                                          data-main-gallery-index="0"
+                                        />
+                                      </span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="modal fade product-img-modal"
+                  id="productImgModalMobile"
+                >
+                  <div
+                    class="product-img-modal-overlay"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  ></div>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="icon--x-close" aria-hidden="true"></i>
+                  </button>
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="zoom-section">
+                          <ul class="slider-control">
+                            <li class="download-icon">
+                              <a href="javascript:;"></a>
+                            </li>
+                          </ul>
+                          <div class="main-image panzoom">
+                            <img
+                              src=""
+                              alt=""
+                              class="img-fluid"
+                              id="modal-img"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="zoom-section">
+                  <ul class="slider-control">
+                    <li class="zoom-in"></li>
+                    <li class="zoom-out"></li>
+                    <li class="share-icon">
+                      <ul class="slider-control-social-share custom-dropdown">
+                        <li>
+                          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                          <div
+                            class="addthis_inline_share_toolbox"
+                            data-url="https://store.laminex.com.au/Brand/Laminex/Olympia-Yellow/p/AU1001672?referer=%2Fbrowse%2Fcolor%3FcategoryCode%3Dcolor%26q%3D%253arelevance%253aallCategories%253aDMG_BRBOL%253aallCategories%253aC_378"
+                            data-title="Olympia Yellow | Laminex | Brand"
+                            style="clear: both;"
+                          >
+                            <div
+                              id="atstbx4"
+                              class="at-resp-share-element at-style-responsive addthis-smartlayers addthis-animated at4-show"
+                              aria-labelledby="at-e59e561a-3287-4f18-973d-759de9b40831"
+                              role="region"
+                            >
+                              <span
+                                id="at-e59e561a-3287-4f18-973d-759de9b40831"
+                                class="at4-visually-hidden"
+                                >AddThis Sharing Buttons</span
+                              >
+                              <div class="at-share-btn-elements">
+                                <a
+                                  role="button"
+                                  tabindex="0"
+                                  class="at-icon-wrapper at-share-btn at-svc-facebook"
+                                  style="
+                                    background-color: rgb(250, 247, 246);
+                                    border-radius: 24px;
+                                  "
+                                  ><span class="at4-visually-hidden"
+                                    >Share to Facebook</span
+                                  ><span
+                                    class="at-icon-wrapper"
+                                    style="
+                                      line-height: 32px;
+                                      height: 32px;
+                                      width: 32px;
+                                    "
+                                    ><svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 32 32"
+                                      version="1.1"
+                                      role="img"
+                                      aria-labelledby="at-svg-facebook-11"
+                                      style="
+                                        fill: rgb(34, 34, 34);
+                                        width: 32px;
+                                        height: 32px;
+                                      "
+                                      class="at-icon at-icon-facebook"
+                                    >
+                                      <title id="at-svg-facebook-11">
+                                        Facebook
+                                      </title>
+                                      <g>
+                                        <path
+                                          d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z"
+                                          fill-rule="evenodd"
+                                        ></path>
+                                      </g></svg></span></a
+                                ><a
+                                  role="button"
+                                  tabindex="0"
+                                  class="at-icon-wrapper at-share-btn at-svc-twitter"
+                                  style="
+                                    background-color: rgb(250, 247, 246);
+                                    border-radius: 24px;
+                                  "
+                                  ><span class="at4-visually-hidden"
+                                    >Share to Twitter</span
+                                  ><span
+                                    class="at-icon-wrapper"
+                                    style="
+                                      line-height: 32px;
+                                      height: 32px;
+                                      width: 32px;
+                                    "
+                                    ><svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 32 32"
+                                      version="1.1"
+                                      role="img"
+                                      aria-labelledby="at-svg-twitter-12"
+                                      style="
+                                        fill: rgb(34, 34, 34);
+                                        width: 32px;
+                                        height: 32px;
+                                      "
+                                      class="at-icon at-icon-twitter"
+                                    >
+                                      <title id="at-svg-twitter-12">
+                                        Twitter
+                                      </title>
+                                      <g>
+                                        <path
+                                          d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336"
+                                          fill-rule="evenodd"
+                                        ></path>
+                                      </g></svg></span></a
+                                ><a
+                                  role="button"
+                                  tabindex="0"
+                                  class="at-icon-wrapper at-share-btn at-svc-email"
+                                  style="
+                                    background-color: rgb(250, 247, 246);
+                                    border-radius: 24px;
+                                  "
+                                  ><span class="at4-visually-hidden"
+                                    >Share to Email</span
+                                  ><span
+                                    class="at-icon-wrapper"
+                                    style="
+                                      line-height: 32px;
+                                      height: 32px;
+                                      width: 32px;
+                                    "
+                                    ><svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 32 32"
+                                      version="1.1"
+                                      role="img"
+                                      aria-labelledby="at-svg-email-13"
+                                      style="
+                                        fill: rgb(34, 34, 34);
+                                        width: 32px;
+                                        height: 32px;
+                                      "
+                                      class="at-icon at-icon-email"
+                                    >
+                                      <title id="at-svg-email-13">Email</title>
+                                      <g>
+                                        <g fill-rule="evenodd"></g>
+                                        <path
+                                          d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"
+                                        ></path>
+                                        <path
+                                          d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"
+                                        ></path>
+                                      </g></svg></span></a
+                                ><a
+                                  role="button"
+                                  tabindex="0"
+                                  class="at-icon-wrapper at-share-btn at-svc-pinterest_share"
+                                  style="
+                                    background-color: rgb(250, 247, 246);
+                                    border-radius: 24px;
+                                  "
+                                  ><span class="at4-visually-hidden"
+                                    >Share to Pinterest</span
+                                  ><span
+                                    class="at-icon-wrapper"
+                                    style="
+                                      line-height: 32px;
+                                      height: 32px;
+                                      width: 32px;
+                                    "
+                                    ><svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 32 32"
+                                      version="1.1"
+                                      role="img"
+                                      aria-labelledby="at-svg-pinterest_share-14"
+                                      style="
+                                        fill: rgb(34, 34, 34);
+                                        width: 32px;
+                                        height: 32px;
+                                      "
+                                      class="at-icon at-icon-pinterest_share"
+                                    >
+                                      <title id="at-svg-pinterest_share-14">
+                                        Pinterest
+                                      </title>
+                                      <g>
+                                        <path
+                                          d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z"
+                                          fill-rule="evenodd"
+                                        ></path>
+                                      </g></svg></span></a
+                                ><a
+                                  role="button"
+                                  tabindex="0"
+                                  class="at-icon-wrapper at-share-btn at-svc-linkedin"
+                                  style="
+                                    background-color: rgb(250, 247, 246);
+                                    border-radius: 24px;
+                                  "
+                                  ><span class="at4-visually-hidden"
+                                    >Share to LinkedIn</span
+                                  ><span
+                                    class="at-icon-wrapper"
+                                    style="
+                                      line-height: 32px;
+                                      height: 32px;
+                                      width: 32px;
+                                    "
+                                    ><svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 32 32"
+                                      version="1.1"
+                                      role="img"
+                                      aria-labelledby="at-svg-linkedin-15"
+                                      style="
+                                        fill: rgb(34, 34, 34);
+                                        width: 32px;
+                                        height: 32px;
+                                      "
+                                      class="at-icon at-icon-linkedin"
+                                    >
+                                      <title id="at-svg-linkedin-15">
+                                        LinkedIn
+                                      </title>
+                                      <g>
+                                        <path
+                                          d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z"
+                                          fill-rule="evenodd"
+                                        ></path>
+                                      </g></svg></span
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      class="expand-pdp-img-wrapper mb-2 text-center featured-products-wrapper"
+                      style="display: none;"
+                    >
+                      <a href="javascript:;" class="showFeaturedProducts">
+                        <span class="expand-icon-text expand-icon-text-new"
+                          >See featured products</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- 			<div class="main-image panzoom"> -->
+                  <!-- 			</div> -->
+                </div>
+              </div>
+            </div>
+            <!-- end product slider -->
+          </div>
+
+          <div class="section-right">
+            <div class="product-description product-description-old">
+              <div class="product-brand">Laminex</div>
+              <div class="prod-range">Colour Collection</div>
+
+              <h4>Olympia Yellow</h4>
+              <h4>Flint</h4>
+              <div class="product-detail-variant-selector-div">
+                <div class="product-variant-detail">
+                  <div class="brandanimer">
+                    <div class="prod-range prod-uppercase">
+                      Colour Code: 378
+                    </div>
+                    <div class="prod-range product-code" style="display: none;">
+                      <span> SKU AU1001672</span>
+                    </div>
+                  </div>
+                  <div class="product-extended-desc">
+                    Olympia Yellow is a bright, bold yellow. Flint finish is a
+                    subtle textured finish with a soft sheen, perfect for
+                    cabinetry.
+                  </div>
+                  <div
+                    class="row input-form product-detail product-detail-wrapper"
+                    id="abc"
+                  >
+                    <input type="hidden" value="true" class="isAnonymousUser" />
+
+                    <input
+                      type="hidden"
+                      id="productDetailPageUrl"
+                      value="/**/p/AU1001672"
+                    />
+                    <input
+                      type="hidden"
+                      value=""
+                      class="selectedDeliveryMethod"
+                    />
+                    <input
+                      type="hidden"
+                      value=""
+                      class="selectedDeliveryAddressId"
+                    />
+                    <input
+                      type="hidden"
+                      value=""
+                      class="defaultDeliveryMethod"
+                    />
+
+                    <div
+                      class="col-sm-12 col-50 substrate dropdown variant-dropdown"
+                    >
+                      <label>substrate</label>
+                      <input type="hidden" value="1" class="loopindex" />
+                      <select
+                        id="select1"
+                        class="select-options selecty-applied"
+                        style="display: none;"
+                      >
+                        <option value="" disabled="disabled">Select</option>
+                        <option
+                          value='{"productcode":"888147","isLastDropdown":false}'
+                          >MDF MR E0</option
+                        >
+                        <option
+                          value='{"productcode":"947260","isLastDropdown":false}'
+                          >MDF Standard E0</option
+                        >
+                        <option
+                          value='{"productcode":"982147","isLastDropdown":false}'
+                          >Particleboard MR E0</option
+                        >
+                        <option disabled="disabled"
+                          >Different substrates and thickness may have different
+                          size and stock availability.</option
+                        >
+                      </select>
+                      <div class="selecty">
+                        <a class="selecty-selected">Select</a>
+                        <ul class="selecty-options">
+                          <li data-value="" data-index="0" class="disabled">
+                            Select
+                          </li>
+                          <li
+                            data-value='{"productcode":"888147","isLastDropdown":false}'
+                            data-index="1"
+                            class=""
+                          >
+                            MDF MR E0
+                          </li>
+                          <li
+                            data-value='{"productcode":"947260","isLastDropdown":false}'
+                            data-index="2"
+                            class=""
+                          >
+                            MDF Standard E0
+                          </li>
+                          <li
+                            data-value='{"productcode":"982147","isLastDropdown":false}'
+                            data-index="3"
+                            class=""
+                          >
+                            Particleboard MR E0
+                          </li>
+                          <li
+                            data-value="Different substrates and thickness may have different size and stock availability."
+                            data-index="4"
+                            class="disabled"
+                          >
+                            Different substrates and thickness may have
+                            different size and stock availability.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-sm-12 col-50 face dropdown variant-dropdown white-tooltip-wrapper"
+                      id="faceToolTip"
+                    >
+                      <label>
+                        face
+                        <a
+                          href="javascript:;"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          data-html="true"
+                          data-trigger="hover"
+                          data-container="#faceToolTip"
+                          title="<strong>Single Sided</strong>: Front side is the premium finish and back side is standard finish in a complementary colour.<br><br>
+                          <strong>Double Sided</strong>: Premium finish on front and back side."
+                          class="tooltip-trigger"
+                        >
+                          <i class="icon--information"></i>
+                        </a>
+                      </label>
+                      <input type="hidden" value="1" class="loopindex" />
+                      <select
+                        id="select1"
+                        class="select-options selecty-applied"
+                        style="display: none;"
+                      >
+                        <option value="" disabled="disabled">Select</option>
+                        <option value="Single Sided">Single Sided</option>
+                        <option value="Double Sided">Double Sided</option>
+                      </select>
+                      <div class="selecty">
+                        <a class="selecty-selected">Select</a>
+                        <ul class="selecty-options">
+                          <li data-value="" data-index="0" class="disabled">
+                            Select
+                          </li>
+                          <li data-value="Single Sided" data-index="1" class="">
+                            Single Sided
+                          </li>
+                          <li data-value="Double Sided" data-index="2" class="">
+                            Double Sided
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-md-6 col-sm-2 col-50 disabled size dropdown variant-dropdown"
+                    >
+                      <label>size</label>
+                      <input type="hidden" value="2" class="loopindex" />
+                      <select
+                        id="select5"
+                        class="select-options selecty-applied"
+                        style="display: none;"
+                      >
+                        <option value="" disabled="disabled">N/A</option>
+                      </select>
+                      <div class="selecty">
+                        <a class="selecty-selected">N/A</a>
+                        <ul class="selecty-options">
+                          <li data-value="" data-index="0" class="disabled">
+                            N/A
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-sm-2 col-50 disabled thicknesss dropdown variant-dropdown"
+                    >
+                      <label
+                        >thickness
+                        <span class="quick-order-thickness-unit"> (mm)</span>
+                      </label>
+                      <input type="hidden" value="3" class="loopindex" />
+                      <select
+                        id="select8"
+                        class="select-options selecty-applied"
+                        style="display: none;"
+                      >
+                        <option value="" disabled="disabled">N/A</option>
+                      </select>
+                      <div class="selecty">
+                        <a class="selecty-selected">N/A</a>
+                        <ul class="selecty-options">
+                          <li data-value="" data-index="0" class="disabled">
+                            N/A
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row input-form"></div>
+              </div>
+
+              <div class="trade-customer-confirmation">
+                <h6>Are you a Laminex Trade customer?</h6>
+                <p class="p3">
+                  <a href="/login">Login to your account</a> to see pricing,
+                  availablity and make purchase online.
+                </p>
+              </div>
+              <div class="order-sample">
+                <div class="sample-header">
+                  <span class="icon">
+                    <img
+                      src="https://store.laminex.com.au/_ui/responsive/theme-laminex/images/svg/order-sample.svg"
+                      alt="Order Sample"
+                    />
+                  </span>
+                  <h4>
+                    Order sample
+                  </h4>
+                </div>
+                <p class="p3">
+                  Don't forget finishes and colours can look drastically
+                  different when used in different settings. To be sure,view a
+                  sample in person with the intended lighting
+                </p>
+                <a class="btn btn-secondary orderSampleBtn">Order sample</a>
+              </div>
+
+              <div
+                class="modal fade modal-deliveryOptions orderSamplePopup"
+                aria-hidden="true"
+              >
+                <input type="hidden" class="sample-total-price" value="" />
+                <input
+                  type="hidden"
+                  class="availableSampleOrderLimit"
+                  value=""
+                />
+                <input
+                  type="hidden"
+                  class="sampleMaxLimitReach"
+                  value="Sorry, you’ve reached the maximum limit (#) for samples of this size. Please update your quantity and try again."
+                />
+                <input
+                  type="hidden"
+                  class="sampleOutOfStock"
+                  value="Sorry, this sample is currently out of stock. Please try changing your selections."
+                />
+                <input
+                  type="hidden"
+                  class="sampleLimitedStock"
+                  value="Only # samples are currently in stock, please update your order quantity."
+                />
+                <input
+                  type="hidden"
+                  class="accessorySampleLimitedStock"
+                  value="Only # products are currently available in stock, please update your quantity."
+                />
+                <input
+                  type="hidden"
+                  class="accessorySampleOutOfStock"
+                  value="Sorry, this product is currently out of stock. Please try changing your selections."
+                />
+                <input
+                  type="hidden"
+                  class="brochureSampleLimitedStock"
+                  value="Only # brochures are currently available in stock, please update your quantity."
+                />
+                <input
+                  type="hidden"
+                  class="brochureSampleOutOfStock"
+                  value="Sorry, this brochure is currently out of stock. Please try changing your selections or contact us."
+                />
+                <input
+                  type="hidden"
+                  class="brochureMaxLimitReach"
+                  value="Sorry, you’ve reached the maximum limit (#) for samples of this size. Please update your quantity and try again."
+                />
+
+                <input
+                  type="hidden"
+                  class="range-category"
+                  value="Colour Collection"
+                />
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header pb-0">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        id="js-clear-cart-button"
+                      >
+                        <i class="icon--x-close"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body pt-0">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-2">
+                          <div class="row">
+                            <div class="col">
+                              <img
+                                id="sample-image"
+                                src="https://dummyimage.com/66x94/000/fff"
+                                width="110"
+                                class="img-fluid my-img"
+                              />
+                            </div>
+                            <div class="col-9 product-show-on-mobile">
+                              <div class="product-type product-sample-brand">
+                                Laminex
+                              </div>
+
+                              <div class="product-name sample-prod-name"></div>
+
+                              <div class="product-color-code">
+                                Colour Code: 378
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-10">
+                          <div
+                            class="form-wrapper"
+                            style="max-width: 475px; width: 100%;"
+                          >
+                            <div class="product-hide-on-mobile">
+                              <div class="product-type product-sample-brand">
+                                Laminex
+                              </div>
+
+                              <div class="product-name sample-prod-name"></div>
+
+                              <div class="product-color-code">
+                                Colour Code: 378
+                              </div>
+                            </div>
+                            <div class="product-disc">
+                              <div class="product-finish"></div>
+                              <div class="product-limit">
+                                You can order a
+                                <strong
+                                  >maximum of <span></span> free samples
+                                </strong>
+                                in a single order.
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-10 col-sm-6">
+                                <label class="form-label">finish</label>
+                                <select id="select4" class="select-finish">
+                                </select>
+                              </div>
+                              <!-- 								<div class="col-12 product-show-on-mobile"> -->
+                              <!-- 									<label class="form-label">SIZE</label> -->
+                              <!-- 									<select id="select6" class="select-size"> -->
+
+                              <!-- 									</select> -->
+                              <!-- 								</div> -->
+
+                              <div class="col-sm-6 product-hide-on-mobile">
+                                <div class="row">
+                                  <div class="col order-sample-qty">
+                                    <label class="form-label">QTY</label>
+                                    <input
+                                      type="text"
+                                      class="form-control price-input pdp-sample-qty sample-qty js-qty-input disable-paste"
+                                      value="0"
+                                      maxlength="5"
+                                      data-placement="bottom"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      data-container=".order-sample-qty"
+                                      data-original-title=""
+                                    />
+                                  </div>
+                                  <div class="col-8">
+                                    <label class="form-label"
+                                      >PRICE (EX GST)</label
+                                    >
+                                    <div class="sample-price"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 mt-19 product-show-on-mobile">
+                                <label class="form-label">PRICE (EX GST)</label>
+                                <div class="sample-price">$0.00</div>
+                              </div>
+                            </div>
+                            <div class="row mt-19">
+                              <div class="col-sm-8 col-md-6 col-xs-12">
+                                <label class="form-label">SIZE</label>
+                                <select id="select6" class="select-size">
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="row mt-25">
+                              <div class="col-12">
+                                <label class="form-label">YOUR PRICE</label>
+                                <p class="product-gst">
+                                  <span class="product-price"> $0.00 </span>
+                                  ex GST and Shipping
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="sample-accessory"
+                              style="display: none;"
+                            >
+                              <div class="row">
+                                <div class="col-12 form-group">
+                                  <label class="custom-checkbox product-option">
+                                    <input
+                                      type="checkbox"
+                                      value="true"
+                                      class="pdp-plp"
+                                      id="accessory-select"
+                                    />
+                                    <span class="custom-checkbox-icon"></span>
+                                    <span>Add accessories</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="sample-accessory-div">
+                                <div class="accessory-set"></div>
+                                <div
+                                  class="row accessory-see-more product-option-see-more pdp-plp"
+                                  style="display: none;"
+                                >
+                                  <div class="col-12">See more accessories</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="sample-brocure" style="display: none;">
+                              <div class="row">
+                                <div class="col-12 form-group">
+                                  <label class="custom-checkbox product-option">
+                                    <input
+                                      type="checkbox"
+                                      value="true"
+                                      class="pdp-plp"
+                                      id="brochure-select"
+                                    />
+                                    <span class="custom-checkbox-icon"></span>
+                                    <span>Select a brochure (optional)</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="sample-brochure-div">
+                                <div class="brochure-set"></div>
+                                <div
+                                  class="row brochure-see-more product-option-see-more pdp-plp"
+                                  style="display: none;"
+                                >
+                                  <div class="col-12">See more brochures</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12">
+                                <button
+                                  class="btn btn-secondary add-basket sample-add-to-cart"
+                                >
+                                  Add to cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row documents download-product-attr-wrapper">
+                <div class="col-md-12">
+                  <h4>Downloads</h4>
+                  <div class="download-product-attr-container">
+                    <div class="row">
+                      <div class="col download-product-img-wrapper">
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            id="dropdownImgButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Download product images
+                            <i class="icon--chevron-small-down"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownImgButton"
+                          >
+                            <li>
+                              <h6>Select Download Format</h6>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/LX-Olympia-Yellow-RGB-1200x1200-HR.jpg?context=bWFzdGVyfGltYWdlc3w1ODU5OTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDJlL2gyMi9oMDAvODgyNTYwMTc4NTg4Ni5qcGd8MDc2MjBkMDM2OWE3YzJkOTFmMWExYzRiN2Q3YjA2ZGIwOTNjNGE5YmMyMDk3YTIzNWMxNzc1ZDliZmY4Zjg2Ng&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name">High resolution</span>
+                                  <span class="date-size-wrapper">
+                                    <span class="date">JPG - </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 0.56MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col download-product-doc-wrapper">
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            id="dropdownDocButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Download product documents
+                            <i class="icon--chevron-small-down"></i>
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownDocButton"
+                          >
+                            <li>
+                              <h6>Select Download Format</h6>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/Protec-Plus.pdf?context=bWFzdGVyfGltYWdlc3w0NDM5MDF8YXBwbGljYXRpb24vcGRmfGltYWdlcy9oNjkvaGE4L2gwMC84ODI5NTc1MTAyNDk0LnBkZnw1YTYyYzRkZjcwN2U3MDdmODE1Zjk2ZTUxMGQ4OWE3ZDc2YmQ2MWM1YmJmNWJlMDE4OTFjZGNkMzcxMTIyNmIz&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name">Protec_Plus.pdf</span>
+                                  <span class="date-size-wrapper">
+                                    <span class="date"
+                                      >Date issued: 25 Mar 2019 -
+                                    </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 0.42MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/Laminex-Landscape-Series-Brochure.pdf?context=bWFzdGVyfGltYWdlc3w0MzU2MTE0fGFwcGxpY2F0aW9uL3BkZnxpbWFnZXMvaGJjL2hjOS9oMDAvODgyOTU3NTA2OTcyNi5wZGZ8YjliNjU1ZDZlMWRkNjY0N2NmZGRjMTI5MWUwYTRkNDRlZTQ0OTFjMjBhMjVjNDNkZWFhNDIzZGE5NjdlNDUzOQ&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name"
+                                    >Laminex Landscape Series Brochure.pdf</span
+                                  >
+                                  <span class="date-size-wrapper">
+                                    <span class="date"
+                                      >Date issued: 25 Mar 2019 -
+                                    </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 4.15MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/Laminex-Laminate-Product-Chemwatch-58017.pdf?context=bWFzdGVyfGltYWdlc3wzNTIzNjV8YXBwbGljYXRpb24vcGRmfGltYWdlcy9oYWIvaDFjL2gwMC84ODI5Njc4NjQ5Mzc0LnBkZnxlNzY3NjEzYzFjYWNmMTM4MGNhYzU5OTU1N2FiYjllZmE2ZWY0NWE0NWZlMDkzYTY3ODE2ZGNmNjFlYWI2ZjEx&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name"
+                                    >Laminex Laminate Product Chemwatch
+                                    58017.pdf</span
+                                  >
+                                  <span class="date-size-wrapper">
+                                    <span class="date"
+                                      >Date issued: 25 Mar 2019 -
+                                    </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 0.34MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/Laminex-National-Availability-Guide-July-2020.pdf?context=bWFzdGVyfGRvY3VtZW50c3wxOTk0MzAyfGFwcGxpY2F0aW9uL3BkZnxoNTcvaDliLzg4NjczNTM1OTE4MzgvTGFtaW5leCBOYXRpb25hbCBBdmFpbGFiaWxpdHkgR3VpZGUgLSBKdWx5IDIwMjAucGRmfDgyZDRhZDFlNTE0ZTgzNTE3MjdlMjczNmY1ZmE5MDM0OWE2NjJhN2E0OWEyOTI0ODQ4ZmUzOGQ0NjQ2NzE0ZTE&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name"
+                                    >Laminex National Availability Guide - July
+                                    2020.pdf</span
+                                  >
+                                  <span class="date-size-wrapper">
+                                    <span class="date"
+                                      >Date issued: 25 Mar 2019 -
+                                    </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 1.9MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/Protect-Plus-Factsheet.PDF?context=bWFzdGVyfGltYWdlc3wxNjAzMTkyfGFwcGxpY2F0aW9uL3BkZnxpbWFnZXMvaGMyL2g5Mi9oMDAvODgyOTU3NTE2ODAzMC5wZGZ8ZjQ4YThlMGU1NDQyYTY5YmNjNTE4MDI0OWZlYmYyNjc1NGM4MmZmYTYxMzlkZGI2YmQxNDAyYjUwNWQxMWQ2MQ&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name"
+                                    >Protect_Plus_Factsheet.PDF</span
+                                  >
+                                  <span class="date-size-wrapper">
+                                    <span class="date"
+                                      >Date issued: 25 Mar 2019 -
+                                    </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 1.53MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="/medias/Laminex-Care-and-Maintanence-Guide.pdf?context=bWFzdGVyfGltYWdlc3w5MDMzM3xhcHBsaWNhdGlvbi9wZGZ8aW1hZ2VzL2g3MC9oMmIvaDAwLzg4Mjk1NzUwMzY5NTgucGRmfGFlM2M5NTIzYTEwMmY5ZjdjZWE4N2JiYjAzNWRmOWNiNjhiNGIwZjA3ZWQxZGI1ODI5MWQ4Njk2NTM0NjU4NDc&amp;attachment=true"
+                              >
+                                <span class="doc-des">
+                                  <span class="name"
+                                    >Laminex Care and Maintanence
+                                    Guide.pdf</span
+                                  >
+                                  <span class="date-size-wrapper">
+                                    <span class="date"
+                                      >Date issued: 25 Mar 2019 -
+                                    </span>
+                                    <!-- File size in bytes, it needs to be converted to MB -->
+                                    <span class="size"> 0.09MB </span>
+                                  </span>
+                                </span>
+                                <span class="icon-holder">
+                                  <i class="icon--downloads"></i>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row specification">
+                <div class="product-Categories-Section col-sm-12">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-3 col-50">
+                      <h4>
+                        Style
+                      </h4>
+                      <ul class="style-display">
+                        <li>
+                          <span
+                            class="color"
+                            style="background: #e9e9e9;"
+                          ></span>
+                          <p class="p1 style-name">Modern &amp; Co</p>
+                        </li>
+                        <li>
+                          <span
+                            class="color"
+                            style="background: #00a4c0;"
+                          ></span>
+                          <p class="p1 style-name">Vintage</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-12 col-sm-3 col-50 product-disclaimer">
+                      <h4>
+                        Applications
+                      </h4>
+                      <i class="disclaimer-stmnt"
+                        ><b>Not all applications apply to all variants</b></i
+                      >
+                      <ul class="disk-list-new">
+                        <li>
+                          <p class="p1">Office Furniture</p>
+                        </li>
+                        <li>
+                          <p class="p1">Wardrobes</p>
+                        </li>
+                        <li>
+                          <p class="p1">Shelving</p>
+                        </li>
+                        <li>
+                          <p class="p1">Residential Furniture</p>
+                        </li>
+                        <li>
+                          <p class="p1">Cabinetry-Doors &amp; Panels</p>
+                        </li>
+                        <li>
+                          <p class="p1">Wall Panels</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-12 col-sm-3 col-50 product-disclaimer">
+                      <h4>
+                        Features
+                      </h4>
+                      <i class="disclaimer-stmnt"
+                        ><b>Not all features apply to all variants</b></i
+                      >
+                      <ul class="disk-list-new">
+                        <li>
+                          <p class="p1">Dimensional Stability</p>
+                        </li>
+                        <li>
+                          <p class="p1">Easy to Clean</p>
+                        </li>
+                        <li>
+                          <p class="p1">Low Maintenance</p>
+                        </li>
+                        <li>
+                          <p class="p1">Moisture Resistant</p>
+                        </li>
+                        <li>
+                          <p class="p1">Stain Resistant</p>
+                        </li>
+                        <li>
+                          <p class="p1">UV Stable Indoor Use</p>
+                        </li>
+                        <li>
+                          <p class="p1">Water Repellent</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      /*<![CDATA[*/
+
+      var ACC = { config: {} };
+      ACC.config.contextPath = "";
+      ACC.config.encodedContextPath = "";
+      ACC.config.commonResourcePath = "/_ui/responsive/common";
+      ACC.config.themeResourcePath = "/_ui/responsive/theme-laminex";
+      ACC.config.siteResourcePath = "/_ui/responsive/site-laminexAU";
+      ACC.config.rootPath = "/_ui/responsive";
+      ACC.config.CSRFToken = "df32ee24-3b6e-434e-bd20-0d698e13efe1";
+      ACC.pwdStrengthVeryWeak = "Very weak";
+      ACC.pwdStrengthWeak = "Weak";
+      ACC.pwdStrengthMedium = "Medium";
+      ACC.pwdStrengthStrong = "Strong";
+      ACC.pwdStrengthVeryStrong = "Very strong";
+      ACC.pwdStrengthUnsafePwd = "password.strength.unsafepwd";
+      ACC.pwdStrengthTooShortPwd = "Too short";
+      ACC.pwdStrengthMinCharText = "Minimum length is %d characters";
+      ACC.accessibilityLoading = "Loading... Please wait...";
+      ACC.accessibilityStoresLoaded = "Stores loaded";
+      ACC.config.googleApiKey = "";
+      ACC.config.googleApiVersion = "3.7";
+
+      ACC.autocompleteUrl = "/search/autocompleteSecure";
+
+      ACC.config.loginUrl = "/login";
+
+      ACC.config.authenticationStatusUrl = "/authentication/status";
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      ACC.addons = {}; //JS holder for addons properties
+
+      ACC.addons.smarteditaddon = [];
+
+      ACC.addons.laminexassistedservicesstorefront = [];
+
+      ACC.addons.laminexcaptchaaddon = [];
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript" src="./js/generatedVariables.js"></script>
+    <script type="text/javascript" src="./js/all_responsive.js"></script>
+    <script type="text/javascript" src="./js/addons_responsive.js"></script>
+    <script type="text/javascript" src="./js/captcha_responsive.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="./js/addthis_widget.js#pubid=ra-5b831d89c6f7ebdc"
+    ></script>
+
+    <script type="text/javascript" src="./js/masonry.min.js"></script>
+    <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/mediaelement-and-player.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>

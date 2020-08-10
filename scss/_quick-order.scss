@@ -107,3 +107,24 @@
     }
   }
 }
+
+.white-tooltip-wrapper {
+  .tooltip-inner {
+    border-color: $white-tooltip-border-color;
+    background-color: #fff;
+  }
+
+  .bs-tooltip-bottom,
+  .bs-tooltip-auto[x-placement^="bottom"] {
+    .arrow {
+      &:before {
+        border-bottom-color: $white-tooltip-border-color;
+      }
+    }
+  }
+
+  .tooltip-trigger {
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+}
