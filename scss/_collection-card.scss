@@ -1,3 +1,29 @@
+%sample-order-trigger {
+  position: absolute;
+  z-index: 1;
+  margin: initial;
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 21px;
+  right: 9px;
+  top: 9px;
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 21px;
+    right: 10px;
+    top: 10px;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 25px;
+    height: 29px;
+    right: 12px;
+    top: 12px;
+  }
+}
+
 .colour-collection-projects-slider-wrapper {
   .btn-wrapper {
     margin-top: 12px;
@@ -96,29 +122,7 @@
     }
 
     .sample-order-trigger {
-      position: absolute;
-      z-index: 1;
-      margin: initial;
-      cursor: pointer;
-      display: block;
-      width: 18px;
-      height: 21px;
-      right: 9px;
-      top: 9px;
-
-      @media screen and (min-width: 768px) {
-        width: 18px;
-        height: 21px;
-        right: 10px;
-        top: 10px;
-      }
-
-      @media screen and (min-width: 960px) {
-        width: 25px;
-        height: 29px;
-        right: 12px;
-        top: 12px;
-      }
+      @extend %sample-order-trigger;
     }
   }
 
@@ -159,5 +163,14 @@
 
   &.no-bg {
     background-color: transparent;
+  }
+}
+
+.swatch-tiles {
+  .media-wrapper {
+    position: relative;
+  }
+  .sample-order-trigger {
+    @extend %sample-order-trigger;
   }
 }
