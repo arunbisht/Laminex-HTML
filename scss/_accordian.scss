@@ -133,6 +133,13 @@
         line-height: 1.5rem;
       }
     }
+
+    a {
+      color: $link-color-new;
+      border-bottom: 1px dotted $link-color-new;
+      background-color: transparent;
+      padding-bottom: 0.25rem;
+    }
   }
 
   .custom-accordion-content {
