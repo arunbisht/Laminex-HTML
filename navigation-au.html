@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Navigation</title>
+<title>Navigation AU</title>
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -27,180 +27,138 @@
 
 </head>
 
-<body class="primary-navmenu-nz">
+<body class="primary-navmenu-au">
+    
+<header>  
+ <div class="container">
+<div class="row">
+    
+<!--Logo Section -->				
+<div class="header-left col-md-2 col-lg-3 col-3">
+<div class="logo">
+<div class="banner__component simple-banner">
+<a href="https://www.laminex.com.au"><img title="Laminex logo" alt="Laminex logo" src="./images/laminex-logo.svg"></a>
+</div></div>
+</div>
+            
+<!-- Header Right on Top -->         
+<div class="header-right col-md-10 col-lg-9 col-9">
+<div class="header-top clearfix">
+<ul>
+<li>
+    <a href="/login"> <i class="icon-new--hammer" title="Trade"></i>Trade</a>
+</li>
+<li>
+    <a href="/login"> <i class="icon-new--compass" title="Specifier"></i>
+Specifier</a>
+</li>
+<li class="active-header">
+    <a href="/login"> <i class="icon--user" title="For Your Home"></i>
+For Your Home</a>
+</li>
+</ul>
+</div>
 
+</div>
+    
+<!-- Primary menu links -->
+<div class="prime-nav header-right col-sm-12">
+<div class="header-bottom">
+<nav class="navbar navbar-expand-md navbar-light">
+<div class="navbar-collapse collapse show" id="navbarNav" style="">
+<ul class="navbar-nav digimeg-group digimeg-main-nav">
+<li class="nav-item">
+<a href="/browse" data-subnav="home-inspiration" class="nav-link digimeg-nav-item">Inspiration</a>
+</li>
+<li class="nav-item">
+<a href="#" data-subnav="home-howto" class="nav-link digimeg-nav-item">How To</a>
+</li>
+<li class="nav-item">
+<a href="#" data-subnav="home-browse" class="nav-link digimeg-nav-item">Browse Products</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link digimeg-nav-item" data-subnav="home-brands">Brands</a>
+</li>
+</ul>
+</div>
+</nav>
 
-<header class="siteHeader-sticky sticky">
-    <div id="header" class="siteHeader">
-        <div class="row">
-            <div class="siteHeader-logo col-4 col-sm-3 col-md-2 col-lg-3 order-0 order-sm-1 order-md-1 order-lg-1">
-                <a title="Logo" href="/"><img class="logo" src="./images/laminex-logo-nz.svg" alt="Laminex"></a><span class="image-caption field-imagecaption"></span>
-            </div>
+<ul class="header-cart-section">
+<li class="menu-icon">
+    <a href="#" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation" class=""><i class="icon-new--menu"></i></a>
+</li>
+<li class="user-icon logout-li">
+    <a href="/login"><i class="icon-new--user" title="Login to My Account"></i>Join/Login</a>
+</li>
+<li class="cartIcon product-detail-mini-cart sample">
+    <a href="/cart/sample" class="unset-text">
+    <i class="siteHeader-Swatch icon-new--sample-basket"></i>      
+    </a>
+</li>
+<input type="hidden" value="/cart/miniCart/SUBTOTAL" class="refreshMiniCartUrl">
+<li>
+    <a href="https://www.laminex.com.au/locator-tool" data-linkname="Store Locator Icon" target="_blank"> 
+    <i class="icon-new--location" title="Find a Location"></i>
+    </a>
+</li>
+<li class="search">
+    <a href="#" class="product-search-toggle"><i class="icon-new--search" title="Search for products or content"></i></a>
+</li>
+</ul>
 
-            <div class="component container-fluid col-8 col-sm-12 col-md-2 col-lg-2 order-1 order-sm-first order-md-4 offset-md-0 order-lg-4 siteHeader__wrapper">
-                <div class="component-content">
-
-
-                    <div class="component link-list siteHeader-menu col-10 col-sm-11 col-md-12 order-1 order-sm-1 offset-sm-0 order-md-0 offset-md-0 order-lg-0">
-
-                        <ul>
-                            <li title="Search for products or content" class="item0 odd first">
-                                <div>
-                                    <a id="primary-search" href="javascript:;" class="primary-search icon-new--search" data-toggle="collapse" data-variantfieldname="Link">
-                                        <span>Search</span>
-                                    </a>
-
-                                </div>
-                            </li>
-                            <li title="Where to Buy" class="item1 even">
-                                <div>
-                                    <a href="https://www.laminex.co.nz/locator-tool" class="siteHeader-Locator icon-new--location">
-                                        <span>locator-tool</span></a></div>
-                            </li>
-                            <li title="Sample Cart" class="item2 odd">
-                                <div>
-                                    <a href="https://store.laminex.co.nz/cart/sample" class="siteHeader-Swatch icon-new--sample-basket">
-                                        <span>Sample Cart</span></a></div>
-                            </li>
-
-
-                            <li title="Login to My Account" class="item1 even show-on-stick d-none">
-                                <div>
-                                    <a href="/auth/Account/Login" class="siteHeader-tradeLogin">
-                                        <span>LOGIN</span></a></div>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="component link siteHeader-toggler col-2 col-sm-1 order-2 order-sm-1">
-                        <div class="component-content">
-
-                            <div class="field-link"><a data-target="#siteHeader__nav--secondary" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="siteHeader__nav--secondary" data-variantitemid="{1B9D77D0-AA9B-45F7-B85F-E2A7A61D7948}" data-variantfieldname="Link" aria-expanded="false">toggle</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="component link-list siteHeader-quickLinks col-12 col-sm-5 col-md-12 col-lg-12 order-3 offset-sm-4 order-md-0 offset-md-0 order-lg-0">
-                <div class="component-content">
-
-
-                    <ul id="link-login-order">
-                        <li title="Quick Order" class="item0 odd first">
-                        </li>
-                        <li title="Login to My Account" class="item1 even">
-                            <div>
-                                <a href="/auth/Account/Login" class="siteHeader-tradeLogin icon-new--user">
-                                    <span>LOGIN</span></a></div>
-                        </li>
-                        <script type="text/javascript">
-                            $(document).ready(function() {
-                                document.body.addEventListener('click', function(evt) {
-                                    if (evt.target.className === 'my-account') {
-                                        var text = evt.target.text.toLowerCase();
-                                        if (["logout", "log out"].indexOf(text) > -1) {
-                                            evt.preventDefault();
-                                            $.ajax({
-                                                url: $("#hybrisUrl").val(),
-                                                dataType: "jsonp",
-                                                success: function(data) {
-                                                    console.log("data" + data);
-                                                    window.location.href = "/auth/Account/logout";
-                                                },
-                                                error: function(jqXHR, textStatus, errorThrown) {
-                                                    console.log("jqXHR " + jqXHR);
-                                                    window.location.href = "/auth/Account/logout";
-                                                }
-                                            });
-
-                                        }
-                                    }
-                                }, false);
-                            });
-
-                        </script>
-
-                    </ul>
-                </div>
-            </div>
-
-            <div class="component siteHeader-nav-primary col-12 col-md-8 col-lg-7 order-4 order-md-3 order-lg-3 navigation-main navigation-main-vertical">
-                <nav class="navbar-expand-md">
-                    <ul class="digimeg-group digimeg-main-nav">
-                        <li>
-                            <!-- Upper menu item -->
-                            <!-- [data-subnav="define-subnav"] here define-sbunav is the id of the respective dropdown menu for this menu item -->
-                            <a href="https://www.laminex.co.nz/Browse-Products" data-subnav="browse" class="digimeg-nav-item">Browse Products
-                            </a> </li>
-                        <li> <a href="#" data-subnav="trade" class="digimeg-nav-item">Trade &amp; Specifier Resources</a> </li>
-                        <li> <a href="#" data-subnav="inspired" class="digimeg-nav-item">Get Inspired</a> </li>
-                        <li> <a href="#" data-subnav="about" class="digimeg-nav-item"> About Laminex</a> </li>
-                        <li> <a href="#" data-subnav="support" class="digimeg-nav-item">Support</a> </li>
-                    </ul>
-
-                </nav>
-            </div>
-        </div>
+</div>
     </div>
-
-    <!-- Dropdown menu Desktop content -->
+     </div>
+	</div> 
+    
+    
+ <!-- Dropdown menu Desktop content -->
     <div class="siteHeader__nav--secondary" id="siteHeader__nav--secondary">
         <div class="desktop-view">
-        <div class="menu-content collapse" id="browse">
+        <div class="menu-content collapse" id="home-brands">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
                         <nav>
                             <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
-                            <ul class="primary listing tab-titles">
-                                <li class="has-child active"><a href="#tab1" href="javascript:;">Brand</a></li>
-                                <li class="has-child"><a href="#tab2" href="javascript:;">Product type</a></li>
-                                <li class="has-child"><a href="#tab3" href="javascript:;">Colour</a></li>
-                                <li class="has-child"><a href="#tab4" href="javascript:;">Application</a></li>
-                                <li class="has-child"><a href="#tab5" href="javascript:;">Style</a></li>
-                            </ul>
+                        <ul class="primary listing tab-titles">
+                            <li class="has-child active"><a href="#tab1" href="javascript:;">Browse by Room</a></li>
+                            <li class="has-child"><a href="#tab2" href="javascript:;">Browse by Colour</a></li>
+                            <li class="has-child"><a href="#tab3" href="javascript:;">Browse Gallery</a></li>
+                            <li class="has-child"><a href="#tab4" href="javascript:;">Browse Palettes</a></li>
+                        </ul>
                         </nav>
                     </div>
                     <div id="tab1" class="col-md-10 tab-content" style="display: block;">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                <div class="col-6">
+                        
+                           <div class="row">
+                                <div class="col-md-2">
                                 <nav>
-                                    <ul class="listing">
-                                        <li><a href="javascript:;">Laminex</a></li>
-                                        <li><a href="javascript:;">HI-MACS</a></li>
-                                        <li><a href="javascript:;">Laminex Laminate</a></li>
-                                        <li><a href="javascript:;">Melteca</a></li>
-                                        <li><a href="javascript:;">Laminex Fomica</a></li>
-                                        <li><a href="javascript:;">Seratone</a></li>
-                                        <li><a href="javascript:;">Caesarstone</a></li>
-                                        <li><a href="javascript:;">Strand by Laminex New Zealand</a></li>
-                                        <li><a href="javascript:;">Laminam</a></li>
-                                        <li><a href="javascript:;">Trade Essentials</a></li>
+                                    <ul class="listing subtab-titles">
+                                        <li><a href="#tab-application">Application</a></li>
+                                        <li><a href="#tab-brand">Brand</a></li>
+                                        <li><a href="#tab-colour">Colour</a></li>
+                                        <li><a href="#tab-style">Style</a></li>
+                                        <li><a href="#tab-finish">Finish</a></li>
+                                        <li><a href="#tab-range">Range</a></li>
                                     </ul>
                                 </nav>    
                                 </div>
-                                <div class="col-6">
-                                <nav>
-                                    <ul class="listing">
-                                        <li><a href="javascript:;">Laminex</a></li>
-                                        <li><a href="javascript:;">HI-MACS</a></li>
-                                        <li><a href="javascript:;">Laminex Laminate</a></li>
-                                        <li><a href="javascript:;">Melteca</a></li>
-                                        <li><a href="javascript:;">Laminex Fomica</a></li>
-                                        <li><a href="javascript:;">Seratone</a></li>
-                                        <li><a href="javascript:;">Caesarstone</a></li>
-                                        <li><a href="javascript:;">Strand by Laminex New Zealand</a></li>
-                                        <li><a href="javascript:;">Laminam</a></li>
-                                        <li><a href="javascript:;">Trade Essentials</a></li>
-                                    </ul>
-                                </nav>    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                                <div id="tab-application" class="col-md-10 subtab-content">
+                                    <div class="row multiple-cols">
+                                        <div class="col-md-2">
+                                        <nav>
+                                            <ul class="listing">
+                                                <li><a href="javascript:;">Material</a></li>
+                                                <li><a href="javascript:;">Brand</a></li>
+                                                <li><a href="javascript:;">Colour</a></li>
+                                                <li><a href="javascript:;">Style</a></li>
+                                                <li><a href="javascript:;">Finish</a></li>
+                                                <li><a href="javascript:;">Range</a></li>
+                                            </ul>
+                                        </nav>    
+                                    </div>
+                                        <div class="col-md-5">
                             <div class="card">
                                 <div class="card-horizontal">
                                     <div class="card-img">
@@ -213,7 +171,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                                        <div class="col-md-5">
+                            <div class="card">
+                                <div class="card-horizontal">
+                                    <div class="card-img">
+                                        <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                        <a href="javascript:;">Brand name</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        
                         </div>
 
                     <!-- Tab content 2 -->
@@ -708,6 +683,672 @@
             </div>
         </div>
     </div>
+    </div>   
+    </header>
+    
+    
+    
+    
+    
+
+<!--  Header part -->
+<header class="siteHeader-sticky sticky" style="display: none">
+    <div id="header" class="siteHeader">
+        <div class="row">
+            <div class="siteHeader-logo col-4 col-sm-3 col-md-2 col-lg-3 order-0 order-sm-1 order-md-1 order-lg-1">
+                <a title="Logo" href="/"><img class="logo" src="./images/laminex-logo-nz.svg" alt="Laminex"></a><span class="image-caption field-imagecaption"></span>
+            </div>
+
+            <div class="component container-fluid col-8 col-sm-12 col-md-2 col-lg-2 order-1 order-sm-first order-md-4 offset-md-0 order-lg-4 siteHeader__wrapper">
+                <div class="component-content">
+
+
+                    <div class="component link-list siteHeader-menu col-10 col-sm-11 col-md-12 order-1 order-sm-1 offset-sm-0 order-md-0 offset-md-0 order-lg-0">
+
+                        <ul>
+                            <li title="Search for products or content" class="item0 odd first">
+                                <div>
+                                    <a id="primary-search" href="javascript:;" class="primary-search icon-new--search" data-toggle="collapse" data-variantfieldname="Link">
+                                        <span>Search</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li title="Where to Buy" class="item1 even">
+                                <div>
+                                    <a href="https://www.laminex.co.nz/locator-tool" class="siteHeader-Locator icon-new--location">
+                                        <span>locator-tool</span></a></div>
+                            </li>
+                            <li title="Sample Cart" class="item2 odd">
+                                <div>
+                                    <a href="https://store.laminex.co.nz/cart/sample" class="siteHeader-Swatch icon-new--sample-basket">
+                                        <span>Sample Cart</span></a></div>
+                            </li>
+
+
+                            <li title="Login to My Account" class="item1 even show-on-stick d-none">
+                                <div>
+                                    <a href="/auth/Account/Login" class="siteHeader-tradeLogin">
+                                        <span>LOGIN</span></a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="component link siteHeader-toggler col-2 col-sm-1 order-2 order-sm-1">
+                        <div class="component-content">
+
+                            <div class="field-link"><a data-target="#siteHeader__nav--secondary" data-toggle="collapse" aria-label="Toggle navigation" aria-controls="siteHeader__nav--secondary" data-variantitemid="{1B9D77D0-AA9B-45F7-B85F-E2A7A61D7948}" data-variantfieldname="Link" aria-expanded="false">toggle</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component link-list siteHeader-quickLinks col-12 col-sm-5 col-md-12 col-lg-12 order-3 offset-sm-4 order-md-0 offset-md-0 order-lg-0">
+                <div class="component-content">
+
+
+                    <ul id="link-login-order">
+                        <li title="Quick Order" class="item0 odd first">
+                        </li>
+                        <li title="Login to My Account" class="item1 even">
+                            <div>
+                                <a href="/auth/Account/Login" class="siteHeader-tradeLogin icon-new--user">
+                                    <span>LOGIN</span></a></div>
+                        </li>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                document.body.addEventListener('click', function(evt) {
+                                    if (evt.target.className === 'my-account') {
+                                        var text = evt.target.text.toLowerCase();
+                                        if (["logout", "log out"].indexOf(text) > -1) {
+                                            evt.preventDefault();
+                                            $.ajax({
+                                                url: $("#hybrisUrl").val(),
+                                                dataType: "jsonp",
+                                                success: function(data) {
+                                                    console.log("data" + data);
+                                                    window.location.href = "/auth/Account/logout";
+                                                },
+                                                error: function(jqXHR, textStatus, errorThrown) {
+                                                    console.log("jqXHR " + jqXHR);
+                                                    window.location.href = "/auth/Account/logout";
+                                                }
+                                            });
+
+                                        }
+                                    }
+                                }, false);
+                            });
+
+                        </script>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="component siteHeader-nav-primary col-12 col-md-8 col-lg-7 order-4 order-md-3 order-lg-3 navigation-main navigation-main-vertical">
+                <nav class="navbar-expand-md">
+                    <ul class="digimeg-group digimeg-main-nav">
+                        <li>
+                            <!-- Upper menu item -->
+                            <!-- [data-subnav="define-subnav"] here define-sbunav is the id of the respective dropdown menu for this menu item -->
+                            <a href="https://www.laminex.co.nz/Browse-Products" data-subnav="browse" class="digimeg-nav-item">Browse Products
+                            </a> </li>
+                        <li> <a href="#" data-subnav="trade" class="digimeg-nav-item">Trade &amp; Specifier Resources</a> </li>
+                        <li> <a href="#" data-subnav="inspired" class="digimeg-nav-item">Get Inspired</a> </li>
+                        <li> <a href="#" data-subnav="about" class="digimeg-nav-item"> About Laminex</a> </li>
+                        <li> <a href="#" data-subnav="support" class="digimeg-nav-item">Support</a> </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown menu Desktop content -->
+    <div class="siteHeader__nav--secondary" id="siteHeader__nav--secondary">
+        <div class="menu-content collapse" id="browse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav>
+                            <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
+                            <ul class="primary listing tab-titles">
+                                <li class="has-child active"><a href="#tab1" href="javascript:;">Brand</a></li>
+                                <li class="has-child"><a href="#tab2" href="javascript:;">Product type</a></li>
+                                <li class="has-child"><a href="#tab3" href="javascript:;">Colour</a></li>
+                                <li class="has-child"><a href="#tab4" href="javascript:;">Application</a></li>
+                                <li class="has-child"><a href="#tab5" href="javascript:;">Style</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="tab1" class="col-md-10 tab-content" style="display: block;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav>
+                                    <ul class="listing d-flex flex-wrap">
+                                        <li class="col-6"><a href="javascript:;">Laminex</a></li>
+                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
+                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
+                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
+                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="card-img">
+                                            <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                            <a href="javascript:;">Brand name</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab content 2 -->
+                    <div id="tab2" class="col-md-10 tab-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav>
+                                    <ul class="listing d-flex flex-wrap">
+                                        <li class="col-6"><a href="javascript:;">Product typle 1</a></li>
+                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
+                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
+                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
+                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="card-img">
+                                            <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product description. Morbi tristique nibh dolor tincidunt</h4>
+                                            <a href="javascript:;">Product name</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab content 3 -->
+                    <div id="tab3" class="col-md-10 tab-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav>
+                                    <ul class="listing col2 d-flex flex-wrap">
+                                        <li class="col-6"><a href="javascript:;">Color typle 1</a></li>
+                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
+                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
+                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
+                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="card-img">
+                                            <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product description. Morbi tristique nibh dolor tincidunt</h4>
+                                            <a href="javascript:;">Product name</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab content 4  -->
+                    <div id="tab4" class="col-md-10 tab-content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav>
+                                    <ul class="listing d-flex flex-wrap">
+                                        <li class="col-6"><a href="javascript:;">Application typle 1</a></li>
+                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
+                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
+                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
+                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
+                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
+                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="card-img">
+                                            <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product description. Morbi tristique nibh dolor tincidunt</h4>
+                                            <a href="javascript:;">Product name</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-content collapse" id="trade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav>
+                            <ul class="listing">
+                                <li><a class="" href="javascript:;">Technical document</a></li>
+                                <li><a href="javascript:;">Technical and specification contacts</a></li>
+                                <li><a href="javascript:;">Warranty registration</a></li>
+                                <li><a href="javascript:;">Credit application</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-content collapse" id="inspired">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav>
+                            <ul class="listing">
+                                <li><a class="" href="javascript:;">Inspiration gallery</a></li>
+                                <li><a href="javascript:;">Design blog</a></li>
+                                <li><a href="javascript:;">Design styles</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-content collapse" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav>
+                            <ul class="listing">
+                                <li><a class="active" href="javascript:;">Explore our brands</a></li>
+                                <li><a href="javascript:;">Sustainability</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-5">
+                        <nav>
+                            <ul class="listing d-flex flex-wrap">
+                                <li class="col-6"><a href="javascript:;">Laminex</a></li>
+                                <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
+                                <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
+                                <li class="col-6"><a href="javascript:;">Melteca</a></li>
+                                <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
+                                <li class="col-6"><a href="javascript:;">Seratone</a></li>
+                                <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
+                                <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
+                                <li class="col-6"><a href="javascript:;">Laminam</a></li>
+                                <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-content collapse" id="support">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav>
+                            <ul class="listing">
+                                <li><a class="" href="javascript:;">Contact us</a></li>
+                                <li><a href="javascript:;">Find someone to help with your project</a></li>
+                                <li><a href="javascript:;">Help with online ordering</a></li>
+                                <li><a href="javascript:;">Help with sample ordering</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8 d-flex">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown menu Tab/Mobile content -->
+    <br /><br /><br /><br />
+    <h4 class="text-center">this menu to be used on tab and mobile dvices</h4>
+    <div class="mobile-menu">
+        <div class="accordion-wrapper">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="accordion accordion-items" id="menuaccordion">
+                        <div class="accordion-item active">
+                            <div class="text-left accordion-title accordion-trigger" type="button" data-target="#browseproducts" aria-expanded="true" aria-controls="browseproducts">
+                                <h5>
+                                    <a href="https://www.laminex.co.nz/Browse-Products">
+                                        Browse Products
+                                    </a>
+                                    <span class="accord-expand"></span>
+                                </h5>
+                            </div>
+                            <div class="sub-content accordion-content" id="browseproducts">
+
+                                <!--Sub accordion -->
+                                <div class="accordion accordion-items" id="subaccordion">
+                                    <div class="accordion-item">
+                                        <div class="text-left accordion-title accordion-trigger" type="button" data-target="#brands" aria-expanded="true" aria-controls="brands">
+                                            <h6>
+                                                <a href="">
+                                                    Brand
+                                                </a>
+                                                <span class="accord-expand"></span>
+                                            </h6>
+                                        </div>
+                                        <div class="accordion-content custom-accordion-content" id="brands">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <ul class="listing d-flex flex-wrap">
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Laminex</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">HI-MACS</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Laminex Laminate</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Melteca</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Laminex</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">HI-MACS</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Laminex Laminate</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Melteca</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Laminex Fomica</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Seratone</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Caesarstone</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Laminam</a></li>
+                                                        <li class="col-6 col-sm-3"><a href="javascript:;">Trade Essentials</a></li>
+                                                        <li class="col-6 col-sm-3"><a class="view-all" href="javascript:;">+ View all</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="content-others">
+                                                    <div class="col-12 d-flex flex-wrap">
+                                                        <div class="card col-12 col-sm-6">
+                                                            <div class="card-horizontal">
+                                                                <div class="card-img">
+                                                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                                                    <a href="javascript:;">Brand name</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card col-12 col-sm-6 mt-4 mt-sm-0">
+                                                            <div class="card-horizontal">
+                                                                <div class="card-img">
+                                                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                                                    <a href="javascript:;">Brand name</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <div class="text-left accordion-title accordion-trigger" type="button" data-target="#product" aria-expanded="true" aria-controls="product">
+                                            <h6>
+                                                <a href="">
+                                                    Product type
+                                                </a>
+                                                <span class="accord-expand"></span>
+                                            </h6>
+                                        </div>
+                                        <div class="accordion-content custom-accordion-content" id="product">
+                                            <p class="p2">
+                                                To set up an account, you need to be registered with us.
+                                                Please contact your Sales Rep to confirm registration.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <div class="text-left accordion-title accordion-trigger" type="button" data-target="#colour" aria-expanded="true" aria-controls="colour">
+                                            <h6>
+                                                <a href="">
+                                                    Colour
+                                                </a>
+                                                <span class="accord-expand"></span>
+                                            </h6>
+                                        </div>
+                                        <div class="accordion-content custom-accordion-content" id="colour">
+                                            <p class="p2">
+                                                To set up an account, you need to be registered with us.
+                                                Please contact your Sales Rep to confirm registration.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <div class="text-left accordion-title accordion-trigger" type="button" data-target="#application" aria-expanded="true" aria-controls="application">
+                                            <h6>
+                                                <a href="">
+                                                    Application
+                                                </a>
+                                                <span class="accord-expand"></span>
+                                            </h6>
+                                        </div>
+                                        <div class="accordion-content custom-accordion-content" id="colour">
+                                            <p class="p2">
+                                                To set up an account, you need to be registered with us.
+                                                Please contact your Sales Rep to confirm registration.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <div class="text-left accordion-title accordion-trigger" type="button" data-target="#style" aria-expanded="true" aria-controls="style">
+                                            <h6>
+                                                <a href="">
+                                                    Style
+                                                </a>
+                                                <span class="accord-expand"></span>
+                                            </h6>
+                                        </div>
+                                        <div class="accordion-content custom-accordion-content" id="style">
+                                            <p class="p2">
+                                                To set up an account, you need to be registered with us.
+                                                Please contact your Sales Rep to confirm registration.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="text-left accordion-title accordion-trigger" type="button" data-target="#tradespecifier" aria-expanded="true" aria-controls="tradespecifier">
+                                <h5>
+                                    <a href="">
+                                        Trade &amp; Specifier Resources
+                                    </a>
+                                    <span class="accord-expand"></span>
+                                </h5>
+                            </div>
+                            <div class="accordion-content custom-accordion-content" id="tradespecifier">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="listing d-flex flex-wrap">
+                                            <li class="col-6 col-sm-3"><a href="javascript:;">Laminex</a></li>
+                                            <li class="col-6 col-sm-3"><a href="javascript:;">HI-MACS</a></li>
+                                            <li class="col-6 col-sm-3"><a href="javascript:;">Laminex Laminate</a></li>
+                                            <li class="col-6 col-sm-3"><a href="javascript:;">Melteca</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="text-left accordion-title accordion-trigger" type="button" data-target="#getinspired" aria-expanded="true" aria-controls="getinspired">
+                                <h5>
+                                    <a href="">
+                                        Get Inspired
+                                    </a>
+                                    <span class="accord-expand"></span>
+                                </h5>
+                            </div>
+                            <div class="accordion-content custom-accordion-content" id="getinspired">
+                                <p class="p2">
+                                    Please contact us on 132 136&nbsp; to request access for
+                                    additional users.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="text-left accordion-title accordion-trigger" type="button" data-target="#aboutlaminex" aria-expanded="true" aria-controls="aboutlaminex">
+                                <h5>
+                                    <a href="">
+                                        About Laminex
+                                    </a>
+                                    <span class="accord-expand"></span>
+                                </h5>
+                            </div>
+                            <div class="accordion-content custom-accordion-content" id="aboutlaminex">
+                                <p class="p2">
+                                    Once you’ve submitted your order in Checkout, you will
+                                    see an order confirmation page. This confirms your order
+                                    has been sent for processing, and provides you with a
+                                    sales order number.&nbsp;You’ll also receive an email
+                                    confirmation (similar to what you receive when you order
+                                    over the phone).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="text-left accordion-title accordion-trigger" type="button" data-target="#support" aria-expanded="true" aria-controls="support">
+                                <h5>
+                                    <a href="">
+                                        Support
+                                    </a>
+                                    <span class="accord-expand"></span>
+                                </h5>
+                            </div>
+                            <div class="accordion-content custom-accordion-content" id="support">
+                                <p class="p2">
+                                    Once you’ve submitted your order in Checkout, you will
+                                    see an order confirmation page. This confirms your order
+                                    has been sent for processing, and provides you with a
+                                    sales order number.&nbsp;You’ll also receive an email
+                                    confirmation (similar to what you receive when you order
+                                    over the phone).
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
@@ -750,6 +1391,14 @@
         $(".tab-titles li").mouseover(function() {
             $(".tab-content").hide();
             $(".tab-titles li").removeClass('active');
+            $(this).addClass("active");
+            var selected_tab = $(this).find("a").attr("href");
+            $(selected_tab).stop().fadeIn();
+            return false;
+        });
+        $(".subtab-titles li").mouseover(function() {
+            $(".subtab-content").hide();
+            $(".subtab-titles li").removeClass('active');
             $(this).addClass("active");
             var selected_tab = $(this).find("a").attr("href");
             $(selected_tab).stop().fadeIn();
