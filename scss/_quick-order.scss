@@ -1,105 +1,109 @@
 .quick-order-container {
-  .item {
-    width: 18.6%;
-  }
-  .face {
-    width: 14.3%;
-    padding-right: 0.5625rem !important;
-
-    select,
-    .selecty {
-      width: 100%;
+  &.has-face {
+    .item {
+      width: 18.6%;
     }
-  }
-  .size {
-    width: 13.7%;
-  }
-  .thickness {
-    width: 9.5%;
-  }
+    .face {
+      width: 14.3%;
+      padding-right: 0.5625rem !important;
 
-  .project-name {
-    width: 11.1%;
-  }
-
-  .qty {
-    width: 10.6%;
-  }
-  .price {
-    width: 25.2%;
-  }
-
-  @media screen and (max-width: 1099.98px) {
-    .substrate {
-      &.substrate-not-desktop {
-        width: 50%;
+      select,
+      .selecty {
+        width: 100%;
       }
     }
-
-    .face {
-      width: 16.3%;
-    }
     .size {
-      width: 16.7%;
+      width: 13.7%;
     }
     .thickness {
-      width: 16.5%;
+      width: 9.5%;
     }
+
     .project-name {
-      width: 50%;
+      width: 11.1%;
+    }
+
+    .qty {
+      width: 10.6%;
     }
     .price {
-      width: 24.7% !important;
+      width: 25.2%;
+    }
+
+    @media screen and (max-width: 1099.98px) {
+      .substrate {
+        &.substrate-not-desktop {
+          width: 50%;
+        }
+      }
+
+      .face {
+        width: 16.3%;
+      }
+      .size {
+        width: 16.7%;
+      }
+      .thickness {
+        width: 16.5%;
+      }
+      .project-name {
+        width: 50%;
+      }
+      .price {
+        width: 24.7% !important;
+      }
     }
   }
 }
 
 .cart-container {
-  .face {
-    span {
-      padding-top: 0.7rem;
-      display: inline-block;
-      font-family: "Maison Neue";
-      font-weight: 500;
-      font-size: 0.8125rem;
-      line-height: 1.85;
-      letter-spacing: 1.3px;
+  &.has-face {
+    .face {
+      span {
+        padding-top: 0.7rem;
+        display: inline-block;
+        font-family: "Maison Neue";
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 1.85;
+        letter-spacing: 1.3px;
+      }
     }
-  }
 
-  .item {
-    width: 21.537%;
-  }
-  .description {
-    width: 20.208%;
-  }
-  .project-name {
-    width: 11.5%;
-  }
+    .item {
+      width: 21.537%;
+    }
+    .description {
+      width: 20.208%;
+    }
+    .project-name {
+      width: 11.5%;
+    }
 
-  @media screen and (max-width: 1099.98px) {
-    .cart-table-body {
-      .tbody {
-        .tr {
-          .td {
-            width: 25%;
+    @media screen and (max-width: 1099.98px) {
+      .cart-table-body {
+        .tbody {
+          .tr {
+            .td {
+              width: 25%;
+            }
           }
         }
       }
+      .qty,
+      .price {
+        width: 25% !important;
+      }
     }
-    .qty,
-    .price {
-      width: 25% !important;
-    }
-  }
 
-  @media screen and (max-width: 767px) {
-    .face {
-      width: 100% !important;
-    }
-    .qty,
-    .price {
-      width: 50% !important;
+    @media screen and (max-width: 767px) {
+      .face {
+        width: 100% !important;
+      }
+      .qty,
+      .price {
+        width: 50% !important;
+      }
     }
   }
 }
