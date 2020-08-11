@@ -115,7 +115,7 @@ For Your Home</a>
  <!-- Dropdown menu Desktop content -->
     <div class="siteHeader__nav--secondary" id="siteHeader__nav--secondary">
         <div class="desktop-view">
-        <div class="menu-content collapse" id="home-brands">
+        <div class="menu-content collapse" id="home-browse">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
@@ -135,17 +135,105 @@ For Your Home</a>
                                 <div class="col-md-2">
                                 <nav>
                                     <ul class="listing subtab-titles">
-                                        <li><a href="#tab-application">Application</a></li>
-                                        <li><a href="#tab-brand">Brand</a></li>
-                                        <li><a href="#tab-colour">Colour</a></li>
-                                        <li><a href="#tab-style">Style</a></li>
-                                        <li><a href="#tab-finish">Finish</a></li>
-                                        <li><a href="#tab-range">Range</a></li>
+                                        <li class="has-child active"><a href="#tab-application">Application</a></li>
+                                        <li class="has-child"><a href="#tab-brand">Brand</a></li>
+                                        <li class="has-child"><a href="#tab-colour">Colour</a></li>
+                                        <li class="has-child"><a href="#tab-style">Style</a></li>
+                                        <li class="has-child"><a href="#tab-finish">Finish</a></li>
+                                        <li class="has-child"><a href="#tab-range">Range</a></li>
                                     </ul>
                                 </nav>    
                                 </div>
-                                <div id="tab-application" class="col-md-10 subtab-content">
+                                <div id="tab-application" class="col-md-10 subtab-content" style="display: block;">
                                     <div class="row multiple-cols">
+                                        <!-- Use this when to show 4 cols, hide col-5 divs by adding class d-none on them -->
+                                        <div class="col-md-3">
+                                        <nav>
+                                            <ul class="listing">
+                                                <li class="has-thumbnails"><a href="javascript:;">
+                                                    <figure class="thumbnail"><img src="./images/thumbnail.jpg" /></figure>
+                                                    Material</a></li>
+                                                <li class="has-thumbnails"><a href="javascript:;"><figure class="thumbnail"><img src="./images/thumbnail.jpg" /></figure>Brand</a></li>
+                                                <li class="has-thumbnails"><a href="javascript:;"><figure class="thumbnail"><img src="./images/thumbnail.jpg" /></figure>Colour</a></li>
+                                                <li class="has-thumbnails"><a href="javascript:;"><figure class="thumbnail"><img src="./images/thumbnail.jpg" /></figure>Style</a></li>
+                                                <li class="has-thumbnails"><a href="javascript:;"><figure class="thumbnail"><img src="./images/thumbnail.jpg" /></figure>Finish</a></li>
+                                                <li class="has-thumbnails"><a href="javascript:;"><figure class="thumbnail"><img src="./images/thumbnail.jpg" /></figure>Range</a></li>
+                                            </ul>
+                                        </nav>    
+                                    </div>
+                                        <div class="col-md-3">
+                                            <nav>
+                                                <ul class="listing">
+                                                    <li><a href="javascript:;">Material</a></li>
+                                                    <li><a href="javascript:;">Brand</a></li>
+                                                    <li><a href="javascript:;">Colour</a></li>
+                                                    <li><a href="javascript:;">Style</a></li>
+                                                    <li><a href="javascript:;">Finish</a></li>
+                                                    <li><a href="javascript:;">Range</a></li>
+                                                </ul>
+                                            </nav>    
+                                        </div>
+                                        <div class="col-md-3">
+                                            <nav>
+                                                <ul class="listing">
+                                                    <li><a href="javascript:;">Material</a></li>
+                                                    <li><a href="javascript:;">Brand</a></li>
+                                                    <li><a href="javascript:;">Colour</a></li>
+                                                    <li><a href="javascript:;">Style</a></li>
+                                                    <li><a href="javascript:;">Finish</a></li>
+                                                    <li><a href="javascript:;">Range</a></li>
+                                                </ul>
+                                            </nav>    
+                                        </div>
+                                        <div class="col-md-3">
+                                            <nav>
+                                                <ul class="listing">
+                                                    <li><a href="javascript:;">Material</a></li>
+                                                    <li><a href="javascript:;">Brand</a></li>
+                                                    <li><a href="javascript:;">Colour</a></li>
+                                                    <li><a href="javascript:;">Style</a></li>
+                                                    <li><a href="javascript:;">Finish</a></li>
+                                                    <li><a class="view-all" href="javascript:;">+ View all</a></li>
+                                                </ul>
+                                            </nav>    
+                                        </div>
+                                    
+                                    
+                                    <!-- Use these divs with class col-md-5 with 2 image sections, then hide the uppder Div with class col-md-10 by adding class d-none -->
+                                    <div class="col-md-5 d-none">
+                                    <div class="card">
+                                    <div class="card-horizontal">
+                                    <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                    </div>
+                                    <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-5 d-none">
+                                    <div class="card">
+                                    <div class="card-horizontal">
+                                    <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                    </div>
+                                    <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                  
+                                </div>
+                               
+                               <!-- Sub tab content 2 -->
+                              <div id="tab-brand" class="col-md-10 subtab-content">
+                                    <div class="row multiple-cols">
+                                        <!-- Use this when to show 4 cols, hide col-5 divs by adding class d-none on them -->
                                         <div class="col-md-2">
                                         <nav>
                                             <ul class="listing">
@@ -158,57 +246,83 @@ For Your Home</a>
                                             </ul>
                                         </nav>    
                                     </div>
-                                        <div class="col-md-5">
-                            <div class="card">
-                                <div class="card-horizontal">
+                                     
+                                    <!-- Use these divs with class col-md-5 with 2 image sections, then hide the uppder Div with class col-md-10 by adding class d-none -->
+                                    <div class="col-md-5">
+                                    <div class="card">
+                                    <div class="card-horizontal">
                                     <div class="card-img">
-                                        <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
-                                        <a href="javascript:;">Brand name</a>
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                                        <div class="col-md-5">
-                            <div class="card">
-                                <div class="card-horizontal">
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                    <div class="card">
+                                    <div class="card-horizontal">
                                     <div class="card-img">
-                                        <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
-                                        <a href="javascript:;">Brand name</a>
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
                                     </div>
                                   
-                                </div>
+                              </div>
+                               
+                               <!-- Sub tab content 3 -->
+                               <div id="tab-colour" class="col-md-10 subtab-content">
+                                   Colour structure to be used as shown above
+                               </div>
+                               
+                               <!-- Sub tab content 4 -->
+                               <div id="tab-style" class="col-md-10 subtab-content">
+                                   Styles structure to be used as shown above
+                               </div>
+                               
+                               <!-- Sub tab content 5 -->
+                               <div id="tab-range" class="col-md-10 subtab-content">
+                                   Range structure to be used as shown above
+                               </div>
+                               
                             </div>
                         
                         </div>
 
                     <!-- Tab content 2 -->
                     <div id="tab2" class="col-md-10 tab-content">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row multiple-cols">
+                            <div class="col-md-3">
                                 <nav>
-                                    <ul class="listing d-flex flex-wrap">
-                                        <li class="col-6"><a href="javascript:;">Product typle 1</a></li>
-                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
-                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
-                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
-                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
-                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
-                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
-                                    </ul>
-                                </nav>
+                                <ul class="listing">
+                                    <li><a href="javascript:;">Material</a></li>
+                                    <li><a href="javascript:;">Brand</a></li>
+                                    <li><a href="javascript:;">Colour</a></li>
+                                    <li><a href="javascript:;">Style</a></li>
+                                    <li><a href="javascript:;">Finish</a></li>
+                                    <li><a href="javascript:;">Range</a></li>
+                                </ul>
+                            </nav>    
+                            </div>
+                            <div class="col-md-3">
+                                <nav>
+                                <ul class="listing">
+                                    <li><a href="javascript:;">Material 1</a></li>
+                                    <li><a href="javascript:;">Brand 1</a></li>
+                                    <li><a href="javascript:;">Colour 1</a></li>
+                                    <li><a href="javascript:;">Style 1</a></li>
+                                    <li><a href="javascript:;">Finish 1</a></li>
+                                    <li><a href="javascript:;">Range 1</a></li>
+                                </ul>
+                            </nav>    
                             </div>
                             <div class="col-md-5">
                                 <div class="card">
@@ -228,22 +342,31 @@ For Your Home</a>
 
                     <!-- Tab content 3 -->
                     <div id="tab3" class="col-md-10 tab-content">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row multiple-cols">
+                            <div class="col-md-2">
                                 <nav>
-                                    <ul class="listing col2 d-flex flex-wrap">
-                                        <li class="col-6"><a href="javascript:;">Color typle 1</a></li>
-                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
-                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
-                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
-                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
-                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
-                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
-                                    </ul>
-                                </nav>
+                                <ul class="listing">
+                                    <li><a href="javascript:;">Material</a></li>
+                                    <li><a href="javascript:;">Brand</a></li>
+                                    <li><a href="javascript:;">Colour</a></li>
+                                    <li><a href="javascript:;">Style</a></li>
+                                    <li><a href="javascript:;">Finish</a></li>
+                                    <li><a href="javascript:;">Range</a></li>
+                                </ul>
+                            </nav>    
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="card-img">
+                                            <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product description. Morbi tristique nibh dolor tincidunt</h4>
+                                            <a href="javascript:;">Product name</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="card">
@@ -264,21 +387,42 @@ For Your Home</a>
                     <!-- Tab content 4  -->
                     <div id="tab4" class="col-md-10 tab-content">
                         <div class="row">
-                            <div class="col-md-6">
-                                <nav>
-                                    <ul class="listing d-flex flex-wrap">
-                                        <li class="col-6"><a href="javascript:;">Application typle 1</a></li>
-                                        <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminex Laminate</a></li>
-                                        <li class="col-6"><a href="javascript:;">Melteca</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminex Fomica</a></li>
-                                        <li class="col-6"><a href="javascript:;">Seratone</a></li>
-                                        <li class="col-6"><a href="javascript:;">Caesarstone</a></li>
-                                        <li class="col-6"><a href="javascript:;">Strand by Laminex New Zealand</a></li>
-                                        <li class="col-6"><a href="javascript:;">Laminam</a></li>
-                                        <li class="col-6"><a href="javascript:;">Trade Essentials</a></li>
-                                    </ul>
-                                </nav>
+                           Same sturctures to be used here
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+</div>
+        
+        <!-- Brands link menu content -->    
+        <div class="menu-content collapse" id="home-brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav>
+                            <ul class="listing">
+                                <li><a class="" href="javascript:;">Laminex</a></li>
+                                <li><a href="javascript:;">Formica</a></li>
+                                <li><a href="javascript:;">Essastone</a></li>
+                                <li><a href="javascript:;">Trade Essential</a></li>
+                                <li><a href="javascript:;">Hi-Mac</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-5">
+                                <div class="card">
+                                    <div class="card-horizontal">
+                                        <div class="card-img">
+                                            <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product description. Morbi tristique nibh dolor tincidunt</h4>
+                                            <a href="javascript:;">Product name</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="card">
@@ -293,32 +437,11 @@ For Your Home</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                
-            </div>
-        </div>
-</div>
-        <div class="menu-content collapse" id="trade">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <nav>
-                            <ul class="listing">
-                                <li><a class="" href="javascript:;">Technical document</a></li>
-                                <li><a href="javascript:;">Technical and specification contacts</a></li>
-                                <li><a href="javascript:;">Warranty registration</a></li>
-                                <li><a href="javascript:;">Credit application</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
                 </div>
             </div>
         </div>
 
-        <div class="menu-content collapse" id="inspired">
+        <div class="menu-content collapse" id="home-inspiration">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
@@ -330,7 +453,18 @@ For Your Home</a>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-8 d-flex">
+                    <div class="col-md-10 d-flex">
+                        <div class="card">
+                            <div class="card-horizontal">
+                                <div class="card-img">
+                                    <img class="" src="./images/brand-placeholder.jpg" alt="Brand name">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum elit. Morbi tristique nibh dolor tincidunt</h4>
+                                    <a href="javascript:;">Brand name</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-horizontal">
                                 <div class="card-img">
