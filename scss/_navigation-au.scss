@@ -54,6 +54,29 @@
                 padding: 2rem 0 1rem;
                 .navbar-nav{
                     flex-direction: row;
+                    .nav-item{
+                        .nav-link{
+                            &:after{
+                                   font-family: 'font-icons-new' !important;
+                                    content: "\e00b";
+                                    display: inline;
+                                    vertical-align: middle;
+                                    font-size: smaller;
+                                line-height: 1.8;
+                                    margin-left:0.3125rem;
+                                position: absolute;
+                                left: auto;
+                                display: none;
+                                }
+                            &:hover{
+                                color: $link-color-new;
+                                border-bottom: none;
+                                &:after{
+                                   display: inline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -428,29 +451,29 @@
                 font-style: normal;
                 line-height: 1.43;
                 letter-spacing: normal;
-                color: $text-color;
+                color: $secondary-text-color;
                 padding-bottom: .375rem;
                 border-bottom: 2px solid transparent;
 
 
                 &:hover {
-                    color: $anchor-color-nz;
-                    border-bottom: 2px solid $anchor-color-nz;
+                    color: $link-color-new;
+                    border-bottom: 2px solid $link-color-new;
 
                 }
 
                 &.view-all {
-                    color: $anchor-color-nz;
+                    color: $link-color-new;
                 }
             }
 
-            margin-bottom: 0.875rem;
+            margin-bottom: 0.3125rem;
 
             &.active.has-child {
                 a {
                     position: relative;
                     width: 100%;
-                    color: $anchor-color-nz;
+                    color: $link-color-new;
 
                     &:hover {
                         border-bottom: 2px solid transparent;
@@ -464,11 +487,27 @@
                         content: "\e00a";
                         right: 0;
                         top: 50%;
-                        -webkit-transform: translateY(-50%);
-                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-75%);
+                        transform: translateY(-75%);
                     }
                 }
             }
+            &.has-thumbnails{
+                position: relative;
+                padding-left: 2.5rem;
+                a{
+                    padding-top:.375rem;
+                }
+            
+            .thumbnail{
+                width:33px;
+                height:33px;
+                position:absolute;
+                top:0;
+                left: 0;
+            }
+        }
+            
         }
 
     }
@@ -482,7 +521,10 @@
         background: none;
         border: none;
         border-radius: 0;
-        padding-right: 2rem;
+        
+        @media screen and (min-width:1100px) {
+                    padding-right: 2rem;
+                }
 
         .card-horizontal {
             display: flex;
@@ -490,10 +532,11 @@
 
             .card-img {
                 margin: 0 1.3125rem 0 1.5rem;
-                flex: 0 0 107px;
+                max-width: 107px;
 
                 @media screen and (min-width:960px) {
-                    flex: 0 0 135px;
+                    flex: 0 0 33%;
+                    max-width: 135px;
                 }
 
                 img {
@@ -587,7 +630,7 @@
                     }
 
                     a:hover {
-                        color: $anchor-color-nz;
+                        color: $link-color-new;
                     }
 
                 }
@@ -598,12 +641,12 @@
                     background-color: $quicklinks-bgNZ;
 
                     h5 > a {
-                        color: $anchor-color-nz;
+                        color: $link-color-new;
                     }
 
                     & > .accordion-trigger {
                         .accord-expand {
-                            color: $anchor-color-nz;
+                            color: $link-color-new;
 
                             &:after {
                                 content: "\e00b";
@@ -619,7 +662,7 @@
                     .accordion-item {
                         &.active {
                             h6 > a {
-                                color: $anchor-color-nz;
+                                color: $link-color-new;
                             }
                         }
 
@@ -672,7 +715,7 @@
 
 
     /* inner tab styles*/
-    .tab-content {
+    .tab-content, .subtab-content {
         margin: 0;
         display: none;
     }
