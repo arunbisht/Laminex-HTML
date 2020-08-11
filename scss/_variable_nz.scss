@@ -5,7 +5,7 @@ $text-color: #454849 !default;
 $secondary-text-color: #3b3c40 !default;
 $link-color-new: #5c7561 !default;
 $link-color-light: #858e81 !default;
-$anchor-color: #5c7561 !default;
+$anchor-color: #507035 !default;
 $anchor-color-nz: #5c7561 !default;
 $danger-color: #d0021b !default;
 $style-palette-peach: #f3f4f2 !default;
@@ -67,7 +67,7 @@ $new-tag-color-text-color: #403d3b !default;
 $new-tag-color-altbg-color: #e1e4e0 !default;
 $new-tag-border-color: #ced2cb !default;
 
-$search-border-color: #c6a590 !default;
+$search-border-color: #a5be9b !default;
 $search-placeholder-text-color: $link-color-light !default;
 $search-result-text-color: #5f6263 !default;
 $search-result-product-bg-color: #fafafa !default;
@@ -101,9 +101,12 @@ $search-filter-item-gutter-space: 6px !default;
 $search-filter-item-btn-width: 116px !default;
 $search-filter-item-size-width: 90px !default;
 $search-filter-item-meta-width: 182px !default;
+$search-filter-nz-item-meta-width: 211px !default;
 /* Formica brand styles */
 $brand-theme-color: #ff0000;
 $brand-banner-bg: #f5f5f5;
 $brand-button-bg: #f5f5f5;
 
 $white-tooltip-border-color: #d4bbad !default;
+
+$no-result-found-font-size: 0.875rem !default;
