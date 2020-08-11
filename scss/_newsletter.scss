@@ -24,6 +24,10 @@
 .home-newsletter-content-col {
   @media screen and (min-width: 768px) {
     padding-left: 8.3333333333%;
+
+    .right-img & {
+      padding-left: 0;
+    }
   }
 }
 .home-newsletter-content-wrapper {
