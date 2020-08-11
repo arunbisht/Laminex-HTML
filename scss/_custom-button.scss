@@ -140,7 +140,7 @@ a:not(.btn) {
 
 .btn--micro,
 .btn--micro {
-  .btn-secondary {
+  &.btn-secondary {
     &:hover,
     &:focus {
       color: #fff !important;
