@@ -23,6 +23,13 @@
         &:-moz-placeholder {
           color: $search-placeholder-text-color;
         }
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+          display: none;
+        }
       }
     }
 
@@ -35,7 +42,7 @@
       padding: 0.688rem;
       border-radius: 3px;
       height: auto;
-      max-height: 65vh;
+      max-height: 45vh;
       overflow: auto;
 
       @media screen and (max-width: 767px) {
@@ -124,26 +131,27 @@
       }
     }
 
-    .invalid-search {
+    .no-product-found {
       clear: both;
       background-color: #ffffff;
-      box-shadow: 0 2px 4px 0 $accordion-border-color;
-      border-radius: 3px;
-      padding: 1.563rem 1.188rem;
-      font-family: "BrownStd New", sans-serif;
-      line-height: 1.43;
-      font-size: 0.875rem;
-      color: $secondary-text-color;
-      font-weight: bold;
+      // box-shadow: 0 2px 4px 0 $accordion-border-color;
+      // border-radius: 3px;
+      // padding: 1.563rem 1.188rem;
+      // font-family: "BrownStd New", sans-serif;
 
       a {
         color: $link-color-new;
         border-bottom: 1px dotted $link-color-new;
       }
 
-      .invalid-search-icon {
+      .no-product-found-icon,
+      > div:before {
         width: 25px;
         height: 25px;
+        font-size: 1.5625rem !important;
+        top: 4px !important;
+        color: $secondary-text-color !important;
+        opacity: 1 !important;
       }
     }
   }
@@ -368,4 +376,8 @@
       }
     }
   }
+}
+
+.page-wrapper .chapter .swatch-tiles__list li .swatch-tiles__body-top h4 {
+  word-break: break-word;
 }

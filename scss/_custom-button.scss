@@ -137,3 +137,13 @@ a:not(.btn) {
     }
   }
 }
+
+.btn--micro,
+.btn--micro {
+  .btn-secondary {
+    &:hover,
+    &:focus {
+      color: #fff !important;
+    }
+  }
+}
