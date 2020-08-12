@@ -4,7 +4,9 @@
   }
 
   .the-forecast-artile-wrappers {
-    width: 100%;
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
   }
 
   .title-wrapper {
