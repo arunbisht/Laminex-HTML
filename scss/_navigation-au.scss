@@ -382,7 +382,7 @@
     }
 
     .siteHeader__nav--secondary {
-        background: #f3f4f2;
+        background: $menucontent-bg;
         position: fixed;
         width: 100%;
         z-index: 1030;
@@ -521,9 +521,9 @@
         background: none;
         border: none;
         border-radius: 0;
-        
+        padding-right: 1rem;
         @media screen and (min-width:1100px) {
-                    padding-right: 2rem;
+                    padding-right: 4rem;
                 }
 
         .card-horizontal {
@@ -597,6 +597,18 @@
                         margin: 0;
                         cursor: default;
                     }
+                    h5{
+                        font-size: 1.125rem;
+                        line-height: 1.33;
+                        a{
+                            color: $text-color;
+                        }
+                    }
+                    h6{
+                            a{
+                                color: $secondary-text-color;
+                            }
+                        }
 
                     &:after {
                         content: "\e008";
@@ -628,18 +640,20 @@
                             line-height: 1.7rem;
                         }
                     }
-
-                    a:hover {
+                    a{
+                        border: none;
+                        &:hover {
                         color: $link-color-new;
                     }
+                    }
+                    
 
                 }
             }
 
             .accordion-item {
                 &.active {
-                    background-color: $quicklinks-bgNZ;
-
+                    
                     h5 > a {
                         color: $link-color-new;
                     }
@@ -657,6 +671,9 @@
 
 
                 .sub-content {
+                    h5{
+                        text-decoration: none;
+                    }
 
                     /* styles for inner accordion */
                     .accordion-item {
@@ -672,6 +689,14 @@
 
                         &:last-child {
                             border-bottom: none;
+                        }
+                    }
+                    .row{
+                        div[class*="col-"] {
+                            border:none;
+                        ul{
+                            margin-left: 0;
+                        }
                         }
                     }
                 }
@@ -706,7 +731,7 @@
                 &:nth-child(even) {
 
                     @media screen and (max-width:767px) {
-                        padding-left: 1.5rem;
+                       
                     }
                 }
             }

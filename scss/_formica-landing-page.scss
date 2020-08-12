@@ -39,6 +39,13 @@
             line-height: 1.5;
         }
     }
+    /* Common theme styles for all themes*/
+    .theme-banner{
+        .h3{
+        font-size: 3rem;
+        margin-bottom: 1.25rem;
+        }
+    }
 }
 
 .brand-theme {
@@ -136,18 +143,18 @@
         }
     }
 
-    .home-newsletter-wrapper {
-        .home-newsletter-media-wrapper {
+    .theme-wrapper {
+        .theme-media-wrapper {
             margin: 0;
         }
 
-        .home-newsletter-content-col {
+        .theme-content-wrapper {
             @media screen and (min-width:768px) {
                 padding-right: 8.3333333333%;
             }
         }
 
-        .home-newsletter-content-wrapper {
+        .theme-content {
 
             padding: 1.75rem;
             text-align: center;
