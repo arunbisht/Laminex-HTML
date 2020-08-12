@@ -62,10 +62,18 @@ $zen-text-color: $text-color !default;
 
 $inspiration-media-bg-color: #f8f5f1 !default;
 $inspiration-nav-text-color: #906549 !default;
-$new-tag-color: #9ea498 !default;
-$new-tag-color-text-color: #403d3b !default;
-$new-tag-color-altbg-color: #e1e4e0 !default;
-$new-tag-border-color: #ced2cb !default;
+$new-tag-color: $link-color-new !default;
+$new-tag-color-text-color: #fff !default;
+$new-tag-color-altbg-color: $link-color-new !default;
+$new-tag-border-color: $link-color-new !default;
+$page-tags-border-radius: 0 !default;
+$page-tags-font-family: "Brown Std New", sans-serif !default;
+$page-tags-font-weight: bold !default;
+$page-tags-text-transform: uppercase !default;
+$page-trend-tag-text-color: #403d3b !default;
+$page-trend-tag-bg-color: #e1e4e0 !default;
+$page-viewmor-tag-text-color: $new-tag-color-altbg-color !default;
+$page-tags-text-color: $natural-text-color !default;
 
 $search-border-color: #a5be9b !default;
 $search-placeholder-text-color: $link-color-light !default;
@@ -110,3 +118,4 @@ $brand-button-bg: #f5f5f5;
 $white-tooltip-border-color: #d4bbad !default;
 
 $no-result-found-font-size: 0.875rem !default;
+$menucontent-bg: #faf8f6;

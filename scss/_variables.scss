@@ -62,10 +62,18 @@ $zen-text-color: $text-color !default;
 
 $inspiration-media-bg-color: #f8f5f1 !default;
 $inspiration-nav-text-color: #906549 !default;
-$new-tag-color: #9ea498 !default;
+$new-tag-color: #e1e4e0 !default;
 $new-tag-color-text-color: #403d3b !default;
 $new-tag-color-altbg-color: #e1e4e0 !default;
 $new-tag-border-color: #ced2cb !default;
+$page-tags-border-radius: 4px !default;
+$page-tags-font-family: "Maison Neue", sans-serif !default;
+$page-tags-font-weight: 500 !default;
+$page-tags-text-transform: normal !default;
+$page-trend-tag-text-color: $link-color-new !default;
+$page-trend-tag-bg-color: $primary-color !default;
+$page-viewmor-tag-text-color: $new-tag-color-text-color !default;
+$page-tags-text-color: $secondary-text-color !default;
 
 $search-border-color: #c6a590 !default;
 $search-placeholder-text-color: $link-color-light !default;
@@ -111,4 +119,3 @@ $white-tooltip-border-color: #d4bbad !default;
 
 $no-result-found-font-size: 1.125rem !default;
 $menucontent-bg: #faf8f6;
-
