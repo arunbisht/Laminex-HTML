@@ -92,15 +92,17 @@
 .inspiration-content-wrapper {
   background-color: #fff;
   color: $secondary-text-color;
+  width: 100%;
+
   @media screen and (min-width: 960px) {
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
   }
 
   .media-wrapper,
   .detail-wrapper {
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
 
   .media-wrapper {
