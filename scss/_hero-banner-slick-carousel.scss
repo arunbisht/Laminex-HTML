@@ -9,6 +9,11 @@
     background-color: transparent;
   }
 
+  &.white-bg {
+    background-color: #ffffff;
+    color: $secondary-text-color;
+  }
+
   &.light-grey-bg {
     background-color: $blog-hero-banner-slick-carousel-bg-color;
   }
