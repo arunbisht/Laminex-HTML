@@ -25,10 +25,12 @@
         $(document).ready(function(){
         $('.dropdown-toggle').click(function(){
             $(this).parent('.select-dropdown').toggleClass('open');
+            $('.select-dropdown-menu').slideToggle();
         });
-    $(".select-dropdown a").click(function(){
+    $(".select-dropdown-menu a").click(function(){
   var selText = $(this).text();
-  $(this).parents('.select-dropdown').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+  $(this).parents('.select-dropdown').find('.dropdown-toggle').text(selText);
+        $('.select-dropdown-menu').slideToggle();
 });
              });
     </script>
@@ -38,8 +40,8 @@
 </head>
 
 <body class="primary-navmenu-au">
-   
-<header>  
+    
+<header class="sticky">  
  <div class="container">
 <div class="row">
     
@@ -52,33 +54,38 @@
 </div>
             
 <!-- Header Right on Top -->         
-<div class="header-right col-md-10 col-lg-9 col-9">
+<div class="header-right">
 <div class="header-top clearfix">
-<ul>
-<li>
-    <a href="/login"> <i class="icon-new--hammer" title="Trade"></i>Trade</a>
-</li>
-<li>
-    <a href="/login"> <i class="icon-new--compass" title="Specifier"></i>
-Specifier</a>
-</li>
-<li class="active-header">
-    <a href="/login"> <i class="icon--user" title="For Your Home"></i>
-For Your Home</a>
-</li>
-</ul>
+    <div class="select-dropdown">
+    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    For Your Home
+    </button>
+    <ul class="select-dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li>
+    <a class="select-dropdown-item" href="javascript:;"><i class="icon-new--hammer" title="Trade"></i>Trade</a>
+    </li>
+    <li>
+    <a class="select-dropdown-item" href="javascript:;"><i class="icon-new--compass" title="Specifier"></i>
+    Specifier</a>
+    </li>
+    <li class="">
+    <a class="select-dropdown-item" href="javascript:;"><i class="icon-new--user" title="For Your Home"></i>
+    For Your Home</a>
+    </li>
+    </ul>
+    </div>
 </div>
 
 </div>
     
 <!-- Primary menu links -->
-<div class="prime-nav header-right col-sm-12">
+<div class="prime-nav header-right col">
 <div class="header-bottom">
 <nav class="navbar navbar-expand-md navbar-light">
 <div class="navbar-collapse collapse show" id="navbarNav" style="">
 <ul class="navbar-nav digimeg-group digimeg-main-nav">
 <li class="nav-item">
-<a href="/browse" data-subnav="home-inspiration" class="nav-link digimeg-nav-item">Inspiration</a>
+<a href="#" data-subnav="home-inspiration" class="nav-link digimeg-nav-item">Inspiration</a>
 </li>
 <li class="nav-item">
 <a href="#" data-subnav="home-howto" class="nav-link digimeg-nav-item">How To</a>
@@ -98,20 +105,19 @@ For Your Home</a>
     <a href="#" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation" class=""><i class="icon-new--menu"></i></a>
 </li>
 <li class="user-icon logout-li">
-    <a href="/login"><i class="icon-new--user" title="Login to My Account"></i>Join/Login</a>
+    <a href="/login"><i class="icon-new--user" title="Login to My Account"></i><span>Join/Login</span></a>
 </li>
-<li class="cartIcon product-detail-mini-cart sample">
+<li class="cart-icon">
     <a href="/cart/sample" class="unset-text">
     <i class="siteHeader-Swatch icon-new--sample-basket"></i>      
     </a>
 </li>
-<input type="hidden" value="/cart/miniCart/SUBTOTAL" class="refreshMiniCartUrl">
-<li>
-    <a href="https://www.laminex.com.au/locator-tool" data-linkname="Store Locator Icon" target="_blank"> 
+<li class="location-icon">
+    <a href="javascript:;" data-linkname="Store Locator Icon" target="_blank"> 
     <i class="icon-new--location" title="Find a Location"></i>
     </a>
 </li>
-<li class="search">
+<li class="search-icon">
     <a href="#" class="product-search-toggle"><i class="icon-new--search" title="Search for products or content"></i></a>
 </li>
 </ul>
@@ -830,7 +836,9 @@ For Your Home</a>
     </div>   
     </header>
     
+ 
     
+    <p>dummy text<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>
     
     
     
