@@ -1,3 +1,59 @@
+.select-dropdown{
+    position: relative;
+    .dropdown-toggle{
+        font-family: "Brown Std New";
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 1.4px;
+    text-align: left;
+    color: #827167;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+        border:none;
+        background: none;
+        &:after{
+            font-family: 'font-icons-new' !important;
+            content: "\e008";
+            border: none;
+            display: inline;
+        }
+    }
+    @media screen and (max-width:960px){
+        position: relative;
+    float: right;
+    max-width: 300px;
+    }
+    
+    .dropdown-toggle{
+        display: block;
+        @media screen and (max-width:768px){
+            display: none;
+        }
+        @media screen and (min-width:960px){
+            display: none;
+        }
+    }
+    .select-dropdown-menu{
+        z-index: 1050;
+       
+        @media screen and (min-width:960px){
+            display: block;
+            position: static;
+            border: none;
+        }
+        li{
+            @media screen and (max-width:960px){
+                margin: 0!important;
+            float: none!important;
+            }
+            a{
+                float: none!important;
+                display: block;
+            }
+        }
+    }
+}
 .primary-navmenu-au {
 
     [class*="icon-new"] {
@@ -13,6 +69,7 @@
 
         &:before {
             font-family: 'font-icons-new' !important;
+            vertical-align: middle;
         }
 
         span {
@@ -20,13 +77,101 @@
         }
 
     }
+    /* Styles with Sticky header */
+    header.sticky{
+        .row{
+            justify-content: space-between;
+        }
+        .header-left{
+            margin-right: auto;
+        }
+        .header-bottom{
+            justify-content: flex-end!important;
+        }
+        .navbar-nav{
+            padding:0!important;
+            .nav-item{
+                padding-right: 3.125rem;
+                &:last-child{
+                    padding-right: 0.8rem;
+                }
+            }
+        }
+        .header-right{
+            order:2;
+        }
+        .prime-nav{
+            width:auto;
+            order:1;
+        }
+        .header-top{
+            display: block;
+            
+        }
+        .select-dropdown {
+            padding-left:1.875rem;
+            border-left:1px solid #d5d5d5;
+            .dropdown-toggle{
+                display: block;
+            }
+            .select-dropdown-menu{
+                background: $bg-white;
+                display: none;
+                padding: 0;
+                 border:1px solid rgba(0,0,0,.15);
+                position: absolute;
+                li{
+                    float: none;
+                    margin:0;
+                    border-top:1px solid $listing-border;
+                    &:first-child{
+                        border-top: 0;
+                    }
+                    a{
+                        padding:0.625rem 1rem;
+                        &:hover{
+                            border-bottom-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .header-cart-section{
+            li{
+                a{
+                    span{
+                        display: none;
+                    }
+                }
+                &.location-icon{
+                    display: none!important;
+                }
+                &.user-icon{
+                    i{
+                       display: block!important; 
+                    }
+                }
+            }
+        }
+    }
     .header-right{
+        margin-left: auto;
+        padding:0 1rem;
         &.prime-nav{
+            width:100%;
+            @media screen and (max-width:768px){
+            order:2;
+        }
+            
             .header-bottom{
                 flex-direction:row;
                 justify-content: space-between;
+                @media screen and (max-width:768px){
+                    flex-direction: row-reverse;
+                    width: 100%;
+                }
                 .header-cart-section{
-            padding-top: 1rem;
+            padding-top: 0.3125rem;
                     li{
                         display: flex;
                         align-items: center;
@@ -99,6 +244,18 @@
                 }
             }
             }
+        @media screen and (max-width:768px){
+            order:0;
+            margin: 0;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+    .header-left{
+        @media screen and (max-width:768px){
+            order:1;
+
+        }
     }
     .logo{
         margin-top: 1.875rem;
@@ -714,6 +871,7 @@
             border-top: 2px solid $accordion-border-color;
             padding: 1.875rem 0;
             margin-top: 0.6875rem;
+            width: 100%;
 
             .card {
                 @media screen and (max-width:767px) {

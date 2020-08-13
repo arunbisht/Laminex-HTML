@@ -4,9 +4,7 @@
 }
 
 .brand-page {
-    font-family: "Helvetica Neue";
-    font-weight: 400;
-
+   
     .navbar {
         padding: 0;
         float: none;
@@ -39,25 +37,20 @@
             line-height: 1.5;
         }
     }
-    /* Common theme styles for all themes*/
-    .theme-banner{
-        .h3{
-        font-size: 3rem;
-        margin-bottom: 1.25rem;
-        }
-    }
 }
 
 .brand-theme {
-    color: $text-black;
 
     &.formica {
+         font-family: "Helvetica Neue";
+         color: $text-black;
+         font-weight: 400;
+
         .theme-header {
             background: $brand-theme-color;
         }
 
-        .title,
-        .browse-product-title {
+        h1,h2,h3,h4,h5,h6 {
             color: $brand-theme-color;
         }
 
@@ -143,18 +136,18 @@
         }
     }
 
-    .theme-wrapper {
-        .theme-media-wrapper {
+    .home-newsletter-wrapper {
+        .home-newsletter-media-wrapper {
             margin: 0;
         }
 
-        .theme-content-wrapper {
+        .home-newsletter-content-col {
             @media screen and (min-width:768px) {
                 padding-right: 8.3333333333%;
             }
         }
 
-        .theme-content {
+        .home-newsletter-content-wrapper {
 
             padding: 1.75rem;
             text-align: center;
