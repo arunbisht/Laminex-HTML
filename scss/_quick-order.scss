@@ -110,8 +110,8 @@
 
 .white-tooltip-wrapper {
   .tooltip-inner {
-    border-color: $white-tooltip-border-color;
-    background-color: #fff;
+    border-color: $white-tooltip-border-color !important;
+    background-color: #fff !important;
   }
 
   .bs-tooltip-bottom,
@@ -126,5 +126,86 @@
   .tooltip-trigger {
     font-size: 1rem;
     vertical-align: middle;
+  }
+}
+
+.checkout-container {
+  .checkout-content {
+    .checkout-summary-container {
+      .checkout-summary-content {
+        .dlvry-from-wrapper {
+          ul.product-desc {
+            li {
+              float: none;
+              position: relative;
+
+              .item {
+                float: none;
+                width: 100%;
+                padding-left: 3.4375rem;
+
+                img {
+                  float: none;
+                  position: absolute;
+                  left: 0;
+                  top: 1.22rem;
+                }
+
+                .prod-desc {
+                  float: none;
+                  width: 100%;
+                  margin-left: 0;
+
+                  .prod-name,
+                  .product-code,
+                  .product-size {
+                    padding-right: calc(27% + 2rem);
+                  }
+
+                  .proj-qty-wrapper,
+                  .proj-face-wrapper {
+                    width: auto;
+                    float: none;
+                    margin: 0;
+                    line-height: 1;
+                    display: inline-block;
+                  }
+                  .qty {
+                    width: 100%;
+                  }
+
+                  .face,
+                  .project {
+                    font-size: 0.812rem;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 1.85;
+                    letter-spacing: 1.3px;
+                    text-align: left;
+                    color: #3b3c40;
+                    display: inline-block;
+                    float: none;
+                  }
+
+                  .product-size {
+                    @media screen and (max-width: 1099.98px) {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+
+              .price {
+                position: absolute;
+                float: none;
+                width: 27%;
+                top: 1.22rem;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

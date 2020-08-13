@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/captcha_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/all_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/laminex_responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/addons_responsive.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/mediaelementplayer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./css/common.css"
+    />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <script type="text/javascript">
+      var dataLayer = [];
+    </script>
+
+    <script type="text/javascript">
+      function trackAddToCart(products) {
+        dataLayer.push({
+          event: "addToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSampleAddToCart(products) {
+        dataLayer.push({
+          event: "sampleAddToCart",
+          ecommerce: {
+            add: {
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackOrderSummaryClick(orderStatus) {
+        dataLayer.push({
+          event: "checkOrder",
+          orderStatus: orderStatus,
+        });
+      }
+
+      function trackUserLoggedIn(userStatus) {
+        dataLayer.push({
+          loggedInStatus: userStatus,
+        });
+      }
+
+      function trackPhoneNoClick(userStatus) {}
+
+      function trackRegisterLoginClick(userStatus) {
+        dataLayer.push({
+          event: "accountAction",
+          accountAction: userStatus,
+        });
+      }
+
+      function trackSampleOrderClick(products, range) {
+        dataLayer.push({
+          event: "sampleProductClick",
+          ecommerce: {
+            click: {
+              actionField: { list: range },
+              products: products,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalRegistration(aboutMe) {
+        dataLayer.push({
+          event: "signUpButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              aboutMe: aboutMe,
+            },
+          },
+        });
+      }
+
+      function trackSignupModalSkip() {
+        dataLayer.push({
+          event: "skipButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackSignupModalLogin() {
+        dataLayer.push({
+          event: "signInButtonClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackRemoveCart(
+        entryProductCode,
+        entryProductName,
+        entryProductPrice,
+        entryInitialQuantity,
+        entrySkuCode
+      ) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode, //string
+                  name: entryProductName, //string
+                  price: entryProductPrice, //currency
+                  quantity: entryInitialQuantity, //number
+                  sku: entrySkuCode,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveFullCart(cartData) {
+        dataLayer.push({
+          event: "removeFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleCart(
+        entryProductCode,
+        entryProductName,
+        entryProductBrand,
+        entryProductPrice,
+        entryInitialQuantity,
+        entryProductCategory,
+        entrySkuCode,
+        entryProductColor,
+        entryProductFinish,
+        entryProductSize,
+        entryProductStock,
+        dimension10
+      ) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [
+                {
+                  id: entryProductCode,
+                  name: entryProductName,
+                  brand: entryProductBrand,
+                  price: entryProductPrice,
+                  quantity: entryInitialQuantity,
+                  category: entryProductCategory,
+                  variant: "",
+                  coupon: "",
+                  position: "",
+                  dimension2: entrySkuCode,
+                  dimension3: entryProductColor,
+                  dimension4: entryProductFinish,
+                  dimension5: entryProductSize,
+                  dimension6: "",
+                  dimension7: entryProductStock,
+                  dimension9: "sample",
+                  dimension10: dimension10,
+                },
+              ],
+            },
+          },
+        });
+      }
+
+      function trackRemoveSampleFullCart(cartData) {
+        dataLayer.push({
+          event: "sampleRemoveFromCart",
+          ecommerce: {
+            remove: {
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackProductClick(
+        productCode,
+        productName,
+        productBrand,
+        productQuantity,
+        productRange,
+        substrate,
+        position,
+        sku,
+        productColour,
+        productFinish,
+        sheetSize,
+        thickness
+      ) {
+        dataLayer.push({
+          event: "productClick",
+          ecommerce: {
+            click: {
+              actionField: {
+                list: "",
+                products: [
+                  {
+                    id: productCode,
+                    name: productName,
+                    brand: productBrand,
+                    price: "0",
+                    quantity: productQuantity,
+                    category: productRange,
+                    variant: substrate,
+                    coupon: "",
+                    position: position,
+                    dimension2: sku,
+                    dimension3: productColour,
+                    dimension4: productFinish,
+                    dimension5: sheetSize,
+                    dimension6: thickness,
+                  },
+                ],
+              },
+            },
+          },
+        });
+      }
+
+      function trackExternalSiteLinkClick(href, title) {
+        dataLayer.push({
+          event: "externalLink",
+          "data-component": "external site link", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": title,
+          elementUrl: href, //within the built-in settings of GTM this is the name of the existing variable
+        });
+      }
+
+      function trackNavigationLinkClick(navigationLabel) {
+        dataLayer.push({
+          event: "navigation",
+          "data-component": "navigation", //could we please keep this data component type in here as this helps us to label the site properly
+          "data-component-context": navigationLabel,
+          "data-label": navigationLabel,
+        });
+      }
+
+      function trackUserDetails() {
+        dataLayer.push({
+          event: "navigationLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+            },
+          },
+        });
+      }
+
+      function trackInternalSiteLinkClick(href) {
+        dataLayer.push({
+          event: "internalSiteLinkClick",
+          ecommerce: {
+            click: {
+              actionField: { list: "Not Applicable" }, // Not Applicable
+              url: href,
+            },
+          },
+        });
+      }
+
+      function trackOnlineChatUsage(interactionType) {
+        dataLayer.push({
+          event: "onlineChat",
+          chatInteraction: interactionType,
+        });
+      }
+
+      function trackCheckoutSteps() {
+        dataLayer.push({
+          event: "checkout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+
+      function trackSampleCheckoutSteps() {
+        dataLayer.push({
+          event: "sampleCheckout",
+          ecommerce: {
+            checkout: {
+              actionField: {
+                step: "Step 1",
+              },
+              products: [],
+            },
+          },
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="checkout-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="checkout-content">
+              <a href="/cart" class="back-btn"
+                ><i class="icon--arrow-small-right"></i> Back to Cart</a
+              >
+
+              <div class="checkout-error">
+                <input
+                  type="hidden"
+                  value="false"
+                  name="redirectDisable"
+                  id="redirectDisable"
+                />
+              </div>
+              <div class="row checkout-row">
+                <div class="col-8 checkout-left-container">
+                  <div class="checkout-left-inner-content">
+                    <form
+                      id="placeOrderForm1"
+                      onkeypress="return event.keyCode != 13;"
+                      action="/checkout/single/initPayment"
+                      method="post"
+                    >
+                      <div class="project-reference">
+                        <h4>
+                          Project reference
+                        </h4>
+                        <div class="order-reference">
+                          <label for="orderReference">Order reference</label>
+                          <input
+                            id="orderReference"
+                            name="orderReference"
+                            class="form-control"
+                            type="text"
+                            value=""
+                            maxlength="15"
+                          />
+                          <p class="error-msg">
+                            <span
+                              class="empty-order-reference-error"
+                              style="display: none;"
+                              >Please enter the order reference number to submit
+                              the order.</span
+                            >
+                          </p>
+                        </div>
+                        <div class="project-code-wrapper">
+                          <div class="project-code">
+                            <label for="projectCode">Project code</label>
+                            <input
+                              type="text"
+                              class="form-control ui-autocomplete-input"
+                              id="projectCode"
+                              autocomplete="off"
+                            />
+                            <i class="icon--chevron-small-down"></i>
+                            <ul
+                              id="ui-id-2"
+                              tabindex="0"
+                              class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+                              style="display: none;"
+                            ></ul>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-secondary apply-discount-code"
+                          >
+                            Apply
+                          </button>
+                          <span
+                            class="project-reference-tooltip"
+                            data-toggle="tooltip"
+                            data-html="true"
+                            data-placement="bottom"
+                            data-original-title="Project codes are used to apply pre-arranged project pricing to your order. If you’re using a project code, keep in mind only one can be used per order and that there must be products within the order that the code can be applied to. To change the project code simply enter a new code and reapply to the cart or if you need further information please <a href=https://www.laminex.com.au/about-laminex/contact-us target=_blank>contact us</a>."
+                            ><i class="icon--help"></i
+                          ></span>
+                          <p class="error-msg">
+                            <span
+                              class="no-discount-code-error"
+                              style="display: none;"
+                              >Code not entered, please enter a code or
+                              <a
+                                href="https://www.laminex.com.au/about-laminex/contact-us"
+                                target="_blank"
+                                >contact us</a
+                              ></span
+                            >
+                            <span
+                              class="invalid-discount-code-error"
+                              style="display: none;"
+                              >Code provided is not valid, please enter only
+                              numbers, or
+                              <a
+                                href="https://www.laminex.com.au/about-laminex/contact-us"
+                                target="_blank"
+                                >contact us</a
+                              ></span
+                            >
+                            <span
+                              class="size-discount-code-error"
+                              style="display: none;"
+                              >You entered an invalid code, please select it
+                              from the list of predefined codes.</span
+                            ><span
+                              class="discount-code-message"
+                              style="display: none;"
+                            ></span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="pickup-address shipping-address">
+                        <h4>
+                          Pick up address
+                        </h4>
+                        <div class="select-address-wrapper">
+                          <div class="select-address">
+                            <label>Select address</label>
+                            <input
+                              id="selectedAddress"
+                              name="selectedAddressId"
+                              type="hidden"
+                              value="949"
+                            /><select
+                              id="delivery-address"
+                              style="display: none;"
+                            >
+                              <option class="address" value="949"
+                                >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
+                                PEMULWUY NSW, 2145</option
+                              >
+                              <option class="address" value="967"
+                                >Pickup: LMX Townsville, QLD, 14-28 Corporate
+                                Crescent, GARBUTT QLD, 4814</option
+                              >
+                              <option class="address" value="992"
+                                >Pickup: LMX Melbourne DC, VIC, 130 Sharps Road,
+                                MELBOURNE AIRPORT VIC, 3045</option
+                              >
+                            </select>
+                            <div class="selecty">
+                              <a class="selecty-selected"
+                                >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
+                                PEMULWUY NSW, 2145</a
+                              >
+                              <ul class="selecty-options">
+                                <li
+                                  data-value="949"
+                                  data-index="0"
+                                  class="selected"
+                                >
+                                  Pickup: LMX Sydney DC, NSW, 2 Foundation
+                                  Place, PEMULWUY NSW, 2145
+                                </li>
+                                <li data-value="967" data-index="1" class="">
+                                  Pickup: LMX Townsville, QLD, 14-28 Corporate
+                                  Crescent, GARBUTT QLD, 4814
+                                </li>
+                                <li data-value="992" data-index="2" class="">
+                                  Pickup: LMX Melbourne DC, VIC, 130 Sharps
+                                  Road, MELBOURNE AIRPORT VIC, 3045
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="change-address">
+                          <div class="change-address-link">
+                            <a href="/cart?editPaymentMethod=true"
+                              >Change delivery method</a
+                            >
+                          </div>
+                          <div class="change-address-alert">
+                            <i class="icon--alert"></i>
+                            <p>
+                              Please be aware that if the pick up address is
+                              changes, it will be
+                              <b>applied to all items in your order.</b> The
+                              <b>availability dates</b> may also change
+                            </p>
+                          </div>
+                        </div>
+                        <div class="dlvry-note">
+                          <label>delivery notes</label>
+                          <p></p>
+                          <p>HOURS: 8.00AM-3.00PM</p>
+                          <p>
+                            FORKLIFT - YES**WET WEATHER ACCESS-YES ** NO SEMI
+                            ACCESS**
+                          </p>
+                          <p>
+                            EACH SHEET OF LAMINATE IS TO BE ROLLED SEPERATELY
+                          </p>
+                        </div>
+                      </div>
+                      <div class="payment-method-wrapper">
+                        <h4>
+                          Payment method
+                        </h4>
+                        <div class="clearfix">
+                          <div class="prefered-payment">
+                            <div class="radio-inline">
+                              <input
+                                id="paymentMode1"
+                                name="paymentMode"
+                                checked="checked"
+                                type="radio"
+                                value="creditcard"
+                              /><label for="paymentMode1">Credit Card</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cancel-order-text">
+                          Before placing your order, please be aware that this
+                          order cannot be modified or cancelled. Once placed if
+                          you need to modify or cancel the order, please
+                          <a
+                            href="https://www.laminex.com.au/about-laminex/contact-us"
+                            target="_blank"
+                            >contact us</a
+                          >
+                        </div>
+                        <div class="submit-btn-wrapper">
+                          <button
+                            id="placeOrder"
+                            type="submit"
+                            class="btn btn-primary"
+                            data-placeorder-text="Submit order"
+                            data-makepayment-text="Make Payment"
+                          >
+                            Make Payment
+                          </button>
+                        </div>
+                      </div>
+                      <div>
+                        <input
+                          type="hidden"
+                          name="CSRFToken"
+                          value="6b1cd353-821b-49a4-815c-62cc3686dd3a"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="checkout-summary-full-width-container">
+                  <div
+                    class="col-4 checkout-summary-container pickup-summary-wrapper"
+                  >
+                    <div class="checkout-summary-content">
+                      <div class="order-summary-header">
+                        <div class="order-summary-left-content">
+                          <div class="accordion-section">
+                            <a href="#" class="accordion-btn"
+                              ><img
+                                src="https://store.test.laminex.com.au/_ui/responsive/theme-laminex/images/svg/icon-accordion-up.svg"
+                            /></a>
+                            <div class="summary-section">
+                              <h4>
+                                Order summary
+                              </h4>
+                              <div class="edit-order" id="checkout-edit-order">
+                                <span>3 items in total </span>
+                                <a href="/cart">Edit order</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="price-section">
+                            <div class="final-price">
+                              <nobr>
+                                <span class="priceOnly">$86.1500</span>
+                              </nobr>
+                            </div>
+                            <div class="gst">
+                              including GST
+                            </div>
+                            <div class="gst gst-mobile">
+                              including GST and Shipping
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order-summary-right-content">
+                          <button class="btn btn-primary submit-order">
+                            Submit order
+                          </button>
+                          <a href="#" class="cross-btn"
+                            ><i class="icon--x-close"></i
+                          ></a>
+                        </div>
+                      </div>
+                      <div class="order-summary-body">
+                        <div
+                          class="dlvry-from-wrapper mCustomScrollbar _mCS_1 mCS_no_scrollbar"
+                        >
+                          <div
+                            id="mCSB_1"
+                            class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+                            style="max-height: none;"
+                            tabindex="0"
+                          >
+                            <div
+                              id="mCSB_1_container"
+                              class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                              style="position: relative; top: 0; left: 0;"
+                              dir="ltr"
+                            >
+                              <div class="dlvry-from-branch">
+                                <ul class="product-desc">
+                                  <li>
+                                    <div class="item">
+                                      <img
+                                        src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-40Wx60H?context=bWFzdGVyfGltYWdlc3wxMjY1fGltYWdlL2pwZWd8aW1hZ2VzL2g3NS9oODIvaDAwLzg4Mjg4ODcxNzExMDIuanBnfDA5ZTMyYmUyN2ZlMDA3NGJkMmM5YjNmY2QyZjdlZDM1MGUyYmNlNDFjZjNmN2U5YWU4NzQ4MzgxMWM5YjQ0YzE"
+                                        alt=""
+                                        title=""
+                                        class="image--loading swatch-tiles__media img-fluid mCS_img_loaded"
+                                      />
+
+                                      <div class="prod-desc">
+                                        <div class="prod-name">
+                                          Laminex Polar White Satin ABS Edging -
+                                          Unglued
+                                        </div>
+                                        <div class="product-code">848428</div>
+                                        <div class="product-size">
+                                          No Substrate, 25mt x 22mm, 2.000
+                                        </div>
+
+                                        <div class="proj-qty-wrapper">
+                                          <span class="project"
+                                            >Project: Kitchen</span
+                                          >
+                                        </div>
+
+                                        <div class="proj-face-wrapper">
+                                          <span class="face"
+                                            >Face: Single Sided</span
+                                          >
+                                        </div>
+
+                                        <div class="qty">
+                                          Qty : 3
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="price">
+                                      <div class="prod-price">
+                                        <nobr>
+                                          <span class="priceOnly"
+                                            >$60.8200</span
+                                          >
+                                        </nobr>
+                                      </div>
+
+                                      <div class="gst">
+                                        excl GST
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="checkout-summary-show-more-less-item-wrapper show-more-less-item-wrapper"
+                                    >
+                                      <div
+                                        class="product-delivery-info"
+                                        style="display: block;"
+                                      >
+                                        <i
+                                          class="icon--quick-order"
+                                          title="Quick Order"
+                                        ></i
+                                        ><strong>3 estimated for pickup</strong>
+                                        by 25 Aug 2020.
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              id="mCSB_1_scrollbar_vertical"
+                              class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+                              style="display: none;"
+                            >
+                              <div class="mCSB_draggerContainer">
+                                <div
+                                  id="mCSB_1_dragger_vertical"
+                                  class="mCSB_dragger"
+                                  style="
+                                    position: absolute;
+                                    min-height: 30px;
+                                    height: 0px;
+                                    top: 0px;
+                                  "
+                                >
+                                  <div
+                                    class="mCSB_dragger_bar"
+                                    style="line-height: 30px;"
+                                  ></div>
+                                </div>
+                                <div class="mCSB_draggerRail"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="final-total first-child">
+                          <div class="title">
+                            Subtotal
+                          </div>
+
+                          <div class="value">
+                            <nobr>
+                              <span class="priceOnly">$60.8200</span>
+                            </nobr>
+                          </div>
+                        </div>
+
+                        <div class="final-total">
+                          <div class="title">
+                            Logistics Fee
+                          </div>
+                          <div class="value delivery-fee">
+                            <nobr>
+                              <span class="priceOnly">$17.5000</span>
+                            </nobr>
+                          </div>
+                        </div>
+
+                        <div class="final-total">
+                          <div class="title">
+                            GST
+                          </div>
+                          <div class="value">
+                            <nobr>
+                              <span class="priceOnly">$7.8300</span>
+                            </nobr>
+                          </div>
+                        </div>
+
+                        <div class="final-total">
+                          <div class="title">
+                            Discount included in total
+                          </div>
+
+                          <div class="value discount">
+                            -
+                            <nobr>
+                              <span class="priceOnly">$59.2500</span>
+                            </nobr>
+                          </div>
+                        </div>
+
+                        <div class="final-summary-price">
+                          <div class="total-text">
+                            TOTAL
+                          </div>
+
+                          <div class="final-price">
+                            <nobr>
+                              <span class="priceOnly">$86.1500</span>
+                            </nobr>
+                          </div>
+
+                          <div class="gst">
+                            including GST
+                          </div>
+                          <div class="gst gst-mobile">
+                            including GST and Shipping
+                          </div>
+                        </div>
+                        <div class="bottom-btn-container">
+                          <button class="btn btn-primary submit-order">
+                            Submit order
+                          </button>
+                          <button
+                            class="btn btn-secondary checkout-overlay-close"
+                          >
+                            Back to checkout
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      /*<![CDATA[*/
+
+      var ACC = { config: {} };
+      ACC.config.contextPath = "";
+      ACC.config.encodedContextPath = "";
+      ACC.config.commonResourcePath = "/_ui/responsive/common";
+      ACC.config.themeResourcePath = "/_ui/responsive/theme-laminex";
+      ACC.config.siteResourcePath = "/_ui/responsive/site-laminexAU";
+      ACC.config.rootPath = "/_ui/responsive";
+      ACC.config.CSRFToken = "df32ee24-3b6e-434e-bd20-0d698e13efe1";
+      ACC.pwdStrengthVeryWeak = "Very weak";
+      ACC.pwdStrengthWeak = "Weak";
+      ACC.pwdStrengthMedium = "Medium";
+      ACC.pwdStrengthStrong = "Strong";
+      ACC.pwdStrengthVeryStrong = "Very strong";
+      ACC.pwdStrengthUnsafePwd = "password.strength.unsafepwd";
+      ACC.pwdStrengthTooShortPwd = "Too short";
+      ACC.pwdStrengthMinCharText = "Minimum length is %d characters";
+      ACC.accessibilityLoading = "Loading... Please wait...";
+      ACC.accessibilityStoresLoaded = "Stores loaded";
+      ACC.config.googleApiKey = "";
+      ACC.config.googleApiVersion = "3.7";
+
+      ACC.autocompleteUrl = "/search/autocompleteSecure";
+
+      ACC.config.loginUrl = "/login";
+
+      ACC.config.authenticationStatusUrl = "/authentication/status";
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      ACC.addons = {}; //JS holder for addons properties
+
+      ACC.addons.smarteditaddon = [];
+
+      ACC.addons.laminexassistedservicesstorefront = [];
+
+      ACC.addons.laminexcaptchaaddon = [];
+
+      /*]]>*/
+    </script>
+    <script type="text/javascript" src="./js/generatedVariables.js"></script>
+    <script type="text/javascript" src="./js/all_responsive.js"></script>
+    <script type="text/javascript" src="./js/addons_responsive.js"></script>
+    <script type="text/javascript" src="./js/captcha_responsive.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="./js/addthis_widget.js#pubid=ra-5b831d89c6f7ebdc"
+    ></script>
+
+    <script type="text/javascript" src="./js/masonry.min.js"></script>
+    <script type="text/javascript" src="./js/imagesloaded.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/mediaelement-and-player.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>
