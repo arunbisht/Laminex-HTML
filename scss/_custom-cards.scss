@@ -1,0 +1,127 @@
+.custom-card {
+  &.horizontal {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+    background-color: #fff;
+    color: $secondary-text-color;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(#000000, 0.12);
+    box-shadow: 0 1px 2px 0 rgba(#000000, 0.12);
+
+    @media screen and (max-width: 767px) {
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .card-image {
+      max-width: 50%;
+      position: relative;
+
+      img {
+        display: block;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+
+    .card-stacked {
+      padding: 30px 70px;
+
+      @media screen and (max-width: 767px) {
+        padding: 1rem 1.25rem;
+      }
+    }
+
+    .card-content {
+      .title {
+        font-size: 1.75rem;
+        line-height: 1.21;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 0.875rem;
+        line-height: 1.79;
+
+        &:last-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    .card-action {
+      a {
+        font-size: 1.125rem;
+        line-height: normal;
+        font-weight: 500;
+        color: $link-color-new;
+        position: relative;
+        padding-left: 42px;
+        display: inline-block;
+        line-height: 1.9375rem;
+        vertical-align: middle;
+        margin-right: 30px;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        > i {
+          font-size: 1.9375rem;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+
+        > span {
+          padding-bottom: 0.25rem;
+          border-bottom: 1px dotted $link-color-new;
+        }
+      }
+    }
+  }
+}
+
+.modal-dialog-centered {
+  min-height: calc(100% - 1rem);
+
+  @media screen and (min-width: 576px) {
+    min-height: calc(100% - 3.5rem);
+  }
+}
+
+.browse-product-modal {
+  .modal-dialog {
+    max-width: 56.625rem;
+
+    @media screen and (max-width: 959px) {
+      max-width: 90%;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+
+  .modal-dismiss-trigger {
+    font-size: 1.125rem;
+    line-height: 1;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    z-index: 2;
+  }
+}

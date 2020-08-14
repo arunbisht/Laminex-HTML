@@ -10,12 +10,12 @@
       background-color: $accordion-active-bg-color;
       .accordion-trigger {
         &:after {
-          content: "\e01e";
+          content: $icon-new--minus;
         }
 
         &:hover {
           &:after {
-            content: "\e01d";
+            content: $icon-new--minus-solid;
             color: $accordion-text-color;
           }
         }
@@ -50,7 +50,7 @@
       -webkit-appearance: none;
 
       &:after {
-        content: "\e024";
+        content: $icon-new--plus;
         display: block;
         position: absolute;
         top: 0;
@@ -79,7 +79,7 @@
 
       &:hover {
         &:after {
-          content: "\e023";
+          content: $icon-new--plus-solid;
           color: $accordion-text-color;
         }
 

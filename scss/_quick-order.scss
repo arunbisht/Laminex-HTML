@@ -136,25 +136,25 @@
         .dlvry-from-wrapper {
           ul.product-desc {
             li {
-              float: none;
+              float: none !important;
               position: relative;
 
               .item {
-                float: none;
-                width: 100%;
+                float: none !important;
+                width: 100% !important;
                 padding-left: 3.4375rem;
 
                 img {
-                  float: none;
+                  float: none !important;
                   position: absolute;
                   left: 0;
                   top: 1.22rem;
                 }
 
                 .prod-desc {
-                  float: none;
-                  width: 100%;
-                  margin-left: 0;
+                  float: none !important;
+                  width: 100% !important;
+                  margin-left: 0 !important;
 
                   .prod-name,
                   .product-code,
@@ -172,6 +172,7 @@
                   }
                   .qty {
                     width: 100%;
+                    float: none;
                   }
 
                   .face,
@@ -197,8 +198,8 @@
 
               .price {
                 position: absolute;
-                float: none;
-                width: 27%;
+                float: none !important;
+                width: 27% !important;
                 top: 1.22rem;
                 right: 0;
               }
