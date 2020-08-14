@@ -3,14 +3,20 @@
     .navbar {
     .navbar-nav{
     flex-direction:row!important ;
+    .nav-item{
+    position: relative;
+     margin-right: 42px;
+     padding-left: .5rem;
+    padding-right: .5rem;
+    }
     }
     }
     }
 
-    a[class*="icon-new"] {
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
+    a[class*="icon-new"], i[class*="icon-new"] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         color: $search-result-text-color;
         font-size: 22px;
         line-height: .5;
@@ -28,6 +34,8 @@
         }
 
     }
+    
+ 
 
     .siteHeader-sticky {
         z-index: 1030;
@@ -93,6 +101,64 @@
             -ms-flex-align: end !important;
             align-items: flex-end !important;
         }
+    }
+    
+    .header-left{
+     @media screen and (max-width:767px){
+     	order:0;
+     	display: flex;
+     	.logo{
+     	align-self:flex-end;
+     	margin-bottom:1rem;
+     	}
+     }
+     .logo{
+	     @media screen and (max-width:768px){
+	     margin-top:1rem;
+	     }
+     }
+    }
+    .header-right{
+	    .header-cart-section{
+	    li{
+	    @media screen and (min-width:768px){
+	    margin-left: 0.875rem;
+	    margin-right:0;
+	    }
+	    }
+	    @media screen and (max-width:768px){
+	    padding:0.5rem 0rem 0.5rem 0 !important;
+	    }
+	    }
+	    .navbar{
+		    @media screen and (min-width:768px){
+		    padding:1rem 0 1.5rem 0;
+		    }
+	    }
+	    .header-top{
+		    @media screen and (min-width:768px){
+		    padding:1rem 0; 
+		    }
+		    @media screen and (max-width:767px){
+			    ul{
+		    	li{
+		    			&:last-child{float:right;text-align:right; padding-bottom:0.8rem;}
+		    			a{
+		    				i{
+		    					top:7px; font-size:22px;
+		    				}
+		    				}
+		    		}
+		    	}
+		    }
+	    }
+	    @media screen and (max-width:767px){
+	        margin-left: auto;
+	        margin-top : 1rem;
+		    width: auto!important;
+		    flex: auto;
+		    order: 1;
+    }
     }
 
     .siteHeader-toggler a {
@@ -484,7 +550,6 @@
 
     /* Mobile menu */
     .mobile-menu-view {
-        display: block;
         @media screen and (min-width:960px){
             display: none;
         }
@@ -587,6 +652,11 @@
                 margin: 0;
                 padding-bottom: 0;
                 padding-top: 0;
+                a{
+                    color: $secondary-text-color;
+                    text-decoration: none;
+                    border: none;
+                }
             }
 
         }
@@ -624,6 +694,16 @@
     .tab-content {
         margin: 0;
         display: none;
+    }
+    
+    /*For sticky header */
+    &.sticky{
+    .navbar{
+    padding-top: 2rem;
+    .navbar-nav{
+    padding : 0;
+    }
+    }
     }
 
 }
