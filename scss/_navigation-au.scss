@@ -13,6 +13,7 @@
     text-transform: uppercase;
     border: none;
     background: none;
+    cursor: pointer;
 
     &:after {
       font-family: "font-icons-new" !important;
@@ -79,7 +80,7 @@
   }
 }
 
-.primary-navmenu-au {
+header.primary-navmenu-au {
   [class*="icon-new"] {
     color: $search-result-text-color;
     font-size: 22px;
@@ -121,8 +122,14 @@
     }
   }
 
+  /*&:not(.sticky) {
+		.header-right .header-top ul {
+			display: block !important;
+		}
+	}*/
+
   /* Styles with Sticky header */
-  header.sticky {
+  &.sticky {
     .select-dropdown {
       display: block;
     }
@@ -275,6 +282,12 @@
             font-family: "Brown Std New";
             font-weight: bold;
             font-size: 0.875rem;
+
+            &:not(.collapsed) {
+              .icon-new--menu {
+                content: $icon-new--x-close;
+              }
+            }
           }
         }
       }
@@ -316,7 +329,7 @@
     }
 
     .header-top {
-      padding: 1.875rem 0 0;
+      padding: 1.375rem 0 0;
 
       @media screen and (max-width: 767px) {
         padding: 1rem 0 0;
@@ -336,6 +349,7 @@
           }
 
           a {
+            float: none;
             i {
               margin-right: 0.3125rem;
             }
@@ -967,8 +981,7 @@
 
       .accordion-content {
         margin: 0;
-        padding-bottom: 0;
-        padding-top: 0;
+        padding: 0 1.25rem;
       }
     }
 
@@ -996,6 +1009,12 @@
           }
         }
       }
+    }
+
+    #menuaccordion {
+      height: calc(100vh - 140px);
+      overflow-x: hidden;
+      overflow-y: auto;
     }
   }
 
