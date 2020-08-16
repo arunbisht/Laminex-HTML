@@ -155,10 +155,10 @@
     transform-origin: center;
     overflow: hidden;
 
-    .caption-wrapper {
-      -webkit-transform: scale(1, 1.02);
-      transform: scale(1, 1.02);
-    }
+    // .caption-wrapper {
+    //   -webkit-transform: scale(1, 1.02);
+    //   transform: scale(1, 1.02);
+    // }
   }
 
   &.no-bg {

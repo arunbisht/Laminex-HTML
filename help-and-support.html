@@ -1028,15 +1028,19 @@
 
     <script>
       $(document).ready(function () {
-        $("body").on("click", ".accordion-trigger", function () {
-          // $(this).closest(".accordion-item").toggleClass("active");
-          $(this)
-            .siblings(".accordion-content")
-            .slideToggle()
-            .toggleClass("custom-accordion-content")
-            .closest(".accordion-item")
-            .toggleClass("active");
-        });
+        $("body").on(
+          "click",
+          ".faq-accordion-wrapper .accordion-trigger",
+          function () {
+            // $(this).closest(".accordion-item").toggleClass("active");
+            $(this)
+              .siblings(".accordion-content")
+              .slideToggle()
+              .toggleClass("custom-accordion-content")
+              .closest(".accordion-item")
+              .toggleClass("active");
+          }
+        );
       });
     </script>
   </body>
