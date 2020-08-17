@@ -322,7 +322,7 @@
             font-size: 0.875rem;
 
             &:not(.collapsed) {
-              .icon-new--menu {
+              .icon-new--menu:before {
                 content: $icon-new--x-close;
               }
             }
