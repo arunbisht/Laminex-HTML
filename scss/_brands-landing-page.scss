@@ -8,6 +8,23 @@
     padding: 0;
     float: none;
   }
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+        top: 28px;
+
+        span,
+        span:before,
+        span:after {
+            background: $bg-white;
+        }
+
+        &[aria-expanded="true"] {
+            span {
+                background-color: transparent;
+            }
+        }
+    }
 
   .header-left {
     align-self: center;
@@ -27,7 +44,6 @@
   p {
     font-size: 0.875rem;
     line-height: 1.71;
-    font-weight: 400;
   }
 
   @media screen and (min-width: 960px) {
@@ -39,10 +55,10 @@
 }
 
 .brand-theme {
-  .formica {
-    font-family: "Helvetica Neue";
-    color: $text-black;
-    font-weight: 400;
+  &.formica {
+    font-family: "Helvetica Neue"!important;
+    color: $text-black!important;
+    font-weight: 400!important;
 
     .theme-header {
       background: $brand-theme-color;
@@ -62,6 +78,9 @@
     .h6 {
       color: $brand-theme-color;
     }
+      p{
+          font-weight: 400;
+      }
 
     .link,
     .next-btn {
@@ -90,18 +109,267 @@
         }
       }
     }
-    .navbar-toggler {
-      position: absolute;
-      right: 1rem;
-      top: 28px;
-      span,
-      span:before,
-      span:after {
-        background: #fff;
+  }
+
+    /* Essastone theme stylings */
+    &.essastone {
+    font-family:"Maison Neue"!important;
+    color: $secondary-text-color!important;
+    font-weight: 300;
+
+    .theme-header {
+      background: $es-brand-theme-color;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        font-family: "Brown Std New"!important;
+      color: $secondary-text-color;
+    }
+      
+    .link,
+    .next-btn {
+      color: $secondary-text-color;
+    }
+        .btn-primary{
+            font-family: "Brown Std New"!important;
+            background: $es-brand-theme-color;
+            border-color: $es-brand-theme-color;
+        }
+
+    .link {
+      border-bottom: 1px dashed $text-black;
+      font-weight: 300;
+    }
+
+    .home-newsletter-wrapper {
+      background: $es-brand-banner-bg;
+    }
+
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $secondary-text-color;
+
+            @media screen and (min-width: 960px) {
+              color: $text-white;
+            }
+          }
+        }
+      }
+    }
+        .colour-collection-projects-slider-nav {
+    .slick-arrow {
+      color: $text-color;
+    }
+
+    .colour-collection-projects-slider-dots {
+      .slick-dots {
+        li {
+          &.slick-active {
+            background-color: $text-color !important;
+          }
+        }
       }
     }
   }
+        .home-hr{
+            border-color: $hm-hr;
+        }
+  }
+    
+/* Hi-Macs theme stylings - font family pending */
+    &.himacs {
+    font-family:""!important;
+    color: $hm-body-text!important;
+    font-weight: normal;
 
+    .theme-header {
+      background: $hm-brand-theme-color;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        
+      color: $hm-brand-theme-color;
+    }
+
+    .link,
+    .next-btn {
+      color: $hm-body-text;
+    }
+        .btn-primary{
+            
+            background: $hm-body-text;
+            border-color: $hm-body-text;
+        }
+
+    .link {
+      border-bottom: 1px dashed $text-black;
+      font-weight: normal;
+    }
+
+    .home-newsletter-wrapper {
+      background: $hm-brand-banner-bg;
+    }
+
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $secondary-text-color;
+
+            @media screen and (min-width: 960px) {
+              color: $text-white;
+            }
+          }
+        }
+      }
+    }
+        .colour-collection-projects-slider-nav {
+    .slick-arrow {
+      color: $hm-body-text;
+    }
+
+    .colour-collection-projects-slider-dots {
+      .slick-dots {
+        li {
+          &.slick-active {
+            background-color: $hm-body-text !important;
+          }
+        }
+      }
+    }
+  }
+        .home-hr{
+            border-color: $hm-hr;
+        }
+  }
+    
+/* Laminex theme stylings - font family pending */
+    &.laminex {
+    font-family:"Maison Neue"!important;
+    color: $secondary-text-color!important;
+    font-weight: 300;
+
+    .theme-header {
+      background: $lx-brand-theme-color;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        font-family: "Brown Std New"!important;
+      color: $secondary-text-color;
+    }
+    .lx-color{
+        color: $lx-prime-text-color!important;
+    }
+
+    .link {
+      color: $lx-prime-text-color;
+    }
+        .next-btn{
+            color: $secondary-text-color;
+        }
+        .btn-primary{
+            
+            background: $text-color;
+            border-color: $text-color;
+        }
+
+    .link {
+      border-bottom: 1px dashed $lx-prime-text-color;
+      font-weight: 300;
+    }
+
+    .home-newsletter-wrapper {
+      background: $hm-brand-banner-bg;
+    }
+        .home-newsletter-content-wrapper p{
+            color: $text-black;
+        }
+
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $secondary-text-color;
+
+            @media screen and (min-width: 960px) {
+              color: $text-white;
+            }
+          }
+        }
+      }
+    }
+        .secondary-navbar {
+            .navbar {
+                .navbar-nav {
+                    .nav-item {
+                        .submenu {
+                            a{
+                                &:hover{
+                                    color: $lx-brand-theme-color;
+                                    border-color: $lx-brand-theme-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .colour-collection-projects-slider-nav {
+    .slick-arrow {
+      color: $search-border-color;
+    }
+
+    .colour-collection-projects-slider-dots {
+      .slick-dots {
+        li {
+          &.slick-active {
+            background-color: $anchor-color !important;
+          }
+        }
+      }
+    }
+  }
+        .home-hr{
+            border-color: $lx-hr;
+        }
+  }
+
+    /* Default styles for all pages*/
   .home-hr {
     border-top: 1px solid $text-black;
     margin: 0;
@@ -306,11 +574,10 @@
           font-family: "Helvetica Neue";
 
           &:hover {
-            border-bottom: none;
+            border-bottom-color: transparent;
           }
 
           @media screen and (max-width: 959.98px) {
-            color: $text-black;
             font-size: 1.125rem;
             line-height: 1.875;
             padding: 0.3125rem 0;
@@ -372,14 +639,13 @@
 
         a {
           font-size: 1.0625rem;
-          color: $text-black;
           font-weight: 400;
           line-height: initial;
           border-bottom: 2px solid transparent;
           padding-bottom: 3px;
 
           &:hover {
-            border-bottom-color: $text-black;
+            border-bottom-color: initial;
           }
         }
 
