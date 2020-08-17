@@ -1,0 +1,67 @@
+.file-content {
+  .file-row {
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: $text-color;
+
+    &:not(:last-child) {
+      border-bottom: 2px solid $primary-color;
+    }
+
+    .fileName {
+      font-size: 0.875rem;
+      font-weight: bold;
+      font-family: "Brown Std New", sans-serif;
+
+      p,
+      .p2 {
+        margin-bottom: 1rem;
+        margin-top: 0.2rem;
+        font-weight: inherit;
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 0;
+          font-size: 0.8125rem;
+          line-height: 1.5384615385;
+        }
+      }
+    }
+
+    .dateIssued,
+    .fileSize {
+      p,
+      .p2 {
+        font-family: "Maison Neue";
+        font-weight: 500;
+        letter-spacing: 1.1px;
+        font-size: 0.6875rem;
+        margin-top: 0.4rem;
+      }
+    }
+
+    .sm-button {
+      width: auto;
+      min-width: 94px;
+
+      @media screen and (max-width: 767px) {
+        // min-width: 103px;
+        float: right;
+      }
+    }
+  }
+
+  .lg-responsive {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .sm-responsive {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
