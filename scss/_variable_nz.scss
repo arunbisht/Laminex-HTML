@@ -112,10 +112,29 @@ $search-filter-item-btn-width: 116px !default;
 $search-filter-item-size-width: 90px !default;
 $search-filter-item-meta-width: 182px !default;
 $search-filter-nz-item-meta-width: 211px !default;
+
+/* Brand page Common Styles - Keeping the variables same so that if needed only the particular page is impacted*/
 /* Formica brand styles */
 $brand-theme-color: #ff0000;
 $brand-banner-bg: #f5f5f5;
 $brand-button-bg: #f5f5f5;
+
+/* Essastone brand styles */
+$es-brand-theme-color: #454849;
+$es-brand-banner-bg: #e0dee1;
+$es-hr: #9a9a9a;
+
+/* Hi-Macs brand styles */
+$hm-brand-theme-color: #a50034;
+$hm-brand-banner-bg: #f5f5f5;
+$hm-body-text: #6b6b6b;
+$hm-hr: #a6a6a6;
+
+/* Laminex brand styles */
+$lx-brand-theme-color: #827167;
+$lx-brand-banner-bg: #e0dee1;
+$lx-prime-text-color: #827167;
+$lx-hr: #9a9a9a;
 
 $white-tooltip-border-color: #d4bbad !default;
 
