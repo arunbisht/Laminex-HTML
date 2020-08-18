@@ -31,6 +31,7 @@
       padding-right: 0;
       margin-bottom: 16px;
       padding-right: 10px;
+      padding-left: 1.25rem;
     }
   }
   .the-forecast-artile-wrapper {
@@ -184,4 +185,11 @@
       }
     }
   }
+}
+
+.micro-image-size {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  margin: 0 0 15px 0;
 }
