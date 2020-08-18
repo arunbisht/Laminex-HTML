@@ -227,6 +227,10 @@
       color: $secondary-text-color;
       margin-bottom: 15px;
     }
+
+    a {
+      color: $link-color-new;
+    }
   }
 
   .accordion-trigger {
@@ -412,4 +416,13 @@
 
 .page-wrapper .chapter .swatch-tiles__list li .swatch-tiles__body-top h4 {
   word-break: break-word;
+}
+
+.page-wrapper .btn-filter {
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    background-color: $link-color-new;
+    border-color: $link-color-new;
+    color: #fff;
+  }
 }
