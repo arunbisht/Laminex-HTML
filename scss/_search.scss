@@ -231,6 +231,10 @@
   }
 }
 .search-result-body-wrapper {
+  .page-wrapper {
+    padding: 0;
+  }
+
   .description-wrapper {
     padding-bottom: 15px;
     p {
@@ -244,6 +248,7 @@
 
     a {
       color: $link-color-new;
+      font-weight: bold;
     }
   }
 
