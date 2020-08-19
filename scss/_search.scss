@@ -166,6 +166,7 @@
       a {
         color: $link-color-new;
         border-bottom: 1px dotted $link-color-new;
+        display: inline !important;
       }
 
       .no-product-found-icon,
