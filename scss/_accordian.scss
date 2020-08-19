@@ -40,6 +40,42 @@
 
     h6 {
       margin: 0;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        text-decoration: none;
+        margin-bottom: 0.625rem;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0.75rem;
+        }
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .p2 {
+        font-size: 0.8125rem;
+        line-height: 1.5384615385;
+        font-weight: 400;
+
+        @media screen and (min-width: 768px) {
+          font-size: 0.875rem;
+          line-height: 1.7142857143;
+        }
+      }
     }
 
     &.accordion-trigger {
