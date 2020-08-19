@@ -373,14 +373,10 @@
           <div class="quick-order-container">
             <input
               type="hidden"
-              value="pickup"
+              value="delivery"
               class="selectedDeliveryMethod"
             />
-            <input
-              type="hidden"
-              value="949"
-              class="selectedDeliveryAddressId"
-            />
+            <input type="hidden" value="2" class="selectedDeliveryAddressId" />
             <input type="hidden" value="pickup" class="defaultDeliveryMethod" />
             <div class="quick-order-table-header">
               <div class="container">
@@ -393,7 +389,6 @@
                       <div class="th face">
                         Face
                       </div>
-
                       <div class="th size">
                         Size
                       </div>
@@ -478,65 +473,13 @@
                             </div>
                           </label>
                           <div class="delivery-radio-content">
-                            <div class="input-form">
-                              <label>SELECT ADDRESS</label>
-                            </div>
-                            <select
-                              id="delivery-address1"
-                              class="select-options select-delivery selecty-applied"
-                              style="display: none;"
-                            >
-                              <option
-                                class="address"
-                                value="2"
-                                selected="selected"
-                                >BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
-                                CHATSWOOD NSW, 2057</option
-                              >
-                              <option class="address" value="3"
-                                >BILLS BOARD FACTORY PTY LTD, MLP, 20B WALTHAM
-                                STREET, ARTARMON NSW, 2064</option
-                              >
-                              <option class="address" value="4"
-                                >BILLS BOARD CAIRNS, 20 BEACH LANE, CAIRNS QLD,
-                                4870</option
-                              >
-                              <option class="address" value="5"
-                                >BILLS BOARD BAYSWATER, 301 CANTERBURY RD,
-                                BAYSWATER VIC, 3153</option
-                              >
-                            </select>
-                            <div class="selecty">
-                              <a class="selecty-selected"
-                                >BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
-                                CHATSWOOD NSW, 2057</a
-                              >
-                              <ul class="selecty-options">
-                                <li
-                                  data-value="2"
-                                  data-index="0"
-                                  class="selected"
-                                >
-                                  BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
-                                  CHATSWOOD NSW, 2057
-                                </li>
-                                <li data-value="3" data-index="1" class="">
-                                  BILLS BOARD FACTORY PTY LTD, MLP, 20B WALTHAM
-                                  STREET, ARTARMON NSW, 2064
-                                </li>
-                                <li data-value="4" data-index="2" class="">
-                                  BILLS BOARD CAIRNS, 20 BEACH LANE, CAIRNS QLD,
-                                  4870
-                                </li>
-                                <li data-value="5" data-index="3" class="">
-                                  BILLS BOARD BAYSWATER, 301 CANTERBURY RD,
-                                  BAYSWATER VIC, 3153
-                                </li>
-                              </ul>
+                            <div class="single-address">
+                              Pickup: LMX Tamworth, NSW, 35 Dampier Street,
+                              TAMINDA NSW, 2340
                             </div>
                             <input
                               type="hidden"
-                              value="2"
+                              value="940"
                               class="selectedAddressId"
                             />
                             <div class="product-msg">
@@ -557,65 +500,18 @@
                           />
                           <label for="pickup">
                             <div class="product-delivery-info">
-                              <i
-                                class="icon--quick-order"
-                                title="Quick Order"
-                              ></i>
-                              Pick up at the nearest location
+                              <i class="icon-new--quick-order"></i> Pick up at
+                              the nearest location
                             </div>
                           </label>
                           <div class="delivery-radio-content">
-                            <div class="input-form">
-                              <label>SELECT ADDRESS</label>
-                            </div>
-                            <select
-                              id="pickup-address"
-                              class="select-options select-pickup selecty-applied"
-                              style="display: none;"
-                            >
-                              <option
-                                class="address"
-                                value="949"
-                                selected="selected"
-                                >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
-                                PEMULWUY NSW, 2145</option
-                              >
-                              <option class="address" value="967"
-                                >Pickup: LMX Townsville, QLD, 14-28 Corporate
-                                Crescent, GARBUTT QLD, 4814</option
-                              >
-                              <option class="address" value="992"
-                                >Pickup: LMX Melbourne DC, VIC, 130 Sharps Road,
-                                MELBOURNE AIRPORT VIC, 3045</option
-                              >
-                            </select>
-                            <div class="selecty">
-                              <a class="selecty-selected"
-                                >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
-                                PEMULWUY NSW, 2145</a
-                              >
-                              <ul class="selecty-options">
-                                <li
-                                  data-value="949"
-                                  data-index="0"
-                                  class="selected"
-                                >
-                                  Pickup: LMX Sydney DC, NSW, 2 Foundation
-                                  Place, PEMULWUY NSW, 2145
-                                </li>
-                                <li data-value="967" data-index="1" class="">
-                                  Pickup: LMX Townsville, QLD, 14-28 Corporate
-                                  Crescent, GARBUTT QLD, 4814
-                                </li>
-                                <li data-value="992" data-index="2" class="">
-                                  Pickup: LMX Melbourne DC, VIC, 130 Sharps
-                                  Road, MELBOURNE AIRPORT VIC, 3045
-                                </li>
-                              </ul>
+                            <div class="single-address">
+                              UNIPLAN GROUP PTY LTD, 22 MYRTLE DRIVE, ARMIDALE
+                              NSW, 2350
                             </div>
                             <input
                               type="hidden"
-                              value="949"
+                              value="2"
                               class="selectedAddressId"
                             />
                           </div>
@@ -642,7 +538,7 @@
                 <div class="row">
                   <div class="tbody quick-order-table-body-div">
                     <div class="delivery-method" style="display: block;">
-                      Delivery method: <b><span>Pick up</span></b>
+                      Delivery method: <b><span>Delivery</span></b>
                       <a href="javascript:void(0)" class="js-delivery-method"
                         >Edit</a
                       >
@@ -768,7 +664,7 @@
                         />
                         <div class="td item au-item">
                           <img
-                            src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-40Wx60H?context=bWFzdGVyfGltYWdlc3wxMjY1fGltYWdlL2pwZWd8aW1hZ2VzL2g3NS9oODIvaDAwLzg4Mjg4ODcxNzExMDIuanBnfDA5ZTMyYmUyN2ZlMDA3NGJkMmM5YjNmY2QyZjdlZDM1MGUyYmNlNDFjZjNmN2U5YWU4NzQ4MzgxMWM5YjQ0YzE"
+                            src="https://store.dev.laminex.com.au/medias/p-LX-Metaline-Lipstick-Red-RGB-1200x1200-LR.jpg-40Wx60H?context=bWFzdGVyfGltYWdlc3wzNDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDYwL2hlOC9oMDAvODgyNjc5Nzk4MTcyNi5qcGd8ZmM0MTg5ZjkwODYxOTI4YWJkMTRkMWI0NDdhYjllNzRlMGExNDk1ZTcxMTNhM2E5YmY2MzRhMjM2NDk0Mjc2MQ"
                             alt=""
                             title=""
                             class="image--loading swatch-tiles__media img-fluid"
@@ -776,11 +672,8 @@
                           <div class="prod-desc">
                             <div class="prod-name">
                               <div class="prod-name-tag-code-wrapper">
-                                <span
-                                  >Laminex Polar White Diamond Gloss
-                                  DiamondGloss DS</span
-                                >
-                                <div class="product-code">973904</div>
+                                <span>Laminex Lipstick Red Gloss Metaline</span>
+                                <div class="product-code">934688</div>
                               </div>
                             </div>
                           </div>
@@ -803,9 +696,9 @@
                                     >Select</option
                                   >
                                   <option
-                                    value='{"productcode":"973904","isLastDropdown":false}'
+                                    value='{"productcode":"934688","isLastDropdown":false}'
                                     selected="selected"
-                                    >MDF MR E0</option
+                                    >No Substrate</option
                                   >
                                   <option disabled="disabled"
                                     >Different substrates and thickness may have
@@ -814,7 +707,7 @@
                                   >
                                 </select>
                                 <div class="selecty">
-                                  <a class="selecty-selected">MDF MR E0</a>
+                                  <a class="selecty-selected">No Substrate</a>
                                   <ul class="selecty-options">
                                     <li
                                       data-value=""
@@ -824,11 +717,11 @@
                                       Select
                                     </li>
                                     <li
-                                      data-value='{"productcode":"973904","isLastDropdown":false}'
+                                      data-value='{"productcode":"934688","isLastDropdown":false}'
                                       data-index="1"
                                       class="selected"
                                     >
-                                      MDF MR E0
+                                      No Substrate
                                     </li>
                                     <li
                                       data-value="Different substrates and thickness may have different size and stock availability."
@@ -845,12 +738,12 @@
                             </div>
                             <input
                               type="hidden"
-                              value="AU1003225"
+                              value="AU1000667"
                               class="baseproduct-code"
                             />
                             <input
                               type="hidden"
-                              value="Polar White"
+                              value="Lipstick Red"
                               class="baseproduct-name"
                             />
                           </div>
@@ -868,9 +761,9 @@
                           >
                             <option value="" disabled="disabled">Select</option>
                             <option
-                              value='{"productcode":"973904","isLastDropdown":false}'
+                              value='{"productcode":"934688","isLastDropdown":false}'
                               selected="selected"
-                              >MDF MR E0</option
+                              >No Substrate</option
                             >
                             <option disabled="disabled"
                               >Different substrates and thickness may have
@@ -878,17 +771,17 @@
                             >
                           </select>
                           <div class="selecty">
-                            <a class="selecty-selected">MDF MR E0</a>
+                            <a class="selecty-selected">No Substrate</a>
                             <ul class="selecty-options">
                               <li data-value="" data-index="0" class="disabled">
                                 Select
                               </li>
                               <li
-                                data-value='{"productcode":"973904","isLastDropdown":false}'
+                                data-value='{"productcode":"934688","isLastDropdown":false}'
                                 data-index="1"
                                 class="selected"
                               >
-                                MDF MR E0
+                                No Substrate
                               </li>
                               <li
                                 data-value="Different substrates and thickness may have different size and stock availability."
@@ -901,50 +794,8 @@
                             </ul>
                           </div>
                         </div>
-
                         <div class="td face tablerow">
-                          <h3 class="mobile-table-heading">Face</h3>
-                          <select
-                            id="select2"
-                            class="select-options selecty-applied"
-                            style="display: none;"
-                          >
-                            <option value="" disabled="disabled">Select</option>
-                            <option value="Double sided" selected="selected"
-                              >Double sided</option
-                            >
-                            <option disabled="disabled"
-                              >Different substrates and thickness may have
-                              different size and stock availability.</option
-                            >
-                          </select>
-                          <div class="selecty">
-                            <a class="selecty-selected">Double sided</a>
-                            <ul class="selecty-options">
-                              <li data-value="" data-index="0" class="disabled">
-                                Select
-                              </li>
-                              <li
-                                data-value="Double sided"
-                                data-index="1"
-                                class="selected"
-                              >
-                                Double sided
-                              </li>
-                              <li
-                                data-value="Different substrates and thickness may have different size and stock availability."
-                                data-index="2"
-                                class="disabled"
-                              >
-                                Different substrates and thickness may have
-                                different size and stock availability.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="td size tablerow">
-                          <h3 class="mobile-table-heading">size</h3>
+                          <h3 class="mobile-table-heading">face</h3>
                           <input type="hidden" value="2" class="loopindex" />
                           <select
                             id="select4"
@@ -953,9 +804,13 @@
                           >
                             <option value="" disabled="disabled">Select</option>
                             <option
-                              value='{"productcode":"973904","isLastDropdown":false}'
+                              value='{"productcode":"934676","isLastDropdown":false}'
+                              >Double Sided</option
+                            >
+                            <option
+                              value='{"productcode":"934688","isLastDropdown":false}'
                               selected="selected"
-                              >3585mm x 1200mm</option
+                              >Single Sided</option
                             >
                             <option disabled="disabled"
                               >Different substrates and thickness may have
@@ -963,17 +818,67 @@
                             >
                           </select>
                           <div class="selecty">
-                            <a class="selecty-selected">3585mm x 1200mm</a>
+                            <a class="selecty-selected">Single Sided</a>
                             <ul class="selecty-options">
                               <li data-value="" data-index="0" class="disabled">
                                 Select
                               </li>
                               <li
-                                data-value='{"productcode":"973904","isLastDropdown":false}'
+                                data-value='{"productcode":"934676","isLastDropdown":false}'
+                                data-index="1"
+                                class=""
+                              >
+                                Double Sided
+                              </li>
+                              <li
+                                data-value='{"productcode":"934688","isLastDropdown":false}'
+                                data-index="2"
+                                class="selected"
+                              >
+                                Single Sided
+                              </li>
+                              <li
+                                data-value="Different substrates and thickness may have different size and stock availability."
+                                data-index="3"
+                                class="disabled"
+                              >
+                                Different substrates and thickness may have
+                                different size and stock availability.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="td size tablerow">
+                          <h3 class="mobile-table-heading">size</h3>
+                          <input type="hidden" value="3" class="loopindex" />
+                          <select
+                            id="select4"
+                            class="select-options selecty-applied"
+                            style="display: none;"
+                          >
+                            <option value="" disabled="disabled">Select</option>
+                            <option
+                              value='{"productcode":"934688","isLastDropdown":false}'
+                              selected="selected"
+                              >3600mm x 800mm</option
+                            >
+                            <option disabled="disabled"
+                              >Different substrates and thickness may have
+                              different size and stock availability.</option
+                            >
+                          </select>
+                          <div class="selecty">
+                            <a class="selecty-selected">3600mm x 800mm</a>
+                            <ul class="selecty-options">
+                              <li data-value="" data-index="0" class="disabled">
+                                Select
+                              </li>
+                              <li
+                                data-value='{"productcode":"934688","isLastDropdown":false}'
                                 data-index="1"
                                 class="selected"
                               >
-                                3585mm x 1200mm
+                                3600mm x 800mm
                               </li>
                               <li
                                 data-value="Different substrates and thickness may have different size and stock availability."
@@ -988,7 +893,7 @@
                         </div>
                         <div class="td thickness tablerow">
                           <h3 class="mobile-table-heading">thickness</h3>
-                          <input type="hidden" value="3" class="loopindex" />
+                          <input type="hidden" value="4" class="loopindex" />
                           <select
                             id="select7"
                             class="select-options selecty-applied"
@@ -996,9 +901,9 @@
                           >
                             <option value="" disabled="disabled">Select</option>
                             <option
-                              value='{"productcode":"973904","isLastDropdown":true}'
+                              value='{"productcode":"934688","isLastDropdown":true}'
                               selected="selected"
-                              >18.000</option
+                              >4.000</option
                             >
                             <option disabled="disabled"
                               >Different substrates and thickness may have
@@ -1006,17 +911,17 @@
                             >
                           </select>
                           <div class="selecty">
-                            <a class="selecty-selected">18.000</a>
+                            <a class="selecty-selected">4.000</a>
                             <ul class="selecty-options">
                               <li data-value="" data-index="0" class="disabled">
                                 Select
                               </li>
                               <li
-                                data-value='{"productcode":"973904","isLastDropdown":true}'
+                                data-value='{"productcode":"934688","isLastDropdown":true}'
                                 data-index="1"
                                 class="selected"
                               >
-                                18.000
+                                4.000
                               </li>
                               <li
                                 data-value="Different substrates and thickness may have different size and stock availability."
@@ -1076,7 +981,7 @@
 
                           <input
                             type="text"
-                            class="js-quick-order-qty disable-paste js-qty-input zero-stock"
+                            class="js-quick-order-qty disable-paste js-qty-input error"
                             value="0"
                             maxlength="5"
                             autocomplete="off"
@@ -1087,11 +992,10 @@
                             data-updated="false"
                             data-prevqty="0"
                             title=""
-                            data-minqty=""
-                            data-multipleqty=""
-                            data-original-title="Enter a quantity to see availability and estimated delivery dates"
+                            data-minqty="10"
+                            data-multipleqty="5"
+                            data-original-title="text.quickOrder.page.error.quantityMoreThanStock"
                             data-container=".quick-order-container"
-                            data-toggle="tooltip"
                             erp-error="false"
                           />
                           <input
@@ -1105,15 +1009,15 @@
                             style="visibility: visible;"
                           >
                             <h3 class="mobile-table-heading"></h3>
-                            <div class="stockLevel" style="display: none;">
-                              <span></span>
+                            <div class="stockLevel" style="display: block;">
+                              <span><i class="icon--alert"></i>0</span>
                               in branch
                             </div>
                             <div
                               class="warehouseStockLevel"
                               style="display: block;"
                             >
-                              <span><i class="icon--alert"></i>0</span>
+                              <span><i class="icon--tick-circle"></i>50</span>
                               in DC
                             </div>
                             <div class="not-in-stock" style="display: none;">
@@ -1142,12 +1046,12 @@
                               PRICE (EX GST)
                             </h3>
                             <div id="price" class="priceValue">
-                              <span>$431.84</span>
+                              <span>$187.20</span>
                               per Sheet
                             </div>
 
                             <div class="areaPrice">
-                              <span class="price-span">$100.38</span>
+                              <span class="price-span">$65.00</span>
                               per
                               <span class="unit-span">m2</span>
                             </div>
@@ -1172,7 +1076,7 @@
                             <a
                               href="#"
                               class="js-add-duplicate-quick-order-row duplicate-product-quick-order icon-duplicate"
-                              data-product-code="973904"
+                              data-product-code="934688"
                               data-container=".quick-order-container"
                               data-placement="bottom"
                               data-toggle="tooltip"
@@ -1182,7 +1086,7 @@
                             <a
                               href="#"
                               class="js-remove-quick-order-row"
-                              data-product-code="973904"
+                              data-product-code="934688"
                               ><i class="icon--trash"></i
                             ></a>
                           </div>
@@ -1258,7 +1162,7 @@
                           </div>
                           <div
                             class="product-orderable-error"
-                            style="display: none;"
+                            style="display: block;"
                           >
                             <p class="errormsg">
                               You are trying to order a restricted product. To
@@ -1332,7 +1236,7 @@
                               <div class="clearfix product-row">
                                 <div class="col-fig">
                                   <img
-                                    src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-304Wx434H-132Wx188H?context=bWFzdGVyfGltYWdlc3wxNzg1fGltYWdlL2pwZWd8aW1hZ2VzL2g4Mi9oMDYvaDAwLzg4Mjg4ODcyNjk0MDYuanBnfGEwNjEzYzI1MGZhNGM0ZmUxYWRlYzE5ZDc1NDAwY2E4YjdjYWY4YzI4NDE4Njg0NGU3MWJkOTM4ZjEyZmU4YjI"
+                                    src="/medias/p-LX-Metaline-Lipstick-Red-RGB-1200x1200-LR.jpg-304Wx434H-132Wx188H?context=bWFzdGVyfGltYWdlc3w5ODN8aW1hZ2UvanBlZ3xpbWFnZXMvaDFmL2hiMy9oMDAvODgyNjc5ODA0NzI2Mi5qcGd8MDNmOWQyNjNlYmNlYTRiZGU0NzNlMDEyYjk5YjlhZTQ1MjNjMmJkMGFhZWVhZjU5MGI3MGU4MmQ2ZGVmZDZjMw"
                                     alt=""
                                     title=""
                                     class="image--loading swatch-tiles__media img-fluid"
@@ -1341,22 +1245,22 @@
                                 </div>
                                 <div class="col-figCaption">
                                   <div class="product-brand">Laminex</div>
-                                  <h4>
-                                    Laminex Polar White Diamond Gloss
-                                    DiamondGloss DS
-                                  </h4>
-                                  <p class="product-range">COLOUR CODE: 205</p>
+                                  <h4>Laminex Lipstick Red Gloss Metaline</h4>
+                                  <p class="product-range">COLOUR CODE: J16</p>
                                   <div class="product-notification">
-                                    <div
-                                      class="delivery-branch"
-                                      style="display: none;"
-                                    >
-                                      <p><span></span> in Branch</p>
+                                    <div class="delivery-branch">
+                                      <p>
+                                        <span
+                                          ><i class="icon--alert"></i>0</span
+                                        >
+                                        in Branch
+                                      </p>
                                     </div>
                                     <div class="delivery-DC">
                                       <p>
                                         <span
-                                          ><i class="icon--alert"></i>0</span
+                                          ><i class="icon--tick-circle"></i
+                                          >50</span
                                         >
                                         in DC
                                       </p>
@@ -1576,6 +1480,7 @@
                     <button
                       id="js-add-to-cart-quick-order-btn-bottom"
                       class="btn btn-primary"
+                      disabled="disabled"
                     >
                       Add to cart
                     </button>
@@ -1598,19 +1503,19 @@
                                     class="slick-track"
                                     style="
                                       opacity: 1;
-                                      width: 4032px;
+                                      width: 3240px;
                                       transform: translate3d(0px, 0px, 0px);
                                     "
                                   >
                                     <div
                                       class="image-slider__item d-inline-block slick-slide slick-current slick-active"
-                                      data-slick-index="0"
-                                      aria-hidden="false"
+                                      style="width: 270px;"
                                       tabindex="0"
                                       role="tabpanel"
                                       id="slick-slide00"
                                       aria-describedby="slick-slide-control00"
-                                      style="width: 336px;"
+                                      data-slick-index="0"
+                                      aria-hidden="false"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
@@ -1625,7 +1530,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                src="/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1659,17 +1564,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide slick-active"
-                                      data-slick-index="1"
-                                      aria-hidden="false"
+                                      style="width: 270px;"
                                       tabindex="0"
                                       role="tabpanel"
                                       id="slick-slide01"
                                       aria-describedby="slick-slide-control01"
-                                      style="width: 336px;"
+                                      data-slick-index="1"
+                                      aria-hidden="false"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="706839"
+                                        id="813685"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -1680,7 +1585,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                src="/medias/TE-Craftwood-Mouldings-Square-1200x1200-32Wx48H?context=bWFzdGVyfGltYWdlc3wyMjgyfGltYWdlL2pwZWd8aDY2L2hkYS84ODYxODQzMDMwMDQ2L1RFLUNyYWZ0d29vZC1Nb3VsZGluZ3MtU3F1YXJlLTEyMDB4MTIwMF8zMld4NDhIfGY1ODE5NzM4MzlmZmQ3OGViZWVlM2Y4NWEzYTRiODMyM2YwMzZhMDZjOWVkMjI4OTEwNTBmODBjM2I5MWExZmU"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1689,23 +1594,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Trade Essentials TE White
-                                                  Decortext Whiteboard MR</span
+                                                  >Trade Essentials Vinyl
+                                                  Craftwood Mouldings</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="706839"
-                                                  id="706839"
+                                                  data-product-code="813685"
+                                                  id="813685"
                                                   tabindex="0"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                706839
+                                                813685
                                               </div>
                                               <div class="product-size">
-                                                Particleboard MR, 3600mm x
-                                                1800mm, 16.000
+                                                White, 3.6mt x 42mm x 18mm,
+                                                18.000
                                               </div>
                                             </div>
                                           </div>
@@ -1714,17 +1619,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide slick-active"
-                                      data-slick-index="2"
-                                      aria-hidden="false"
+                                      style="width: 270px;"
                                       tabindex="0"
                                       role="tabpanel"
                                       id="slick-slide02"
                                       aria-describedby="slick-slide-control02"
-                                      style="width: 336px;"
+                                      data-slick-index="2"
+                                      aria-hidden="false"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="706840"
+                                        id="878796"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -1735,7 +1640,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                src="/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjUzfGltYWdlL2pwZWd8aW1hZ2VzL2hkOS9oMTkvaDAwLzg4Mjg4ODcyMDM4NzAuanBnfDU5MWIxOTE3NzQ2ODkyNTdmYWRmODE0YmM0ZjdmYjAzMDZmZjQyMjNiYTliN2E0YWQ2OWEzY2NjZGQ4MjliNjE"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1744,23 +1649,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Trade Essentials TE White
-                                                  Decortext Whiteboard MR</span
+                                                  >Laminex Polar White Gloss ABS
+                                                  Edging - Unglued</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="706840"
-                                                  id="706840"
+                                                  data-product-code="878796"
+                                                  id="878796"
                                                   tabindex="0"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                706840
+                                                878796
                                               </div>
                                               <div class="product-size">
-                                                Particleboard MR, 2400mm x
-                                                1800mm, 16.000
+                                                No Substrate, 100mt x 21mm,
+                                                1.000
                                               </div>
                                             </div>
                                           </div>
@@ -1769,17 +1674,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="3"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide03"
                                       aria-describedby="slick-slide-control03"
-                                      style="width: 336px;"
+                                      data-slick-index="3"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="730915"
+                                        id="936274"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -1790,7 +1695,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-No-Image-Default-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNTAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDgwL2gwMC84ODI2NzY1NjA2OTQyLmpwZ3w1NDQ5MTI4ZGZhYTQxMzNkOGIxNjdlODk4NThlMzM5MjQyNjg0ZGVkMjdiNTA4ZmJhZWE0MWQ2NGJmODg1Y2M2"
+                                                src="/medias/p-TE-Craftwood-Thick-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wyNTk1fGltYWdlL2pwZWd8aW1hZ2VzL2hmZi9oZTgvaDAwLzg4Mjg4OTE2Mjc1NTAuanBnfGQ0Yjg4ODYyOGQ0N2RjZGViMDQ0ZTFkZmM2NTM2NGZhYTMyZTUwODg3MmM0ZjQyYWRlYzVhNzE3M2Y1OTIwNTY"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1799,23 +1704,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Trade Essentials TE White
-                                                  Decortext Whiteboard MR</span
+                                                  >Trade Essentials Craftwood
+                                                  STD</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="730915"
-                                                  id="730915"
+                                                  data-product-code="936274"
+                                                  id="936274"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                730915
+                                                936274
                                               </div>
                                               <div class="product-size">
-                                                Particleboard MR, 2400mm x
-                                                1200mm, 25.000
+                                                MDF Standard E0, 2400mm x
+                                                1200mm, 9.000
                                               </div>
                                             </div>
                                           </div>
@@ -1824,17 +1729,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="4"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide04"
                                       aria-describedby="slick-slide-control04"
-                                      style="width: 336px;"
+                                      data-slick-index="4"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="906493"
+                                        id="948060"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -1845,7 +1750,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                src="/medias/p-LX-Charcoal-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wzMDN8aW1hZ2UvanBlZ3xpbWFnZXMvaDJmL2gxZi9oMDAvODgyNjYxOTc4OTM0Mi5qcGd8NjhhZmUzMWE1MTA3MTFhZjhkNGE5MmRhMzkxMGRjMzQ4YmMzZDliMGU4ZjM1YWZjZDRmM2Q0NGEzMDEzZTU0Mg"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1854,23 +1759,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Laminex White Satin Colour
+                                                  >Laminex Charcoal Flint Colour
                                                   Collection</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="906493"
-                                                  id="906493"
+                                                  data-product-code="948060"
+                                                  id="948060"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                906493
+                                                948060
                                               </div>
                                               <div class="product-size">
                                                 MDF MR E0, 2400mm x 1200mm,
-                                                18.000
+                                                16.000
                                               </div>
                                             </div>
                                           </div>
@@ -1879,17 +1784,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="5"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide05"
                                       aria-describedby="slick-slide-control05"
-                                      style="width: 336px;"
+                                      data-slick-index="5"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="942864"
+                                        id="948196"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -1900,7 +1805,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                src="/medias/p-LX-ColourCollection-Lustrous-elm-natural-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3w2NjN8aW1hZ2UvanBlZ3xpbWFnZXMvaDExL2gyNy9oMDAvODgyNjY2MDQ4NzE5OC5qcGd8MTk3ZmEzZmI1ZmE4ZTI0YmRkMDQ0YWZmNWVkMTA4NmQ1ZGYwYjUwZmM2ODljYzA0Yjg1ZThjZjc2ODY2YzhmMA"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1909,23 +1814,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Laminex White Satin Colour
-                                                  Collection</span
+                                                  >Laminex Lustrous Elm Natural
+                                                  Colour Collection</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="942864"
-                                                  id="942864"
+                                                  data-product-code="948196"
+                                                  id="948196"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                942864
+                                                948196
                                               </div>
                                               <div class="product-size">
-                                                MDF MR E0, 3600mm x 1200mm,
-                                                18.000
+                                                MDF MR E0, 2400mm x 1200mm,
+                                                16.000
                                               </div>
                                             </div>
                                           </div>
@@ -1934,17 +1839,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="6"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide06"
                                       aria-describedby="slick-slide-control06"
-                                      style="width: 336px;"
+                                      data-slick-index="6"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="948034"
+                                        id="961906"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -1955,7 +1860,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                src="/medias/p-LX-Blackened-Linewood-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3w1OTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDg1L2g0NS9oMDAvODgyNjYwMzc5ODU1OC5qcGd8OTZiMTFlZWFlMDhmMWRjZDBmMzZlZWU0YmE5ZTY4MzhmNDk3NTVjN2I1ZjE2MzkyOTE4OTgxNDAxMjFkNmIzNQ"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -1964,23 +1869,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Laminex White Satin Colour
-                                                  Collection</span
+                                                  >Laminex Blackened Linewood
+                                                  Nuance Impressions</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="948034"
-                                                  id="948034"
+                                                  data-product-code="961906"
+                                                  id="961906"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                948034
+                                                961906
                                               </div>
                                               <div class="product-size">
-                                                MDF MR E0, 2400mm x 1800mm,
-                                                18.000
+                                                MDF MR E0, 2400mm x 1200mm,
+                                                16.000
                                               </div>
                                             </div>
                                           </div>
@@ -1989,17 +1894,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="7"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide07"
                                       aria-describedby="slick-slide-control07"
-                                      style="width: 336px;"
+                                      data-slick-index="7"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="948052"
+                                        id="961908"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -2010,7 +1915,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                src="/medias/p-LX-Chalky-Teak-Nuance-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3w2MTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDU5L2g2Ny9oMDAvODgyNjYxODAxOTg3MC5qcGd8NzY0ZDMzM2Q3YzhmZjJlN2IzOTgxZjcyM2M0Y2M0MWI5YzBhZDc1Y2VmNDlkYjE0NmEyOWYzMzdkODkzMjRjMQ"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -2019,23 +1924,23 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Laminex White Satin Colour
-                                                  Collection</span
+                                                  >Laminex Chalky Teak Nuance
+                                                  Impressions</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="948052"
-                                                  id="948052"
+                                                  data-product-code="961908"
+                                                  id="961908"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                948052
+                                                961908
                                               </div>
                                               <div class="product-size">
                                                 MDF MR E0, 2400mm x 1200mm,
-                                                25.000
+                                                16.000
                                               </div>
                                             </div>
                                           </div>
@@ -2044,17 +1949,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="8"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide08"
                                       aria-describedby="slick-slide-control08"
-                                      style="width: 336px;"
+                                      data-slick-index="8"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="948059"
+                                        id="985515"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -2065,7 +1970,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                src="/medias/p-LX-Concrete-Formwood-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3w2OTl8aW1hZ2UvanBlZ3xpbWFnZXMvaDk1L2hlMC9oMDAvODgyNjYyNTY4NzU4Mi5qcGd8OTc2MDFmMmYzNWU3YzcyNTZhMDYxOGYyMTE2YzFjYjAzNzNjOWVhNjk2MGIxYTU5MTY1MzhiODVlMmM1MGM0MQ"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -2074,19 +1979,19 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Laminex White Satin Colour
-                                                  Collection</span
+                                                  >Laminex Concrete Formwood
+                                                  Chalk Impressions</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="948059"
-                                                  id="948059"
+                                                  data-product-code="985515"
+                                                  id="985515"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                948059
+                                                985515
                                               </div>
                                               <div class="product-size">
                                                 MDF MR E0, 2400mm x 1200mm,
@@ -2099,72 +2004,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="9"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
                                       id="slick-slide09"
                                       aria-describedby="slick-slide-control09"
-                                      style="width: 336px;"
-                                    >
-                                      <div
-                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="948075"
-                                      >
-                                        <div
-                                          class="style-palette--scandinavian"
-                                        >
-                                          <div
-                                            class="fop-slide image-slider__item-inner--scaling"
-                                            style="height: 175.406px;"
-                                          >
-                                            <div class="prod-img">
-                                              <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
-                                                alt=""
-                                                title=""
-                                                class="image--loading swatch-tiles__media img-fluid"
-                                              />
-                                            </div>
-                                            <div class="prod-desc">
-                                              <div class="prod-name">
-                                                <span
-                                                  >Laminex White Satin Colour
-                                                  Collection</span
-                                                >
-                                                <a
-                                                  href="#"
-                                                  class="icon"
-                                                  data-product-code="948075"
-                                                  id="948075"
-                                                  tabindex="-1"
-                                                ></a>
-                                              </div>
-                                              <div class="product-code">
-                                                948075
-                                              </div>
-                                              <div class="product-size">
-                                                MDF MR E0, 3600mm x 1800mm,
-                                                18.000
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="10"
+                                      data-slick-index="9"
                                       aria-hidden="true"
-                                      tabindex="-1"
-                                      role="tabpanel"
-                                      id="slick-slide010"
-                                      aria-describedby="slick-slide-control010"
-                                      style="width: 336px;"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="948117"
+                                        id="985517"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -2175,7 +2025,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LX-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjQwfGltYWdlL2pwZWd8aW1hZ2VzL2hmNi9oNTgvaDAwLzg4Mjg4ODgwODg2MDYuanBnfDZlNzI5Yjg5YWJkZmIwYTZmYmIzZGYzMjkwYjg5MDJkYmRjMjJmZDUzMDM0OTIwNjIwOGRhNjgxZDUzMjM1ZTY"
+                                                src="/medias/p-LX-ColourCollection-Elegant-Oak-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNzY0MXxpbWFnZS9qcGVnfGltYWdlcy9oNGMvaGViL2gwMC84ODI2NjM3NDg0MDYyLmpwZ3wxZDU4OGJiY2UxNzBlNmUwNDU0ZTRiODIzNGQ3NDVmYmQ2ZmE0OWFiYmMxZWMyM2U3MjE2MzNkYTRkOTg4OTY4"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -2184,22 +2034,22 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >Laminex White Satin Colour
-                                                  Collection</span
+                                                  >Laminex Elegant Oak Chalk
+                                                  Impressions</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="948117"
-                                                  id="948117"
+                                                  data-product-code="985517"
+                                                  id="985517"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                948117
+                                                985517
                                               </div>
                                               <div class="product-size">
-                                                MDF MR E0, 3600mm x 1800mm,
+                                                MDF MR E0, 2400mm x 1200mm,
                                                 16.000
                                               </div>
                                             </div>
@@ -2209,17 +2059,17 @@
                                     </div>
                                     <div
                                       class="image-slider__item d-inline-block slick-slide"
-                                      data-slick-index="11"
-                                      aria-hidden="true"
+                                      style="width: 270px;"
                                       tabindex="-1"
                                       role="tabpanel"
-                                      id="slick-slide011"
-                                      aria-describedby="slick-slide-control011"
-                                      style="width: 336px;"
+                                      id="slick-slide010"
+                                      aria-describedby="slick-slide-control010"
+                                      data-slick-index="10"
+                                      aria-hidden="true"
                                     >
                                       <div
                                         class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
-                                        id="991506"
+                                        id="985526"
                                       >
                                         <div
                                           class="style-palette--scandinavian"
@@ -2230,7 +2080,7 @@
                                           >
                                             <div class="prod-img">
                                               <img
-                                                src="https://store.test.laminex.com.au/medias/p-LG-S302-Opal-1200x1200.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjA2fGltYWdlL2pwZWd8aW1hZ2VzL2hlYy9oYWMvaDAwLzg4NDUyMTg2NzY3NjYuanBnfGJiNjI0YzdiYjA4MjA1ZDBhZWEzNzA5ZGI1M2UzNWQzYWM4NmY0MTA5N2M1Y2RmODQ1ZmFjNzdlZWZjZDg5NTE"
+                                                src="/medias/p-LX-ColourCollection-Rural-Oak-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNzgwOHxpbWFnZS9qcGVnfGltYWdlcy9oNDYvaDY0L2gwMC84ODI2NzAwNjYwNzY2LmpwZ3wzNzI2ZDRlOWRkYzRiOWM1NzBkZmU2ZjMzZWMwMDBlZTJjZmE3YjNjZmZhNTg3NTQwZDFjMTVlZDI2MDNhMmI3"
                                                 alt=""
                                                 title=""
                                                 class="image--loading swatch-tiles__media img-fluid"
@@ -2239,22 +2089,78 @@
                                             <div class="prod-desc">
                                               <div class="prod-name">
                                                 <span
-                                                  >LG HI-MACS Opal HI-MACS</span
+                                                  >Laminex Rural Oak Chalk
+                                                  Impressions</span
                                                 >
                                                 <a
                                                   href="#"
                                                   class="icon"
-                                                  data-product-code="991506"
-                                                  id="991506"
+                                                  data-product-code="985526"
+                                                  id="985526"
                                                   tabindex="-1"
                                                 ></a>
                                               </div>
                                               <div class="product-code">
-                                                991506
+                                                985526
                                               </div>
                                               <div class="product-size">
-                                                No Substrate, 3680mm x 760mm,
-                                                12.000
+                                                MDF MR E0, 2400mm x 1200mm,
+                                                16.000
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="image-slider__item d-inline-block slick-slide"
+                                      style="width: 270px;"
+                                      tabindex="-1"
+                                      role="tabpanel"
+                                      id="slick-slide011"
+                                      aria-describedby="slick-slide-control011"
+                                      data-slick-index="11"
+                                      aria-hidden="true"
+                                    >
+                                      <div
+                                        class="image-slider__item-inner click-add-fop-to-quick-order js-add-fop-to-quick-order"
+                                        id="985692"
+                                      >
+                                        <div
+                                          class="style-palette--scandinavian"
+                                        >
+                                          <div
+                                            class="fop-slide image-slider__item-inner--scaling"
+                                            style="height: 175.406px;"
+                                          >
+                                            <div class="prod-img">
+                                              <img
+                                                src="/medias/p-LX-ColourCollection-Rural-Oak-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxNzgwOHxpbWFnZS9qcGVnfGltYWdlcy9oNDYvaDY0L2gwMC84ODI2NzAwNjYwNzY2LmpwZ3wzNzI2ZDRlOWRkYzRiOWM1NzBkZmU2ZjMzZWMwMDBlZTJjZmE3YjNjZmZhNTg3NTQwZDFjMTVlZDI2MDNhMmI3"
+                                                alt=""
+                                                title=""
+                                                class="image--loading swatch-tiles__media img-fluid"
+                                              />
+                                            </div>
+                                            <div class="prod-desc">
+                                              <div class="prod-name">
+                                                <span
+                                                  >Laminex Rural Oak Stipple ABS
+                                                  Edging - Unglued</span
+                                                >
+                                                <a
+                                                  href="#"
+                                                  class="icon"
+                                                  data-product-code="985692"
+                                                  id="985692"
+                                                  tabindex="-1"
+                                                ></a>
+                                              </div>
+                                              <div class="product-code">
+                                                985692
+                                              </div>
+                                              <div class="product-size">
+                                                No Substrate, 100mt x 21mm,
+                                                1.000
                                               </div>
                                             </div>
                                           </div>
@@ -2428,79 +2334,79 @@
                           },
 
                           {
-                            id: "706839",
-                            name: "W/board MR 16 Dec 3600x1800",
-                            category: "Whiteboard MR",
+                            id: "813685",
+                            name: "Vinyl Wrap Fix Rail 3.6x42x18",
+                            category: "Craftwood Mouldings",
                             position: "2",
                           },
 
                           {
-                            id: "706840",
-                            name: "W/board MR 16 Dec 2400x1800",
-                            category: "Whiteboard MR",
+                            id: "878796",
+                            name: "EAbsU Sil PolarWhi S 100x21x1",
+                            category: "ABS Edging - Unglued",
                             position: "3",
                           },
 
                           {
-                            id: "730915",
-                            name: "W/board MR 25 Dec 2400x1200",
-                            category: "Whiteboard MR",
+                            id: "936274",
+                            name: "Craftwood STD E0 9 2400x1200",
+                            category: "Craftwood STD",
                             position: "4",
                           },
 
                           {
-                            id: "906493",
-                            name: "LWE0 18 Sat White 2400x1200",
+                            id: "948060",
+                            name: "LWE0 16 Fli Charcoa 2400x1200",
                             category: "Colour Collection",
                             position: "5",
                           },
 
                           {
-                            id: "942864",
-                            name: "LWE0 18 Sat White 3600x1200",
+                            id: "948196",
+                            name: "LWE0 16 Nat LustrousElm 24x12",
                             category: "Colour Collection",
                             position: "6",
                           },
 
                           {
-                            id: "948034",
-                            name: "LWE0 18 Sat White 2400x1800",
-                            category: "Colour Collection",
+                            id: "961906",
+                            name: "LWImpE0 16 Nua BlackeLwd 24x12",
+                            category: "Impressions",
                             position: "7",
                           },
 
                           {
-                            id: "948052",
-                            name: "LWE0 25 Sat White 2400x1200",
-                            category: "Colour Collection",
+                            id: "961908",
+                            name: "LWImpE0 16 Nua ChalkTeak 24x12",
+                            category: "Impressions",
                             position: "8",
                           },
 
                           {
-                            id: "948059",
-                            name: "LWE0 16 Sat White 2400x1200",
-                            category: "Colour Collection",
+                            id: "985515",
+                            name: "LWImpE0 16 Cha ConcrForm 24x12",
+                            category: "Impressions",
                             position: "9",
                           },
 
                           {
-                            id: "948075",
-                            name: "LWE0 18 Sat White 3600x1800",
-                            category: "Colour Collection",
+                            id: "985517",
+                            name: "LWImpE0 16 Cha EleganOak 24x12",
+                            category: "Impressions",
                             position: "10",
                           },
 
                           {
-                            id: "948117",
-                            name: "LWE0 16 Sat White 3600x1800",
-                            category: "Colour Collection",
+                            id: "985526",
+                            name: "LWImpE0 16 Cha RuralOak 24x12",
+                            category: "Impressions",
                             position: "11",
                           },
 
                           {
-                            id: "991506",
-                            name: "HI-MACS 12 Opal 3680x760",
-                            category: "HI-MACS",
+                            id: "985692",
+                            name: "EAbsU Sti RuralOak W 100x21x1",
+                            category: "ABS Edging - Unglued",
                             position: "12",
                           },
                         ],

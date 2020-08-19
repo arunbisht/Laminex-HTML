@@ -2,9 +2,16 @@
   &.has-face {
     .item {
       width: 18.6%;
+
+      &.item-only-desktop {
+        .prod-desc {
+          width: 100%;
+          padding-left: 0;
+        }
+      }
     }
     .face {
-      width: 14.3%;
+      width: 10.7%;
       padding-right: 0.5625rem !important;
 
       select,
@@ -24,10 +31,16 @@
     }
 
     .qty {
-      width: 10.6%;
+      width: 13.2%;
+
+      .price-details1 {
+        div {
+          white-space: normal !important;
+        }
+      }
     }
     .price {
-      width: 25.2%;
+      width: 26.2%;
     }
 
     @media screen and (max-width: 1099.98px) {
@@ -51,6 +64,16 @@
       }
       .price {
         width: 24.7% !important;
+      }
+
+      .product-orderable-error {
+        padding: 0 0.625rem;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .price {
+        width: 50% !important;
       }
     }
   }
