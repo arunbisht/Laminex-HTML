@@ -15,7 +15,7 @@
             }
 }
 .natural-language {
-    background-color: $primary-color;
+    background-color: $storelocator-filterbg;
     padding: 1rem 0 2rem 0;
     font-family: "Brown Std New"!important;
     font-weight: 700;
@@ -340,7 +340,7 @@
             vertical-align: middle;
         }
         a{
-            color: $link-color-new;
+            color: $storelocator-links;
             font-weight: 500;
             i{
                 color: $secondary-text-color;
@@ -371,11 +371,11 @@
             border: 1px solid transparent;
             border-radius: 50%;
             &:hover{
-                color: $link-color-new;
+                color: $storelocator-pagination-anchor;
             }
             &.active{
-                color: $link-color-new;
-                border-color: $link-color-new;
+                color: $storelocator-pagination-anchor;
+                border-color: $storelocator-pagination-border;
             }
         }
     }
