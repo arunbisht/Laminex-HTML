@@ -1,0 +1,250 @@
+.store-locator{
+    button{
+        width: auto!important;
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+        margin-left: 0.75rem;
+        &:first-child{
+            margin-left: 0;
+        }
+        }
+    ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+}
+.natural-language {
+    background-color: $primary-color;
+    padding: 2.75rem 0;
+    font-family: "Brown Std New"!important;
+    font-weight: 700;
+    label, .facet-title, .dropdown{
+        font-size: 1.5rem;
+        color: $secondary-text-color;
+        line-height: 1.33;
+        letter-spacing: -0.05px;
+    }
+    .location-filter, .location-finder{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+    .location-filter-input{
+        display: inline-block;
+        position: relative;
+        margin-right: 0.5rem;
+    }
+    .location-search-input{
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px dotted $link-color-new !important;
+        color: $link-color-new;
+        text-overflow: ellipsis;
+        vertical-align: baseline !important;
+        font-size: 1.5rem;
+        font-family: "Brown Std New"!important;
+        font-weight: 700;
+        &::placeholder{
+            color: $link-color-new;
+            opacity: .5;
+            font-size: inherit;
+            font-family: "Brown Std New"!important;
+        font-weight: 700;
+        }
+        &:focus, &:active{
+            border: 0!important;
+            border-bottom: 2px dotted $link-color-new !important;
+        }
+    }
+    .facet-heading, .location-finder-dropdown{
+            display: inline-block;
+            margin-right: .375rem;
+    }
+    .location-finder-dropdown{
+        position: relative;
+        .dropdown{
+            color: $link-color-new;
+            padding-bottom: 0.5625rem;
+            border-bottom: 1px solid $link-color-light;
+            &:after{
+                display: inline-block;
+                vertical-align: middle;
+                font-family: "font-icons-new" !important;
+                content: "\e008";
+                font-size: initial;
+            }
+        }
+        #location-dropdown{
+            position: absolute;
+            top: 60px;
+            background: $bg-white;
+            width: 100%;
+            width: 420px;
+            z-index: 10;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+            ul{
+                padding: 1rem 2rem;
+                li{
+                    padding:0.8rem 0;
+                    a{
+                        font-size: 1.5rem;
+                        line-height: normal;
+                        font-family: "Brown Std New"!important;
+                        font-weight: bold;
+                        display: block;
+                        color: $link-color-new;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.results-info{
+        padding: 1.25rem 0;
+        background: $whites-and-neutrals-bg;
+        .result{
+            color: $secondary-text-color;
+            font-size: 0.875rem;
+            font-family:"Maison Neue";
+            font-weight: 700;
+            margin-top: 0.3125rem;
+            margin-bottom: 0;
+        }
+    }
+.btn.small-btn{
+    border-radius: 4px;
+    padding: 6px 16px;
+    width: auto;
+}
+.card-horizontal{
+    display: block;
+}
+.location-search-results{
+    padding: 0 1.875rem;
+}
+.location-search-results-list{
+    padding-top: 20px;
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            border-top:1px solid $accordion-border-color;
+            padding: 1.25rem 0 1.6875rem 0;
+            &:first-child{
+                border-top: none;
+            }
+            position: relative;
+        }
+    }
+    .card{
+        border:0;
+        position: static;
+        .card-map{
+            width: 192px;
+            height: 192px;
+            float: left;
+            margin-right: 1.625rem;
+        }
+            .card-body{
+                overflow: hidden;
+                line-height: normal;
+                small{
+                    font-family:"Maison Neue";
+                    font-weight: 500;
+                    font-size: 0.8125rem;
+                    color: $secondary-color;
+                    line-height: 1.85;
+                    margin-bottom: 0.3125rem;
+                    display: block;
+                }
+                .card-title{
+                font-size:1.3125rem;
+                color: $secondary-text-color;
+                    margin-bottom: 0.3125rem;
+                }
+                
+            }
+        .contact-details{
+            overflow: hidden;
+            position: relative;
+            address{
+                    font-family:"Maison Neue";
+                    font-weight: 300;
+                    font-size: 0.875rem;
+                    color: $secondary-text-color;
+                    margin-bottom: 0;
+                }
+            .actions{
+        @media screen and (min-width:1300px){
+            position: absolute;
+        right: 0;
+        bottom: 0.75rem;
+        }
+            .btn{
+                &.btn-secondary{
+                    padding-left:1rem!important;
+                    padding-right:1rem!important;
+                }
+            }
+        }
+        }
+    }
+    
+    
+}
+.contact-info{
+    li{
+        font-family:"Maison Neue";
+        font-weight: 300;
+        font-size: 0.875rem;
+        color: $secondary-text-color;
+        padding: 0!important;
+        margin-top: 0.5rem;
+        border: 0!important;
+        i{
+            font-family: "font-icons-new" !important;
+            margin-right: 0.875rem;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        a{
+            color: $link-color-new;
+            font-weight: 500;
+            i{
+                color: $secondary-text-color;
+            }
+        }
+    }
+}
+.pagination{
+    margin: 0;
+    padding: 1.125rem 0 2.8125rem 0;
+    list-style: none;
+    li{
+        
+        a{
+            font-family:"Maison Neue";
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.71;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: $secondary-text-color;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            &:hover{
+                color: $link-color-new;
+            }
+            &.active{
+                color: $link-color-new;
+                border-color: $link-color-new;
+            }
+        }
+    }
+}

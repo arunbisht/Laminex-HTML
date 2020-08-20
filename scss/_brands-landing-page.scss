@@ -290,11 +290,9 @@
     h6,
     .h6 {
         font-family: "Brown Std New"!important;
-      color: $secondary-text-color;
+      color: $lx-prime-text-color;
     }
-    .lx-color{
-        color: $lx-prime-text-color!important;
-    }
+    
 
     .link {
       color: $lx-prime-text-color;
@@ -368,8 +366,84 @@
             border-color: $lx-hr;
         }
   }
+    
+/* Default basic theme stylings */
+    &.default {
+    font-family:inherit;
+    color: $text-color!important;
+    font-weight: inherit;
 
-    /* Default styles for all pages*/
+    .theme-header {
+      background: $bg-white;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {   
+      color: $secondary-text-color;
+    }
+      
+    .link,
+    .next-btn {
+      color: $secondary-text-color;
+    }
+        .btn-primary{
+            background: $text-color;
+            border-color: $text-color;
+        }
+
+    .link {
+      border-bottom: 1px dashed $text-color;
+      font-weight: 300;
+    }
+
+    .home-newsletter-wrapper {
+      background: $primary-color;
+    }
+
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $secondary-text-color;
+
+            @media screen and (min-width: 960px) {
+              color: $secondary-text-color;
+            }
+          }
+        }
+      }
+    }
+        .colour-collection-projects-slider-nav {
+    .slick-arrow {
+      color: $text-color;
+    }
+
+    .colour-collection-projects-slider-dots {
+      .slick-dots {
+        li {
+          &.slick-active {
+            background-color: $text-color !important;
+          }
+        }
+      }
+    }
+  }
+        .home-hr{
+            border-color: $text-color;
+        }
+  }
+
+    /* Normal Default styles for all pages*/
   .home-hr {
     border-top: 1px solid $text-black;
     margin: 0;
