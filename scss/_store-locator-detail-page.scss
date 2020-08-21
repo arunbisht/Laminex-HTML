@@ -1,0 +1,59 @@
+.store-locator-details{
+   color: $secondary-text-color;
+    font-family:"Maison Neue";
+    font-weight: 300;
+    @media screen and (min-width:960px){
+        font-size: 1.125rem;
+    }
+    h6{
+        font-family:"Maison Neue"!important;
+        font-weight: 500;
+    }
+    .featured-info{
+        p{
+            margin-bottom:2rem;
+        }
+    }
+    .location-content{
+        .location-content-composition,a:not(.btn){
+            font-size: 1.125rem;
+        }
+        .field-locationfaxnumber a, .field-locationphonenumber a{
+            font-weight: inherit;
+            color: inherit;
+        }
+        address{
+            margin-bottom: 1.875rem;
+        }
+    }
+    a:not(.btn){
+            font-weight: 500;
+            color: $storelocator-links;
+        }
+    .field-public-holiday{
+        font-weight: 700;
+    }
+}
+.company-banner{
+    position: relative;
+    .title{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    h1{
+        font-size: 1.5rem;
+        letter-spacing: -0.5px;
+        background: $bg-white;
+        display: inline-block;
+        padding: 0.625rem 1.25rem 0;
+        margin: 0 0 0 -1.25rem;
+        @media screen and (min-width:960px){
+            font-size: 3.125rem;
+            line-height: 1.28;
+            letter-spacing: -0.83px;
+            margin: 0 0 0 -4.625rem;
+            padding: 1.75rem 3.875rem 0 4.625rem;
+        }
+    }
+}
