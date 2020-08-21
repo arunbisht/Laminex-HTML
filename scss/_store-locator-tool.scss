@@ -9,10 +9,34 @@
         }
         }
     ul{
-                margin: 0;
-                padding: 0;
-                list-style: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+    .dropdowns{
+            position: absolute;
+            top: 100%;
+            background: $bg-white;
+            width: auto;
+            min-width: 300px;
+            z-index: 10;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        text-align: left;
+            .dropdown-content{
+                padding: 1rem 2rem;
+                text-align: left;
+                li{
+                    padding:0.4rem 0;
+                    line-height: normal;
+                    a{
+                        font-family: "Brown Std New"!important;
+                        font-weight: bold;
+                        display: block;
+                        color: $link-color-new;
+                    }
+                }
             }
+        }
 }
 .natural-language {
     background-color: $storelocator-filterbg;
@@ -92,7 +116,10 @@
     }
     .facet-heading, .location-finder-dropdown{
             display: inline-block;
+            
+        @media screen and (min-width:768px){
             margin-right: .375rem;
+        }
     }
     .location-finder-dropdown{
         position: relative;
@@ -109,15 +136,10 @@
                 font-size: initial;
             }
         }
-        #location-dropdown{
-            position: absolute;
+        .dropdowns{
             top: 60px;
-            background: $bg-white;
-            width: auto;
-            min-width: 300px;
-            z-index: 10;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-            ul{
+            min-width:420px;
+            .dropdown-content{
                 padding: 1rem 1.5rem;
                 @media screen and (min-width:960px){
                    padding: 1rem 2rem;
@@ -130,8 +152,6 @@
                     a{
                         font-size: 1.3125rem;
                         line-height: normal;
-                        font-family: "Brown Std New"!important;
-                        font-weight: bold;
                         display: block;
                         color: $link-color-new;
                         @media screen and (min-width:960px){
@@ -188,6 +208,62 @@
              margin-top: 0;
          }
         }
+    .refine-results{
+        position: relative;
+        display: inline-block;
+        .dropdowns{
+            right: 0;
+            top:50px;
+            li{
+                label{
+                    display: inline-block;
+                    font-size: 0.875rem;
+                    color:$secondary-text-color;
+                    margin: 0;
+                    font-family:"Maison Neue";
+                }
+                input[type="checkbox"],input[type="radio"]{
+                    vertical-align: middle;
+                    margin-right: 0.75rem;
+                    margin-top: -2px;
+                }
+            }
+            h5{
+                text-decoration: none;
+                margin-bottom: 0.75rem;
+                color: $link-color-new;
+                i{
+                    vertical-align: baseline;
+                    margin-right: 0.8125rem;
+                    font-size: small;
+                }
+            }
+            .filter-actions{
+                display: flex;
+                justify-content: space-between;
+                padding: 1.375rem 0 0 2rem;
+                a{
+                    font-size:0.75rem;
+                    font-family: "Brown Std New";
+                    line-height: 1.33;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding-bottom: 0.3125rem;
+                    position: relative;
+                    color: $storelocator-links;
+                    &:hover:after{
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 1px;
+                            background: $storelocator-links;
+                            display: block;
+                            content: "";
+                    }
+                }
+            }
+        }
+    }
     }
 .btn.small-btn{
     border-radius: 4px;
