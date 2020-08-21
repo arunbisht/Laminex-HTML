@@ -812,3 +812,13 @@ $sticky-tablet-header-height: 67px;
     }
   }
 }
+
+header.primary-navmenu-au {
+  .header-right .header-bottom .header-cart-section li .cart-value {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

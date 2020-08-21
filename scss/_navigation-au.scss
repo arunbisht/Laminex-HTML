@@ -1215,3 +1215,23 @@ $sticky-tablet-header-height: 54px;
     }
   }
 }
+header.primary-navmenu-au {
+  .header-right .header-bottom .header-cart-section li .cart-value {
+    top: -3px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 959px) {
+      top: -12px;
+    }
+  }
+
+  &.sticky {
+    .header-right .header-bottom .header-cart-section li .cart-value {
+      display: inline;
+    }
+  }
+}
