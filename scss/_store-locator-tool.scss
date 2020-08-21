@@ -301,8 +301,8 @@
              @media screen and (max-width:767px){
                 padding: 1.25rem 0;
             }
-            @media screen and (min-width:1440px){
-                margin-right: 5.5rem;
+            @media screen and (min-width:1900px){
+                margin-right: 8.148148%;
             }
         }
     }
@@ -377,16 +377,34 @@
                     right: 0;
                     bottom: 0;
                 }
+                @media screen and (min-width:960px){
+                    position: static;
+                    padding-left: calc(192px + 1.625rem);
+                }
+                @media screen and (min-width:1200px){
+                    position: absolute;
+                    padding-left: 0;
+                }
             .btn{
                 @media screen and (min-width:768px){
                     display: block;
                     margin-top: 0.625rem;
                     margin-left: 0;
                 }
-                @media screen and (min-width:1441px){
+                 @media screen and (min-width:960px){
                     display: inline-block;
-                    margin-left: 0.625rem;
-                    margin-top: 0;
+                     margin-right: 0.625rem;
+                    
+                }
+                @media screen and (min-width:1200px){
+                    display: block;
+                    margin-top: 0.625rem;
+                    margin-left: 0;
+                }
+                @media screen and (min-width:1500px){
+                    display: inline-block;
+                     margin-left: 0.625rem;
+                    margin-right: 0;
                 }
                 &.btn-secondary{
                     padding-left:1rem!important;
@@ -407,8 +425,12 @@
         color: $secondary-text-color;
         padding: 0!important;
         margin-top: 1rem;
+        margin-right: 0!important;
         border: 0!important;
         line-height: normal;
+        @media screen and (min-width:768px){
+            padding-left: calc(192px + 1.625rem)!important;
+        }
         i{
             font-family: "font-icons-new" !important;
             margin-right: 0.875rem;

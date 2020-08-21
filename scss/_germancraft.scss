@@ -136,6 +136,11 @@
          &.field-locationphonenumber > a::before {
              content: "\e020";
          }
+         
+         &.field-locationfaxnumber > a::before {
+             content: "\e00d";
+         }
+
 
          &.field-locationwebsite > a::before {
              content: "\e011";
