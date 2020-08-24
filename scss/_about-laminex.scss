@@ -29,6 +29,8 @@
 }
 
 .vertical-scroll {
+  color: $secondary-text-color;
+
   &:first-child {
     .vertical-scroll-wrapper {
       .vertical-scroll-item {
