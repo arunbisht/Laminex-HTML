@@ -121,6 +121,13 @@
         padding-right: 0;
       }
 
+      .micro-image-size {
+        @media screen and (max-width: 767px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
       .btn {
         @media screen and (max-width: 1099.98px) {
           margin-bottom: 3.125rem;
