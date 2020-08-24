@@ -55,24 +55,34 @@
     @media screen and (max-width: 1099.98px) {
       .substrate {
         &.substrate-not-desktop {
-          width: 50%;
+          width: 40.5%;
         }
       }
 
       .face {
-        width: 16.3%;
+        width: 24.8%;
       }
       .size {
-        width: 16.7%;
+        width: 34.7%;
       }
       .thickness {
-        width: 16.5%;
+        width: 18.9% !important;
       }
       .project-name {
-        width: 50%;
+        width: 30.9%;
+      }
+      .qty.my-qty {
+        width: 29.3% !important;
       }
       .price {
-        width: 24.7% !important;
+        width: 20.7% !important;
+        display: block !important;
+        text-align: right !important;
+
+        .price-details2 {
+          width: auto !important;
+          display: inline-block !important;
+        }
       }
 
       .product-orderable-error {
@@ -83,6 +93,15 @@
     @media screen and (max-width: 767px) {
       .price {
         width: 50% !important;
+      }
+      .thickness {
+        width: 100% !important;
+      }
+      .qty.my-qty {
+        width: 50% !important;
+      }
+      .price {
+        text-align: left !important;
       }
     }
   }
