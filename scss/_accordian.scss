@@ -210,6 +210,7 @@
 
 .hero-banner-internal-header {
   padding: 1.25rem 44px;
+  color: $secondary-color;
 
   h3 {
     font-size: 1.3125rem;
@@ -242,6 +243,7 @@
 
 .section-intro-heading {
   margin-bottom: 8px;
+  color: $secondary-color;
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
   }
@@ -251,6 +253,7 @@
 }
 
 .section-intro-description {
+  color: $secondary-color;
   p {
     color: $section-intro-description-text-color;
     font-size: 0.875rem;
