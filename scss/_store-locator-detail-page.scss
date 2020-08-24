@@ -16,7 +16,15 @@
     }
     .location-content{
         .location-content-composition,a:not(.btn){
-            font-size: 1.125rem;
+            @media screen and (max-width:767px){
+                font-size: 0.875rem;
+            }
+            @media screen and (min-width:768px){
+                font-size: 1rem;
+            }
+            @media screen and (min-width:960px){
+                font-size: 1.125rem;
+            }
         }
         .field-locationfaxnumber a, .field-locationphonenumber a{
             font-weight: inherit;
@@ -24,14 +32,38 @@
         }
         address{
             margin-bottom: 1.875rem;
+            div:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .location-content-head{
+            @media screen and (max-width:767px){
+                padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            }
+        }
+        .location-col{
+            @media screen and (max-width:767px){
+                margin-bottom: 1.75rem;
+            }
         }
     }
     a:not(.btn){
             font-weight: 500;
-            color: $storelocator-links;
+            color: $storelocator-pagination-anchor;
+        &:before{
+                color: $secondary-text-color;
+            }
         }
     .field-public-holiday{
         font-weight: 700;
+    }
+    &.nz{
+        .location-content{
+            address{
+                margin-bottom:0;
+            }
+        }
     }
 }
 .company-banner{
