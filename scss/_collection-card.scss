@@ -124,6 +124,13 @@
     .sample-order-trigger {
       @extend %sample-order-trigger;
     }
+
+    .sample-order-checkbox {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      z-index: 2;
+    }
   }
 
   .caption-wrapper {
@@ -172,5 +179,12 @@
   }
   .sample-order-trigger {
     @extend %sample-order-trigger;
+  }
+}
+
+.collection-card-row {
+  > div[class*="col-"] {
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }

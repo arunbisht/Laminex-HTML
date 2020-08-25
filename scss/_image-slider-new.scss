@@ -35,6 +35,16 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
+  &.container-fluid {
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 960px) {
+      margin-bottom: 80px;
+    }
+  }
 }
 
 .explore-style {
@@ -43,4 +53,8 @@
       display: block;
     }
   }
+}
+
+.mar-t-m-35 {
+  margin-top: -35px !important;
 }
