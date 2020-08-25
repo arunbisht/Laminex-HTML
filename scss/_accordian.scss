@@ -157,6 +157,19 @@
       margin-bottom: 1.5rem;
     }
 
+    .p1 {
+      font-size: 0.875rem;
+      line-height: 1.7142857143;
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 1.125rem;
+        line-height: 1.7777777778;
+      }
+    }
+
     ol {
       list-style-type: lower-alpha !important;
       list-style: initial;
@@ -188,7 +201,10 @@
         &.active {
           background-color: $whites-and-neutrals-bg;
         }
-
+      }
+    }
+    &.no-spacing-accordion-item {
+      .accordion-item {
         .accordion-content {
           @media screen and (min-width: 768px) {
             padding: 0;
