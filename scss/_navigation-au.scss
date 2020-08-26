@@ -358,12 +358,26 @@ $sticky-tablet-header-height: 54px;
                 display: none;
               }
 
-              &:hover {
+              &:hover,
+              &.show {
                 color: $link-color-new;
                 border-bottom: none;
 
                 &:after {
                   display: inline;
+                }
+              }
+
+              &:hover {
+                &:before {
+                  content: "";
+                  display: block;
+                  height: 40px;
+                  margin-bottom: -8px;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
                 }
               }
             }

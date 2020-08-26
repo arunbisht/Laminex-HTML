@@ -1260,34 +1260,67 @@
       // TODO : Transformation to the modular structure
 
       $(function () {
-        ///////////////////////////////////////////////
-        // Mouse over event for the Main menu items //
-        ///////////////////////////////////////////////
-        $(".digimeg-main-nav>li>a").on("mouseenter", function () {
-          //initially closing all sub-menu
-          $(".menu-content").stop(true, true).delay(100).slideUp();
-          // Get the subnav's ID from [data-subnav] attribute of the currently hovered menu item
-          var navContentId = $(this).data("subnav");
-          // Stop (in case the sub nav was sliding up) and slidedown
-          //$('#'+navContentId).stop().slideDown({ queue : false});
-          $("#" + navContentId)
-            .stop(true, true)
-            .delay(100)
-            .slideDown();
+        $(".digimeg-main-nav li a").hover(
+          function () {
+            $(".menu-content").stop(true, true).delay(100).slideUp();
+            $(this)
+              .parent(".nav-item")
+              .siblings()
+              .children()
+              .removeClass("show");
+            var navContentId = $(this).data("subnav");
+            if ($("#" + navContentId).length > 0) {
+              $("#" + navContentId)
+                .stop(true, true)
+                .delay(100)
+                .slideDown();
+              $(this).addClass("show");
+            }
+            event.stopPropagation();
+          },
+          function () {
+            var currentMousePos = { x: 1, y: 1 };
+            var navContentId = $(this).data("subnav");
 
-          event.stopPropagation();
-        });
+            currentMousePos.x = event.pageX;
+            currentMousePos.y = event.pageY;
+
+            if ($("#" + navContentId).length > 0) {
+              if (!(currentMousePos.y >= $("#" + navContentId).offset().top)) {
+                $("#" + navContentId)
+                  .stop(true, true)
+                  .delay(100)
+                  .slideUp();
+                $(this).removeClass("show");
+              }
+            }
+          }
+        );
+
+        $("#siteHeader__nav--secondary .desktop-view").on(
+          "mouseleave",
+          function (event) {
+            event.preventDefault();
+            $(".menu-content").stop(true, true).delay(100).slideUp();
+            $(
+              ".header-right.prime-nav .navbar .navbar-nav .nav-item .nav-link"
+            ).removeClass("show");
+            $(
+              ".primary-navmenu-nz .siteHeader-nav-primary nav ul li a"
+            ).removeClass("show");
+          }
+        );
 
         //////////////////////////////////////////////
         // Mouse out event for the Main menu items //
         //////////////////////////////////////////////
-        $(".menu-content").on("mouseleave", function () {
-          var navContentId = $(this).data("subnav");
-          // Stop ( in case the sub nav was sliding down ) and slide up
-          //$('#'+navContentId).stop().slideUp({ queue : false});
-          $(".menu-content").stop(true, true).delay(100).slideUp();
-          event.preventDefault();
-        });
+        // $(".menu-content").on("mouseleave", function () {
+        //   var navContentId = $(this).data("subnav");
+        //   // Stop ( in case the sub nav was sliding down ) and slide up
+        //   //$('#'+navContentId).stop().slideUp({ queue : false});
+        //   $(".menu-content").stop(true, true).delay(100).slideUp();
+        //   event.preventDefault();
+        // });
 
         // Tabs link content change
         $(".tab-titles li").mouseover(function () {
