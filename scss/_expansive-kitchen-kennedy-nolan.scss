@@ -1,0 +1,127 @@
+.fh-banner {
+    margin-bottom: 5.625rem;
+    .btn-link-backward{
+        font-size: .875rem;
+        margin-left: 1.25rem;
+    }
+    .content{
+        padding: 1.25rem 0 1.75rem;
+        @media screen and (min-width:768px){
+            padding: 1.25rem 0 2.375rem;
+        }
+        @media screen and (min-width:960px){
+            padding: .75rem 0 2.125rem;
+        }
+    }
+    .fh-title{
+        margin: 1.5rem 0 0 .5rem;
+        @media screen and (min-width:768px){
+            margin: 2.25rem 0 1.25rem 0;
+        }
+        @media screen and (min-width:960px){
+            margin: 1.125rem 0 1.125rem 0;
+            font-size: 3.75rem;
+        }
+    }
+    .pub-on{
+        font-family: "Brown Std New";
+        font-weight: 700;
+        font-size: .75rem;
+        letter-spacing: .0875rem;
+        margin: 1.25rem 0 .625rem 0;
+        @media screen and (min-width:768px){
+            margin: 1.625rem 0 .625rem 0;
+        }
+    }
+    .trend-tag {
+    font-family: "Maison Neue";
+    color: #403d3b !important;
+    background-color: $style-palette-peach;
+    font-size: 11px;
+    padding: 2px 13.5px;
+    border-radius: 4px;
+    line-height: 1.65;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin: 12px 8px 0 0;
+    }
+    .image-caption-media{
+        margin-bottom: 8px;
+         @media screen and (min-width:768px){
+            
+        }
+        @media screen and (min-width:960px){
+            margin-bottom: 16px;
+        }
+    }
+    .content-half{
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            margin-top: -1px;
+        }
+    }
+}
+.style-palette{
+    &.peach{
+        .palette-bg{
+        background-color: $style-palette-peach;
+        .style-palette_primary-text{
+            color: $secondary-text-color;
+        }
+        }
+        .content-half{
+            &:before{
+               background-color: $style-palette-peach; 
+            }
+        }
+    }
+}
+.expansive-kitchen{
+    .laminex-rich-text-component{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -4px;
+        margin-left: -4px;
+        @media screen and (min-width:768px){
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+        @media screen and (min-width:960px){
+            margin-right: -16px;
+            margin-left: -16px;
+        }
+    }
+    .section-wrapper{
+        @media screen and (max-width: 767px){
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.fb-video {
+    .component-content{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 768px;
+    max-width: 100%;
+        @media screen and (min-width:768px){
+             padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        @media screen and (min-width:960px){
+            margin-right: 4rem;
+            margin-left: 4rem;
+        }
+    }
+}
