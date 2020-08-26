@@ -89,6 +89,7 @@ $text-black: #000000 !default;
 
 $footer-social-icon-border-color: #cccccc !default;
 $footer-social-icon-hover-bg-color: #222327 !default;
+$footer-social-icon-spacing: 3px !default;
 
 $footer-mobile-arrow-color: $link-color-light !default;
 $footer-top-bg-color: $style-palette-peach !default;
@@ -96,6 +97,10 @@ $footer-top-top-padding: 50px !default;
 $footer-top-bottom-padding: 25px !default;
 $footer-bottom-bg-color: #ffffff !default;
 $footer-logo-width: 110px !default;
+$footer-copyrights-left-spacing: 50px !default;
+$footer-nav-left-spacing: 90px !default;
+$footer-mobile-copyrights-left-spacing: 30px !default;
+$footer-mobile-nav-left-spacing: 50px !default;
 
 $form-bg-color: $style-palette-peach !default;
 
@@ -148,9 +153,8 @@ $listing-border: #f2f0ed;
 
 $whites-and-neutrals-bg: #fafafa !default;
 
-
 /* Store locator styles */
 $storelocator-filterbg: #f3f4f2;
-$storelocator-links: #858e81!default;
-$storelocator-pagination-border: #a5be9b!default;
-$storelocator-pagination-anchor: #507035!default;
+$storelocator-links: #858e81 !default;
+$storelocator-pagination-border: #a5be9b !default;
+$storelocator-pagination-anchor: #507035 !default;
