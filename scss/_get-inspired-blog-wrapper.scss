@@ -22,6 +22,12 @@
 .home-hr {
   padding-bottom: 20px;
   margin-bottom: 0;
+  width: 100%;
+
+  .laminex-rich-text-component & {
+    border-top: 2px solid $accordion-border-color;
+  }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 40px;
   }
