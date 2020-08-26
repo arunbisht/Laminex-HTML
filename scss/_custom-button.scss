@@ -7,6 +7,10 @@
   border-bottom: 2px solid transparent;
   border-radius: 0;
 
+  &.btn-16 {
+    font-size: 1rem;
+  }
+
   &:after {
     content: "\E002";
     font-family: "font-icons" !important;
