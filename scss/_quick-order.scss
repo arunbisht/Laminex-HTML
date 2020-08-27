@@ -150,6 +150,16 @@
     @media screen and (max-width: 767px) {
       .face {
         width: 100% !important;
+        padding-left: calc(2.5rem + 5.794%) !important;
+        padding-top: 0 !important;
+
+        .mobile-table-heading {
+          display: none !important;
+        }
+
+        span {
+          padding-top: 0 !important;
+        }
       }
       .qty,
       .price {
