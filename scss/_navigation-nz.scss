@@ -335,6 +335,10 @@ $sticky-tablet-header-height: 67px;
           padding-left: 0.5rem;
           padding-right: 0.5rem;
 
+          &:last-child {
+            margin-right: 0;
+          }
+
           a {
             display: block;
             text-decoration: none;
