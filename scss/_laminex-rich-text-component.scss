@@ -5,7 +5,8 @@
     font-weight: 500;
   }
 
-  a:not(.btn) {
+  a:not(.btn),
+  a:not(.default-link) {
     padding-bottom: 0.25rem;
     color: $anchor-color;
     border-bottom: 1px dotted $anchor-color;

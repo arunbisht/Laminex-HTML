@@ -1,7 +1,8 @@
 .laminex-rich-text-component {
   color: $secondary-text-color;
 
-  a:not(.btn) {
+  a:not(.btn),
+  a:not(.default-link) {
     padding-bottom: 0.25rem;
     color: $anchor-color-nz;
     border-bottom: 1px dotted $anchor-color-nz;
@@ -63,7 +64,7 @@
 
 .nz-laminex-rich-text-component {
   color: $secondary-text-color;
-  a {
+  a:not(.default-link) {
     color: $anchor-color-nz;
     border-bottom: 1px dotted $anchor-color-nz;
   }
