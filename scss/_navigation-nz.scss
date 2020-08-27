@@ -840,3 +840,17 @@ header.primary-navmenu-au {
     transform: translateX(-50%);
   }
 }
+
+.primary-navmenu-nz .navbar .navbar-nav .nav-item .nav-link:hover:before {
+  content: "";
+  display: block;
+  height: 60px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.primary-navmenu-nz .navbar .navbar-nav .nav-item .nav-link.show {
+  border-bottom: 2px solid $anchor-color;
+}
