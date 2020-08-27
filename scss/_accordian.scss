@@ -259,7 +259,7 @@
 
 .section-intro-heading {
   margin-bottom: 8px;
-  color: $secondary-color;
+  color: $secondary-text-color;
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
   }
@@ -269,7 +269,7 @@
 }
 
 .section-intro-description {
-  color: $secondary-color;
+  color: $secondary-text-color;
   p {
     color: $section-intro-description-text-color;
     font-size: 0.875rem;
