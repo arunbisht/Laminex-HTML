@@ -51,196 +51,207 @@
     <!-- Scripts for Prime Navigation -->
   </head>
 
-  <body class="primary-navmenu-nz">
-    <header class="siteHeader-sticky sticky">
-      <div id="header" class="siteHeader">
+  <body>
+    <header class="primary-navmenu-nz">
+      <!-- <div id="header" class="siteHeader"> -->
+      <div class="container">
         <div class="row">
-          <div
-            class="siteHeader-logo col-4 col-sm-3 col-md-2 col-lg-3 order-0 order-sm-1 order-md-1 order-lg-1"
-          >
-            <a title="Logo" href="/"
-              ><img
-                class="logo"
-                src="./images/laminex-logo-nz.svg"
-                alt="Laminex" /></a
-            ><span class="image-caption field-imagecaption"></span>
-          </div>
-
-          <div
-            class="component container-fluid col-8 col-sm-12 col-md-2 col-lg-2 order-1 order-sm-first order-md-4 offset-md-0 order-lg-4 siteHeader__wrapper"
-          >
-            <div class="component-content">
-              <div
-                class="component link-list siteHeader-menu col-10 col-sm-11 col-md-12 order-1 order-sm-1 offset-sm-0 order-md-0 offset-md-0 order-lg-0"
-              >
-                <ul>
-                  <li
-                    title="Search for products or content"
-                    class="item0 odd first"
-                  >
-                    <div>
-                      <a
-                        id="primary-search"
-                        href="javascript:;"
-                        class="primary-search icon-new--search"
-                        data-toggle="collapse"
-                        data-variantfieldname="Link"
-                      >
-                        <span>Search</span>
-                      </a>
-                    </div>
-                  </li>
-                  <li title="Where to Buy" class="item1 even">
-                    <div>
-                      <a
-                        href="https://www.laminex.co.nz/locator-tool"
-                        class="siteHeader-Locator icon-new--location"
-                      >
-                        <span>locator-tool</span></a
-                      >
-                    </div>
-                  </li>
-                  <li title="Sample Cart" class="item2 odd">
-                    <div>
-                      <a
-                        href="https://store.laminex.co.nz/cart/sample"
-                        class="siteHeader-Swatch icon-new--sample-basket"
-                      >
-                        <span>Sample Cart</span></a
-                      >
-                    </div>
-                  </li>
-
-                  <li
-                    title="Login to My Account"
-                    class="item1 even show-on-stick d-none"
-                  >
-                    <div>
-                      <a
-                        href="/auth/Account/Login"
-                        class="siteHeader-tradeLogin"
-                      >
-                        <span>LOGIN</span></a
-                      >
-                    </div>
-                  </li>
-                </ul>
+          <div class="banner-wrapper hide-on-desktop clearfix"></div>
+          <div class="header-left col-md-2 col-lg-3 col-3">
+            <div class="logo">
+              <div class="banner__component simple-banner">
+                <a href="https://laminexnz-uat902.fletcherbuilding.cloud"
+                  ><img
+                    title="Laminex logo"
+                    alt="Laminex logo"
+                    src="https://store.dev.laminex.co.nz/medias/logo.svg?context=bWFzdGVyfGltYWdlc3w0MDQ0fGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2hiMC9oNzAvODgxODczNDg5MTAzOC5zdmd8MzI4OTk1NzdhOWMyNTI2NWFkMGIyODJmYjJkZjI0NWUwMzc4MTA2MWYyNTg2MGMyMjJhNThkNDU5MzU4NGMwZA"
+                /></a>
               </div>
+            </div>
+          </div>
+          <div class="header-right col-md-10 col-lg-9 col-9">
+            <div class="header-top clearfix">
+              <ul>
+                <li>
+                  <a href="/login">
+                    <i class="icon-new--user" title="Login to My Account"></i>
+                    login</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="header-bottom clearfix">
+              <ul class="header-cart-section">
+                <li class="menu-icon">
+                  <a
+                    href="#"
+                    data-toggle="collapse"
+                    class="collapsed"
+                    data-target="#navMobile"
+                    aria-controls="navMobile"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    ><i class="icon-new--menu"></i
+                  ></a>
+                </li>
 
-              <div
-                class="component link siteHeader-toggler col-2 col-sm-1 order-2 order-sm-1"
-              >
-                <div class="component-content">
-                  <div class="field-link">
+                <li class="user-icon logout-li">
+                  <a href="/login">
+                    <i class="icon-new--user" title="Login to My Account"></i>
+                  </a>
+                </li>
+
+                <li class="cartIcon product-detail-mini-cart sample">
+                  <a href="/cart/sample" class="unset-text">
+                    <!-- 
+             <img src="/_ui/responsive/theme-laminexNZ/images/svg/sample-cart.svg" title="Sample Basket" alt="Sample Basket" /> -->
+                    <i
+                      class="icon-new--sample-basket"
+                      title="Sample Basket"
+                      alt="Sample Basket"
+                    ></i>
+                    <span class="cart-value">0</span>
+                  </a>
+                </li>
+                <input
+                  type="hidden"
+                  value="/cart/miniCart/SUBTOTAL"
+                  class="refreshMiniCartUrl"
+                />
+
+                <li class="list-inline-item">
+                  <a
+                    href="https://laminexnz-uat902.fletcherbuilding.cloud/locator-tool"
+                    data-linkname="Store Locator Icon"
+                    target="_blank"
+                  >
+                    <i class="icon--location" title="Find a Location"></i>
+                  </a>
+                </li>
+                <li class="search">
+                  <a href="#" class="product-search-toggle"
+                    ><i class="icon-new--search"></i
+                  ></a>
+                </li>
+              </ul>
+              <!-- <div class= "siteHeader-nav-primary">   -->
+              <nav class="navbar navbar-expand-md navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav digimeg-group digimeg-main-nav">
+                    <li class="nav-item">
+                      <a
+                        href="/browse"
+                        data-subnav="BrowseProductsLink"
+                        class="nav-link digimeg-nav-item show"
+                        >Browse Products</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        data-subnav="TradeAndSpecifierResourcesLink"
+                        class="nav-link digimeg-nav-item"
+                        >Trade &amp; Specifier Resources</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        data-subnav="GetInspiredLink"
+                        class="nav-link digimeg-nav-item"
+                        >Get Inspired</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="$siteCore/about-laminex"
+                        data-subnav="AboutLaminexLink"
+                        class="nav-link digimeg-nav-item"
+                        >About Laminex</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        data-subnav="SupportLink"
+                        class="nav-link digimeg-nav-item"
+                        >Support</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!--   </div> 
+-->
+            </div>
+          </div>
+          <input type="hidden" id="siteName" value="LaminexNZ Site" />
+          <input
+            type="hidden"
+            id="siteCoreUrl"
+            value="https://laminexnz-uat902.fletcherbuilding.cloud"
+          />
+
+          <div class="search-products-outer updated-search-products-outer">
+            <div class="container">
+              <div class="search-for-products col-12">
+                <form
+                  name="search_form_"
+                  method="get"
+                  action="/search/"
+                  id="productSearchForm"
+                >
+                  <i
+                    class="icon--search"
+                    title="Search for products or content"
+                  ></i>
+                  <input
+                    type="search"
+                    placeholder="Type your search keywords"
+                    name="text"
+                    class="js-product-search-input-field form-control form-control ui-autocomplete-input"
+                    data-options='{"autocompleteUrl" : "/search/autocomplete/ProductSearchBox","minCharactersBeforeRequest" : "3","waitTimeBeforeRequest" : "500","displayProductImages" : true,"productSearchRequest" : true}'
+                    autocomplete="off"
+                  />
+                  <a href="#" class="search-input-cross"
+                    ><img
+                      src="/_ui/responsive/theme-laminexNZ/images/svg/cross-grey.svg"
+                  /></a>
+                </form>
+
+                <div class="invalid-search" style="display: none;">
+                  <div>
+                    Sorry we don’t seem to have this product – please check your
+                    search keywords or
                     <a
-                      data-target="#siteHeader__nav--secondary"
-                      data-toggle="collapse"
-                      aria-label="Toggle navigation"
-                      aria-controls="siteHeader__nav--secondary"
-                      data-variantitemid="{1B9D77D0-AA9B-45F7-B85F-E2A7A61D7948}"
-                      data-variantfieldname="Link"
-                      aria-expanded="false"
-                      >toggle</a
+                      href="https://www.laminex.co.nz/about-laminex/contact-us"
+                      target="_blank"
+                      >speak to us.</a
                     >
                   </div>
                 </div>
+
+                <ul class="autocomplete-product-search-results"></ul>
               </div>
             </div>
           </div>
-
-          <div
-            class="component link-list siteHeader-quickLinks col-12 col-sm-5 col-md-12 col-lg-12 order-3 offset-sm-4 order-md-0 offset-md-0 order-lg-0"
-          >
-            <div class="component-content">
-              <ul id="link-login-order">
-                <li title="Quick Order" class="item0 odd first"></li>
-                <li title="Login to My Account" class="item1 even">
-                  <div>
-                    <a
-                      href="/auth/Account/Login"
-                      class="siteHeader-tradeLogin icon-new--user"
-                    >
-                      <span>LOGIN</span></a
-                    >
-                  </div>
-                </li>
-                <script type="text/javascript">
-                  $(document).ready(function () {
-                    document.body.addEventListener(
-                      "click",
-                      function (evt) {
-                        if (evt.target.className === "my-account") {
-                          var text = evt.target.text.toLowerCase();
-                          if (["logout", "log out"].indexOf(text) > -1) {
-                            evt.preventDefault();
-                            $.ajax({
-                              url: $("#hybrisUrl").val(),
-                              dataType: "jsonp",
-                              success: function (data) {
-                                console.log("data" + data);
-                                window.location.href = "/auth/Account/logout";
-                              },
-                              error: function (jqXHR, textStatus, errorThrown) {
-                                console.log("jqXHR " + jqXHR);
-                                window.location.href = "/auth/Account/logout";
-                              },
-                            });
-                          }
-                        }
-                      },
-                      false
-                    );
-                  });
-                </script>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            class="component siteHeader-nav-primary col-12 col-md-8 col-lg-7 order-4 order-md-3 order-lg-3 navigation-main navigation-main-vertical"
-          >
-            <nav class="navbar-expand-md">
-              <ul class="digimeg-group digimeg-main-nav">
-                <li>
-                  <!-- Upper menu item -->
-                  <!-- [data-subnav="define-subnav"] here define-sbunav is the id of the respective dropdown menu for this menu item -->
-                  <a
-                    href="https://www.laminex.co.nz/Browse-Products"
-                    data-subnav="browse"
-                    class="digimeg-nav-item"
-                    >Browse Products
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-subnav="trade" class="digimeg-nav-item"
-                    >Trade &amp; Specifier Resources</a
-                  >
-                </li>
-                <li>
-                  <a href="#" data-subnav="inspired" class="digimeg-nav-item"
-                    >Get Inspired</a
-                  >
-                </li>
-                <li>
-                  <a href="#" data-subnav="about" class="digimeg-nav-item">
-                    About Laminex</a
-                  >
-                </li>
-                <li>
-                  <a href="#" data-subnav="support" class="digimeg-nav-item"
-                    >Support</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
       </div>
+      <!-- </div> -->
 
-      <!-- Dropdown menu Desktop content -->
+      <!-- </div> -->
+
+      <span class="nav--modal"></span> <span class="nav--modal1"></span>
+
+      <input type="hidden" id="isUserLoggedIn" value="false" />
+
       <div class="siteHeader__nav--secondary" id="siteHeader__nav--secondary">
         <div class="desktop-view">
-          <div class="menu-content collapse" id="browse">
+          <div
+            class="menu-content collapse"
+            id="BrowseProductsLink"
+            style="display: none;"
+          >
             <div class="container">
               <div class="row">
                 <div class="col-md-2">
@@ -248,25 +259,55 @@
                     <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
                     <ul class="primary listing tab-titles">
                       <li class="has-child active">
-                        <a href="#tab1" href="javascript:;">Brand</a>
+                        <a
+                          data-target="#BrandLinkComponent"
+                          href="https://www.google.com/"
+                        >
+                          Brand</a
+                        >
                       </li>
+
                       <li class="has-child">
-                        <a href="#tab2" href="javascript:;">Product type</a>
+                        <a
+                          data-target="#ProductTypeLinkComponent"
+                          href="https://www.google.com/"
+                        >
+                          Product Type</a
+                        >
                       </li>
+
                       <li class="has-child">
-                        <a href="#tab3" href="javascript:;">Colour</a>
+                        <a
+                          data-target="#ColourLinkComponent"
+                          href="https://www.google.com/"
+                        >
+                          Colour</a
+                        >
                       </li>
+
                       <li class="has-child">
-                        <a href="#tab4" href="javascript:;">Application</a>
+                        <a
+                          data-target="#ApplicationLinkComponent"
+                          href="https://www.google.com/"
+                        >
+                          Application</a
+                        >
                       </li>
+
                       <li class="has-child">
-                        <a href="#tab5" href="javascript:;">Style</a>
+                        <a
+                          data-target="#StyleLinkComponent"
+                          href="https://www.google.com/"
+                        >
+                          Style</a
+                        >
                       </li>
                     </ul>
                   </nav>
                 </div>
+
                 <div
-                  id="tab1"
+                  id="BrandLinkComponent"
                   class="col-md-10 tab-content"
                   style="display: block;"
                 >
@@ -276,23 +317,44 @@
                         <div class="col-6">
                           <nav>
                             <ul class="listing">
-                              <li><a href="javascript:;">Laminex</a></li>
-                              <li><a href="javascript:;">HI-MACS</a></li>
                               <li>
-                                <a href="javascript:;">Laminex Laminate</a>
-                              </li>
-                              <li><a href="javascript:;">Melteca</a></li>
-                              <li><a href="javascript:;">Laminex Fomica</a></li>
-                              <li><a href="javascript:;">Seratone</a></li>
-                              <li><a href="javascript:;">Caesarstone</a></li>
-                              <li>
-                                <a href="javascript:;"
-                                  >Strand by Laminex New Zealand</a
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LX"
+                                >
+                                  Laminex</a
                                 >
                               </li>
-                              <li><a href="javascript:;">Laminam</a></li>
+
                               <li>
-                                <a href="javascript:;">Trade Essentials</a>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
+                                >
+                                  Laminex Formica</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_SD"
+                                >
+                                  Strand by Laminex New Zealand</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LG"
+                                >
+                                  HI-MACS</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_TE"
+                                >
+                                  Trade Essentials</a
+                                >
                               </li>
                             </ul>
                           </nav>
@@ -300,45 +362,62 @@
                         <div class="col-6">
                           <nav>
                             <ul class="listing">
-                              <li><a href="javascript:;">Laminex</a></li>
-                              <li><a href="javascript:;">HI-MACS</a></li>
                               <li>
-                                <a href="javascript:;">Laminex Laminate</a>
-                              </li>
-                              <li><a href="javascript:;">Melteca</a></li>
-                              <li><a href="javascript:;">Laminex Fomica</a></li>
-                              <li><a href="javascript:;">Seratone</a></li>
-                              <li><a href="javascript:;">Caesarstone</a></li>
-                              <li>
-                                <a href="javascript:;"
-                                  >Strand by Laminex New Zealand</a
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_CS"
+                                >
+                                  Caesarstone</a
                                 >
                               </li>
-                              <li><a href="javascript:;">Laminam</a></li>
+
                               <li>
-                                <a href="javascript:;">Trade Essentials</a>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LM"
+                                >
+                                  Laminam</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.com.au/get-inspired/blog"
+                                >
+                                  Laminex Laminate</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_MT"
+                                >
+                                  Melteca</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_ST"
+                                >
+                                  Seratone</a
+                                >
                               </li>
                             </ul>
                           </nav>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
+
+                    <div class="col-md-5">
                       <div class="card">
                         <div class="card-horizontal">
                           <div class="card-img">
-                            <img
-                              class=""
-                              src="./images/brand-placeholder.jpg"
-                              alt="Brand name"
-                            />
+                            <img class="" src="" alt="" />
                           </div>
                           <div class="card-body">
-                            <h4 class="card-title">
-                              Lorem ipsum elit. Morbi tristique nibh dolor
-                              tincidunt
-                            </h4>
-                            <a href="javascript:;">Brand name</a>
+                            <h4 class="card-title">Lorem ipsumj jhjjjk</h4>
+                            <a href="CMSLinkComponentModel (8797211001916@2)"
+                              >BrandName jkjkj</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -346,63 +425,290 @@
                   </div>
                 </div>
 
-                <!-- Tab content 2 -->
-                <div id="tab2" class="col-md-10 tab-content">
+                <div
+                  id="ProductTypeLinkComponent"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row multiple-cols">
+                        <div class="col-6 col-sm-3">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_FLOORING"
+                                >
+                                  Flooring Link</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_TIMBERVEN"
+                                >
+                                  Timber Veener</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_LLAMINATE"
+                                >
+                                  Low Pressure Laminate</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_HLAMINATE"
+                                >
+                                  High Pressure Laminate</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_CERTIL"
+                                >
+                                  Ceramic Tile</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-3">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_PBOARD"
+                                >
+                                  Particleboard</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_MDF"
+                                >
+                                  MDF</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_PREFABBENCH"
+                                >
+                                  Prefabricated Benchtops</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_HARDB"
+                                >
+                                  Hardboard</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_PLYWOOD"
+                                >
+                                  PlyWood</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-3">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_WALLLINING"
+                                >
+                                  Wall Lining</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_ACRYLICSS"
+                                >
+                                  Acrylic Solid Surface</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_CERBEN"
+                                >
+                                  Ceramic Benchtops</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_COMPLAM"
+                                >
+                                  Compact Laminate</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_WALLLINING"
+                                >
+                                  Engineered Stone</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-3">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_CBACKING"
+                                >
+                                  Cabinet Backing</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_JOINT"
+                                >
+                                  Jointers</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_EDGPAN"
+                                >
+                                  Edging Panels</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_EDGBEN"
+                                >
+                                  Edging Benchtops</a
+                                >
+                              </li>
+
+                              <li>
+                                <a href="https://www.google.com/"> +View All</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="ColourLinkComponent"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
                   <div class="row">
                     <div class="col-md-6">
-                      <nav>
-                        <ul class="listing d-flex flex-wrap">
-                          <li class="col-6">
-                            <a href="javascript:;">Product typle 1</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">HI-MACS</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminex Laminate</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Melteca</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminex Fomica</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Seratone</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Caesarstone</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;"
-                              >Strand by Laminex New Zealand</a
-                            >
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminam</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Trade Essentials</a>
-                          </li>
-                        </ul>
-                      </nav>
+                      <div class="row multiple-cols">
+                        <div class="col-6">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_BR01"
+                                >
+                                  Brights And Bold</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WH01"
+                                >
+                                  Whites</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WO01"
+                                >
+                                  Wood Grains</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_IN01"
+                                >
+                                  Industrial</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_ME01"
+                                >
+                                  Metallics</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="col-6">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_VE01"
+                                >
+                                  Veins</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_NE01"
+                                >
+                                  Neutrals</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
                     </div>
+
                     <div class="col-md-5">
                       <div class="card">
                         <div class="card-horizontal">
                           <div class="card-img">
                             <img
                               class=""
-                              src="./images/brand-placeholder.jpg"
-                              alt="Brand name"
+                              src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hlYi9oYTEvODgyODkwMjgzNDIwNi5qcGd8N2U1NjUyYjNhMDM0NWNkYjllZDM2ZTQ4MzlhMTE5OTA5MWU5NzZiOGM3OTkwNjgxYTU2ZjNmMzUyOTMxODU1NQ"
+                              alt="colourImage"
                             />
                           </div>
                           <div class="card-body">
-                            <h4 class="card-title">
-                              Product description. Morbi tristique nibh dolor
-                              tincidunt
-                            </h4>
-                            <a href="javascript:;">Product name</a>
+                            <h4 class="card-title">Lorem ipsum3</h4>
+                            <a href="CMSLinkComponentModel (8797210936380@1)"
+                              >Colour Name</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -410,127 +716,240 @@
                   </div>
                 </div>
 
-                <!-- Tab content 3 -->
-                <div id="tab3" class="col-md-10 tab-content">
+                <div
+                  id="ApplicationLinkComponent"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
                   <div class="row">
-                    <div class="col-md-6">
-                      <nav>
-                        <ul class="listing col2 d-flex flex-wrap">
-                          <li class="col-6">
-                            <a href="javascript:;">Color typle 1</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">HI-MACS</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminex Laminate</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Melteca</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminex Fomica</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Seratone</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Caesarstone</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;"
-                              >Strand by Laminex New Zealand</a
-                            >
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminam</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Trade Essentials</a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="card">
-                        <div class="card-horizontal">
-                          <div class="card-img">
-                            <img
-                              class=""
-                              src="./images/brand-placeholder.jpg"
-                              alt="Brand name"
-                            />
-                          </div>
-                          <div class="card-body">
-                            <h4 class="card-title">
-                              Product description. Morbi tristique nibh dolor
-                              tincidunt
-                            </h4>
-                            <a href="javascript:;">Product name</a>
-                          </div>
+                    <div class="col-md-12">
+                      <div class="row multiple-cols">
+                        <div class="col-6 col-sm-4">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WETWALL"
+                                >
+                                  Wet Wall Lining</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SPLASHBK"
+                                >
+                                  Splashback</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_FLOORING"
+                                >
+                                  Flooring Application</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_FURNITURE"
+                                >
+                                  Furniture</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BATHROOM"
+                                >
+                                  Bathroom</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BENCHTOPS"
+                                >
+                                  Benchtops</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_EXTFURN"
+                                >
+                                  Exterior Furniture</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_CABINETRY"
+                                >
+                                  Cabinetry</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_CEILING"
+                                >
+                                  Ceiling Lining</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_PARTITION"
+                                >
+                                  Partioning</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_VRTWALL"
+                                >
+                                  Vertical Wall Lining</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Tab content 4  -->
-                <div id="tab4" class="col-md-10 tab-content">
+                <div
+                  id="StyleLinkComponent"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
                   <div class="row">
                     <div class="col-md-6">
-                      <nav>
-                        <ul class="listing d-flex flex-wrap">
-                          <li class="col-6">
-                            <a href="javascript:;">Application typle 1</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">HI-MACS</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminex Laminate</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Melteca</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminex Fomica</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Seratone</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Caesarstone</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;"
-                              >Strand by Laminex New Zealand</a
-                            >
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Laminam</a>
-                          </li>
-                          <li class="col-6">
-                            <a href="javascript:;">Trade Essentials</a>
-                          </li>
-                        </ul>
-                      </nav>
+                      <div class="row multiple-cols">
+                        <div class="col-6">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_TON"
+                                >
+                                  Tonal</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_TAI"
+                                >
+                                  Tailored</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_EAS"
+                                >
+                                  East Coast</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_HEA"
+                                >
+                                  Heartland</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_NOS"
+                                >
+                                  Nostalgia</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="col-6">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_VOG"
+                                >
+                                  Vogue</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_RUG"
+                                >
+                                  Rugged</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_ISL"
+                                >
+                                  Island</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_DIG"
+                                >
+                                  Digital</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_URB"
+                                >
+                                  Urban</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
                     </div>
+
                     <div class="col-md-5">
                       <div class="card">
                         <div class="card-horizontal">
                           <div class="card-img">
                             <img
                               class=""
-                              src="./images/brand-placeholder.jpg"
-                              alt="Brand name"
+                              src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2g5Ni9oY2YvODgyODkwMjc2ODY3MC5qcGd8YTExNGU5NGI4Y2I1ZjVjMWQ0OTUyOTJkZmNhMGNmMTQ5YmQ5MDQ3NDU0M2MwYWE3MmEwYmVjYzk1YzBmY2U1Nw"
+                              alt="styleImage"
                             />
                           </div>
                           <div class="card-body">
-                            <h4 class="card-title">
-                              Product description. Morbi tristique nibh dolor
-                              tincidunt
-                            </h4>
-                            <a href="javascript:;">Product name</a>
+                            <h4 class="card-title">Lorem ipsum5</h4>
+                            <a href="CMSLinkComponentModel (8797210969148@1)"
+                              >StyleName</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -540,22 +959,53 @@
               </div>
             </div>
           </div>
-          <div class="menu-content collapse" id="trade">
+
+          <div
+            class="menu-content collapse"
+            id="TradeAndSpecifierResourcesLink"
+            style="display: none;"
+          >
             <div class="container">
               <div class="row">
                 <div class="col-md-2">
                   <nav>
+                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
                     <ul class="listing">
-                      <li>
-                        <a class="" href="javascript:;">Technical document</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;"
-                          >Technical and specification contacts</a
+                      <li class="active">
+                        <a
+                          data-target="#TechnicalDocumentLinkComponent"
+                          href="https://www.laminex.co.nz/trade-and-specifier-resources/document-browser"
+                        >
+                          Technical Document</a
                         >
                       </li>
-                      <li><a href="javascript:;">Warranty registration</a></li>
-                      <li><a href="javascript:;">Credit application</a></li>
+
+                      <li class="">
+                        <a
+                          data-target="#TechnicalSpecificationContactLinkComponent"
+                          href="https://www.laminex.co.nz/trade-and-specifier-resources/technical-contacts"
+                        >
+                          Technical And Specification Contacts</a
+                        >
+                      </li>
+
+                      <li class="">
+                        <a
+                          data-target="#WarrantyRegistrationTechnicalLinkComponent"
+                          href="/trade-and-specifier-resources/warranty-registration"
+                        >
+                          Warranty Registration</a
+                        >
+                      </li>
+
+                      <li class="">
+                        <a
+                          data-target="#CreditApplicationTechnicalLinkComponent"
+                          href="/trade-and-specifier-resources/credit-application"
+                        >
+                          Credit Application</a
+                        >
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -563,52 +1013,80 @@
             </div>
           </div>
 
-          <div class="menu-content collapse" id="inspired">
+          <div
+            class="menu-content collapse"
+            id="GetInspiredLink"
+            style="display: none;"
+          >
             <div class="container">
               <div class="row">
                 <div class="col-md-2">
                   <nav>
+                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
                     <ul class="listing">
-                      <li>
-                        <a class="" href="javascript:;">Inspiration gallery</a>
+                      <li class="active">
+                        <a
+                          data-target="#InspirationGalleryIconLinkComponent"
+                          href="/get-inspired/inspiration-gallery"
+                        >
+                          Inspiration Gallery</a
+                        >
                       </li>
-                      <li><a href="javascript:;">Design blog</a></li>
-                      <li><a href="javascript:;">Design styles</a></li>
+
+                      <li class="">
+                        <a
+                          data-target="#DesignBlogLinkComponent"
+                          href="/get-inspired/blog"
+                        >
+                          Design Blog</a
+                        >
+                      </li>
+
+                      <li class="">
+                        <a
+                          data-target="#DesignStylesLinkComponent"
+                          href="/get-inspired/laminex-design-styles"
+                        >
+                          Design Styles</a
+                        >
+                      </li>
                     </ul>
                   </nav>
                 </div>
+
                 <div class="col-md-8 d-flex">
                   <div class="card">
                     <div class="card-horizontal">
                       <div class="card-img">
                         <img
                           class=""
-                          src="./images/brand-placeholder.jpg"
-                          alt="Brand name"
+                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hkZS9oM2QvODgyODkwMjg5OTc0Mi5qcGd8ZjdlMDJhNjQ2N2E4NWUyNDQ2NmQyYmEzZDRhZWM4M2JkNjk2MjgwYzc5YzM4MTMzMjIzY2Q3OWRjNjVjZDk0MA"
+                          alt="getInspiredImage"
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">
-                          Lorem ipsum elit. Morbi tristique nibh dolor tincidunt
-                        </h4>
-                        <a href="javascript:;">Brand name</a>
+                        <h4 class="card-title">Lorem ipsum1</h4>
+                        <a href="CMSLinkComponentModel (8797211362364@1)"
+                          >BrandName1</a
+                        >
                       </div>
                     </div>
                   </div>
+
                   <div class="card">
                     <div class="card-horizontal">
                       <div class="card-img">
                         <img
                           class=""
-                          src="./images/brand-placeholder.jpg"
-                          alt="Brand name"
+                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2gyMC9oMmIvODgyODkwMjkzMjUxMC5qcGd8ZGVmZGViODc3NzQ2YmM3NmQwMTNiY2Y1Y2NmYjlmMDkwOWNhNmUzZWMwZDRlMmRlNzZlZmMzYzFiZTg0OGZhNA"
+                          alt="getInspiredImage"
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">
-                          Lorem ipsum elit. Morbi tristique nibh dolor tincidunt
-                        </h4>
-                        <a href="javascript:;">Brand name</a>
+                        <h4 class="card-title">Lorem ipsum2</h4>
+                        <a href="CMSLinkComponentModel (8797211395132@1)"
+                          >Brand Name2</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -617,62 +1095,198 @@
             </div>
           </div>
 
-          <div class="menu-content collapse" id="about">
+          <div
+            class="menu-content collapse"
+            id="AboutLaminexLink"
+            style="display: none;"
+          >
             <div class="container">
               <div class="row">
                 <div class="col-md-2">
                   <nav>
-                    <ul class="listing">
-                      <li>
-                        <a class="active" href="javascript:;"
-                          >Explore our brands</a
+                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
+                    <ul class="primary listing tab-titles">
+                      <li class="has-child active">
+                        <a
+                          data-target="#ExploreOurBrandsLinkComponent"
+                          href="https://www.google.com/"
+                        >
+                          Explore Our Brands</a
                         >
                       </li>
-                      <li><a href="javascript:;">Sustainability</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="col-md-5">
-                  <nav>
-                    <ul class="listing d-flex flex-wrap">
-                      <li class="col-6"><a href="javascript:;">Laminex</a></li>
-                      <li class="col-6"><a href="javascript:;">HI-MACS</a></li>
-                      <li class="col-6">
-                        <a href="javascript:;">Laminex Laminate</a>
-                      </li>
-                      <li class="col-6"><a href="javascript:;">Melteca</a></li>
-                      <li class="col-6">
-                        <a href="javascript:;">Laminex Fomica</a>
-                      </li>
-                      <li class="col-6"><a href="javascript:;">Seratone</a></li>
-                      <li class="col-6">
-                        <a href="javascript:;">Caesarstone</a>
-                      </li>
-                      <li class="col-6">
-                        <a href="javascript:;">Strand by Laminex New Zealand</a>
-                      </li>
-                      <li class="col-6"><a href="javascript:;">Laminam</a></li>
-                      <li class="col-6">
-                        <a href="javascript:;">Trade Essentials</a>
+
+                      <li class="has-child">
+                        <a
+                          data-target="#SustainibiltyLinkComponent"
+                          href="/about-laminex/sustainability"
+                        >
+                          Sustainibilty</a
+                        >
                       </li>
                     </ul>
                   </nav>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-horizontal">
-                      <div class="card-img">
-                        <img
-                          class=""
-                          src="./images/brand-placeholder.jpg"
-                          alt="Brand name"
-                        />
+
+                <div
+                  id="ExploreOurBrandsLinkComponent"
+                  class="col-md-10 tab-content"
+                  style="display: block;"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="row multiple-cols">
+                        <div class="col-6">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/caesarstone"
+                                >
+                                  Caesarstone</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/laminexlaminate"
+                                >
+                                  Laminex Laminate</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/laminex"
+                                >
+                                  Laminex</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/laminam"
+                                >
+                                  Laminam</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/formica"
+                                >
+                                  Laminex Formica</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/melteca"
+                                >
+                                  Melteca</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="col-6">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/strand"
+                                >
+                                  Strand Laminex</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="http://laminex.co.nz/hi-macs?_ga=2.75751317.1411989234.1594586909-16022988.1578601040&amp;_gac=1.90617320.1594335252.Cj0KCQjwgJv4BRCrARIsAB17JI54pV7eNlvfrT3yznyRK0rXTpBNwmFZvUIgexmI6FmCw4dap4ZSOWcaAlpGEALw_wcB"
+                                >
+                                  HI-MACS</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/seratone"
+                                >
+                                  Seratone</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="https://www.laminex.co.nz/about-laminex/brands/trade-essentials"
+                                >
+                                  Trade Essentials</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
                       </div>
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Lorem ipsum elit. Morbi tristique nibh dolor tincidunt
-                        </h4>
-                        <a href="javascript:;">Brand name</a>
+                    </div>
+
+                    <div class="col-md-5">
+                      <div class="card">
+                        <div class="card-horizontal">
+                          <div class="card-img">
+                            <img class="" src="" alt="" />
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsumj jhjjjk</h4>
+                            <a href="CMSLinkComponentModel (8797211001916@2)"
+                              >BrandName jkjkj</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="SustainibiltyLinkComponent"
+                  class="col-md-10 tab-content"
+                  style="display: none; opacity: 1;"
+                >
+                  <div class="row">
+                    <div class="col-md-8 d-flex">
+                      <div class="card">
+                        <div class="card-horizontal">
+                          <div class="card-img">
+                            <img
+                              class=""
+                              src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hmNy9oZWIvODgyODkwMjk2NTI3OC5qcGd8MzU5MjMzYjBhZTQ5NTkyZTBiMGE5MmZiZDJmNmY5NWM1ZDZkZTcwZDBlM2RiYWM3ZmRkNTQxMzdjMjg0NTAwOA"
+                              alt="sustainableImage1"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum</h4>
+                            <a href="CMSLinkComponentModel (8797212083260@1)"
+                              >Brand Name</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-horizontal">
+                          <div class="card-img">
+                            <img
+                              class=""
+                              src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2gzNC9oMDkvODgyODkwMjk5ODA0Ni5qcGd8NzQzZTAyMGM4NGQxYjM0YzQ2Yzg0NDlkYzllYjdiYWZjM2ZjZDM4ODA3ZDk4NzY1M2MxZTNhYzViZjY3NGFkMQ"
+                              alt="sustainableImage2"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Brand Name</h4>
+                            <a
+                              href="CMSLinkComponentModel (8797212050492@1)"
+                            ></a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -681,59 +1295,86 @@
             </div>
           </div>
 
-          <div class="menu-content collapse" id="support">
+          <div
+            class="menu-content collapse"
+            id="SupportLink"
+            style="display: none;"
+          >
             <div class="container">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <nav>
+                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
                     <ul class="listing">
-                      <li><a class="" href="javascript:;">Contact us</a></li>
-                      <li>
-                        <a href="javascript:;"
-                          >Find someone to help with your project</a
+                      <li class="active">
+                        <a
+                          data-target="#ContactUsLinkComponent"
+                          href="https://www.laminex.co.nz/about-laminex/contact-us?_ga=2.81452695.1411989234.1594586909-16022988.1578601040&amp;_gac=1.262592766.1594335252.Cj0KCQjwgJv4BRCrARIsAB17JI54pV7eNlvfrT3yznyRK0rXTpBNwmFZvUIgexmI6FmCw4dap4ZSOWcaAlpGEALw_wcB"
+                        >
+                          Contact Us</a
                         >
                       </li>
-                      <li>
-                        <a href="javascript:;">Help with online ordering</a>
+
+                      <li class="">
+                        <a
+                          data-target="#HelpProjectLinkComponent"
+                          href="https://www.laminex.co.nz/locator-tool?_ga=2.81452695.1411989234.1594586909-16022988.1578601040&amp;_gac=1.262592766.1594335252.Cj0KCQjwgJv4BRCrARIsAB17JI54pV7eNlvfrT3yznyRK0rXTpBNwmFZvUIgexmI6FmCw4dap4ZSOWcaAlpGEALw_wcB"
+                        >
+                          Find Someone To help With Your Project</a
+                        >
                       </li>
-                      <li>
-                        <a href="javascript:;">Help with sample ordering</a>
+
+                      <li class="">
+                        <a
+                          data-target="#HelpOnlineOrderLinkComponent"
+                          href="https://www.laminex.co.nz/about-laminex/faq"
+                        >
+                          Help Online Order</a
+                        >
+                      </li>
+
+                      <li class="">
+                        <a data-target="#HelpSampleOrderLinkComponent" href="">
+                          Help Sample Order</a
+                        >
                       </li>
                     </ul>
                   </nav>
                 </div>
+
                 <div class="col-md-8 d-flex">
                   <div class="card">
                     <div class="card-horizontal">
                       <div class="card-img">
                         <img
                           class=""
-                          src="./images/brand-placeholder.jpg"
-                          alt="Brand name"
+                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hmNC9oNmIvODgyODkwMzA5NjM1MC5qcGd8NjIxYzczMDI0ZjJjYjE5MWJlZWMyYzA2ZTc3MmI1ZDQ2ZDdiNjBhYWJhZDQxYzZjMmRmMjBkYjUyYzgxNGQ4OA"
+                          alt="supportImage1"
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">
-                          Lorem ipsum elit. Morbi tristique nibh dolor tincidunt
-                        </h4>
-                        <a href="javascript:;">Brand name</a>
+                        <h4 class="card-title">Lorem Ipsum</h4>
+                        <a href="CMSLinkComponentModel (8797212279868@1)"
+                          >Support1</a
+                        >
                       </div>
                     </div>
                   </div>
+
                   <div class="card">
                     <div class="card-horizontal">
                       <div class="card-img">
                         <img
                           class=""
-                          src="./images/brand-placeholder.jpg"
-                          alt="Brand name"
+                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2gzOC9oODkvODgyODkwMzA2MzU4Mi5qcGd8YjM4NjhjMjA4ZTkyOWU3MzBkMTI3NTEyMGQzMTc2YWEyOGZmMzBjYjQ3NDk2Zjk3MThhMTgyNzc2M2RiMmYzMg"
+                          alt="supportImage2"
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">
-                          Lorem ipsum elit. Morbi tristique nibh dolor tincidunt
-                        </h4>
-                        <a href="javascript:;">Brand name</a>
+                        <h4 class="card-title">Lorem Ipsum</h4>
+                        <a href="CMSLinkComponentModel (8797212247100@1)"
+                          >Support2</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -743,30 +1384,28 @@
           </div>
         </div>
 
-        <!-- Dropdown menu Tab/Mobile content -->
-        <div class="mobile-menu-view">
+        <div class="mobile-menu-view collapse" id="navMobile">
           <div class="accordion-wrapper">
             <div class="row justify-content-center">
               <div class="col-12">
                 <div class="accordion accordion-items" id="menuaccordion">
-                  <div class="accordion-item active">
+                  <div class="accordion-item">
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#browseproducts"
+                      data-target="#BrowseProductsLink-mobile"
                       aria-expanded="true"
-                      aria-controls="browseproducts"
+                      aria-controls="BrowseProductsLink"
                     >
                       <h5>
-                        <a href="https://www.laminex.co.nz/Browse-Products">
-                          Browse Products
-                        </a>
+                        <a href="/browse">Browse Products</a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
+
                     <div
-                      class="sub-content accordion-content"
-                      id="browseproducts"
+                      class="sub-content accordion-content custom-accordion-content"
+                      id="BrowseProductsLink-mobile"
                     >
                       <!--Sub accordion -->
                       <div class="accordion accordion-items" id="subaccordion">
@@ -774,112 +1413,137 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#brands"
+                            data-target="#BrandLinkComponent-mobile"
                             aria-expanded="true"
-                            aria-controls="brands"
+                            aria-controls="BrandLinkComponent"
                           >
                             <h6>
-                              <a href="">
-                                Brand
-                              </a>
+                              <a
+                                data-target="#BrandLinkComponent"
+                                href="https://www.google.com/"
+                              >
+                                Brand</a
+                              >
+
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
+                          <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="brands"
+                            id="BrandLinkComponent-mobile"
                           >
                             <div class="row">
-                              <div class="col-12">
-                                <ul class="listing d-flex flex-wrap">
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Laminex</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">HI-MACS</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Laminex Laminate</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Melteca</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Laminex</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">HI-MACS</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Laminex Laminate</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Melteca</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Laminex Fomica</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Seratone</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Caesarstone</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;"
-                                      >Strand by Laminex New Zealand</a
-                                    >
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Laminam</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a href="javascript:;">Trade Essentials</a>
-                                  </li>
-                                  <li class="col-6 col-sm-3">
-                                    <a class="view-all" href="javascript:;"
-                                      >+ View all</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="content-others">
-                                <div class="col-12 d-flex flex-wrap">
-                                  <div class="card col-12 col-sm-6">
-                                    <div class="card-horizontal">
-                                      <div class="card-img">
-                                        <img
-                                          class=""
-                                          src="./images/brand-placeholder.jpg"
-                                          alt="Brand name"
-                                        />
-                                      </div>
-                                      <div class="card-body">
-                                        <h4 class="card-title">
-                                          Lorem ipsum elit. Morbi tristique nibh
-                                          dolor tincidunt
-                                        </h4>
-                                        <a href="javascript:;">Brand name</a>
-                                      </div>
-                                    </div>
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LX"
+                                          >
+                                            Laminex</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
+                                          >
+                                            Laminex Formica</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_SD"
+                                          >
+                                            Strand by Laminex New Zealand</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LG"
+                                          >
+                                            HI-MACS</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_TE"
+                                          >
+                                            Trade Essentials</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
                                   </div>
-                                  <div
-                                    class="card col-12 col-sm-6 mt-4 mt-sm-0"
-                                  >
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_CS"
+                                          >
+                                            Caesarstone</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LM"
+                                          >
+                                            Laminam</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.com.au/get-inspired/blog"
+                                          >
+                                            Laminex Laminate</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_MT"
+                                          >
+                                            Melteca</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_ST"
+                                          >
+                                            Seratone</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
                                     <div class="card-horizontal">
                                       <div class="card-img">
-                                        <img
-                                          class=""
-                                          src="./images/brand-placeholder.jpg"
-                                          alt="Brand name"
-                                        />
+                                        <img class="" src="" alt="" />
                                       </div>
                                       <div class="card-body">
                                         <h4 class="card-title">
-                                          Lorem ipsum elit. Morbi tristique nibh
-                                          dolor tincidunt
+                                          Lorem ipsumj jhjjjk
                                         </h4>
-                                        <a href="javascript:;">Brand name</a>
+                                        <a
+                                          href="CMSLinkComponentModel (8797211001916@2)"
+                                          >BrandName jkjkj</a
+                                        >
                                       </div>
                                     </div>
                                   </div>
@@ -893,26 +1557,236 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#product"
+                            data-target="#ProductTypeLinkComponent-mobile"
                             aria-expanded="true"
-                            aria-controls="product"
+                            aria-controls="ProductTypeLinkComponent"
                           >
                             <h6>
-                              <a href="">
-                                Product type
-                              </a>
+                              <a
+                                data-target="#ProductTypeLinkComponent"
+                                href="https://www.google.com/"
+                              >
+                                Product Type</a
+                              >
+
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
+                          <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="product"
+                            id="ProductTypeLinkComponent-mobile"
                           >
-                            <p class="p2">
-                              To set up an account, you need to be registered
-                              with us. Please contact your Sales Rep to confirm
-                              registration.
-                            </p>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="row multiple-cols">
+                                  <div class="col-6 col-sm-3">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_FLOORING"
+                                          >
+                                            Flooring Link</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_TIMBERVEN"
+                                          >
+                                            Timber Veener</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_LLAMINATE"
+                                          >
+                                            Low Pressure Laminate</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_HLAMINATE"
+                                          >
+                                            High Pressure Laminate</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_CERTIL"
+                                          >
+                                            Ceramic Tile</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-3">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_PBOARD"
+                                          >
+                                            Particleboard</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_MDF"
+                                          >
+                                            MDF</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_PREFABBENCH"
+                                          >
+                                            Prefabricated Benchtops</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_HARDB"
+                                          >
+                                            Hardboard</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_PLYWOOD"
+                                          >
+                                            PlyWood</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-3">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_WALLLINING"
+                                          >
+                                            Wall Lining</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_ACRYLICSS"
+                                          >
+                                            Acrylic Solid Surface</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_CERBEN"
+                                          >
+                                            Ceramic Benchtops</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_COMPLAM"
+                                          >
+                                            Compact Laminate</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_WALLLINING"
+                                          >
+                                            Engineered Stone</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-3">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_CBACKING"
+                                          >
+                                            Cabinet Backing</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_JOINT"
+                                          >
+                                            Jointers</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_EDGPAN"
+                                          >
+                                            Edging Panels</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/range?categoryCode=product_type&amp;q=%3arelevance%3aallCategories%3aPT_EDGBEN"
+                                          >
+                                            Edging Benchtops</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a href="https://www.google.com/">
+                                            +View All</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2g0MS9oNmQvODgyODkwMjczNTkwMi5qcGd8NGRhM2U5N2UxMGExYzFiNGMxOTRiNWI4MGZiNDM5MjFkZGZkNjA2ZWU4NjU3ODQzNWNiNGVlYzBkZDUwMTNlYQ"
+                                          alt="productImage"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum2</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797211034684@1)"
+                                          >ProductName</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -920,26 +1794,121 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#colour"
+                            data-target="#ColourLinkComponent-mobile"
                             aria-expanded="true"
-                            aria-controls="colour"
+                            aria-controls="ColourLinkComponent"
                           >
                             <h6>
-                              <a href="">
-                                Colour
-                              </a>
+                              <a
+                                data-target="#ColourLinkComponent"
+                                href="https://www.google.com/"
+                              >
+                                Colour</a
+                              >
+
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
+                          <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="colour"
+                            id="ColourLinkComponent-mobile"
                           >
-                            <p class="p2">
-                              To set up an account, you need to be registered
-                              with us. Please contact your Sales Rep to confirm
-                              registration.
-                            </p>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_BR01"
+                                          >
+                                            Brights And Bold</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WH01"
+                                          >
+                                            Whites</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WO01"
+                                          >
+                                            Wood Grains</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_IN01"
+                                          >
+                                            Industrial</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_ME01"
+                                          >
+                                            Metallics</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_VE01"
+                                          >
+                                            Veins</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_NE01"
+                                          >
+                                            Neutrals</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hlYi9oYTEvODgyODkwMjgzNDIwNi5qcGd8N2U1NjUyYjNhMDM0NWNkYjllZDM2ZTQ4MzlhMTE5OTA5MWU5NzZiOGM3OTkwNjgxYTU2ZjNmMzUyOTMxODU1NQ"
+                                          alt="colourImage"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum3</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797210936380@1)"
+                                          >Colour Name</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -947,26 +1916,160 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#application"
+                            data-target="#ApplicationLinkComponent-mobile"
                             aria-expanded="true"
-                            aria-controls="application"
+                            aria-controls="ApplicationLinkComponent"
                           >
                             <h6>
-                              <a href="">
-                                Application
-                              </a>
+                              <a
+                                data-target="#ApplicationLinkComponent"
+                                href="https://www.google.com/"
+                              >
+                                Application</a
+                              >
+
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
+                          <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="colour"
+                            id="ApplicationLinkComponent-mobile"
                           >
-                            <p class="p2">
-                              To set up an account, you need to be registered
-                              with us. Please contact your Sales Rep to confirm
-                              registration.
-                            </p>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="row multiple-cols">
+                                  <div class="col-6 col-sm-4">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WETWALL"
+                                          >
+                                            Wet Wall Lining</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SPLASHBK"
+                                          >
+                                            Splashback</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_FLOORING"
+                                          >
+                                            Flooring Application</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_FURNITURE"
+                                          >
+                                            Furniture</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BATHROOM"
+                                          >
+                                            Bathroom</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-4">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BENCHTOPS"
+                                          >
+                                            Benchtops</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_EXTFURN"
+                                          >
+                                            Exterior Furniture</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_CABINETRY"
+                                          >
+                                            Cabinetry</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_CEILING"
+                                          >
+                                            Ceiling Lining</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_PARTITION"
+                                          >
+                                            Partioning</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-4">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_VRTWALL"
+                                          >
+                                            Vertical Wall Lining</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hlNy9oNjgvODgyODkwMjgwMTQzOC5qcGd8NzI0YzE1M2MzMWU5NTY4NGJlM2M0NmFlYWRmNjE1MjgzY2VhMTJhNWFiY2RiMTQyMDE4YzZhYWQ0YTc2NjJhNg"
+                                          alt="applicationImage"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum4</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797210903612@1)"
+                                          >ApplicationName</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -974,26 +2077,145 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#style"
+                            data-target="#StyleLinkComponent-mobile"
                             aria-expanded="true"
-                            aria-controls="style"
+                            aria-controls="StyleLinkComponent"
                           >
                             <h6>
-                              <a href="">
-                                Style
-                              </a>
+                              <a
+                                data-target="#StyleLinkComponent"
+                                href="https://www.google.com/"
+                              >
+                                Style</a
+                              >
+
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
+                          <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="style"
+                            id="StyleLinkComponent-mobile"
                           >
-                            <p class="p2">
-                              To set up an account, you need to be registered
-                              with us. Please contact your Sales Rep to confirm
-                              registration.
-                            </p>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_TON"
+                                          >
+                                            Tonal</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_TAI"
+                                          >
+                                            Tailored</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_EAS"
+                                          >
+                                            East Coast</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_HEA"
+                                          >
+                                            Heartland</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_NOS"
+                                          >
+                                            Nostalgia</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_VOG"
+                                          >
+                                            Vogue</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_RUG"
+                                          >
+                                            Rugged</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_ISL"
+                                          >
+                                            Island</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_DIG"
+                                          >
+                                            Digital</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://store.laminex.co.nz/browse/style?categoryCode=style&amp;q=%3arelevance%3aallCategories%3aS_URB"
+                                          >
+                                            Urban</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2g5Ni9oY2YvODgyODkwMjc2ODY3MC5qcGd8YTExNGU5NGI4Y2I1ZjVjMWQ0OTUyOTJkZmNhMGNmMTQ5YmQ5MDQ3NDU0M2MwYWE3MmEwYmVjYzk1YzBmY2U1Nw"
+                                          alt="styleImage"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum5</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797210969148@1)"
+                                          >StyleName</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1004,35 +2226,57 @@
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#tradespecifier"
+                      data-target="#TradeAndSpecifierResourcesLink-mobile"
                       aria-expanded="true"
-                      aria-controls="tradespecifier"
+                      aria-controls="TradeAndSpecifierResourcesLink"
                     >
                       <h5>
-                        <a href="">
-                          Trade &amp; Specifier Resources
-                        </a>
+                        <a href="#">Trade &amp; Specifier Resources</a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
+
                     <div
                       class="accordion-content custom-accordion-content"
-                      id="tradespecifier"
+                      id="TradeAndSpecifierResourcesLink-mobile"
                     >
                       <div class="row">
                         <div class="col-12">
-                          <ul class="listing d-flex flex-wrap">
-                            <li class="col-6 col-sm-3">
-                              <a href="javascript:;">Laminex</a>
+                          <ul class="listing">
+                            <li class="">
+                              <a
+                                data-target="#TechnicalDocumentLinkComponent"
+                                href="https://www.laminex.co.nz/trade-and-specifier-resources/document-browser"
+                              >
+                                Technical Document</a
+                              >
                             </li>
-                            <li class="col-6 col-sm-3">
-                              <a href="javascript:;">HI-MACS</a>
+
+                            <li class="">
+                              <a
+                                data-target="#TechnicalSpecificationContactLinkComponent"
+                                href="https://www.laminex.co.nz/trade-and-specifier-resources/technical-contacts"
+                              >
+                                Technical And Specification Contacts</a
+                              >
                             </li>
-                            <li class="col-6 col-sm-3">
-                              <a href="javascript:;">Laminex Laminate</a>
+
+                            <li class="">
+                              <a
+                                data-target="#WarrantyRegistrationTechnicalLinkComponent"
+                                href="/trade-and-specifier-resources/warranty-registration"
+                              >
+                                Warranty Registration</a
+                              >
                             </li>
-                            <li class="col-6 col-sm-3">
-                              <a href="javascript:;">Melteca</a>
+
+                            <li class="">
+                              <a
+                                data-target="#CreditApplicationTechnicalLinkComponent"
+                                href="/trade-and-specifier-resources/credit-application"
+                              >
+                                Credit Application</a
+                              >
                             </li>
                           </ul>
                         </div>
@@ -1044,25 +2288,94 @@
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#getinspired"
+                      data-target="#GetInspiredLink-mobile"
                       aria-expanded="true"
-                      aria-controls="getinspired"
+                      aria-controls="GetInspiredLink"
                     >
                       <h5>
-                        <a href="">
-                          Get Inspired
-                        </a>
+                        <a href="#">Get Inspired</a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
+
                     <div
                       class="accordion-content custom-accordion-content"
-                      id="getinspired"
+                      id="GetInspiredLink-mobile"
                     >
-                      <p class="p2">
-                        Please contact us on 132 136&nbsp; to request access for
-                        additional users.
-                      </p>
+                      <div class="row">
+                        <div class="col-12">
+                          <ul class="listing">
+                            <li class="">
+                              <a
+                                data-target="#InspirationGalleryIconLinkComponent"
+                                href="/get-inspired/inspiration-gallery"
+                              >
+                                Inspiration Gallery</a
+                              >
+                            </li>
+
+                            <li class="">
+                              <a
+                                data-target="#DesignBlogLinkComponent"
+                                href="/get-inspired/blog"
+                              >
+                                Design Blog</a
+                              >
+                            </li>
+
+                            <li class="">
+                              <a
+                                data-target="#DesignStylesLinkComponent"
+                                href="/get-inspired/laminex-design-styles"
+                              >
+                                Design Styles</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content-others">
+                          <div class="row">
+                            <div class="card col-12 col-sm-6 mb-4">
+                              <div class="card-horizontal">
+                                <div class="card-img">
+                                  <img
+                                    class=""
+                                    src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hkZS9oM2QvODgyODkwMjg5OTc0Mi5qcGd8ZjdlMDJhNjQ2N2E4NWUyNDQ2NmQyYmEzZDRhZWM4M2JkNjk2MjgwYzc5YzM4MTMzMjIzY2Q3OWRjNjVjZDk0MA"
+                                    alt="getInspiredImage"
+                                  />
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Lorem ipsum1</h4>
+                                  <a
+                                    href="CMSLinkComponentModel (8797211362364@1)"
+                                    >BrandName1</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card col-12 col-sm-6 mb-4">
+                              <div class="card-horizontal">
+                                <div class="card-img">
+                                  <img
+                                    class=""
+                                    src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2gyMC9oMmIvODgyODkwMjkzMjUxMC5qcGd8ZGVmZGViODc3NzQ2YmM3NmQwMTNiY2Y1Y2NmYjlmMDkwOWNhNmUzZWMwZDRlMmRlNzZlZmMzYzFiZTg0OGZhNA"
+                                    alt="getInspiredImage"
+                                  />
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Lorem ipsum2</h4>
+                                  <a
+                                    href="CMSLinkComponentModel (8797211395132@1)"
+                                    >Brand Name2</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -1070,29 +2383,250 @@
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#aboutlaminex"
+                      data-target="#AboutLaminexLink-mobile"
                       aria-expanded="true"
-                      aria-controls="aboutlaminex"
+                      aria-controls="AboutLaminexLink"
                     >
                       <h5>
-                        <a href="">
-                          About Laminex
-                        </a>
+                        <a href="$siteCore/about-laminex">About Laminex</a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
+
                     <div
-                      class="accordion-content custom-accordion-content"
-                      id="aboutlaminex"
+                      class="sub-content accordion-content custom-accordion-content"
+                      id="AboutLaminexLink-mobile"
                     >
-                      <p class="p2">
-                        Once you’ve submitted your order in Checkout, you will
-                        see an order confirmation page. This confirms your order
-                        has been sent for processing, and provides you with a
-                        sales order number.&nbsp;You’ll also receive an email
-                        confirmation (similar to what you receive when you order
-                        over the phone).
-                      </p>
+                      <!--Sub accordion -->
+                      <div class="accordion accordion-items" id="subaccordion">
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#ExploreOurBrandsLinkComponent-mobile"
+                            aria-expanded="true"
+                            aria-controls="ExploreOurBrandsLinkComponent"
+                          >
+                            <h6>
+                              <a
+                                data-target="#ExploreOurBrandsLinkComponent"
+                                href="https://www.google.com/"
+                              >
+                                Explore Our Brands</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="ExploreOurBrandsLinkComponent-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/caesarstone"
+                                          >
+                                            Caesarstone</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/laminexlaminate"
+                                          >
+                                            Laminex Laminate</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/laminex"
+                                          >
+                                            Laminex</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/laminam"
+                                          >
+                                            Laminam</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/formica"
+                                          >
+                                            Laminex Formica</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/melteca"
+                                          >
+                                            Melteca</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/strand"
+                                          >
+                                            Strand Laminex</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="http://laminex.co.nz/hi-macs?_ga=2.75751317.1411989234.1594586909-16022988.1578601040&amp;_gac=1.90617320.1594335252.Cj0KCQjwgJv4BRCrARIsAB17JI54pV7eNlvfrT3yznyRK0rXTpBNwmFZvUIgexmI6FmCw4dap4ZSOWcaAlpGEALw_wcB"
+                                          >
+                                            HI-MACS</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/seratone"
+                                          >
+                                            Seratone</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="https://www.laminex.co.nz/about-laminex/brands/trade-essentials"
+                                          >
+                                            Trade Essentials</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img class="" src="" alt="" />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">
+                                          Lorem ipsumj jhjjjk
+                                        </h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797211001916@2)"
+                                          >BrandName jkjkj</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#SustainibiltyLinkComponent-mobile"
+                            aria-expanded="true"
+                            aria-controls="SustainibiltyLinkComponent"
+                          >
+                            <h6>
+                              <a
+                                data-target="#SustainibiltyLinkComponent"
+                                href="/about-laminex/sustainability"
+                              >
+                                Sustainibilty</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="SustainibiltyLinkComponent-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hmNy9oZWIvODgyODkwMjk2NTI3OC5qcGd8MzU5MjMzYjBhZTQ5NTkyZTBiMGE5MmZiZDJmNmY5NWM1ZDZkZTcwZDBlM2RiYWM3ZmRkNTQxMzdjMjg0NTAwOA"
+                                          alt="sustainableImage1"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797212083260@1)"
+                                          >Brand Name</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2gzNC9oMDkvODgyODkwMjk5ODA0Ni5qcGd8NzQzZTAyMGM4NGQxYjM0YzQ2Yzg0NDlkYzllYjdiYWZjM2ZjZDM4ODA3ZDk4NzY1M2MxZTNhYzViZjY3NGFkMQ"
+                                          alt="sustainableImage2"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Brand Name</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797212050492@1)"
+                                        ></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -1100,29 +2634,103 @@
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#support"
+                      data-target="#SupportLink-mobile"
                       aria-expanded="true"
-                      aria-controls="support"
+                      aria-controls="SupportLink"
                     >
                       <h5>
-                        <a href="">
-                          Support
-                        </a>
+                        <a href="#">Support</a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
+
                     <div
                       class="accordion-content custom-accordion-content"
-                      id="support"
+                      id="SupportLink-mobile"
                     >
-                      <p class="p2">
-                        Once you’ve submitted your order in Checkout, you will
-                        see an order confirmation page. This confirms your order
-                        has been sent for processing, and provides you with a
-                        sales order number.&nbsp;You’ll also receive an email
-                        confirmation (similar to what you receive when you order
-                        over the phone).
-                      </p>
+                      <div class="row">
+                        <div class="col-12">
+                          <ul class="listing">
+                            <li class="">
+                              <a
+                                data-target="#ContactUsLinkComponent"
+                                href="https://www.laminex.co.nz/about-laminex/contact-us?_ga=2.81452695.1411989234.1594586909-16022988.1578601040&amp;_gac=1.262592766.1594335252.Cj0KCQjwgJv4BRCrARIsAB17JI54pV7eNlvfrT3yznyRK0rXTpBNwmFZvUIgexmI6FmCw4dap4ZSOWcaAlpGEALw_wcB"
+                              >
+                                Contact Us</a
+                              >
+                            </li>
+
+                            <li class="">
+                              <a
+                                data-target="#HelpProjectLinkComponent"
+                                href="https://www.laminex.co.nz/locator-tool?_ga=2.81452695.1411989234.1594586909-16022988.1578601040&amp;_gac=1.262592766.1594335252.Cj0KCQjwgJv4BRCrARIsAB17JI54pV7eNlvfrT3yznyRK0rXTpBNwmFZvUIgexmI6FmCw4dap4ZSOWcaAlpGEALw_wcB"
+                              >
+                                Find Someone To help With Your Project</a
+                              >
+                            </li>
+
+                            <li class="">
+                              <a
+                                data-target="#HelpOnlineOrderLinkComponent"
+                                href="https://www.laminex.co.nz/about-laminex/faq"
+                              >
+                                Help Online Order</a
+                              >
+                            </li>
+
+                            <li class="">
+                              <a
+                                data-target="#HelpSampleOrderLinkComponent"
+                                href=""
+                              >
+                                Help Sample Order</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content-others">
+                          <div class="row">
+                            <div class="card col-12 col-sm-6 mb-4">
+                              <div class="card-horizontal">
+                                <div class="card-img">
+                                  <img
+                                    class=""
+                                    src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2hmNC9oNmIvODgyODkwMzA5NjM1MC5qcGd8NjIxYzczMDI0ZjJjYjE5MWJlZWMyYzA2ZTc3MmI1ZDQ2ZDdiNjBhYWJhZDQxYzZjMmRmMjBkYjUyYzgxNGQ4OA"
+                                    alt="supportImage1"
+                                  />
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Lorem Ipsum</h4>
+                                  <a
+                                    href="CMSLinkComponentModel (8797212279868@1)"
+                                    >Support1</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card col-12 col-sm-6 mb-4">
+                              <div class="card-horizontal">
+                                <div class="card-img">
+                                  <img
+                                    class=""
+                                    src="https://store.dev.laminex.co.nz/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aW1hZ2VzL2gzOC9oODkvODgyODkwMzA2MzU4Mi5qcGd8YjM4NjhjMjA4ZTkyOWU3MzBkMTI3NTEyMGQzMTc2YWEyOGZmMzBjYjQ3NDk2Zjk3MThhMTgyNzc2M2RiMmYzMg"
+                                    alt="supportImage2"
+                                  />
+                                </div>
+                                <div class="card-body">
+                                  <h4 class="card-title">Lorem Ipsum</h4>
+                                  <a
+                                    href="CMSLinkComponentModel (8797212247100@1)"
+                                    >Support2</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1134,9 +2742,7 @@
     </header>
 
     <script>
-      // TODO : Transformation to the modular structure
-
-      $(function () {
+      $(document).ready(function () {
         $(".digimeg-main-nav li a").hover(
           function () {
             $(".menu-content").stop(true, true).delay(100).slideUp();
@@ -1180,7 +2786,7 @@
             event.preventDefault();
             $(".menu-content").stop(true, true).delay(100).slideUp();
             $(
-              ".primary-navmenu-nz .siteHeader-nav-primary nav ul li a"
+              ".primary-navmenu-nz .navbar .navbar-nav .nav-item .nav-link.show"
             ).removeClass("show");
             $(
               ".header-right.prime-nav .navbar .navbar-nav .nav-item .nav-link"
@@ -1188,32 +2794,16 @@
           }
         );
 
-        //////////////////////////////////////////////
-        // Mouse out event for the Main menu items //
-        //////////////////////////////////////////////
-        // $('.menu-content').on('mouseleave', function() {
-        //     var navContentId = $(this).data('subnav');
-        //     // Stop ( in case the sub nav was sliding down ) and slide up
-        //     //$('#'+navContentId).stop().slideUp({ queue : false});
-        //     $('.menu-content').stop(true, true).delay(100).slideUp();
-        //     event.preventDefault();
-
-        // });
-
         // Tabs link content change
         $(".tab-titles li").mouseover(function () {
           $(".tab-content").hide();
           $(".tab-titles li").removeClass("active");
           $(this).addClass("active");
-          var selected_tab = $(this).find("a").attr("href");
+          var selected_tab = $(this).find("a").attr("data-target");
           $(selected_tab).stop().fadeIn();
           return false;
         });
-      });
-    </script>
 
-    <script>
-      $(document).ready(function () {
         $("body").on("click", ".accord-expand", function () {
           // $(this).closest(".accordion-item").toggleClass("active");
           $(this).closest(".accordion-item").toggleClass("active");
