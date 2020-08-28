@@ -345,40 +345,47 @@ $sticky-tablet-header-height: 54px;
 
           .nav-item {
             .nav-link {
-              &:after {
-                font-family: "font-icons-new" !important;
-                content: "\e00b";
-                display: inline;
-                vertical-align: middle;
-                font-size: smaller;
-                line-height: 1.8;
-                margin-left: 0.3125rem;
-                position: absolute;
-                left: auto;
-                display: none;
-              }
-
-              &:hover,
-              &.show {
-                color: $link-color-new;
-                border-bottom: none;
-
+              &.has-child {
                 &:after {
+                  font-family: "font-icons-new" !important;
+                  content: "\e00b";
                   display: inline;
+                  vertical-align: middle;
+                  font-size: smaller;
+                  line-height: 1.8;
+                  margin-left: 0.3125rem;
+                  position: absolute;
+                  left: auto;
+                  display: none;
+                }
+
+                &:hover,
+                &.show {
+                  color: $link-color-new;
+                  border-bottom: none;
+
+                  &:after {
+                    display: inline;
+                  }
+                }
+
+                &:hover {
+                  &:before {
+                    content: "";
+                    display: block;
+                    height: 40px;
+                    margin-bottom: -8px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                  }
                 }
               }
 
               &:hover {
-                &:before {
-                  content: "";
-                  display: block;
-                  height: 40px;
-                  margin-bottom: -8px;
-                  position: absolute;
-                  bottom: 0;
-                  left: 0;
-                  width: 100%;
-                }
+                color: $link-color-new;
+                border-bottom: none;
               }
             }
           }

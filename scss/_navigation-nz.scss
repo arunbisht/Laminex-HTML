@@ -879,3 +879,7 @@ header.primary-navmenu-au {
 .primary-navmenu-nz .navbar .navbar-nav .nav-item .nav-link.show {
   border-bottom: 2px solid $anchor-color;
 }
+
+.primary-navmenu-nz.sticky .header-right .header-bottom .navbar .navbar-nav {
+  margin-bottom: 0;
+}

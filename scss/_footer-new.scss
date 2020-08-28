@@ -150,9 +150,9 @@
         &:not(:last-child) {
           margin-right: $footer-social-icon-spacing;
 
-          @media screen and (max-width: 1210px) {
-            margin-right: 0;
-          }
+          // @media screen and (max-width: 1210px) {
+          //   margin-right: 0;
+          // }
         }
         a {
           font-size: 1.125rem;
