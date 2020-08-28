@@ -62,6 +62,10 @@
         display: inline-block;
         vertical-align: middle;
 
+        &:only-child {
+          display: none;
+        }
+
         &.slick-active {
           opacity: 1;
         }
