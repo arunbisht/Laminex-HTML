@@ -404,9 +404,7 @@
                 <div class="th description">
                   Description
                 </div>
-                <div class="th face">
-                  Face
-                </div>
+                <div class="th face">Face</div>
                 <div class="th project-name">
                   Project Name
                 </div>
@@ -423,10 +421,14 @@
       </div>
       <div class="cart-table-body">
         <div class="container">
-          <input type="hidden" value="pickup" class="selectedDeliveryMethod" />
-          <input type="hidden" value="949" class="selectedDeliveryAddressId" />
+          <input
+            type="hidden"
+            value="delivery"
+            class="selectedDeliveryMethod"
+          />
+          <input type="hidden" value="2" class="selectedDeliveryAddressId" />
           <div class="delivery-method">
-            Delivery method: <b><span>Pick up</span></b>
+            Delivery method: <b><span>Delivery</span></b>
             <a href="javascript:void(0)" class="js-cart-delivery-method"
               >Edit</a
             >
@@ -491,33 +493,10 @@
                           </div>
                         </label>
                         <div class="delivery-radio-content">
-                          <div class="input-form">
-                            <label>SELECT ADDRESS</label>
+                          <div class="single-address">
+                            UNIPLAN GROUP PTY LTD, 22 MYRTLE DRIVE, ARMIDALE
+                            NSW, 2350
                           </div>
-                          <select
-                            id="delivery-address1"
-                            class="select-options select-delivery"
-                          >
-                            <option
-                              class="address"
-                              value="2"
-                              selected="selected"
-                              >BILLS BOARD FACTORY PTY LTD, 5 GIBBS ST,
-                              CHATSWOOD NSW, 2057</option
-                            >
-                            <option class="address" value="3"
-                              >BILLS BOARD FACTORY PTY LTD, MLP, 20B WALTHAM
-                              STREET, ARTARMON NSW, 2064</option
-                            >
-                            <option class="address" value="4"
-                              >BILLS BOARD CAIRNS, 20 BEACH LANE, CAIRNS QLD,
-                              4870</option
-                            >
-                            <option class="address" value="5"
-                              >BILLS BOARD BAYSWATER, 301 CANTERBURY RD,
-                              BAYSWATER VIC, 3153</option
-                            >
-                          </select>
                           <input
                             type="hidden"
                             value="2"
@@ -549,32 +528,13 @@
                           </div>
                         </label>
                         <div class="delivery-radio-content">
-                          <div class="input-form">
-                            <label>SELECT ADDRESS</label>
+                          <div class="single-address">
+                            Pickup: LMX Tamworth, NSW, 35 Dampier Street,
+                            TAMINDA NSW, 2340
                           </div>
-                          <select
-                            id="pickup-address"
-                            class="select-options select-pickup"
-                          >
-                            <option
-                              class="address"
-                              value="949"
-                              selected="selected"
-                              >Pickup: LMX Sydney DC, NSW, 2 Foundation Place,
-                              PEMULWUY NSW, 2145</option
-                            >
-                            <option class="address" value="967"
-                              >Pickup: LMX Townsville, QLD, 14-28 Corporate
-                              Crescent, GARBUTT QLD, 4814</option
-                            >
-                            <option class="address" value="992"
-                              >Pickup: LMX Melbourne DC, VIC, 130 Sharps Road,
-                              MELBOURNE AIRPORT VIC, 3045</option
-                            >
-                          </select>
                           <input
                             type="hidden"
-                            value="949"
+                            value="940"
                             class="selectedAddressId"
                           />
                         </div>
@@ -608,24 +568,25 @@
                   <input
                     type="hidden"
                     class="orderQuantityMultiple"
-                    value="25"
+                    value="1"
                   />
 
                   <div class="td item">
                     <img
-                      src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wxMjUzfGltYWdlL2pwZWd8aW1hZ2VzL2hkOS9oMTkvaDAwLzg4Mjg4ODcyMDM4NzAuanBnfDU5MWIxOTE3NzQ2ODkyNTdmYWRmODE0YmM0ZjdmYjAzMDZmZjQyMjNiYTliN2E0YWQ2OWEzY2NjZGQ4MjliNjE"
+                      src="https://store.test.laminex.com.au/medias/p-LX-White-Valencia-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3w1MTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGRkL2gyOC9oMDAvODgyNjczNTQ2MDM4Mi5qcGd8MThmYzg4ZWFjNWQ3NTU3NTJkMDYzMzAzZmM1NDNkNTg4MTI1ZmE3YjYwY2NhZmUzNTg2Yjc3M2I3MGNlMTkyNg"
                       alt=""
                       title=""
                       class="image--loading swatch-tiles__media img-fluid"
                     />
                     <div class="prod-desc">
                       <div class="prod-name">
-                        Laminex Polar White Satin ABS Edging - Unglued
+                        Laminex White Valencia Glaze Aquapanel
                       </div>
-                      <div class="product-code">848428</div>
+                      <div class="product-code">709171</div>
 
                       <div class="desc">
-                        No Substrate, 25mt x 22mm, 2.000
+                        No Substrate, 1800mm x 900mm, 2.700
+                        <span class="face">Single Sided</span>
                       </div>
                     </div>
                   </div>
@@ -633,15 +594,12 @@
                     <h3 class="mobile-table-heading">
                       Description
                     </h3>
-                    <span>No Substrate, 25mt x 22mm, 2.000</span>
+                    <span>No Substrate, 1800mm x 900mm, 2.700</span>
                   </div>
                   <div class="td face">
-                    <h3 class="mobile-table-heading">
-                      Face
-                    </h3>
-                    <span>Double sided</span>
+                    <h3 class="mobile-table-heading">Face</h3>
+                    <span>N/A</span>
                   </div>
-
                   <div class="td project-name">
                     <h3 class="mobile-table-heading">
                       Project Name
@@ -675,13 +633,13 @@
                       type="hidden"
                       name="productCode"
                       id="cartEntries[0].sku"
-                      value="848428"
+                      value="709171"
                     />
-                    <input type="hidden" id="productPrice[0]" value="0.81" />
+                    <input type="hidden" id="productPrice[0]" value="110.87" />
                     <input
                       type="hidden"
                       name="initialQuantity"
-                      value="3"
+                      value="20"
                       id="initialQuantity[0]"
                     />
 
@@ -699,10 +657,10 @@
                         class="sku-quantity disable-paste js-update-sku-quantity"
                         data-variant-id="variant_0"
                         name="cartEntries[0].quantity"
-                        data-product-selection='{"product":"848428"}'
-                        data-original-title="Enter a quantity to see availability and estimated delivery dates."
+                        data-product-selection='{"product":"709171"}'
+                        data-original-title="This product has a minimum order quantity of 20 and can only be ordered in multiples of 10. Please enter an appropriate quantity to see availability and estimated delivery dates."
                         id="cartEntries[0].quantity"
-                        value="3"
+                        value="20"
                         data-toggle="tooltip"
                         data-placement="bottom"
                         title=""
@@ -717,12 +675,18 @@
                         <input
                           type="hidden"
                           name="CSRFToken"
-                          value="e2de9da3-34a3-446b-9512-d7ea26bf7273"
+                          value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
                         />
                       </div>
                     </form>
 
                     <div class="price-details1">
+                      <div>
+                        <i class="icon--alert"></i>
+
+                        0 in branch
+                      </div>
+
                       <div>
                         <i class="icon--alert"></i>
 
@@ -733,7 +697,7 @@
                   <input
                     type="hidden"
                     class="orderQuantityMultipleError0"
-                    value="The quantity of the product can only be in the multiples of 25."
+                    value="The quantity of the product can only be in the multiples of 1."
                   />
 
                   <div class="td price">
@@ -742,18 +706,18 @@
                         PRICE (EX GST)
                       </h3>
                       <div>
-                        <span>$0.81</span>
-                        per Lineal Metres
+                        <span>$110.87</span>
+                        per Sheet
                       </div>
                       <div>
-                        <span>$20.2725</span>
+                        <span>$68.44</span>
                         per m2
                       </div>
                     </div>
                     <div class="price-details3">
                       <div class="prod-price" id="item0">
                         $<nobr>
-                          <span class="priceOnly">60.82</span>
+                          <span class="priceOnly">2,217.39</span>
                         </nobr>
                       </div>
                       <div>
@@ -770,7 +734,7 @@
                           <input
                             type="hidden"
                             name="CSRFToken"
-                            value="e2de9da3-34a3-446b-9512-d7ea26bf7273"
+                            value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
                           />
                         </div>
                       </form>
@@ -779,12 +743,12 @@
                         id="actionEntry_0"
                         data-entry-action-url="/cart/entry/execute/REMOVE"
                         data-entry-action="REMOVE"
-                        data-entry-product-code="AU1002210"
-                        data-entry-initial-quantity="3"
+                        data-entry-product-code="AU1000048"
+                        data-entry-initial-quantity="20"
                         data-action-entry-numbers="0"
-                        data-entry-product-price="0.81"
-                        data-entry-product-name="Polar White"
-                        data-entry-sku-code="848428"
+                        data-entry-product-price="110.87"
+                        data-entry-product-name="White Valencia"
+                        data-entry-sku-code="709171"
                       >
                         <a href="#"><i class="icon--trash"></i></a>
                       </div>
@@ -804,7 +768,7 @@
                         <input
                           type="hidden"
                           name="CSRFToken"
-                          value="e2de9da3-34a3-446b-9512-d7ea26bf7273"
+                          value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
                         />
                       </div>
                     </form>
@@ -881,7 +845,7 @@
                           <div class="clearfix product-row">
                             <div class="col-fig">
                               <img
-                                src="https://store.test.laminex.com.au/medias/p-LX-Polar-White-RGB-1200x1200-LR.jpg-304Wx434H-132Wx188H?context=bWFzdGVyfGltYWdlc3wxNzg1fGltYWdlL2pwZWd8aW1hZ2VzL2g4Mi9oMDYvaDAwLzg4Mjg4ODcyNjk0MDYuanBnfGEwNjEzYzI1MGZhNGM0ZmUxYWRlYzE5ZDc1NDAwY2E4YjdjYWY4YzI4NDE4Njg0NGU3MWJkOTM4ZjEyZmU4YjI"
+                                src="https://store.test.laminex.com.au/medias/p-LX-White-Valencia-RGB-1200x1200-LR.jpg-304Wx434H-132Wx188H?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aW1hZ2VzL2hiNy9oZmMvaDAwLzg4MjY3MzUzOTQ4NDYuanBnfGYyZDBmMzliZjExNDZhN2U5NTVkMTIzZTU3ZTMzMjk5YzYzMDJmZGVlYmNkYjViN2EzNzIyMWE1MWQ4Zjc3YWQ"
                                 alt=""
                                 title=""
                                 class="image--loading swatch-tiles__media img-fluid"
@@ -889,11 +853,15 @@
                             </div>
                             <div class="col-figCaption">
                               <div class="product-brand">Laminex</div>
-                              <h4>
-                                Laminex Polar White Satin ABS Edging - Unglued
-                              </h4>
-                              <p class="product-range">COLOUR CODE: 205</p>
+                              <h4>Laminex White Valencia Glaze Aquapanel</h4>
+                              <p class="product-range">COLOUR CODE: 742</p>
                               <div class="product-notification">
+                                <div class="delivery-branch">
+                                  <p>
+                                    <i class="icon--alert"></i>
+                                    0 in Branch
+                                  </p>
+                                </div>
                                 <div class="delivery-DC">
                                   <p>
                                     <i class="icon--alert"></i>
@@ -911,18 +879,17 @@
                                     class="fast"
                                   />
                                   <label for="optradio1_0">
-                                    Pick up at the earliest available dates
+                                    Deliver at the earliest available dates
                                     (your order might be split)
                                     <div
                                       class="radio-content fast-delivery-info"
                                     >
                                       <div class="product-delivery-info">
-                                        <i
-                                          class="icon--quick-order"
-                                          title="Quick Order"
-                                        ></i
-                                        ><strong>3 estimated for pickup</strong>
-                                        by 19 Aug 2020.
+                                        <i class="icon-car"></i
+                                        ><strong
+                                          >20 estimated for delivery</strong
+                                        >
+                                        by 09 Oct 2020.
                                       </div>
                                     </div>
                                   </label>
@@ -935,18 +902,17 @@
                                     class="full"
                                   />
                                   <label for="optradio2_0">
-                                    Pick up in full when all products are
+                                    Deliver in full when all products are
                                     available
                                     <div class="radio-content">
                                       <div
                                         class="product-delivery-info full-delivery-info"
                                       >
-                                        <i
-                                          class="icon--quick-order"
-                                          title="Quick Order"
-                                        ></i
-                                        ><strong>3 estimated for pickup</strong>
-                                        by 19 Aug 2020.
+                                        <i class="icon-car"></i
+                                        ><strong
+                                          >20 estimated for delivery</strong
+                                        >
+                                        by 09 Oct 2020.
                                       </div>
                                     </div>
                                   </label>
@@ -968,19 +934,67 @@
                                             <input
                                               type="radio"
                                               name="orderDate_0"
-                                              id="dateradio2_0"
-                                              class="dispatchDate"
+                                              id="dateradio1_0"
                                               checked="checked"
+                                              class="deliveryDate"
                                             />
-                                            <span class="pickup-text"
-                                              >PICK UP DATE</span
+                                            <label for="dateradio1_0"
+                                              >DELIVERY DATE</label
                                             >
+                                            <span class="popover2">
+                                              <i class="icon--information"></i>
+                                              <span class="popover-text"
+                                                >Selecting a delivery date will
+                                                determine the estimated delivery
+                                                date for these products. Please
+                                                be aware, if you select a
+                                                Delivery Date early in a month,
+                                                the order may be dispatched and
+                                                invoiced in the previous month
+                                                due to the transit times.</span
+                                              >
+                                            </span>
                                           </div>
                                           <div class="deliveryDatepicker">
                                             <input
                                               type="hidden"
                                               class="available-date"
-                                              value="Fri 07 Aug 2020"
+                                              value="Fri 28 Aug 2020"
+                                            />
+                                            <input
+                                              class="js-datepickerInput delivery-datepicker"
+                                              type="text"
+                                              value=""
+                                              readonly=""
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="col-deliveryDate">
+                                          <div class="radio-inline">
+                                            <input
+                                              type="radio"
+                                              name="orderDate_0"
+                                              id="dateradio2_0"
+                                              class="dispatchDate"
+                                            />
+                                            <label for="dateradio2_0"
+                                              >DISPATCH DATE</label
+                                            >
+                                            <span class="popover2">
+                                              <i class="icon--information"></i>
+                                              <span class="popover-text"
+                                                >Selecting a dispatch date will
+                                                determine the date your products
+                                                are estimated to be sent (rather
+                                                than received.)
+                                              </span>
+                                            </span>
+                                          </div>
+                                          <div class="deliveryDatepicker">
+                                            <input
+                                              type="hidden"
+                                              class="available-date"
+                                              value="Fri 28 Aug 2020"
                                             />
                                             <input
                                               class="js-datepickerInput dispatch-datepicker"
@@ -1008,10 +1022,11 @@
                                   136 or via online chat.
                                 </p>
                                 <p>
-                                  <b
-                                    >If you need to arrange an urgent pick up,
-                                    please contact the Customer Service team.</b
-                                  >
+                                  Please consider
+                                  <a
+                                    href="https://www.laminex.com.au/trade-and-specifier/order-cut-off-times"
+                                    >daily order cut off times </a
+                                  >when placing your order.
                                 </p>
                               </div>
                               <div class="btn-wrapper">
@@ -1034,13 +1049,533 @@
                 <div class="line-error-message"></div>
                 <div class="dates-tr show-mobile show-more-less-item-wrapper">
                   <div class="product-delivery-info" style="display: block;">
-                    <i class="icon--quick-order" title="Quick Order"></i
-                    ><strong>3 estimated for pickup</strong> by 19 Aug 2020.
+                    <i class="icon-car"></i
+                    ><strong>20 estimated for delivery</strong> by 09 Oct 2020.
                     <a
                       href="javascript:void(0)"
                       data-toggle="modal"
                       data-target=".deliveryOptions_0"
-                      >See more pickup options</a
+                      >See more delivery options</a
+                    >
+                    <span
+                      class="project-reference-tooltip"
+                      data-toggle="tooltip"
+                      data-html="true"
+                      data-placement="bottom"
+                      data-container=".cart-container"
+                      data-original-title='Select "See more delivery options" to change delivery or dispatch dates or place products on forward or backorder.'
+                      ><i class="icon--information"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-tr">
+                <div class="tr">
+                  <input
+                    type="hidden"
+                    name="erp-out-of-stock"
+                    value="false"
+                    class="erp-out-of-stock"
+                  />
+                  <input
+                    type="hidden"
+                    class="orderQuantityMultiple"
+                    value="1"
+                  />
+
+                  <div class="td item">
+                    <img
+                      src="https://store.test.laminex.com.au/medias/p-LX-Metaline-Lipstick-Red-RGB-1200x1200-LR.jpg-32Wx48H?context=bWFzdGVyfGltYWdlc3wzMDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDBlL2gzNy9oMDAvODgyNjc5ODExMjc5OC5qcGd8MGQ2YjkyMGI4ODQ2MDUwMmI0NjQxM2Y4MDY4NDZhNDMzNmI2NDQ5NjFhNzhiZTZkMGJlMDc2ODVlYTM2NDViMw"
+                      alt=""
+                      title=""
+                      class="image--loading swatch-tiles__media img-fluid"
+                    />
+                    <div class="prod-desc">
+                      <div class="prod-name">
+                        Laminex Lipstick Red Gloss Metaline
+                      </div>
+                      <div class="product-code">934688</div>
+
+                      <div class="desc">
+                        No Substrate, 3600mm x 800mm, 4.000
+                        <span class="face">N/A</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td description">
+                    <h3 class="mobile-table-heading">
+                      Description
+                    </h3>
+                    <span>No Substrate, 3600mm x 800mm, 4.000</span>
+                  </div>
+                  <div class="td face">
+                    <h3 class="mobile-table-heading">Face</h3>
+                    <span>Single Sided</span>
+                  </div>
+                  <div class="td project-name">
+                    <h3 class="mobile-table-heading">
+                      Project Name
+                    </h3>
+                    <input
+                      type="text"
+                      value=""
+                      class="js-update-sku-projectname"
+                      id="projectName-1"
+                      maxlength="70"
+                    />
+                    <input
+                      type="hidden"
+                      name="initialProjectName"
+                      value=""
+                      id="initialProjectName-1"
+                    />
+                  </div>
+                  <div class="td qty">
+                    <h3 class="mobile-table-heading">
+                      Qty
+                    </h3>
+
+                    <input
+                      type="hidden"
+                      name="entryNumber"
+                      class="entryNumber"
+                      value="1"
+                    />
+                    <input
+                      type="hidden"
+                      name="productCode"
+                      id="cartEntries[1].sku"
+                      value="934688"
+                    />
+                    <input type="hidden" id="productPrice[1]" value="187.2" />
+                    <input
+                      type="hidden"
+                      name="initialQuantity"
+                      value="1"
+                      id="initialQuantity[1]"
+                    />
+
+                    <form
+                      id="updateCartForm1"
+                      class="js-qty-form1"
+                      action="/cart"
+                      method="post"
+                    >
+                      <input
+                        type="text"
+                        maxlength="5"
+                        autocomplete="off"
+                        autocorrect="off"
+                        class="sku-quantity disable-paste js-update-sku-quantity"
+                        data-variant-id="variant_1"
+                        name="cartEntries[1].quantity"
+                        data-product-selection='{"product":"934688"}'
+                        data-original-title="Enter a quantity to see availability and estimated delivery dates."
+                        id="cartEntries[1].quantity"
+                        value="1"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title=""
+                      />
+
+                      <input type="hidden" name="quantity" value="0" />
+                      <div
+                        id="QuantityProduct1"
+                        class="updateQuantityProduct"
+                      ></div>
+                      <div>
+                        <input
+                          type="hidden"
+                          name="CSRFToken"
+                          value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
+                        />
+                      </div>
+                    </form>
+
+                    <div class="price-details1">
+                      <div>
+                        <i class="icon--alert"></i>
+
+                        0 in branch
+                      </div>
+
+                      <div>
+                        <i class="icon--alert"></i>
+
+                        1 in DC
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    type="hidden"
+                    class="orderQuantityMultipleError1"
+                    value="The quantity of the product can only be in the multiples of 1."
+                  />
+
+                  <div class="td price">
+                    <div class="price-details2">
+                      <h3 class="mobile-table-heading">
+                        PRICE (EX GST)
+                      </h3>
+                      <div>
+                        <span
+                          >$<nobr>
+                            <span class="priceOnly">187.20</span>
+                          </nobr>
+                        </span>
+                        per Sheet
+                      </div>
+                      <div>
+                        <span
+                          >$<nobr>
+                            <span class="priceOnly">65.00</span>
+                          </nobr>
+                        </span>
+                        per m2
+                      </div>
+                    </div>
+                    <div class="price-details3">
+                      <div class="prod-price" id="item1">
+                        $<nobr>
+                          <span class="priceOnly">187.20</span>
+                        </nobr>
+                      </div>
+                      <div>
+                        ex GST
+                      </div>
+                    </div>
+                    <div class="price-edit-delete">
+                      <form
+                        id="cartEntryActionForm"
+                        action="/cart"
+                        method="post"
+                      >
+                        <div>
+                          <input
+                            type="hidden"
+                            name="CSRFToken"
+                            value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
+                          />
+                        </div>
+                      </form>
+                      <div
+                        class="js-execute-entry-action-button"
+                        id="actionEntry_1"
+                        data-entry-action-url="/cart/entry/execute/REMOVE"
+                        data-entry-action="REMOVE"
+                        data-entry-product-code="AU1000667"
+                        data-entry-initial-quantity="1"
+                        data-action-entry-numbers="1"
+                        data-entry-product-price="187.2"
+                        data-entry-product-name="Lipstick Red"
+                        data-entry-sku-code="934688"
+                      >
+                        <a href="#"><i class="icon--trash"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade zeroQuantityMessagingModal1"
+                    id="systemMessagingModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="zeroQuantityMessagingModal1"
+                    aria-hidden="true"
+                  >
+                    <form id="cartEntryActionForm" action="/cart" method="post">
+                      <div>
+                        <input
+                          type="hidden"
+                          name="CSRFToken"
+                          value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
+                        />
+                      </div>
+                    </form>
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                            id="js-clear-cart-button"
+                          >
+                            <i class="icon--x-close"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Entering 0 quantity will remove your product from
+                            the cart. Do you want to continue?
+                          </p>
+                          <p></p>
+                          <p></p>
+                          <button
+                            class="btn btn-primary js-delete-cartItem-button"
+                            type="submit"
+                            id="cartEntries[1]"
+                          >
+                            Yes
+                          </button>
+                          <button
+                            class="btn btn-primary"
+                            data-dismiss="modal"
+                            aria-label="Cancel"
+                            id="js-clear-cart-button"
+                          >
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade modal-deliveryOptions modal-deliveryOptions-cart deliveryOptions_1"
+                    id="deliveryOptions_1"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-hidden="true"
+                  >
+                    <input type="hidden" class="delivery-Type" value="FAST" />
+                    <input type="hidden" class="delivery-Date" value="" />
+                    <input type="hidden" class="dispatch-Date" value="" />
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                            id="js-clear-cart-button"
+                          >
+                            <i class="icon--x-close"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="clearfix product-row">
+                            <div class="col-fig">
+                              <img
+                                src="https://store.test.laminex.com.au/medias/p-LX-Metaline-Lipstick-Red-RGB-1200x1200-LR.jpg-304Wx434H-132Wx188H?context=bWFzdGVyfGltYWdlc3w5ODN8aW1hZ2UvanBlZ3xpbWFnZXMvaDFmL2hiMy9oMDAvODgyNjc5ODA0NzI2Mi5qcGd8MDNmOWQyNjNlYmNlYTRiZGU0NzNlMDEyYjk5YjlhZTQ1MjNjMmJkMGFhZWVhZjU5MGI3MGU4MmQ2ZGVmZDZjMw"
+                                alt=""
+                                title=""
+                                class="image--loading swatch-tiles__media img-fluid"
+                              />
+                            </div>
+                            <div class="col-figCaption">
+                              <div class="product-brand">Laminex</div>
+                              <h4>Laminex Lipstick Red Gloss Metaline</h4>
+                              <p class="product-range">COLOUR CODE: J16</p>
+                              <div class="product-notification">
+                                <div class="delivery-branch">
+                                  <p>
+                                    <i class="icon--alert"></i>
+                                    0 in Branch
+                                  </p>
+                                </div>
+                                <div class="delivery-DC">
+                                  <p>
+                                    <i class="icon--alert"></i>
+                                    1 in DC
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="product-detail">
+                                <div class="radio-inline">
+                                  <input
+                                    type="radio"
+                                    name="optradio_1"
+                                    id="optradio1_1"
+                                    checked="checked"
+                                    class="fast"
+                                  />
+                                  <label for="optradio1_1">
+                                    Deliver at the earliest available dates
+                                    (your order might be split)
+                                    <div
+                                      class="radio-content fast-delivery-info"
+                                    >
+                                      <div class="product-delivery-info">
+                                        <i class="icon-car"></i
+                                        ><strong
+                                          >1 estimated for delivery</strong
+                                        >
+                                        by 02 Sep 2020.
+                                      </div>
+                                    </div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input
+                                    type="radio"
+                                    name="optradio_1"
+                                    id="optradio2_1"
+                                    class="full"
+                                  />
+                                  <label for="optradio2_1">
+                                    Deliver in full when all products are
+                                    available
+                                    <div class="radio-content">
+                                      <div
+                                        class="product-delivery-info full-delivery-info"
+                                      >
+                                        <i class="icon-car"></i
+                                        ><strong
+                                          >1 estimated for delivery</strong
+                                        >
+                                        by 02 Sep 2020.
+                                      </div>
+                                    </div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline">
+                                  <input
+                                    type="radio"
+                                    name="optradio_1"
+                                    id="optradio3_1"
+                                    class="forward"
+                                  />
+                                  <label for="optradio3_1"
+                                    >Set a <b>future/forward order</b> date
+                                    (your order might be split)
+                                    <div class="radio-content deliveryDate">
+                                      <div class="row">
+                                        <div class="col-deliveryDate">
+                                          <div class="radio-inline">
+                                            <input
+                                              type="radio"
+                                              name="orderDate_1"
+                                              id="dateradio1_1"
+                                              checked="checked"
+                                              class="deliveryDate"
+                                            />
+                                            <label for="dateradio1_1"
+                                              >DELIVERY DATE</label
+                                            >
+                                            <span class="popover2">
+                                              <i class="icon--information"></i>
+                                              <span class="popover-text"
+                                                >Selecting a delivery date will
+                                                determine the estimated delivery
+                                                date for these products. Please
+                                                be aware, if you select a
+                                                Delivery Date early in a month,
+                                                the order may be dispatched and
+                                                invoiced in the previous month
+                                                due to the transit times.</span
+                                              >
+                                            </span>
+                                          </div>
+                                          <div class="deliveryDatepicker">
+                                            <input
+                                              type="hidden"
+                                              class="available-date"
+                                              value="Fri 28 Aug 2020"
+                                            />
+                                            <input
+                                              class="js-datepickerInput delivery-datepicker"
+                                              type="text"
+                                              value=""
+                                              readonly=""
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="col-deliveryDate">
+                                          <div class="radio-inline">
+                                            <input
+                                              type="radio"
+                                              name="orderDate_1"
+                                              id="dateradio2_1"
+                                              class="dispatchDate"
+                                            />
+                                            <label for="dateradio2_1"
+                                              >DISPATCH DATE</label
+                                            >
+                                            <span class="popover2">
+                                              <i class="icon--information"></i>
+                                              <span class="popover-text"
+                                                >Selecting a dispatch date will
+                                                determine the date your products
+                                                are estimated to be sent (rather
+                                                than received.)
+                                              </span>
+                                            </span>
+                                          </div>
+                                          <div class="deliveryDatepicker">
+                                            <input
+                                              type="hidden"
+                                              class="available-date"
+                                              value="Fri 28 Aug 2020"
+                                            />
+                                            <input
+                                              class="js-datepickerInput dispatch-datepicker"
+                                              type="text"
+                                              value=""
+                                              readonly=""
+                                              disabled=""
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div
+                                      class="radio-content forward-delivery-info"
+                                    ></div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="product-msg">
+                                <p>
+                                  Please be aware that once your order is
+                                  placed, orders can only be changed or updated
+                                  via the Customer Service team by phone at 132
+                                  136 or via online chat.
+                                </p>
+                                <p>
+                                  Please consider
+                                  <a
+                                    href="https://www.laminex.com.au/trade-and-specifier/order-cut-off-times"
+                                    >daily order cut off times </a
+                                  >when placing your order.
+                                </p>
+                              </div>
+                              <div class="btn-wrapper">
+                                <button
+                                  class="btn btn-primary apply-selection-cart apply-au"
+                                  id="apply-1"
+                                  data-dismiss="modal"
+                                  aria-label="Apply"
+                                >
+                                  Apply
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="line-error-message"></div>
+                <div class="dates-tr show-mobile show-more-less-item-wrapper">
+                  <div class="product-delivery-info" style="display: block;">
+                    <i class="icon-car"></i
+                    ><strong>1 estimated for delivery</strong> by 02 Sep 2020.
+                    <a
+                      href="javascript:void(0)"
+                      data-toggle="modal"
+                      data-target=".deliveryOptions_1"
+                      >See more delivery options</a
                     >
                     <span
                       class="project-reference-tooltip"
@@ -1068,7 +1603,7 @@
               </div>
               <div class="final-price">
                 $<nobr>
-                  <span class="priceOnly">60.82</span>
+                  <span class="priceOnly">2,404.59</span>
                 </nobr>
               </div>
               <div class="gst">
@@ -1085,7 +1620,7 @@
                   <input
                     type="hidden"
                     name="CSRFToken"
-                    value="e2de9da3-34a3-446b-9512-d7ea26bf7273"
+                    value="3b05360e-7f6b-4411-98bd-40cd82e6e2aa"
                   />
                 </div>
               </form>
@@ -1094,8 +1629,17 @@
                 id="actionEntry_"
                 data-entry-action-url="/cart/entry/execute/REMOVE"
                 data-entry-action="REMOVE"
-                data-entry-product-code="848428"
-                data-entry-initial-quantity="3"
+                data-entry-product-code="934688"
+                data-entry-initial-quantity="1"
+                data-action-entry-numbers="1"
+              ></div>
+              <div
+                class="js-execute-entry-action-button"
+                id="actionEntry_"
+                data-entry-action-url="/cart/entry/execute/REMOVE"
+                data-entry-action="REMOVE"
+                data-entry-product-code="709171"
+                data-entry-initial-quantity="20"
                 data-action-entry-numbers="0"
               ></div>
               <button
@@ -1136,9 +1680,9 @@
                         <button
                           class="btn btn-primary js-clear-cart-button"
                           type="submit"
-                          data-clear-entry-numbers="0,"
+                          data-clear-entry-numbers="1,0,"
                           data-clear-cart-action-url="/cart/entry/execute/REMOVE"
-                          data-clear-cart-data="de.hybris.platform.commercefacades.order.data.CartData@40bbd6b4"
+                          data-clear-cart-data="de.hybris.platform.commercefacades.order.data.CartData@6219d396"
                         >
                           OK
                         </button>
@@ -1160,7 +1704,7 @@
                 class="continue-shopping-btn"
                 id="cart-continue-shopping-btn"
               >
-                <a href="/quickOrder"
+                <a href="https://cms.test.laminex.com.au/"
                   ><i class="icon--arrow-small-right"></i> Continue Shopping</a
                 >
               </div>

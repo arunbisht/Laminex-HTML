@@ -131,6 +131,28 @@
       width: 11.5%;
     }
 
+    .price {
+      .price-edit-delete {
+        float: right !important;
+      }
+    }
+
+    @media screen and (max-width: 1099.98px) and (min-width: 768px) {
+      .price {
+        text-align: right !important;
+        .price-details2 {
+          width: auto !important;
+          display: inline-block !important;
+          float: none !important;
+        }
+        .price-edit-delete {
+          position: absolute;
+          right: 2rem;
+          top: 0.8125rem;
+        }
+      }
+    }
+
     @media screen and (max-width: 1099.98px) {
       .cart-table-body {
         .tbody {
@@ -145,13 +167,75 @@
       .price {
         width: 25% !important;
       }
+
+      .delivery-method {
+        display: block;
+        width: calc(100% - 8rem);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cart-table-body {
+        .tbody {
+          .tr {
+            .td {
+              &.description,
+              &.face {
+                display: none !important;
+              }
+
+              &.item {
+                .prod-desc {
+                  .desc {
+                    display: block;
+                  }
+                }
+              }
+
+              &.project-name {
+                width: 50% !important;
+              }
+            }
+          }
+        }
+      }
+      .qty {
+        .price-details1 {
+          width: 70% !important;
+          padding-left: 1.125rem !important;
+        }
+      }
+
+      .proj-qty-face-wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+      }
+    }
+
+    @media screen and (max-width: 959.98px) {
+      .cart-table-header {
+        display: none !important;
+      }
+
+      .price {
+        padding-right: 2rem !important;
+        .price-details3 {
+          right: 4rem;
+        }
+      }
+
+      .delivery-method {
+        width: calc(100% - 4rem);
+      }
     }
 
     @media screen and (max-width: 767px) {
       .face {
+        display: block;
         width: 100% !important;
-        padding-left: calc(2.5rem + 5.794%) !important;
-        padding-top: 0 !important;
+        // padding-left: calc(2.5rem + 5.794%) !important;
+        // padding-top: 0 !important;
 
         .mobile-table-heading {
           display: none !important;
@@ -161,9 +245,33 @@
           padding-top: 0 !important;
         }
       }
+      .cart-table-body {
+        .tbody {
+          .tr {
+            .td {
+              &.project-name {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
       .qty,
       .price {
         width: 50% !important;
+      }
+      .price {
+        padding-right: 0.5rem !important;
+        text-align: right !important;
+        .price-details3 {
+          right: 1.2rem !important;
+        }
+
+        .price-details2 {
+          width: auto !important;
+          display: inline-block !important;
+          float: none !important;
+        }
       }
     }
   }
@@ -234,6 +342,52 @@
                   .qty {
                     width: 100%;
                     float: none;
+
+                    @media screen and (max-width: 1099.98px) {
+                      width: auto !important;
+                      margin-bottom: 0;
+                    }
+                  }
+
+                  .proj-qty-face-wrapper {
+                    @media screen and (max-width: 1099.98px) {
+                      display: -ms-flexbox;
+                      display: flex;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                      -ms-flex-pack: start;
+                      justify-content: flex-start;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+                      margin: 0 0 0.75rem;
+                      width: 100%;
+
+                      .qty {
+                        -ms-flex-order: 1;
+                        order: 1;
+                        margin-right: 40px;
+                      }
+                      .proj-face-wrapper {
+                        -ms-flex-order: 2;
+                        order: 2;
+                        margin-right: 40px;
+                      }
+                      .proj-qty-wrapper {
+                        -ms-flex-order: 3;
+                        order: 3;
+                      }
+                    }
+
+                    @media screen and (max-width: 1099.98px) {
+                      .qty {
+                        margin-right: 1rem;
+                      }
+                      .proj-face-wrapper {
+                        margin-right: 1rem;
+                      }
+                    }
                   }
 
                   .face,
