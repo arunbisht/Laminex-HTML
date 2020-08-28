@@ -286,11 +286,13 @@
         }
       }
 
-      .xforms-input-input,
-      select,
-      textarea,
-      input[type="text"] {
-        border-color: $danger-color !important;
+      &.xforms-visited {
+        .xforms-input-input,
+        select,
+        textarea,
+        input[type="text"] {
+          border-color: $danger-color !important;
+        }
       }
     }
 
