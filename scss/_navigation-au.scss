@@ -801,6 +801,12 @@ $sticky-tablet-header-height: 54px;
         }
       }
 
+      .has-thumbnails {
+        .thumbnail {
+          width: 33px;
+        }
+      }
+
       margin-bottom: 0.3125rem;
 
       &.active.has-child {
