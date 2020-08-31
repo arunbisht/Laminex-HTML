@@ -160,4 +160,18 @@ $storelocator-links: #858e81 !default;
 $storelocator-pagination-border: #a5be9b !default;
 $storelocator-pagination-anchor: #507035 !default;
 
+$store-locator-map-popover-border-radius: 0 !default;
+$store-locator-map-popover-bg-color: #ffffff !default;
+$store-locator-map-popover-text-color: $secondary-text-color !default;
+$store-locator-map-popover-subtitle-text-color: $secondary-color !default;
+$store-locator-map-popover-left-right-spacing: 35px !default;
+$store-locator-map-popover-header-top-spacing: 10px !default;
+$store-locator-map-popover-header-bottom-spacing: 0 !default;
+$store-locator-map-popover-close-right-pos: 21px !default;
+$store-locator-map-popover-close-top-pos: 24px !default;
+$store-locator-map-popover-link-font-weight: 500 !default;
+$store-locator-map-popover-content-top-spacing: 0 !default;
+
 $form-btn-hover-color: $anchor-color !default;
+
+$flyover-border-color: $accordion-border-color !default;

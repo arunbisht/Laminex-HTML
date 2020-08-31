@@ -46,307 +46,400 @@
     />
 
     <meta name="theme-color" content="#fafafa" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-      <script>
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#showlocations" ).autocomplete({
-      appendTo:".location-filter-input",
-      source: availableTags
-    });
-  } );
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme",
+        ];
+        $("#showlocations").autocomplete({
+          appendTo: ".location-filter-input",
+          source: availableTags,
+        });
+      });
+    </script>
   </head>
 
-<body>
-<main class="store-locator">
-    <div class="natural-language">
+  <body>
+    <main class="store-locator">
+      <div class="natural-language">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <div class="location-filter">
-                        <label for="textBoxLocationSearch">I’m located in</label>
-                        <span class="location-filter-input">
-                        <input 
-                               class="location-search-input location-search-box-input tt-input" 
-                               type="text" 
-                               placeholder="search area"
-                               id="showlocations"
-                               value="Doncaster"
-                        />
-                        </span>
-                    </div>
-                    <div class="facet-heading">
-                        <h4 class="facet-title">and I want to</h4>
-                    </div>
-                    <div class="location-finder">
-                        <div class="location-finder-dropdown">
-                        <a 
-                           class="dropdown" 
-                           data-toggle="collapse" href="#location-dropdown" 
-                           role="button" 
-                           aria-expanded="false" 
-                           aria-controls="location-dropdown">
-                           find a showroom
-                        </a>
-                            <div class="collapse dropdowns" id="location-dropdown">
-                                <div class="dropdown-content">
-                                <ul class="showroom-details">
-                                    <li><a href="#">Find a cabinet maker/designer</a></li>
-                                    <li><a href="#">Find a showroom</a></li>
-                                    <li><a href="#">Find laminex locations</a></li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 text-left text-md-right">
-                    <div class="search-actions">
-                    <button class="btn btn-primary" type="button">
-                    Search
-                    </button>
-                    <button class="btn btn-secondary" type="button">
-                    Reset
-                    </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Search results found container -->
-    <div class="results-info d-sm-none d-md-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <p class="result">14 locations found</p>
-                </div>
-                <div class="col-6 text-right d-none d-sm-block">
-                    <div class="refine-results dropdown-container">
-                    <button 
-                            class="btn btn-secondary small-btn" type="button" 
-                            data-toggle="collapse" 
-                            data-target="#refine-results" 
-                            aria-expanded="false" 
-                            aria-controls="refine-results">
-                            Refine results
-                  </button>
-                <div class="collapse dropdowns" id="refine-results">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="location-filter">
+                <label for="textBoxLocationSearch">I’m located in</label>
+                <span class="location-filter-input">
+                  <input
+                    class="location-search-input location-search-box-input tt-input"
+                    type="text"
+                    placeholder="search area"
+                    id="showlocations"
+                    value="Doncaster"
+                  />
+                </span>
+              </div>
+              <div class="facet-heading">
+                <h4 class="facet-title">and I want to</h4>
+              </div>
+              <div class="location-finder">
+                <div class="location-finder-dropdown">
+                  <a
+                    class="dropdown"
+                    data-toggle="collapse"
+                    href="#location-dropdown"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="location-dropdown"
+                  >
+                    find a showroom
+                  </a>
+                  <div class="collapse dropdowns" id="location-dropdown">
                     <div class="dropdown-content">
+                      <ul class="showroom-details">
+                        <li><a href="#">Find a cabinet maker/designer</a></li>
+                        <li><a href="#">Find a showroom</a></li>
+                        <li><a href="#">Find laminex locations</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 text-left text-md-right">
+              <div class="search-actions">
+                <button class="btn btn-primary" type="button">
+                  Search
+                </button>
+                <button class="btn btn-secondary" type="button">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search results found container -->
+      <div class="results-info d-sm-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <p class="result">14 locations found</p>
+            </div>
+            <div class="col-6 text-right d-none d-sm-block">
+              <div class="refine-results dropdown-container">
+                <button
+                  class="btn btn-secondary small-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#refine-results"
+                  aria-expanded="false"
+                  aria-controls="refine-results"
+                >
+                  Refine results
+                </button>
+                <div class="collapse dropdowns" id="refine-results">
+                  <div class="dropdown-content">
                     <h5><i class="icon-new--chevron-small-up"></i>Styles</h5>
                     <ul>
-                        <li>
-                            <input name="coastal" id="coastal" type="checkbox" />
-                            <label for="coastal">Coastal</label>
-                        </li>
-                        <li>
-                            <input name="Glamour" id="Glamour" type="checkbox" />
-                            <label for="Glamour">Glamour</label>
-                        </li>
-                        <li>
-                            <input name="Hamptons" id="Hamptons" type="checkbox" />
-                            <label for="Hamptons">Hamptons</label>
-                        </li>
+                      <li>
+                        <input name="coastal" id="coastal" type="checkbox" />
+                        <label for="coastal">Coastal</label>
+                      </li>
+                      <li>
+                        <input name="Glamour" id="Glamour" type="checkbox" />
+                        <label for="Glamour">Glamour</label>
+                      </li>
+                      <li>
+                        <input name="Hamptons" id="Hamptons" type="checkbox" />
+                        <label for="Hamptons">Hamptons</label>
+                      </li>
                     </ul>
-                        <div class="filter-actions">
-                            <a href="#">Apply</a>
-                            <a href="#">Clear</a>
-                        </div>
+                    <div class="filter-actions">
+                      <a href="#">Apply</a>
+                      <a href="#">Clear</a>
                     </div>
+                  </div>
                 </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    
-    <!-- Search results container -->
-    <div class="location-search-results">
+      </div>
+
+      <!-- Search results container -->
+      <div class="location-search-results">
         <div class="row">
-            <!-- Search results listing -->
-            <div class="col-12 col-md-8 col-lg-7 order-1 order-md-0">
-                <div class="location-search-results-list">
-                    <ul>
-                        <li>
-                            <div class="card">
-                                <div class="card-horizontal">
-                                    <div class="card-map">
-                                        <img class="" src="./images/map-thumbnail.jpg" alt="Map view">
-                                    </div>
-                                    <div class="card-body">
-                                        <small>Cabinet maker/Designer</small>
-                                        <h4 class="card-title">Creativ Kitchens</h4>
-                                    </div>
-                                    <div class="contact-details">
-                                            <address>
-                                            123 Main Street, Melbourne, VIC 3000
-                                            </address>
-                                            <ul class="contact-info">
-                                                <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
-                                                <li><a href="#"><i class="icon-new--globe"></i>www.creativkitchensaustralia.com.au</a></li>
-                                                <li><a href="#"><i class="icon-new--email"></i>sales@creativkitchensaustralia.com.au</a></li>
-                                            </ul>
-                                        <div class="actions">
-                                        <button class="btn btn-primary" type="button">
-                                        More info
-                                        </button>
-                                        <button class="btn btn-secondary" type="button">
-                                        Get directions
-                                        </button>
-                                    </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-horizontal">
-                                    <div class="card-map">
-                                        <img class="" src="./images/map-thumbnail.jpg" alt="Map view">
-                                    </div>
-                                    <div class="card-body">
-                                        <small>Cabinet maker/Designer</small>
-                                        <h4 class="card-title">Creativ Kitchens</h4>
-                                    </div>
-                                    <div class="contact-details">
-                                            <address>
-                                            123 Main Street, Melbourne, VIC 3000
-                                            </address>
-                                            <ul class="contact-info">
-                                                <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
-                                                <li><a href="#"><i class="icon-new--globe"></i>www.creativkitchensaustralia.com.au</a></li>
-                                                <li><a href="#"><i class="icon-new--email"></i>sales@creativkitchensaustralia.com.au</a></li>
-                                            </ul>
-                                        <div class="actions">
-                                        <button class="btn btn-primary" type="button">
-                                        More info
-                                        </button>
-                                        <button class="btn btn-secondary" type="button">
-                                        Get directions
-                                        </button>
-                                    </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-horizontal">
-                                    <div class="card-map">
-                                        <img class="" src="./images/map-thumbnail.jpg" alt="Map view">
-                                    </div>
-                                    <div class="card-body">
-                                        <small>Cabinet maker/Designer</small>
-                                        <h4 class="card-title">Creativ Kitchens</h4>
-                                    </div>
-                                    <div class="contact-details">
-                                            <address>
-                                            123 Main Street, Melbourne, VIC 3000
-                                            </address>
-                                            <ul class="contact-info">
-                                                <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
-                                                <li><a href="#"><i class="icon-new--globe"></i>www.creativkitchensaustralia.com.au</a></li>
-                                                <li><a href="#"><i class="icon-new--email"></i>sales@creativkitchensaustralia.com.au</a></li>
-                                            </ul>
-                                        <div class="actions">
-                                        <button class="btn btn-primary" type="button">
-                                        More info
-                                        </button>
-                                        <button class="btn btn-secondary" type="button">
-                                        Get directions
-                                        </button>
-                                    </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-horizontal">
-                                    <div class="card-map">
-                                        <img class="" src="./images/map-thumbnail.jpg" alt="Map view">
-                                    </div>
-                                    <div class="card-body">
-                                        <small>Cabinet maker/Designer</small>
-                                        <h4 class="card-title">Creativ Kitchens</h4>
-                                    </div>
-                                    <div class="contact-details">
-                                        <address>
-                                        123 Main Street, Melbourne, VIC 3000
-                                        </address>
-                                        <ul class="contact-info">
-                                            <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
-                                            <li><a href="#"><i class="icon-new--globe"></i>www.creativkitchensaustralia.com.au</a></li>
-                                            <li><a href="#"><i class="icon-new--email"></i>sales@creativkitchensaustralia.com.au</a></li>
-                                        </ul>
-                                        <div class="actions">
-                                            <button class="btn btn-primary" type="button">
-                                            More info
-                                            </button>
-                                            <button class="btn btn-secondary" type="button">
-                                            Get directions
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                       
-                    </ul>
-                </div>
+          <!-- Search results listing -->
+          <div class="col-12 col-md-7 order-1 order-md-0">
+            <div class="location-search-results-list">
+              <ul>
+                <li>
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="card-map">
+                        <img
+                          class=""
+                          src="./images/map-thumbnail.jpg"
+                          alt="Map view"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <small>Cabinet maker/Designer</small>
+                        <h4 class="card-title">Creativ Kitchens</h4>
+                      </div>
+                      <div class="contact-details">
+                        <address>
+                          123 Main Street, Melbourne, VIC 3000
+                        </address>
+                        <ul class="contact-info">
+                          <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--globe"></i
+                              >www.creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--email"></i
+                              >sales@creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="actions">
+                          <button class="btn btn-primary" type="button">
+                            More info
+                          </button>
+                          <button class="btn btn-secondary" type="button">
+                            Get directions
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="card-map">
+                        <img
+                          class=""
+                          src="./images/map-thumbnail.jpg"
+                          alt="Map view"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <small>Cabinet maker/Designer</small>
+                        <h4 class="card-title">Creativ Kitchens</h4>
+                      </div>
+                      <div class="contact-details">
+                        <address>
+                          123 Main Street, Melbourne, VIC 3000
+                        </address>
+                        <ul class="contact-info">
+                          <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--globe"></i
+                              >www.creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--email"></i
+                              >sales@creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="actions">
+                          <button class="btn btn-primary" type="button">
+                            More info
+                          </button>
+                          <button class="btn btn-secondary" type="button">
+                            Get directions
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="card-map">
+                        <img
+                          class=""
+                          src="./images/map-thumbnail.jpg"
+                          alt="Map view"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <small>Cabinet maker/Designer</small>
+                        <h4 class="card-title">Creativ Kitchens</h4>
+                      </div>
+                      <div class="contact-details">
+                        <address>
+                          123 Main Street, Melbourne, VIC 3000
+                        </address>
+                        <ul class="contact-info">
+                          <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--globe"></i
+                              >www.creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--email"></i
+                              >sales@creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="actions">
+                          <button class="btn btn-primary" type="button">
+                            More info
+                          </button>
+                          <button class="btn btn-secondary" type="button">
+                            Get directions
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-horizontal">
+                      <div class="card-map">
+                        <img
+                          class=""
+                          src="./images/map-thumbnail.jpg"
+                          alt="Map view"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <small>Cabinet maker/Designer</small>
+                        <h4 class="card-title">Creativ Kitchens</h4>
+                      </div>
+                      <div class="contact-details">
+                        <address>
+                          123 Main Street, Melbourne, VIC 3000
+                        </address>
+                        <ul class="contact-info">
+                          <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--globe"></i
+                              >www.creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="icon-new--email"></i
+                              >sales@creativkitchensaustralia.com.au</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="actions">
+                          <button class="btn btn-primary" type="button">
+                            More info
+                          </button>
+                          <button class="btn btn-secondary" type="button">
+                            Get directions
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            
-            <!-- Search map placeholder -->
-            <div class="col-12 col-md-4 col-lg-5 order-0 order-md-1">
-            <img class="" src="./images/map.jpg" style="height:auto;" alt="Map view">
-            </div>
+          </div>
+
+          <!-- Search map placeholder -->
+          <div class="col-12 col-md-5 order-0 order-md-1">
+            <img
+              class=""
+              src="./images/map.jpg"
+              style="height: auto;"
+              alt="Map view"
+            />
+          </div>
         </div>
-        
+
         <!-- Pagination -->
         <div class="row">
-            <div class="col-12">
-                <ul class="pagination justify-content-center">
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                </ul>
-            </div>
+          <div class="col-12">
+            <ul class="pagination justify-content-center">
+              <li><a class="active" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </main>
+
+    <div class="store-locator-map-popover">
+      <div class="header">
+        <div class="subtitle">Designer</div>
+        <h4 class="title">Kitchens by Kathie</h4>
+        <a href="javascript:;" class="store-locator-map-close-popover"
+          ><i class="icon--x-close"></i
+        ></a>
+      </div>
+      <div class="content">
+        <p>380 Lutwyche Road, Windsor, Brisbane QLD 4030</p>
+        <ul class="contact-info">
+          <li><i class="icon-new--phone"></i>(07) 3357 2028</li>
+          <li>
+            <a href="www.kitchensbykathie.com.au">
+              <i class="icon-new--globe"></i>www.kitchensbykathie.com.au
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@kitchensbykathie.com.au">
+              <i class="icon-new--email"></i>hello@kitchensbykathie.com.au
+            </a>
+          </li>
+        </ul>
+        <div class="btn-wrapper">
+          <button class="btn btn-primary" type="button">
+            More info
+          </button>
+          <button class="btn btn-secondary" type="button">
+            Get directions
+          </button>
+        </div>
+      </div>
     </div>
-    
-</main>
-      
-      
-      
-      
-      
-      <script type="text/javascript">
+
+    <script type="text/javascript">
       var dataLayer = [];
     </script>
     <script type="text/javascript">
@@ -651,7 +744,7 @@
         });
       }
     </script>
-   
+
     <script type="text/javascript" src="./js/generatedVariables.js"></script>
     <script type="text/javascript" src="./js/all_responsive.js"></script>
     <script type="text/javascript" src="./js/addons_responsive.js"></script>

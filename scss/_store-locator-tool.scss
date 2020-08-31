@@ -1,481 +1,560 @@
-.store-locator{
-    button{
-        width: auto!important;
-        padding-left: 2rem!important;
-        padding-right: 2rem!important;
-        margin-left: 0.75rem;
-        &:first-child{
-            margin-left: 0;
+.store-locator {
+  button {
+    width: auto !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    margin-left: 0.75rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .dropdowns {
+    position: absolute;
+    top: 100%;
+    background: $bg-white;
+    width: auto;
+    min-width: 300px;
+    z-index: 10;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    text-align: left;
+    .dropdown-content {
+      padding: 1rem 2rem;
+      text-align: left;
+      li {
+        padding: 0.4rem 0;
+        line-height: normal;
+        a {
+          font-family: "Brown Std New" !important;
+          font-weight: bold;
+          display: block;
+          color: $link-color-new;
         }
-        }
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        }
-    .dropdowns{
-            position: absolute;
-            top: 100%;
-            background: $bg-white;
-            width: auto;
-            min-width: 300px;
-            z-index: 10;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-        text-align: left;
-            .dropdown-content{
-                padding: 1rem 2rem;
-                text-align: left;
-                li{
-                    padding:0.4rem 0;
-                    line-height: normal;
-                    a{
-                        font-family: "Brown Std New"!important;
-                        font-weight: bold;
-                        display: block;
-                        color: $link-color-new;
-                    }
-                }
-            }
-        }
+      }
+    }
+  }
 }
 .natural-language {
-    background-color: $storelocator-filterbg;
-    padding: 1rem 0 2rem 0;
-    font-family: "Brown Std New"!important;
+  background-color: $storelocator-filterbg;
+  padding: 1rem 0 2rem 0;
+  font-family: "Brown Std New" !important;
+  font-weight: 700;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 1.25rem;
+  }
+  @media screen and (min-width: 960px) {
+    padding: 2.75rem 0;
+  }
+  label,
+  .facet-title,
+  .dropdown {
+    letter-spacing: -0.38px;
+    font-size: 1.125rem;
+    line-height: 1.78;
+    @media screen and (min-width: 960px) {
+      font-size: 1.5rem;
+      color: $secondary-text-color;
+      line-height: 1.33;
+      letter-spacing: -0.05px;
+    }
+  }
+  .location-filter,
+  .location-finder {
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    @media screen and (min-width: 960px) {
+      margin-bottom: 0;
+    }
+  }
+  .location-finder {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+  .search-actions {
+    padding-top: 1rem;
+    @media screen and (min-width: 960px) {
+      padding-top: 0;
+    }
+  }
+  .location-filter-input {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5rem;
+  }
+  .location-search-input {
+    font-family: "Brown Std New" !important;
     font-weight: 700;
-    @media screen and (max-width:767px){
-        padding-bottom: 1.25rem;
+    letter-spacing: -0.38px;
+    font-size: 1.125rem;
+    line-height: 1.78;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px dotted $link-color-new !important;
+    color: $link-color-new;
+    text-overflow: ellipsis;
+    vertical-align: baseline !important;
+    width: 90px;
+    @media screen and (min-width: 960px) {
+      font-size: 1.5rem;
+      width: auto;
     }
-    @media screen and (min-width:960px){
-        padding: 2.75rem 0;
+
+    &::placeholder {
+      color: $link-color-new;
+      opacity: 0.5;
+      font-size: inherit;
+      font-family: "Brown Std New" !important;
+      font-weight: 700;
     }
-    label, .facet-title, .dropdown{
-        letter-spacing: -0.38px;
-        font-size: 1.125rem;
-        line-height: 1.78;
-        @media screen and (min-width:960px){
-            font-size: 1.5rem;
-            color: $secondary-text-color;
-            line-height: 1.33;
-            letter-spacing: -0.05px;
-        }
+    &:focus,
+    &:active {
+      border: 0 !important;
+      border-bottom: 2px dotted $link-color-new !important;
     }
-    .location-filter, .location-finder{
+  }
+  .facet-heading,
+  .location-finder-dropdown {
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0.375rem;
+    }
+  }
+  .location-finder-dropdown {
+    position: relative;
+    .dropdown {
+      color: $link-color-new;
+      padding-bottom: 0.5625rem;
+      border-bottom: 2px solid $link-color-light;
+      display: inline-block;
+      &:after {
         display: inline-block;
-        vertical-align: baseline;
-        position: relative;
-        @media screen and (min-width:960px){
-            margin-bottom: 0;
-        }
+        vertical-align: middle;
+        font-family: "font-icons-new" !important;
+        content: "\e008";
+        font-size: initial;
+      }
     }
-    .location-finder{
-        @media screen and (max-width:767px){
+    .dropdowns {
+      top: 60px;
+      min-width: 420px;
+      .dropdown-content {
+        padding: 1rem 1.5rem;
+        @media screen and (min-width: 960px) {
+          padding: 1rem 2rem;
+        }
+        li {
+          padding: 0.4rem 0;
+          @media screen and (min-width: 960px) {
+            padding: 0.8rem 0;
+          }
+          a {
+            font-size: 1.3125rem;
+            line-height: normal;
             display: block;
+            color: $link-color-new;
+            @media screen and (min-width: 960px) {
+              font-size: 1.5rem;
+            }
+          }
         }
+      }
     }
-    .search-actions{
-        padding-top: 1rem;
-        @media screen and (min-width:960px){
-            padding-top: 0;
-        }
+  }
+  .ui-widget {
+    background: $bg-white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    position: absolute !important;
+    z-index: 11;
+    padding: 1rem 1.5rem;
+    max-width: 300px;
+    @media screen and (min-width: 960px) {
+      padding: 1rem 2rem;
     }
-    .location-filter-input{
-        display: inline-block;
-        position: relative;
-        margin-right: 0.5rem;
-    }
-    .location-search-input{
-        font-family: "Brown Std New"!important;
-        font-weight: 700;
-        letter-spacing: -0.38px;
-        font-size: 1.125rem;
-        line-height: 1.78;
-        background-color: transparent;
-        border: 0;
-        border-bottom: 2px dotted $link-color-new !important;
+    li {
+      padding: 0.4rem 0;
+      @media screen and (min-width: 960px) {
+        padding: 0.8rem 0;
+      }
+      div {
+        font-size: 1.3125rem;
+        line-height: normal;
+        font-family: "Brown Std New" !important;
+        font-weight: bold;
+        display: block;
         color: $link-color-new;
-        text-overflow: ellipsis;
-        vertical-align: baseline !important;
-        width:90px;
-        @media screen and (min-width:960px){
-            font-size: 1.5rem;
-            width: auto;
+        @media screen and (min-width: 960px) {
+          font-size: 1.5rem;
         }
-        
-        &::placeholder{
-            color: $link-color-new;
-            opacity: .5;
-            font-size: inherit;
-            font-family: "Brown Std New"!important;
-            font-weight: 700;
-        }
-        &:focus, &:active{
-            border: 0!important;
-            border-bottom: 2px dotted $link-color-new !important;
-        }
+      }
     }
-    .facet-heading, .location-finder-dropdown{
-            display: inline-block;
-            
-        @media screen and (min-width:768px){
-            margin-right: .375rem;
-        }
-    }
-    .location-finder-dropdown{
-        position: relative;
-        .dropdown{
-            color: $link-color-new;
-            padding-bottom: 0.5625rem;
-            border-bottom: 2px solid $link-color-light;
-            display: inline-block;
-            &:after{
-                display: inline-block;
-                vertical-align: middle;
-                font-family: "font-icons-new" !important;
-                content: "\e008";
-                font-size: initial;
-            }
-        }
-        .dropdowns{
-            top: 60px;
-            min-width:420px;
-            .dropdown-content{
-                padding: 1rem 1.5rem;
-                @media screen and (min-width:960px){
-                   padding: 1rem 2rem;
-                }
-                li{
-                    padding:0.4rem 0;
-                    @media screen and (min-width:960px){
-                           padding:0.8rem 0;
-                        }
-                    a{
-                        font-size: 1.3125rem;
-                        line-height: normal;
-                        display: block;
-                        color: $link-color-new;
-                        @media screen and (min-width:960px){
-                           font-size: 1.5rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .ui-widget{
-            background: $bg-white;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-            position: absolute!important;
-            z-index: 11;
-            padding: 1rem 1.5rem;
-            max-width:300px;
-                @media screen and (min-width:960px){
-                   padding: 1rem 2rem;
-                }
-                li{
-                     padding:0.4rem 0;
-                    @media screen and (min-width:960px){
-                           padding:0.8rem 0;
-                        }
-                    div{
-                        font-size: 1.3125rem;
-                        line-height: normal;
-                        font-family: "Brown Std New"!important;
-                        font-weight: bold;
-                        display: block;
-                        color: $link-color-new;
-                        @media screen and (min-width:960px){
-                           font-size: 1.5rem;
-                        }
-                    }
-                }
-        }
+  }
 }
-.results-info{
+.results-info {
+  padding: 1.25rem 0;
+  background: $whites-and-neutrals-bg;
+  .result {
+    color: $secondary-text-color;
+    font-size: 0.875rem;
+    font-family: "Maison Neue";
+    font-weight: 700;
+    margin-top: 0.3125rem;
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0.625rem 0;
+    .result {
+      margin-top: 0;
+    }
+  }
+  .refine-results {
+    position: relative;
+    display: inline-block;
+    .dropdowns {
+      right: 0;
+      top: 50px;
+      li {
+        label {
+          display: inline-block;
+          font-size: 0.875rem;
+          color: $secondary-text-color;
+          margin: 0;
+          font-family: "Maison Neue";
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+          vertical-align: middle;
+          margin-right: 0.75rem;
+          margin-top: -2px;
+        }
+      }
+      h5 {
+        text-decoration: none;
+        margin-bottom: 0.75rem;
+        color: $link-color-new;
+        i {
+          vertical-align: baseline;
+          margin-right: 0.8125rem;
+          font-size: small;
+        }
+      }
+      .filter-actions {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.375rem 0 0 2rem;
+        a {
+          font-size: 0.75rem;
+          font-family: "Brown Std New";
+          line-height: 1.33;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-bottom: 0.3125rem;
+          position: relative;
+          color: $storelocator-links;
+          &:hover:after {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: $storelocator-links;
+            display: block;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+.btn.small-btn {
+  border-radius: 4px;
+  padding: 6px 16px;
+  width: auto;
+}
+.card-horizontal {
+  display: block;
+}
+.location-search-results {
+  padding: 1.875rem 1.875rem 0;
+  @media screen and (max-width: 767px) {
+    padding: 1.25rem 1.25rem 0;
+  }
+  @media screen and (min-width: 960px) {
+    padding-top: 0;
+  }
+}
+.location-search-results-list {
+  padding-top: 0.625rem;
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      border-top: 1px solid $accordion-border-color;
+      padding: 1.25rem 0 1.6875rem 0;
+      &:first-child {
+        border-top: none;
+      }
+      position: relative;
+      @media screen and (max-width: 767px) {
         padding: 1.25rem 0;
-        background: $whites-and-neutrals-bg;
-        .result{
-            color: $secondary-text-color;
-            font-size: 0.875rem;
-            font-family:"Maison Neue";
-            font-weight: 700;
-            margin-top: 0.3125rem;
-            margin-bottom: 0;
-        }
-     @media screen and (max-width:767px){
-           padding: 0.625rem 0;
-         .result{
-             margin-top: 0;
-         }
-        }
-    .refine-results{
-        position: relative;
-        display: inline-block;
-        .dropdowns{
-            right: 0;
-            top:50px;
-            li{
-                label{
-                    display: inline-block;
-                    font-size: 0.875rem;
-                    color:$secondary-text-color;
-                    margin: 0;
-                    font-family:"Maison Neue";
-                }
-                input[type="checkbox"],input[type="radio"]{
-                    vertical-align: middle;
-                    margin-right: 0.75rem;
-                    margin-top: -2px;
-                }
-            }
-            h5{
-                text-decoration: none;
-                margin-bottom: 0.75rem;
-                color: $link-color-new;
-                i{
-                    vertical-align: baseline;
-                    margin-right: 0.8125rem;
-                    font-size: small;
-                }
-            }
-            .filter-actions{
-                display: flex;
-                justify-content: space-between;
-                padding: 1.375rem 0 0 2rem;
-                a{
-                    font-size:0.75rem;
-                    font-family: "Brown Std New";
-                    line-height: 1.33;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    padding-bottom: 0.3125rem;
-                    position: relative;
-                    color: $storelocator-links;
-                    &:hover:after{
-                            position: absolute;
-                            bottom: 0;
-                            width: 100%;
-                            height: 1px;
-                            background: $storelocator-links;
-                            display: block;
-                            content: "";
-                    }
-                }
-            }
-        }
+      }
+      @media screen and (min-width: 1900px) {
+        margin-right: 8.148148%;
+      }
     }
+  }
+  .card {
+    border: 0;
+    position: static;
+    .card-map {
+      width: 192px;
+      height: 192px;
+      float: left;
+      margin-right: 1.625rem;
+      @media screen and (max-width: 767px) {
+        width: 112px;
+        height: 80px;
+        overflow: hidden;
+        margin-right: 1.25rem;
+      }
+      img {
+        height: auto;
+      }
     }
-.btn.small-btn{
-    border-radius: 4px;
-    padding: 6px 16px;
-    width: auto;
-}
-.card-horizontal{
-    display: block;
-}
-.location-search-results{
-    padding: 1.875rem 1.875rem 0;
-    @media screen and (max-width:767px){
-        padding: 1.25rem 1.25rem 0;
+    .card-body {
+      overflow: hidden;
+      line-height: normal;
+      small {
+        font-family: "Maison Neue";
+        font-weight: 500;
+        font-size: 0.8125rem;
+        color: $secondary-color;
+        line-height: 1.85;
+        margin-bottom: 0.3125rem;
+        display: block;
+      }
+      .card-title {
+        font-size: 1.3125rem;
+        color: $secondary-text-color;
+        margin-bottom: 0.3125rem;
+      }
     }
-    @media screen and (min-width:960px){
-        padding-top: 0;
-    }
-}
-.location-search-results-list{
-    padding-top: 0.625rem;
-    @media screen and (max-width:767px){
-        padding-top: 0;
-    }
-    ul{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        li{
-            border-top:1px solid $accordion-border-color;
-            padding: 1.25rem 0 1.6875rem 0;
-            &:first-child{
-                border-top: none;
-            }
-            position: relative;
-             @media screen and (max-width:767px){
-                padding: 1.25rem 0;
-            }
-            @media screen and (min-width:1900px){
-                margin-right: 8.148148%;
-            }
-        }
-    }
-    .card{
-        border:0;
-        position: static;
-        .card-map{
-            width: 192px;
-            height: 192px;
-            float: left;
-            margin-right: 1.625rem;
-            @media screen and (max-width:767px){
-                width: 112px;
-                height: 80px;
-                overflow: hidden;
-                margin-right: 1.25rem;
-            }
-            img{
-                height: auto;
-            }
-        }
-            .card-body{
-                overflow: hidden;
-                line-height: normal;
-                small{
-                    font-family:"Maison Neue";
-                    font-weight: 500;
-                    font-size: 0.8125rem;
-                    color: $secondary-color;
-                    line-height: 1.85;
-                    margin-bottom: 0.3125rem;
-                    display: block;
-                }
-                .card-title{
-                font-size:1.3125rem;
-                color: $secondary-text-color;
-                    margin-bottom: 0.3125rem;
-                }
-                
-            }
-        .contact-details{
-            position: relative;
-            padding-top: 0.625rem;
-            @media screen and (max-width:767px){
-                clear: both;
-                padding-top: 1.25rem;
-            }
-            address{
-                    font-family:"Maison Neue";
-                    font-weight: 300;
-                    font-size: 0.875rem;
-                    color: $secondary-text-color;
-                    margin-bottom: 0;
-                    line-height: normal;
-                }
-            .actions{
-                margin-top: 1rem;
-                @media screen and (max-width:767px){
-                    display: flex;
-                    justify-content: space-between;
-                    button{
-                        &.btn-primary{
-                            width: 148px!important;
-                        }
-                        &.btn-secondary{
-                            width: 165px!important;
-                        }
-                    }
-                }
-                @media screen and (min-width:768px){
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                }
-                @media screen and (min-width:960px){
-                    position: static;
-                    padding-left: calc(192px + 1.625rem);
-                }
-                @media screen and (min-width:1200px){
-                    position: absolute;
-                    padding-left: 0;
-                }
-            .btn{
-                @media screen and (min-width:768px){
-                    display: block;
-                    margin-top: 0.625rem;
-                    margin-left: 0;
-                }
-                 @media screen and (min-width:960px){
-                    display: inline-block;
-                     margin-right: 0.625rem;
-                    
-                }
-                @media screen and (min-width:1200px){
-                    display: block;
-                    margin-top: 0.625rem;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-                @media screen and (min-width:1500px){
-                    display: inline-block;
-                     margin-left: 0.625rem;
-                    margin-right: 0;
-                }
-                &.btn-secondary{
-                    padding-left:1rem!important;
-                    padding-right:1rem!important;
-                }
-            }
-        }
-        }
-    }
-    
-    
-}
-.contact-info{
-    li{
-        font-family:"Maison Neue";
+    .contact-details {
+      position: relative;
+      padding-top: 0.625rem;
+      @media screen and (max-width: 767px) {
+        clear: both;
+        padding-top: 1.25rem;
+      }
+      address {
+        font-family: "Maison Neue";
         font-weight: 300;
         font-size: 0.875rem;
         color: $secondary-text-color;
-        padding: 0!important;
-        margin-top: 1rem;
-        margin-right: 0!important;
-        border: 0!important;
+        margin-bottom: 0;
         line-height: normal;
-        @media screen and (min-width:768px){
-            padding-left: calc(192px + 1.625rem)!important;
-        }
-        i{
-            font-family: "font-icons-new" !important;
-            margin-right: 0.875rem;
-            font-size: 18px;
-            vertical-align: middle;
-        }
-        a{
-            color: $storelocator-links;
-            font-weight: 500;
-            i{
-                color: $secondary-text-color;
+      }
+      .actions {
+        margin-top: 1rem;
+        @media screen and (max-width: 767px) {
+          display: flex;
+          justify-content: space-between;
+          button {
+            &.btn-primary {
+              width: 148px !important;
             }
-        }
-        @media screen and (max-width:767px){
-               margin-top: 0.75rem; 
+            &.btn-secondary {
+              width: 165px !important;
             }
-    }
-}
-.pagination{
-    margin: 0;
-    padding: 1.125rem 0 2.8125rem 0!important;
-    list-style: none;
-    li{
-        
-        a{
-            font-family:"Maison Neue";
-            font-weight: 500;
-            font-size: 0.875rem;
-            line-height: 1.71;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            color: $secondary-text-color;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        @media screen and (min-width: 960px) {
+          position: static;
+          padding-left: calc(192px + 1.625rem);
+        }
+        @media screen and (min-width: 1200px) {
+          // position: absolute;
+          // padding-left: 0;
+        }
+        .btn {
+          @media screen and (min-width: 768px) {
+            display: block;
+            margin-top: 0.625rem;
+            margin-left: 0;
+          }
+          @media screen and (min-width: 960px) {
             display: inline-block;
-            text-align: center;
-            border: 1px solid transparent;
-            border-radius: 50%;
-            &:hover{
-                color: $storelocator-pagination-anchor;
-            }
-            &.active{
-                color: $storelocator-pagination-anchor;
-                border-color: $storelocator-pagination-border;
-            }
+            margin-right: 0.625rem;
+          }
+          @media screen and (min-width: 1200px) {
+            // display: block;
+            // margin-top: 0.625rem;
+            // margin-left: 0;
+            // margin-right: 0;
+          }
+          @media screen and (min-width: 1500px) {
+            display: inline-block;
+            margin-left: 0.625rem;
+            margin-right: 0;
+          }
+          &.btn-secondary {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+          }
         }
+      }
     }
+  }
+}
+.contact-info {
+  li {
+    font-family: "Maison Neue";
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: $secondary-text-color;
+    padding: 0 !important;
+    margin-top: 1rem;
+    margin-right: 0 !important;
+    border: 0 !important;
+    line-height: normal;
+    @media screen and (min-width: 768px) {
+      padding-left: calc(192px + 1.625rem) !important;
+    }
+    i {
+      font-family: "font-icons-new" !important;
+      margin-right: 0.875rem;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    a {
+      color: $storelocator-links;
+      font-weight: 500;
+      i {
+        color: $secondary-text-color;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 0.75rem;
+    }
+  }
+}
+.pagination {
+  margin: 0;
+  padding: 1.125rem 0 2.8125rem 0 !important;
+  list-style: none;
+  li {
+    a {
+      font-family: "Maison Neue";
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.71;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      color: $secondary-text-color;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      &:hover {
+        color: $storelocator-pagination-anchor;
+      }
+      &.active {
+        color: $storelocator-pagination-anchor;
+        border-color: $storelocator-pagination-border;
+      }
+    }
+  }
+}
+
+.store-locator-map-popover {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  border-radius: $store-locator-map-popover-border-radius;
+
+  @media screen and (min-width: 768px) {
+    min-width: 487px;
+  }
+
+  .header {
+    border-radius: $store-locator-map-popover-border-radius
+      $store-locator-map-popover-border-radius 0 0;
+    background-color: $store-locator-map-popover-bg-color;
+    color: $store-locator-map-popover-text-color;
+    padding: $store-locator-map-popover-header-top-spacing
+      ($store-locator-map-popover-left-right-spacing + 10px)
+      $store-locator-map-popover-header-bottom-spacing
+      $store-locator-map-popover-left-right-spacing;
+    position: relative;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      color: $store-locator-map-popover-subtitle-text-color;
+    }
+  }
+
+  .store-locator-map-close-popover {
+    position: absolute;
+    color: $store-locator-map-popover-text-color;
+    right: $store-locator-map-popover-close-right-pos;
+    top: $store-locator-map-popover-close-top-pos;
+    width: 22px;
+  }
+
+  .content {
+    padding: $store-locator-map-popover-content-top-spacing
+      $store-locator-map-popover-left-right-spacing 30px;
+    border-radius: 0 0 $store-locator-map-popover-border-radius
+      $store-locator-map-popover-border-radius;
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    .contact-info {
+      margin: 0 0 10px;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 0;
+        padding: 0 !important;
+        line-height: 2.29;
+
+        a {
+          font-weight: $store-locator-map-popover-link-font-weight;
+        }
+      }
+    }
+
+    .btn-wrapper {
+      .btn {
+        @media screen and (max-width: 767px) {
+          display: block;
+          width: 100%;
+
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
 }
