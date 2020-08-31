@@ -106,6 +106,22 @@
       }
     }
   }
+
+  &.card-banner {
+    position: relative;
+
+    .card-stacked {
+      position: absolute;
+      background-color: #fff;
+      left: 30px;
+      bottom: 30px;
+      padding: 10px 16px;
+
+      .title {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .modal-dialog-centered {

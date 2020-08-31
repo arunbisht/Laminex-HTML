@@ -2558,13 +2558,13 @@
               {
                 breakpoint: 767,
                 settings: {
-                  slidesToShow: 2
+                  slidesToShow: 2,
                 },
               },
               {
                 breakpoint: 420,
                 settings: {
-                  slidesToShow: 1
+                  slidesToShow: 1,
                 },
               },
             ],
@@ -2584,6 +2584,8 @@
             $(_this).slick("init");
           });
         });
+
+        $("body").on("click", ".btn-next-process", function (e) {});
 
         $("body").on("click", ".collection-card-checkbox ", function (e) {
           e.preventDefault();
