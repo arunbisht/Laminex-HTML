@@ -880,6 +880,45 @@ header.primary-navmenu-au {
   border-bottom: 2px solid $anchor-color;
 }
 
-.primary-navmenu-nz.sticky .header-right .header-bottom .navbar .navbar-nav {
-  margin-bottom: 0;
+.primary-navmenu-nz {
+  &.sticky {
+    .header-right {
+      @media screen and (max-width: 767px) {
+        margin-top: 10px;
+        margin-bottom: 6px;
+      }
+      .header-bottom .navbar .navbar-nav {
+        margin-bottom: 0;
+      }
+    }
+
+    .siteHeader__nav--secondary {
+      .mobile-menu-view {
+        @media screen and (max-width: 960px) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.primary-navmenu-nz {
+  .header-bottom {
+    .navbar {
+      .navbar-nav {
+        .nav-item {
+          @media screen and (max-width: 1300px) {
+            margin-right: 5px;
+          }
+          @media screen and (max-width: 1040px) {
+            margin-right: 3px;
+
+            .nav-link {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
