@@ -371,34 +371,35 @@
                   }
 
                   .proj-qty-face-wrapper {
-                    @media screen and (max-width: 1099.98px) {
-                      display: -ms-flexbox;
-                      display: flex;
-                      -ms-flex-direction: row;
-                      flex-direction: row;
-                      -ms-flex-pack: start;
-                      justify-content: flex-start;
-                      -ms-flex-align: center;
-                      align-items: center;
-                      -ms-flex-wrap: wrap;
-                      flex-wrap: wrap;
-                      margin: 0 0 0.75rem;
-                      width: 100%;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    margin: 0 0 0.75rem;
+                    width: 100%;
 
-                      .qty {
-                        -ms-flex-order: 1;
-                        order: 1;
-                        margin-right: 40px;
-                      }
-                      .proj-face-wrapper {
-                        -ms-flex-order: 2;
-                        order: 2;
-                        margin-right: 40px;
-                      }
-                      .proj-qty-wrapper {
-                        -ms-flex-order: 3;
-                        order: 3;
-                      }
+                    .qty {
+                      -ms-flex-order: 1;
+                      order: 1;
+                      margin-right: 40px;
+                      width: auto;
+                      margin-bottom: 6px;
+                    }
+                    .proj-face-wrapper {
+                      -ms-flex-order: 2;
+                      order: 2;
+                      margin-right: 40px;
+                      margin-bottom: 6px;
+                    }
+                    .proj-qty-wrapper {
+                      -ms-flex-order: 3;
+                      order: 3;
                     }
 
                     @media screen and (max-width: 1099.98px) {
