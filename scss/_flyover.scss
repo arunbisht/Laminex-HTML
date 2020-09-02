@@ -1,3 +1,15 @@
+%brand-btn-oytline {
+  color: $link-color-new;
+  border-color: $link-color-new;
+  background-color: transparent;
+
+  &:hover {
+    color: #ffffff;
+    border-color: $link-color-new;
+    background-color: $link-color-new;
+  }
+}
+
 .flyover-wrapper {
   @media screen and (min-width: 960px) {
     width: 100%;
@@ -131,7 +143,8 @@
             padding: 6px 16px;
             border-radius: 3px;
 
-            &.btn-brand {
+            &.btn-brand,
+            &.btn-primary {
               color: #ffffff;
             }
 
@@ -149,15 +162,7 @@
             }
 
             &.btn-brand-outline {
-              color: $link-color-new;
-              border-color: $link-color-new;
-              background-color: #ffffff;
-
-              &:hover {
-                color: #ffffff;
-                border-color: $link-color-new;
-                background-color: $link-color-new;
-              }
+              @extend %brand-btn-oytline;
             }
           }
         }
