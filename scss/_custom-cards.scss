@@ -1,3 +1,48 @@
+%card-action {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: 959px) {
+        display: block;
+        margin-right: 0;
+      }
+    }
+  }
+  a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $link-color-new;
+    position: relative;
+    padding-left: 42px;
+    line-height: 1.9375rem;
+    vertical-align: middle;
+    display: inline-block;
+
+    > i {
+      font-size: 1.9375rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    > span {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px dotted $link-color-new;
+    }
+  }
+}
+
 .custom-card {
   &.horizontal {
     display: -ms-flexbox;
@@ -62,48 +107,7 @@
     }
 
     .card-action {
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-          display: inline-block;
-          margin-right: 30px;
-          margin-bottom: 15px;
-
-          &:last-child {
-            margin-right: 0;
-          }
-
-          @media screen and (max-width: 959px) {
-            display: block;
-            margin-right: 0;
-          }
-        }
-      }
-      a {
-        font-size: 1.125rem;
-        font-weight: 500;
-        color: $link-color-new;
-        position: relative;
-        padding-left: 42px;
-        line-height: 1.9375rem;
-        vertical-align: middle;
-        display: inline-block;
-
-        > i {
-          font-size: 1.9375rem;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-        }
-
-        > span {
-          padding-bottom: 0.25rem;
-          border-bottom: 1px dotted $link-color-new;
-        }
-      }
+      @extend %card-action;
     }
   }
 
@@ -112,13 +116,14 @@
 
     .card-stacked {
       position: absolute;
-      background-color: #fff;
       left: 30px;
+      right: 30px;
       bottom: 30px;
-      padding: 10px 16px;
 
       .title {
         margin: 0;
+        background-color: #fff;
+        padding: 10px 16px;
       }
     }
   }

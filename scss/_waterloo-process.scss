@@ -21,6 +21,22 @@
       margin-top: 70px;
     }
   }
+
+  .tab-accordion-body {
+    padding-bottom: 0;
+
+    .swatch-tiles {
+      > .row {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.section-wrapper {
+    .section-wrapper {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .field-text {

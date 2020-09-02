@@ -49,6 +49,16 @@
               margin: 0;
               margin-bottom: 3rem;
 
+              &:before,
+              &:after {
+                content: "";
+                display: table;
+              }
+
+              &:after {
+                clear: both;
+              }
+
               .xforms-control,
               .xbl-component,
               .xforms-group {
