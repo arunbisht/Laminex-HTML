@@ -3113,7 +3113,10 @@
         $(".selectProductId  select")
           .children()
           .each(function () {
-            if ($(this).text() === waterlooData.productId) {
+            if (
+              $(this).text().trim().replace(/\s+/g, " ") ===
+              waterlooData.productId
+            ) {
               console.log($(this).text());
             }
           });
