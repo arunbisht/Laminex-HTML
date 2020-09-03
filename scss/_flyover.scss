@@ -35,6 +35,9 @@
     max-width: 648px;
     margin-left: auto;
     margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 130px;
   }
 
   &.flyover-item-banner {
@@ -123,6 +126,14 @@
           li {
             margin-bottom: 0;
             margin-right: 16px;
+
+            @media screen and (max-width: 959px) {
+              display: inline-block;
+            }
+
+            @media screen and (max-width: 767px) {
+              display: block;
+            }
           }
         }
 
