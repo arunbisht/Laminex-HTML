@@ -120,7 +120,7 @@
             />
             <!-- Mobile Image -->
             <img
-              src="./images/flyover.jpg"
+              src="./images/flyover-mobile.jpg"
               alt="Browse Products"
               class="img-fluid d-block d-md-none"
             />
@@ -161,7 +161,7 @@
             />
             <!-- Mobile Image -->
             <img
-              src="./images/flyover.jpg"
+              src="./images/flyover-mobile.jpg"
               alt="Browse Products"
               class="img-fluid d-block d-md-none"
             />
@@ -230,7 +230,7 @@
             />
             <!-- Mobile Image -->
             <img
-              src="./images/flyover.jpg"
+              src="./images/flyover-mobile.jpg"
               alt="Browse Products"
               class="img-fluid d-block d-md-none"
             />
@@ -284,7 +284,7 @@
             />
             <!-- Mobile Image -->
             <img
-              src="./images/flyover.jpg"
+              src="./images/flyover-mobile.jpg"
               alt="Browse Products"
               class="img-fluid d-block d-md-none"
             />
@@ -700,15 +700,18 @@
         $("body").on("click", ".show-flyover", function (e) {
             var target = $($(this).attr('data-target'));
             target.fadeIn();
+            target.closest('.flyover-wrapper').addClass('active');
 
             if(target.attr('data-time')) {
                 setTimeout(function() {
                     target.fadeOut();
+                    target.closest('.flyover-wrapper').removeClass('active');
                 }, (parseInt(target.attr('data-time'))*1000));
             }
         });
         $("body").on("click", ".flyover-close-trigger", function (e) {
             $(this).closest('.flyover').fadeOut();
+            $(this).closest('.flyover-wrapper').removeClass('active');
         });
       });
     </script>
