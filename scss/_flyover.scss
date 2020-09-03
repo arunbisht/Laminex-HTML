@@ -52,6 +52,27 @@
     max-width: 336px;
   }
 
+  &.flyover-item {
+    @media screen and (max-width: 959px) {
+      margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      width: 100%;
+      &.with-left-img {
+        max-width: 596px;
+      }
+
+      &.without-left-img {
+        max-width: 481px;
+      }
+
+      &.with-left-img-links {
+        width: 100%;
+      }
+    }
+  }
+
   &.flyover-item-banner {
     .flyover-close-trigger {
       background-color: $link-color-new;
