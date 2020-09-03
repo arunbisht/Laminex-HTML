@@ -580,6 +580,9 @@
 
     .btn-wrapper {
       .btn {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
         & + .btn {
           margin-left: 0.625rem;
         }
