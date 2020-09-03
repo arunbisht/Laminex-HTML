@@ -1,11 +1,13 @@
 .store-locator {
-  button {
-    width: auto !important;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    margin-left: 0.75rem;
-    &:first-child {
-      margin-left: 0;
+  .location-search-results-list {
+    button {
+      width: auto !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+      margin-left: 0.75rem;
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
   ul {
@@ -292,6 +294,11 @@
     @media screen and (min-width: 960px) {
       min-height: 960px;
     }
+
+    button {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
 }
 .location-search-results-list {
@@ -573,9 +580,17 @@
 
     .btn-wrapper {
       .btn {
+        & + .btn {
+          margin-left: 0.625rem;
+        }
+
         @media screen and (max-width: 767px) {
           display: block;
           width: 100%;
+
+          & + .btn {
+            margin-left: 0;
+          }
 
           &:not(:first-child) {
             margin-top: 10px;

@@ -54,15 +54,17 @@
 
     .final-product-price {
       .btn {
-        padding-left: 15px;
-        padding-right: 15px;
-        white-space: normal;
-        display: block;
-        float: none;
-        clear: both;
-        margin-left: auto;
-        width: 100%;
-        max-width: 260px;
+        &.btn-order-update {
+          padding-left: 15px;
+          padding-right: 15px;
+          white-space: normal;
+          display: block;
+          float: none;
+          clear: both;
+          margin-left: auto;
+          width: 100%;
+          max-width: 260px;
+        }
       }
     }
 
