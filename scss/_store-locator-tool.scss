@@ -164,7 +164,9 @@
     }
   }
   .location-finder-dropdown {
-    position: relative;
+    @media screen and (min-width: 768px) {
+      position: relative;
+    }
     .dropdown {
       color: $link-color-new;
       padding-bottom: 0.5625rem;
@@ -184,6 +186,11 @@
       min-width: 420px;
       @media screen and (max-width: 959px) {
         right: 0;
+      }
+      @media screen and (max-width: 767px) {
+        right: 0;
+        width: 100%;
+        min-width: 1px;
       }
       .dropdown-content {
         padding: 1rem 1.5rem;
