@@ -706,3 +706,21 @@
     }
   }
 }
+
+.store-locator {
+  position: relative;
+  .social-share-section-wrapper {
+    &.position-absolute {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 8px;
+    }
+
+    &.social-share-md-center {
+      .addthis_inline_share_toolbox {
+        margin-top: 15px;
+      }
+    }
+  }
+}
