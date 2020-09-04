@@ -59,6 +59,11 @@
     @media screen and (min-width: 768px) {
       margin-left: auto;
       width: 100%;
+
+      &.flyover-item-banner {
+        max-width: 481px;
+      }
+
       &.with-left-img {
         max-width: 596px;
       }
