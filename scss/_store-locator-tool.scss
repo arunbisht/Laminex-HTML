@@ -683,3 +683,26 @@
     opacity: 1 !important;
   }
 }
+
+@media screen and (max-width: 959px) {
+  .company-banner {
+    position: relative;
+    height: 95px;
+    figure {
+      margin: 0;
+    }
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 100%;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .title {
+      bottom: -1px;
+    }
+  }
+}
