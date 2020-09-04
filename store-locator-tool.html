@@ -142,13 +142,13 @@
       </div>
 
       <!-- Search results found container -->
-      <div class="results-info d-sm-none d-md-block">
+      <div class="results-info">
         <div class="container">
           <div class="row">
             <div class="col-6">
               <p class="result">14 locations found</p>
             </div>
-            <div class="col-6 text-right d-none d-sm-block">
+            <div class="col-6 text-right">
               <div class="refine-results dropdown-container">
                 <button
                   class="btn btn-secondary small-btn"
@@ -194,7 +194,57 @@
         <div class="row">
           <!-- Search results listing -->
           <div class="col-12 col-md-7 order-1 order-md-0">
-            <div class="location-search-results-list">
+            <div class="location-mobile-popup d-block d-lg-none">
+              <div
+                class="location-search-results-list"
+                id="mobileLocationSearch"
+              >
+                <div class="card">
+                  <div class="card-horizontal">
+                    <div class="card-map">
+                      <img
+                        class=""
+                        src="./images/map-thumbnail.jpg"
+                        alt="Map view"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <small>Cabinet maker/Designer</small>
+                      <h4 class="card-title">Creativ Kitchens</h4>
+                    </div>
+                    <div class="contact-details">
+                      <address>
+                        123 Main Street, Melbourne, VIC 3000
+                      </address>
+                      <ul class="contact-info">
+                        <li><i class="icon-new--phone"></i>(03) 9876 5432</li>
+                        <li>
+                          <a href="#"
+                            ><i class="icon-new--globe"></i
+                            >www.creativkitchensaustralia.com.au</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><i class="icon-new--email"></i
+                            >sales@creativkitchensaustralia.com.au</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="actions">
+                        <button class="btn btn-primary" type="button">
+                          More info
+                        </button>
+                        <button class="btn btn-secondary" type="button">
+                          Get directions
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="location-search-results-list" id="locationSearchList">
               <ul>
                 <li>
                   <div class="card">
@@ -383,7 +433,7 @@
           <!-- Search map placeholder -->
           <div class="col-12 col-md-5 order-0 order-md-1">
             <img
-              class=""
+              class="img-trigger"
               src="./images/map.jpg"
               style="height: auto;"
               alt="Map view"
@@ -762,10 +812,22 @@
         $("body").on("click", function () {
           $("#location-dropdown").collapse("hide");
           $("#refine-results").collapse("hide");
+
+          $("#mobileLocationSearch").fadeOut();
+          $("#locationSearchList").fadeIn();
         });
 
-        $("#location-dropdown, #refine-results").on("click", function (e) {
+        $("#location-dropdown, #refine-results, #mobileLocationSearch").on(
+          "click",
+          function (e) {
+            e.stopPropagation();
+          }
+        );
+
+        $("body").on("click", ".img-trigger", function (e) {
           e.stopPropagation();
+          $("#mobileLocationSearch").fadeIn();
+          $("#locationSearchList").fadeOut();
         });
       });
     </script>
