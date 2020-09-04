@@ -96,6 +96,28 @@
     @media screen and (min-width: 960px) {
       padding-top: 0;
     }
+
+    @media screen and (max-width: 767px) {
+      &:before,
+      &:after {
+        content: "";
+        display: table;
+      }
+
+      &:after {
+        clear: both;
+      }
+
+      .btn {
+        float: left;
+        display: block;
+        width: 48%;
+
+        &:last-child {
+          margin-left: 4%;
+        }
+      }
+    }
   }
   .location-filter-input {
     display: inline-block;
@@ -343,6 +365,12 @@
         border-top: none;
       }
       position: relative;
+      @media screen and (max-width: 960px) {
+        &:last-child {
+          border-bottom: 1px solid $accordion-border-color;
+          margin-bottom: 20px;
+        }
+      }
       @media screen and (max-width: 767px) {
         padding: 1.25rem 0;
       }
@@ -416,12 +444,12 @@
             }
           }
         }
+        // @media screen and (min-width: 768px) {
+        //   position: absolute;
+        //   right: 0;
+        //   bottom: 0;
+        // }
         @media screen and (min-width: 768px) {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-        }
-        @media screen and (min-width: 960px) {
           position: static;
           padding-left: calc(192px + 1.625rem);
         }
@@ -430,12 +458,12 @@
           // padding-left: 0;
         }
         .btn {
+          // @media screen and (min-width: 768px) {
+          //   display: block;
+          //   margin-top: 0.625rem;
+          //   margin-left: 0;
+          // }
           @media screen and (min-width: 768px) {
-            display: block;
-            margin-top: 0.625rem;
-            margin-left: 0;
-          }
-          @media screen and (min-width: 960px) {
             display: inline-block;
             margin-right: 0.625rem;
           }
