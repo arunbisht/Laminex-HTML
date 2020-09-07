@@ -42,14 +42,14 @@
 }
 .natural-language {
   background-color: $storelocator-filterbg;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0;
   font-family: "Brown Std New" !important;
   font-weight: 700;
   @media screen and (max-width: 767px) {
-    padding-bottom: 1.25rem;
+    // padding-bottom: 1.25rem;
   }
   @media screen and (min-width: 960px) {
-    padding: 2.75rem 0;
+    padding: 20px 0;
   }
   label,
   .facet-title,
@@ -75,6 +75,7 @@
   }
   .find-category-div {
     display: none;
+    margin-top: 10px;
   }
   .location-finder {
     @media screen and (max-width: 767px) {
@@ -188,11 +189,11 @@
     .dropdowns {
       // top: 60px;
       min-width: 420px;
-      @media screen and (max-width: 959px) {
-        right: 0;
-      }
+      // @media screen and (max-width: 959px) {
+      //   right: 0;
+      // }
       @media screen and (max-width: 767px) {
-        // right: 0;
+        right: 0;
         width: 100%;
         min-width: 1px;
       }
@@ -440,6 +441,9 @@
     .contact-details {
       position: relative;
       padding-top: 0.625rem;
+      @media screen and (min-width: 768px) and (max-width: 960px) {
+        padding-right: 140px;
+      }
       @media screen and (max-width: 767px) {
         clear: both;
         padding-top: 1.25rem;
@@ -507,6 +511,18 @@
           &.btn-secondary {
             padding-left: 1rem !important;
             padding-right: 1rem !important;
+          }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+          position: absolute;
+          padding-left: 0;
+          right: 0;
+          bottom: 0;
+
+          .btn {
+            display: block;
+            margin: 0 0 10px !important;
           }
         }
       }
@@ -721,15 +737,28 @@
   position: relative;
   .social-share-section-wrapper {
     &.position-absolute {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      margin-bottom: 8px;
+      @media screen and (min-width: 960px) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 8px;
+      }
     }
 
     &.social-share-md-center {
-      .addthis_inline_share_toolbox {
+      .CustomSocialSharing {
         margin-top: 15px;
+
+        span.d-block.d-md-inline-block {
+          @media screen and (min-width: 960px) {
+            margin-right: 1rem;
+          }
+        }
+
+        a.at-icon-wrapper.at-share-btn {
+          border: 1px solid #cccccc;
+          font-size: 18px;
+        }
       }
     }
   }
@@ -750,6 +779,11 @@
         &[aria-label="Next"],
         &[aria-label="Previous"] {
           line-height: 40px;
+
+          > i {
+            position: relative;
+            top: 2px;
+          }
         }
       }
     }
