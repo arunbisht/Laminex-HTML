@@ -73,14 +73,45 @@
       margin-bottom: 0;
     }
   }
-  .find-category-div {
+  .find-category-div,
+  .help-category-div {
     display: none;
     margin-top: 10px;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      .facet-heading {
+        position: relative;
+        top: -8px;
+      }
+    }
   }
   .location-finder {
     @media screen and (max-width: 767px) {
-      display: block;
-      width: 100%;
+      // display: block;
+      // width: 100%;
+      width: calc(100% - 120px);
+      vertical-align: middle;
+      position: static;
+
+      .location-finder-dropdown {
+        width: 100%;
+
+        .dropdown {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .help-category-div {
+    .location-finder {
+      @media screen and (max-width: 767px) {
+        width: calc(100% - 200px);
+      }
     }
   }
   .search-actions {
@@ -127,7 +158,19 @@
   .location-filter-input {
     display: inline-block;
     position: relative;
-    margin-right: 0.5rem;
+
+    // margin-right: 0.5rem;
+    @media screen and (max-width: 767px) {
+      width: calc(100% - 120px);
+    }
+
+    @media screen and (min-width: 768px) {
+      min-width: 400px;
+    }
+
+    @media screen and (min-width: 960px) {
+      min-width: 360px;
+    }
   }
   .location-search-input {
     font-family: "Brown Std New" !important;
@@ -141,10 +184,10 @@
     color: $link-color-new;
     text-overflow: ellipsis;
     vertical-align: baseline !important;
-    width: 90px;
+    width: 100%;
+
     @media screen and (min-width: 960px) {
       font-size: 1.5rem;
-      width: auto;
     }
 
     &::placeholder {
@@ -177,6 +220,9 @@
       padding-bottom: 0.5625rem;
       border-bottom: 2px solid $link-color-light;
       display: inline-block;
+      position: relative;
+      padding-right: 38px;
+
       &:after {
         display: inline-block;
         vertical-align: middle;
@@ -184,6 +230,9 @@
         content: "\e008";
         font-size: initial;
         margin-left: 10px;
+        position: absolute;
+        right: 0;
+        top: 4px;
       }
     }
     .dropdowns {
@@ -423,6 +472,9 @@
     .card-body {
       overflow: hidden;
       line-height: normal;
+      @media screen and (min-width: 768px) and (max-width: 960px) {
+        padding-right: 140px;
+      }
       small {
         font-family: "Maison Neue";
         font-weight: 500;
