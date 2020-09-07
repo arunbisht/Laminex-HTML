@@ -73,6 +73,9 @@
       margin-bottom: 0;
     }
   }
+  .find-category-div {
+    display: none;
+  }
   .location-finder {
     @media screen and (max-width: 767px) {
       display: block;
