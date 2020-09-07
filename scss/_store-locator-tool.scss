@@ -82,7 +82,7 @@
     @media screen and (max-width: 767px) {
       .facet-heading {
         position: relative;
-        top: -8px;
+        top: -5px;
       }
     }
   }
@@ -165,7 +165,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      min-width: 400px;
+      min-width: 250px;
     }
 
     @media screen and (min-width: 960px) {
@@ -217,11 +217,11 @@
     }
     .dropdown {
       color: $link-color-new;
-      padding-bottom: 0.5625rem;
+      padding-bottom: 7px;
       border-bottom: 2px solid $link-color-light;
       display: inline-block;
       position: relative;
-      padding-right: 38px;
+      padding-right: 18px;
 
       &:after {
         display: inline-block;
