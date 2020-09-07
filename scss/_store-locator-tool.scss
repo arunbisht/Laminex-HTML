@@ -392,14 +392,25 @@
   .card {
     border: 0;
     position: static;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+
     .card-map {
       width: 192px;
-      height: 192px;
+      // height: 192px;
       float: left;
       margin-right: 1.625rem;
       @media screen and (max-width: 767px) {
         width: 112px;
-        height: 80px;
+        // height: 80px;
         overflow: hidden;
         margin-right: 1.25rem;
       }
@@ -586,9 +597,9 @@
 .store-locator-map-popover {
   width: 100%;
 
-  @media screen and (min-width: 768px) {
-    min-width: 487px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   min-width: 487px;
+  // }
 
   .header {
     border-radius: $store-locator-map-popover-border-radius
@@ -648,18 +659,16 @@
       .btn {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+        margin-right: 0.625rem;
 
-        & + .btn {
-          margin-left: 0.625rem;
+        &:last-child {
+          margin-right: 0;
         }
 
         @media screen and (max-width: 767px) {
           display: block;
           width: 100%;
-
-          & + .btn {
-            margin-left: 0;
-          }
+          margin-right: 0;
 
           &:not(:first-child) {
             margin-top: 10px;
