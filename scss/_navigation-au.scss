@@ -118,6 +118,12 @@ $sticky-tablet-header-height: 54px;
 
       .dropdown-toggle {
         display: block;
+
+        i {
+          font-size: 20px;
+          position: relative;
+          top: 1px;
+        }
       }
     }
   }
@@ -745,9 +751,9 @@ $sticky-tablet-header-height: 54px;
       }
 
       @media screen and (min-width: 1440px) {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        left: 0;
+        -webkit-transform: initial;
+        transform: initial;
         width: 1440px;
         transition: opacity 0.2s ease-in-out;
       }
