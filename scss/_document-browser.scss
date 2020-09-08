@@ -497,6 +497,8 @@
             .nz-doc-meta-wrapper {
               display: -ms-flexbox;
               display: flex;
+              -ms-flex-direction: column;
+              flex-direction: column;
 
               .doc-type {
                 -ms-flex-order: 0;
