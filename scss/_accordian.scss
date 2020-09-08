@@ -376,11 +376,22 @@
     &.collapsed {
       background-color: #fff;
       border-bottom-color: transparent;
+
       .icon--chevron-small-up {
         display: none;
       }
       .icon--chevron-small-down {
         display: block;
+      }
+    }
+  }
+
+  .accordion-tab-content {
+    &:last-child {
+      .accordion-trigger {
+        &.collapsed {
+          border-color: $accordion-border-color;
+        }
       }
     }
   }

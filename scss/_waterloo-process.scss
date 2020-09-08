@@ -25,6 +25,11 @@
   .tab-accordion-body {
     padding-bottom: 0;
 
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
     .swatch-tiles {
       > .row {
         margin-bottom: 0;
