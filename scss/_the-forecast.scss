@@ -15,6 +15,8 @@
     flex: 0 0 125px;
     max-width: 125px;
     padding-top: 5%;
+    position: relative;
+    z-index: 2;
 
     @media screen and (min-width: 768px) {
       -ms-flex: 0 0 $the-forecast-title-tab-width;
