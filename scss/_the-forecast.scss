@@ -27,6 +27,10 @@
       max-width: $the-forecast-title-width;
     }
 
+    @media screen and (max-width: 960px) {
+      padding-left: 2rem;
+    }
+
     @media screen and (max-width: 767px) {
       padding-right: 0;
       margin-bottom: 16px;
@@ -56,6 +60,11 @@
 
     > a {
       display: block;
+
+      > .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
     }
   }
 
