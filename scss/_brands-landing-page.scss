@@ -365,6 +365,59 @@
     .home-hr {
       border-color: $lx-hr;
     }
+
+    .blog-slider-nav,
+    .colour-collection-projects-slider-nav {
+      .icon--arrow-small-right:before {
+        content: "";
+      }
+      .icon--arrow-small-left:before {
+        content: "";
+      }
+    }
+  }
+
+  &.formica,
+  &.essastone,
+  &.himacs,
+  &.laminex {
+    .home-newsletter-content-wrapper {
+      .title {
+        font-size: 1.5rem;
+        line-height: 1.17;
+        letter-spacing: normal;
+        @media screen and (min-width: 768px) {
+          font-size: 2rem;
+          line-height: 1.38;
+        }
+      }
+    }
+
+    .hero-banner-carousel-container-wrapper {
+      @media only screen and (max-device-width: 1023px) and (min-device-width: 768px) and (orientation: portrait) {
+        .slick-slide {
+          padding: 0;
+        }
+      }
+      @media screen and (max-width: 959px) {
+        .hero-banner-slick-carousel-row {
+          > div {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+
+          .hero-banner-slick-carousel-col {
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+            text-align: center;
+
+            .hero-banner-slick-carousel-content-wrapper {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   /* Default basic theme stylings */
