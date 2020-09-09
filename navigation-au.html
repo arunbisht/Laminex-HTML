@@ -278,7 +278,7 @@
                 <div
                   id="tab1"
                   class="col-md-10 tab-content"
-                  style="display: block;"
+                  style="display: block"
                 >
                   <div class="row">
                     <div class="col-md-2">
@@ -308,7 +308,7 @@
                     <div
                       id="tab-application"
                       class="col-md-10 subtab-content"
-                      style="display: block;"
+                      style="display: block"
                     >
                       <div class="row multiple-cols">
                         <!-- Use this when to show 4 cols, hide col-5 divs by adding class d-none on them -->
@@ -635,9 +635,7 @@
 
                 <!-- Tab content 4  -->
                 <div id="tab4" class="col-md-10 tab-content">
-                  <div class="row">
-                    Same sturctures to be used here
-                  </div>
+                  <div class="row">Same sturctures to be used here</div>
                 </div>
               </div>
             </div>
@@ -916,9 +914,7 @@
                       aria-controls="browseproducts"
                     >
                       <h5>
-                        <a href="javascript:;">
-                          Products
-                        </a>
+                        <a href="javascript:;"> Products </a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
@@ -937,9 +933,7 @@
                             aria-controls="brands"
                           >
                             <h6>
-                              <a href="">
-                                Brand
-                              </a>
+                              <a href=""> Brand </a>
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
@@ -1048,9 +1042,7 @@
                             aria-controls="product"
                           >
                             <h6>
-                              <a href="">
-                                Product type
-                              </a>
+                              <a href=""> Product type </a>
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
@@ -1075,9 +1067,7 @@
                             aria-controls="colour"
                           >
                             <h6>
-                              <a href="">
-                                Colour
-                              </a>
+                              <a href=""> Colour </a>
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
@@ -1102,9 +1092,7 @@
                             aria-controls="application"
                           >
                             <h6>
-                              <a href="">
-                                Application
-                              </a>
+                              <a href=""> Application </a>
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
@@ -1129,9 +1117,7 @@
                             aria-controls="style"
                           >
                             <h6>
-                              <a href="">
-                                Style
-                              </a>
+                              <a href=""> Style </a>
                               <span class="accord-expand"></span>
                             </h6>
                           </div>
@@ -1159,9 +1145,7 @@
                       aria-controls="tradespecifier"
                     >
                       <h5>
-                        <a href="javascript:;">
-                          Trade Resources
-                        </a>
+                        <a href="javascript:;"> Trade Resources </a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
@@ -1199,9 +1183,7 @@
                       aria-controls="getinspired"
                     >
                       <h5>
-                        <a href="javascript:;">
-                          Brand
-                        </a>
+                        <a href="javascript:;"> Brand </a>
                         <span class="accord-expand"></span>
                       </h5>
                     </div>
@@ -1225,9 +1207,7 @@
                       aria-controls="aboutlaminex"
                     >
                       <h5>
-                        <a href="javascript:;">
-                          Quick Order
-                        </a>
+                        <a href="javascript:;"> Quick Order </a>
                       </h5>
                     </div>
                     <div
@@ -1260,25 +1240,32 @@
       // TODO : Transformation to the modular structure
 
       $(function () {
+        var timeout = null;
         $(".digimeg-main-nav li a").hover(
-          function () {
-            $(".menu-content").stop(true, true).delay(100).slideUp();
-            $(this)
-              .parent(".nav-item")
-              .siblings()
-              .children()
-              .removeClass("show");
-            var navContentId = $(this).data("subnav");
-            if ($("#" + navContentId).length > 0) {
-              $("#" + navContentId)
-                .stop(true, true)
-                .delay(100)
-                .slideDown();
-              $(this).addClass("show");
-            }
+          function (event) {
             event.stopPropagation();
+            var _this = this;
+            timeout = setTimeout(function () {
+              console.log("Test");
+              // debugger;
+              $(".menu-content").stop(true, true).delay(100).slideUp();
+              $(_this)
+                .parent(".nav-item")
+                .siblings()
+                .children()
+                .removeClass("show");
+              var navContentId = $(_this).data("subnav");
+              if ($("#" + navContentId).length > 0) {
+                $("#" + navContentId)
+                  .stop(true, true)
+                  .delay(100)
+                  .slideDown();
+                $(_this).addClass("show");
+              }
+            }, 500);
           },
           function () {
+            clearTimeout(timeout);
             var currentMousePos = { x: 1, y: 1 };
             var navContentId = $(this).data("subnav");
 
