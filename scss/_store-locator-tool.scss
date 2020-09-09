@@ -185,6 +185,7 @@
     text-overflow: ellipsis;
     vertical-align: baseline !important;
     width: 100%;
+    height: 46px;
 
     @media screen and (min-width: 960px) {
       font-size: 1.5rem;
@@ -193,9 +194,32 @@
     &::placeholder {
       color: $link-color-new;
       opacity: 0.5;
-      font-size: inherit;
-      font-family: "Brown Std New" !important;
-      font-weight: 700;
+      font: inherit !important;
+    }
+    &::-webkit-input-placeholder {
+      color: $link-color-new;
+      opacity: 0.5;
+      font: inherit !important;
+    }
+    &::-moz-placeholder {
+      color: $link-color-new;
+      opacity: 0.5;
+      font: inherit !important;
+    }
+    &:-ms-input-placeholder {
+      color: $link-color-new;
+      opacity: 0.5;
+      font: inherit !important;
+      line-height: 1.78 !important;
+
+      @media screen and (min-width: 960px) {
+        font-size: 1.5rem !important;
+      }
+    }
+    &:-moz-placeholder {
+      color: $link-color-new;
+      opacity: 0.5;
+      font: inherit !important;
     }
     &:focus,
     &:active {
@@ -228,11 +252,11 @@
         vertical-align: middle;
         font-family: "font-icons-new" !important;
         content: "\e008";
-        font-size: initial;
+        font-size: 1rem;
         margin-left: 10px;
         position: absolute;
         right: 0;
-        top: 4px;
+        top: 8px;
       }
     }
     .dropdowns {
