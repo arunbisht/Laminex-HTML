@@ -257,6 +257,10 @@
         position: absolute;
         right: 0;
         top: 8px;
+
+        @media screen and (max-width: 959px) {
+          top: 4px;
+        }
       }
     }
     .dropdowns {
@@ -480,12 +484,13 @@
 
     .card-map {
       width: 192px;
-      // height: 192px;
+      height: 192px;
       float: left;
       margin-right: 1.625rem;
+      overflow: hidden;
       @media screen and (max-width: 767px) {
         width: 112px;
-        // height: 80px;
+        height: 79px;
         overflow: hidden;
         margin-right: 1.25rem;
       }
@@ -857,6 +862,9 @@
 
 .store-locator-pagination {
   &.pagination-container {
+    @media screen and (max-width: 959px) {
+      margin-top: 0;
+    }
     .page-item {
       .page-link {
         line-height: 40px;
