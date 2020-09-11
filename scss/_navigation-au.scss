@@ -1316,3 +1316,22 @@ header.primary-navmenu-au {
     align-items: center;
   }
 }
+
+.primary-navmenu-au .listing li .has-thumbnails .thumbnail {
+  margin-bottom: 0;
+}
+
+.primary-navmenu-au .listing li .has-thumbnails > a:hover {
+  border-bottom: navajowhite;
+}
+
+.primary-navmenu-au .listing li.active.has-child a:after {
+  right: 0;
+  transform: translateY(0);
+  margin-top: -7px;
+}
+
+.primary-navmenu-au .listing li.has-child a {
+  padding-right: 15px;
+  position: relative;
+}
