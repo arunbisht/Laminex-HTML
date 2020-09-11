@@ -1321,8 +1321,8 @@ header.primary-navmenu-au {
   margin-bottom: 0;
 }
 
-.primary-navmenu-au .listing li .has-thumbnails > a:hover {
-  border-bottom: navajowhite;
+.primary-navmenu-au .listing li .has-thumbnails > a {
+  border-bottom: none;
 }
 
 .primary-navmenu-au .listing li.active.has-child a:after {

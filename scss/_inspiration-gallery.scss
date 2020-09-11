@@ -102,7 +102,6 @@
   .media-wrapper,
   .detail-wrapper {
     width: 100%;
-    // height: 100%;
   }
 
   .media-wrapper {
@@ -121,25 +120,10 @@
       width: 100%;
     }
 
-    // @media screen and (min-width: 768px) {
-    //   -ms-flex: 0 0 calc(100% - 20rem);
-    //   flex: 0 0 calc(100% - 20rem);
-    //   max-width: calc(100% - 20rem);
-
-    //   img {
-    //     left: 50%;
-    //     position: absolute;
-    //     top: 50%;
-    //     -webkit-transform: translate(-50%, -50%);
-    //     transform: translate(-50%, -50%);
-    //     margin: 0 auto;
-    //   }
-    // }
-
     @media screen and (min-width: 960px) {
-      -ms-flex: 0 0 calc(100% - 26.25rem);
-      flex: 0 0 calc(100% - 26.25rem);
-      max-width: calc(100% - 26.25rem);
+      -ms-flex: 0 0 calc(100% - #{$inspiration-content-width});
+      flex: 0 0 calc(100% - #{$inspiration-content-width});
+      max-width: calc(100% - #{$inspiration-content-width});
 
       img {
         left: 50%;
@@ -157,35 +141,23 @@
   }
 
   .detail-wrapper {
-    // @media screen and (min-width: 768px) {
-    //   -ms-flex: 0 0 20rem;
-    //   flex: 0 0 20rem;
-    //   max-width: 20rem;
-    // }
-
     @media screen and (min-width: 960px) {
-      -ms-flex: 0 0 26.25rem;
-      flex: 0 0 26.25rem;
-      max-width: 26.25rem;
+      -ms-flex: 0 0 $inspiration-content-width;
+      flex: 0 0 $inspiration-content-width;
+      max-width: $inspiration-content-width;
     }
   }
 
   .inspiration-content-detail {
-    // @media screen and (min-width: 768px) {
-    //   padding: 1.5rem 1.25rem 2rem;
-    //   height: calc(100% - 47px);
-    //   margin-top: 3.125rem;
-    //   overflow-x: hidden;
-    //   overflow-y: auto;
-    // }
-
     @media screen and (min-width: 960px) {
       padding: 0.8125rem 2rem 2rem;
-      // padding: 1.5rem 1.25rem 2rem;
-      height: calc(100% - 47px);
+      // height: calc(100% - 47px);
       margin-top: 3.125rem;
-      overflow-x: hidden;
-      overflow-y: auto;
+      // overflow-x: hidden;
+      // overflow-y: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 4.3125rem;
     }
 
     @media screen and (max-width: 959px) {
@@ -319,6 +291,7 @@
     }
     @media screen and (min-width: 960px) {
       padding: 3.4375rem 0 0;
+      padding-right: 20px;
 
       li {
         margin-bottom: 1.5rem;
@@ -366,8 +339,8 @@
 
     > a {
       position: absolute;
-      background-color: rgba(255, 255, 255, 0.8);
-      color: $inspiration-nav-text-color;
+      background-color: #5f6263;
+      color: #ffffff;
       // border: 1px solid #3b3c40;
       cursor: pointer;
       padding: 36px 0.75rem;
@@ -378,6 +351,7 @@
       font-weight: bold;
       line-height: 1.33;
       letter-spacing: 1.4px;
+      opacity: 0.5;
 
       &.nav-prev {
         left: 0;
@@ -388,20 +362,20 @@
       }
 
       &:hover {
-        background-color: rgba(255, 255, 255, 1);
+        opacity: 1;
       }
 
-      &.light-theme {
-        border: 1px solid rgba($accordion-border-color, 0.8);
+      // &.light-theme {
+      //   border: 1px solid rgba($accordion-border-color, 0.8);
 
-        &.nav-prev {
-          border-left: none;
-        }
+      //   &.nav-prev {
+      //     border-left: none;
+      //   }
 
-        &.nav-next {
-          border-right: none;
-        }
-      }
+      //   &.nav-next {
+      //     border-right: none;
+      //   }
+      // }
     }
 
     @media screen and (max-width: 959px) {
@@ -423,6 +397,7 @@
         text-align: center;
         border: 1px solid $secondary-text-color;
         color: $secondary-text-color;
+        background-color: #ffffff;
         opacity: 0.6;
 
         .icon {
@@ -448,5 +423,32 @@
   .custom-input {
     font-size: 0.875rem;
     line-height: 1.71;
+  }
+}
+
+.CustomSocialSharing {
+  .at-resp-share-element {
+    .at-share-btn {
+      border: solid 1px #cccccc;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .at-icon-wrapper {
+        width: 28px !important;
+        height: 28px !important;
+        > svg {
+          width: 28px !important;
+          height: 28px !important;
+        }
+      }
+    }
   }
 }
