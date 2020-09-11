@@ -1285,3 +1285,34 @@ header.primary-navmenu-au {
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  header.sticky .header-cart-section [class*="icon-"] {
+    line-height: 1;
+    height: 22px;
+  }
+
+  header.primary-navmenu-au.sticky
+    .header-right
+    .header-bottom
+    .header-cart-section
+    li
+    .cart-value {
+    top: -9px;
+  }
+
+  .primary-navmenu-au.sticky .logout-toggle {
+    margin-top: 0;
+  }
+
+  .primary-navmenu-au
+    .header-right.prime-nav
+    .header-bottom
+    .header-cart-section
+    a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
