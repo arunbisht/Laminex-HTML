@@ -20,6 +20,30 @@
       @media screen and (min-width: 1440px) {
         margin: 0 1rem;
       }
+
+      .img-slider-link {
+        font-weight: bold;
+        line-height: 1.43;
+        border-bottom: 2px solid transparent;
+        margin-top: 1rem;
+        display: inline-block;
+        font-size: 0.875rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+        -webkit-transition: color 0.15s ease-in-out,
+          background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+          box-shadow 0.15s ease-in-out;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:hover {
+          border-bottom-color: currentColor;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

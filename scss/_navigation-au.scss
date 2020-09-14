@@ -1290,6 +1290,10 @@ header.primary-navmenu-au {
   header.sticky .header-cart-section [class*="icon-"] {
     line-height: 1;
     height: 22px;
+
+    &:before {
+      vertical-align: initial;
+    }
   }
 
   header.primary-navmenu-au.sticky
@@ -1314,6 +1318,7 @@ header.primary-navmenu-au {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    padding: 0;
   }
 }
 
