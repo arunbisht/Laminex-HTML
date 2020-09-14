@@ -1,4 +1,9 @@
 .image-slider-wrapper {
+  @media screen and (max-width: 767px) {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
+
   .image-slider {
     padding-left: 0;
     padding-right: 0;

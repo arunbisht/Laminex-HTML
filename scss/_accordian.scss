@@ -200,6 +200,26 @@
       .accordion-item {
         &.active {
           background-color: $whites-and-neutrals-bg;
+
+          .accordion-title {
+            @media screen and (min-width: 768px) {
+              border-bottom: 2px solid transparent;
+            }
+          }
+        }
+
+        .accordion-title {
+          border-bottom-color: $primary-color !important;
+        }
+
+        .accordion-content {
+          padding: 0;
+
+          .sm-responsive {
+            &:last-child {
+              padding-bottom: 20px;
+            }
+          }
         }
       }
     }

@@ -84,26 +84,28 @@
     .home-newsletter-media-col {
       margin-bottom: 24px;
       @media screen and (min-width: 768px) {
-        width: 58.3333333333%;
+        // width: 58.3333333333%;
         margin-bottom: 16px;
 
-        &.media-col-left {
-          float: left;
-          padding-right: calc(8.3333333333% + 8px);
-        }
-        &.media-col-right {
-          float: right;
-          padding-left: calc(8.3333333333% + 8px);
-        }
+        // &.media-col-left {
+        //   float: left;
+        //   padding-right: calc(8.3333333333% + 8px);
+        // }
+        // &.media-col-right {
+        //   float: right;
+        //   padding-left: calc(8.3333333333% + 8px);
+        // }
       }
 
       @media screen and (min-width: 960px) {
         margin-bottom: 32px;
 
         &.media-col-left {
+          float: left;
           padding-right: calc(8.3333333333% + 16px);
         }
         &.media-col-right {
+          float: right;
           padding-left: calc(8.3333333333% + 16px);
         }
       }
