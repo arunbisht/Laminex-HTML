@@ -165,7 +165,11 @@
         margin-bottom: 20px;
 
         @media screen and (max-width: 960px) {
-          margin-bottom: 15px;
+          margin-bottom: 16px;
+        }
+
+        @media screen and (max-width: 960px) {
+          font-size: 1.375rem;
         }
       }
 
