@@ -308,6 +308,7 @@ $sticky-tablet-header-height: 54px;
           li {
             display: flex;
             align-items: center;
+            margin-right: 0;
 
             @media screen and (min-width: 960px) {
               margin-left: 0.9375rem;
