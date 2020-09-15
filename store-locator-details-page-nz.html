@@ -46,138 +46,205 @@
     />
 
     <meta name="theme-color" content="#fafafa" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-      <script>
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#showlocations" ).autocomplete({
-      appendTo:".location-filter-input",
-      source: availableTags
-    });
-  } );
-  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme",
+        ];
+        $("#showlocations").autocomplete({
+          appendTo: ".location-filter-input",
+          source: availableTags,
+        });
+      });
+    </script>
   </head>
 
-<body>
-<main class="store-locator-details nz">
-       
-    <!-- Company/Brand Details -->
-    <div class="section-wrapper location-content">
-      <div class="container">
-
+  <body>
+    <main class="store-locator-details nz">
+      <!-- Company/Brand Details -->
+      <div class="section-wrapper location-content">
+        <div class="container">
           <div class="location-content-head">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="javascript:;" class="btn btn-link btn-link-forward btn-link-backward" target="_self">Back to search results</a>
-                    </div>
-                </div>
+            <div class="row">
+              <div class="col-12">
+                <a
+                  href="javascript:;"
+                  class="btn btn-link btn-link-forward btn-link-backward"
+                  target="_self"
+                  >Back to search results</a
+                >
+              </div>
+            </div>
           </div>
           <div class="location-content-body">
             <div class="row">
-                
-                <div class="col-12 location-content-body-top">
-                    <div class="field-locationlogo">
-                        <img src="/images/logo-kitchens-by-kathy-182-x-73@2x.png" class="location-content-logo" alt="Kitchens by Kathie" />
+              <div class="col-12 location-content-body-top">
+                <div class="field-locationlogo">
+                  <img
+                    src="/images/logo-kitchens-by-kathy-182-x-73@2x.png"
+                    class="location-content-logo"
+                    alt="Kitchens by Kathie"
+                  />
+                </div>
+              </div>
+
+              <!-- Location and timings details -->
+              <div
+                class="location-content-feature col-12 col-sm-11 col-md-5 location-col"
+              >
+                <h6 class="location-content-sub-heading h7 text-uppercase">
+                  Featured Products
+                </h6>
+                <ul class="location-content-features-list list-unstyled">
+                  <li
+                    class="location-content-composition d-inline field-labeltitle"
+                  >
+                    Laminate,
+                  </li>
+                  <li
+                    class="location-content-composition d-inline field-labeltitle"
+                  >
+                    Essastone
+                  </li>
+                </ul>
+                <div
+                  class="location-content-composition location-content-description field-description"
+                >
+                  Kitchens by Kathie is a well known and trusted name in
+                  Brisbane specialising in custom kitchen design. We believe
+                  that the kitchen is the heart of the home and therefore work
+                  closely with our clients to ensure we deliver the best kitchen
+                  design to suit your personal style and needs.
+                </div>
+                <div>
+                  <a
+                    class="btn location-content-direction-cta btn-primary green"
+                    href="javascript:;"
+                    title="get directions"
+                    target="_blank"
+                    >Get directions</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="location-content-details col-12 col-sm-6 col-md-4 col-lg-4 location-col"
+              >
+                <h6 class="location-content-sub-heading h7 text-uppercase">
+                  Location details
+                </h6>
+                <address class="location-content-address-items vcard">
+                  <div
+                    class="location-content-composition location-content-address address-item"
+                  >
+                    <div class="d-inline-block">
+                      <span class="street-address">380 Lutwyche Road,</span>
+                      <span class="locality">Windsor,</span>
+                      <br />
+                      <span class="region">Brisbane QLD </span>
+                      <span class="postal-code">4030</span>
                     </div>
-                </div>
-                
+                  </div>
 
-                <!-- Location and timings details -->
-                <div class="location-content-feature col-12 col-sm-11 col-md-5 location-col">
-                    <h6 class="location-content-sub-heading h7 text-uppercase">Featured Products</h6>
-                    <ul class="location-content-features-list list-unstyled">
-                        <li class="location-content-composition d-inline field-labeltitle">Laminate, </li>
-                        <li class="location-content-composition d-inline field-labeltitle">Essastone</li>
-                    </ul>
-                    <div class="location-content-composition location-content-description field-description">Kitchens by Kathie is a well known and trusted name in Brisbane specialising in custom kitchen design. We believe that the kitchen is the heart of the home and therefore work closely with our clients to ensure we deliver the best kitchen design to suit your personal style and needs.</div>
-                    <div><a class="btn location-content-direction-cta btn-primary green" href="javascript:;" title="get directions" target="_blank">Get directions</a></div>
-                </div>
-                
-                <div class="location-content-details col-12 col-sm-6 col-md-4 col-lg-4 location-col">
-                    <h6 class="location-content-sub-heading h7 text-uppercase">Location details</h6>
-                    <address class="location-content-address-items vcard">
-                        <div class="location-content-composition location-content-address address-item"><div class="d-inline-block">
-                        <span class="street-address">380 Lutwyche Road,</span>
-                        <span class="locality">Windsor,</span>
-                        <br>
-                        <span class="region">Brisbane QLD </span>
-                        <span class="postal-code">4030</span>
-                        </div>
-                        </div>
-                        
-                        <div class="tel field-locationphonenumber address-item">
-                            <a href="tel:xxxxxxx">(07) 3357 2028</a>
-                        </div>
-                        
-                        <div class="tel field-locationfaxnumber location-content-composition address-item">
-                            <a href="">(07) 3357 2038</a>
-                        </div>
-                        
-                        <div class="url org field-locationwebsite location-content-composition address-item">
-                            <a href="#" target="">www.kitchensbykathie.com.au</a>
-                        </div>
-                        
-                        <div class="email field-locationemail location-content-composition address-item">
-                            <a href="javascript:;">hello@kitchensbykathie.com.au</a>
-                        </div>
-                    </address>
-                </div>
+                  <div class="tel field-locationphonenumber address-item">
+                    <a href="tel:xxxxxxx">(07) 3357 2028</a>
+                  </div>
 
-                <div class="location-content__col col-8 col-sm-4 col-md-3 col-lg-3">
-                    <h6 class="location-content-sub-heading h7 text-uppercase">Open Hours</h6>
-                    <dl class="location-content-trading location-content-composition">
-                        <dt class="float-left">Mon</dt><dd class="text-right mb-0">09:00 - 17:00</dd>
-<dt class="float-left">Tue</dt><dd class="text-right mb-0">09:00 - 17:00</dd>
-<dt class="float-left">Wed</dt><dd class="text-right mb-0">09:00 - 17:00 </dd>
-<dt class="float-left">Thu</dt><dd class="text-right mb-0">09:00 - 17:00</dd>
-<dt class="float-left">Fri</dt><dd class="text-right mb-0">09:00 - 16:00</dd>
-<dt class="float-left">Sat</dt><dd class="text-right mb-0">Closed</dd>
-<dt class="float-left">Sun</dt><dd class="text-right mb-0">Closed</dd></dl>
-                    <p class="location-content-composition field-public-holiday">
-*Closed public holidays</p>
+                  <div
+                    class="tel field-locationfaxnumber location-content-composition address-item"
+                  >
+                    <a href="">(07) 3357 2038</a>
+                  </div>
+
+                  <div
+                    class="url org field-locationwebsite location-content-composition address-item"
+                  >
+                    <a href="#" target="">www.kitchensbykathie.com.au</a>
+                  </div>
+
+                  <div
+                    class="email field-locationemail location-content-composition address-item"
+                  >
+                    <a href="javascript:;">hello@kitchensbykathie.com.au</a>
+                  </div>
+                </address>
+              </div>
+
+              <div
+                class="location-content__col col-8 col-sm-4 col-md-3 col-lg-3"
+              >
+                <h6 class="location-content-sub-heading h7 text-uppercase">
+                  Open Hours
+                </h6>
+                <div
+                  class="location-content-trading location-content-composition"
+                >
+                  <div class="clearfix">
+                    <div class="float-left"><b>Mon</b></div>
+                    <div class="float-right time">09:00 - 17:00</div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="float-left"><b>Tue</b></div>
+                    <div class="float-right time">09:00 - 17:00</div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="float-left"><b>Wed</b></div>
+                    <div class="float-right time">09:00 - 17:00</div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="float-left"><b>Thu</b></div>
+                    <div class="float-right time">09:00 - 17:00</div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="float-left"><b>Fri</b></div>
+                    <div class="float-right time">09:00 - 16:00</div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="float-left"><b>Sat</b></div>
+                    <div class="float-right time">Closed</div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="float-left"><b>Sun</b></div>
+                    <div class="float-right time">Closed</div>
+                  </div>
                 </div>
+                <p class="location-content-composition field-public-holiday">
+                  *Closed public holidays
+                </p>
+              </div>
             </div>
           </div>
-
+        </div>
       </div>
-    </div>
-    
-    <!-- Carousel component -->
-    <div class="section-wrapper carousel text-center">
-    Carousel component 
-    </div>
-  
-</main>
-      
-      
-      
-      
-      
-      <script type="text/javascript">
+
+      <!-- Carousel component -->
+      <div class="section-wrapper carousel text-center">Carousel component</div>
+    </main>
+
+    <script type="text/javascript">
       var dataLayer = [];
     </script>
     <script type="text/javascript">
@@ -482,7 +549,7 @@
         });
       }
     </script>
-   
+
     <script type="text/javascript" src="./js/generatedVariables.js"></script>
     <script type="text/javascript" src="./js/all_responsive.js"></script>
     <script type="text/javascript" src="./js/addons_responsive.js"></script>
