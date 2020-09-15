@@ -213,8 +213,6 @@
         }
 
         .accordion-content {
-          padding: 0;
-
           .sm-responsive {
             &:last-child {
               padding-bottom: 20px;
@@ -226,9 +224,7 @@
     &.no-spacing-accordion-item {
       .accordion-item {
         .accordion-content {
-          @media screen and (min-width: 768px) {
-            padding: 0;
-          }
+          padding: 0;
 
           .container-fluid {
             padding: 0;

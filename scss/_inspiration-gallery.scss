@@ -121,9 +121,9 @@
     }
 
     @media screen and (min-width: 960px) {
-      -ms-flex: 0 0 $inspiration-content-width;
-      flex: 0 0 $inspiration-content-width;
-      max-width: $inspiration-content-width;
+      -ms-flex: 0 0 calc(100% - #{$inspiration-content-width});
+      flex: 0 0 calc(100% - #{$inspiration-content-width});
+      max-width: calc(100% - #{$inspiration-content-width});
 
       img {
         left: 50%;
@@ -142,9 +142,9 @@
 
   .detail-wrapper {
     @media screen and (min-width: 960px) {
-      -ms-flex: 0 0 calc(100% - #{$inspiration-content-width});
-      flex: 0 0 calc(100% - #{$inspiration-content-width});
-      max-width: calc(100% - #{$inspiration-content-width});
+      -ms-flex: 0 0 $inspiration-content-width;
+      flex: 0 0 $inspiration-content-width;
+      max-width: $inspiration-content-width;
     }
   }
 
