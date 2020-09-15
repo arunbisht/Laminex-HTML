@@ -167,6 +167,14 @@ $sticky-tablet-header-height: 54px;
         &:last-child {
           padding-right: 0.8rem;
         }
+
+        @media screen and (max-width: 1285px) {
+          padding-right: 1.12rem;
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
       }
     }
 
@@ -202,6 +210,10 @@ $sticky-tablet-header-height: 54px;
 
       .dropdown-toggle {
         display: block;
+      }
+
+      @media screen and (max-width: 1285px) {
+        padding-left: 1rem;
       }
     }
 
@@ -1285,12 +1297,10 @@ header.primary-navmenu-au {
     }
   }
 }
-
 @media screen and (max-width: 767px) {
   header.sticky .header-cart-section [class*="icon-"] {
     line-height: 1;
     height: 22px;
-
     &:before {
       vertical-align: initial;
     }
@@ -1321,7 +1331,6 @@ header.primary-navmenu-au {
     padding: 0;
   }
 }
-
 .primary-navmenu-au .listing li .has-thumbnails .thumbnail {
   margin-bottom: 0;
 }
