@@ -203,4 +203,14 @@
   max-width: 120px;
   height: auto;
   margin: 0 0 15px 0;
+  display: inline;
+
+  .section-wrapper & {
+    img {
+      vertical-align: middle;
+      border-style: none;
+      width: auto;
+      height: auto;
+    }
+  }
 }
