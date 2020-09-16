@@ -88,11 +88,11 @@
           <!-- Site Logo -->
           <div class="header-left col-md-2 col-lg-3 col-3">
             <div class="logo">
-              <a href="/specifier/homepage"
+              <a href="/for-your-home/homepage"
                 ><img
                   title="Laminex logo"
                   alt="Laminex logo"
-                  src="/medias/logo.svg?context=bWFzdGVyfGltYWdlc3wyODc2fGltYWdlL3N2Zyt4bWx8aDg1L2gzMC84ODcxNzI5NzkxMDA2L2xvZ28uc3ZnfGUxNTAyN2UzZWU1MTNiNzkyOTIzMTkxOTdlMDc5ZjYyMTA5OGQ3Y2FhMGQ1NWVmYTI4ZDBjODM2MWQ3NGIwNDY"
+                  src="https://store.dev.laminex.com.au/medias/logo.svg?context=bWFzdGVyfGltYWdlc3wyODc2fGltYWdlL3N2Zyt4bWx8aDRmL2g3Mi84ODc2OTYzODIzNjQ2L2xvZ28uc3ZnfGQwNjk5NDY0MGZlMTE4NmM5NGNlYzcyMmY1ZTJmNTQwZjY4Yzk0MTFkMTliNjdjZGY2M2Q2NTI4ODlkZGM1MzE"
               /></a>
             </div>
           </div>
@@ -107,14 +107,17 @@
                     <i class="icon-new--hammer" title="TRADE"></i> TRADE</a
                   >
                 </li>
-                <li class="active-header">
+                <li>
                   <a class="select-dropdown-item" href="/specifier/homepage">
                     <i class="icon-new--compass" title="SPECIFIER"></i>
                     SPECIFIER</a
                   >
                 </li>
-                <li>
-                  <a class="select-dropdown-item" href="/consumer/homepage">
+                <li class="active-header">
+                  <a
+                    class="select-dropdown-item"
+                    href="/for-your-home/homepage"
+                  >
                     <i class="icon-new--home" title="FOR YOUR HOME"></i> FOR
                     YOUR HOME</a
                   >
@@ -129,7 +132,8 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <i class="icon-new--compass" title="SPECIFIER"></i> SPECIFIER
+                  <i class="icon-new--home" title="FOR YOUR HOME"></i> FOR YOUR
+                  HOME
                 </button>
                 <ul
                   class="select-dropdown-menu"
@@ -141,9 +145,9 @@
                     >
                   </li>
                   <li>
-                    <a class="select-dropdown-item" href="/consumer/homepage">
-                      <i class="icon-new--home" title="FOR YOUR HOME"></i> FOR
-                      YOUR HOME</a
+                    <a class="select-dropdown-item" href="/specifier/homepage">
+                      <i class="icon-new--compass" title="SPECIFIER"></i>
+                      SPECIFIER</a
                     >
                   </li>
                 </ul>
@@ -151,38 +155,11 @@
             </div>
 
             <div class="d-block d-sm-none mobile-login-wrapper">
-              <div class="logout-li">
-                <a href="/login" class="logout-toggle">
-                  <i class="icon-new--user"></i>
+              <div class="user-icon logout-li">
+                <a href="/login">
+                  <!-- <i class="icon-new--user" title="Login to My Account"></i> -->
+                  <span>Join/Login</span>
                 </a>
-
-                <div class="logout-dropdown">
-                  <a class="dropdown-item" href="/my-account">Dashboard</a>
-
-                  <a class="dropdown-item" href="/my-account/balance"
-                    >Account Balance</a
-                  >
-
-                  <a class="dropdown-item" href="/my-account/document"
-                    >Invoices &amp; Credits</a
-                  >
-
-                  <a class="dropdown-item" href="/my-account/orders"
-                    >Order Summary</a
-                  >
-
-                  <a class="dropdown-item" href="/my-account/profile"
-                    >Profile</a
-                  >
-
-                  <a class="dropdown-item" href="/my-account/sampleOrderHistory"
-                    >Sample Order History</a
-                  >
-
-                  <a class="dropdown-item" href="/logout?source=ecom"
-                    >Log Out</a
-                  >
-                </div>
               </div>
             </div>
           </div>
@@ -198,41 +175,41 @@
                   <ul class="navbar-nav digimeg-group digimeg-main-nav">
                     <li class="nav-item">
                       <a
-                        href="/specifier/browse"
-                        data-subnav="ADBrowseProductsAULink"
+                        href="/get-inspired/"
+                        data-subnav="ConsumerInspirationAULink"
+                        class="nav-link digimeg-nav-item has-child"
+                        >Inspiration</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="#"
+                        data-subnav="ConsumerHowToAULink"
+                        class="nav-link digimeg-nav-item has-child"
+                        >How To</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="/browse"
+                        data-subnav="ConsumerProductsAULink"
                         class="nav-link digimeg-nav-item has-child"
                         >Browse Products</a
                       >
                     </li>
                     <li class="nav-item">
                       <a
-                        href="#"
-                        data-subnav="ADSpecifierResourcesAULink"
-                        class="nav-link digimeg-nav-item has-child"
-                        >Specifier Resources</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
                         href="/about-laminex/brands"
-                        data-subnav="ADBrandsAULink"
+                        data-subnav="ConsumerBrandsAULink"
                         class="nav-link digimeg-nav-item has-child"
                         >Brands</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="/my-account/sampleOrderHistory"
-                        data-subnav="ADQuickOrderAULink"
-                        class="nav-link digimeg-nav-item"
-                        >Order Samples</a
                       >
                     </li>
                   </ul>
                 </div>
               </nav>
 
-              <ul class="header-cart-section four">
+              <ul class="header-cart-section">
                 <li class="menu-icon">
                   <a
                     href="#"
@@ -245,54 +222,12 @@
                     ><i class="icon-new--menu"></i
                   ></a>
                 </li>
-                <li class="logout-li">
-                  <a href="#" class="logout-toggle">
-                    <i class="icon--user" title="My Account"> </i
-                    ><span class="d-none d-md-inline">Dan Manson</span>
-                  </a>
-
-                  <div class="logout-dropdown">
-                    <a class="dropdown-item" href="/my-account">Dashboard</a>
-
-                    <a class="dropdown-item" href="/my-account/balance"
-                      >Account Balance</a
-                    >
-
-                    <a class="dropdown-item" href="/my-account/document"
-                      >Invoices &amp; Credits</a
-                    >
-
-                    <a class="dropdown-item" href="/my-account/orders"
-                      >Order Summary</a
-                    >
-
-                    <a class="dropdown-item" href="/my-account/profile"
-                      >Profile</a
-                    >
-
-                    <a
-                      class="dropdown-item"
-                      href="/my-account/sampleOrderHistory"
-                      >Sample Order History</a
-                    >
-
-                    <a class="dropdown-item" href="/logout?source=ecom"
-                      >Log Out</a
-                    >
-                  </div>
-                </li>
-                <li class="cartIcon product-detail-mini-cart normal">
-                  <a href="/cart">
-                    <i class="icon-new--cart"></i>
-                    <span class="cart-value">0</span>
+                <li class="user-icon logout-li">
+                  <a href="/login">
+                    <i class="icon-new--user" title="Login to My Account"></i>
+                    <span>Join/Login</span>
                   </a>
                 </li>
-                <input
-                  type="hidden"
-                  value="/cart/miniCart/SUBTOTAL"
-                  class="refreshMiniCartUrl"
-                />
-
                 <li class="cartIcon product-detail-mini-cart sample">
                   <a href="/cart/sample" class="unset-text">
                     <!-- 
@@ -302,7 +237,7 @@
                       title="Sample Cart"
                       alt="Sample Cart"
                     ></i>
-                    <span class="cart-value">1</span>
+                    <span class="cart-value">0</span>
                   </a>
                 </li>
                 <input
@@ -313,7 +248,7 @@
 
                 <li class="list-inline-item">
                   <a
-                    href="/specifier/store-finder"
+                    href="/for-your-home/location"
                     data-linkname="Store Locator Icon"
                   >
                     <i class="icon-new--location"></i>
@@ -380,15 +315,11 @@
         </div>
       </div>
       <span class="nav--modal"></span> <span class="nav--modal1"></span>
-      <input type="hidden" id="isUserLoggedIn" value="true" />
+      <input type="hidden" id="isUserLoggedIn" value="false" />
 
       <div class="siteHeader__nav--secondary" id="siteHeader__nav--secondary">
         <div class="desktop-view">
-          <div
-            class="menu-content collapse"
-            id="ADBrowseProductsAULink"
-            style="display: none"
-          >
+          <div class="menu-content collapse" id="ConsumerInspirationAULink">
             <div class="container">
               <div class="row">
                 <div class="col-md-2">
@@ -397,358 +328,8 @@
                     <ul class="primary listing tab-titles">
                       <li class="has-child active">
                         <a
-                          data-target="#ADProductsBrowseByColourAULink"
-                          href="/specifier/browse/color"
-                        >
-                          Browse by Colour</a
-                        >
-                      </li>
-
-                      <li class="has-child">
-                        <a
-                          data-target="#ADProductsByAppAULink"
-                          href="/specifier/browse/product_application"
-                        >
-                          Browse by Application</a
-                        >
-                      </li>
-
-                      <li class="has-child">
-                        <a
-                          data-target="#ADProductsByBrandAULink"
-                          href="/specifier/browse/brand"
-                        >
-                          Browse by Brand</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-
-                <div
-                  id="ADProductsBrowseByColourAULink"
-                  class="col-md-10 tab-content"
-                  style="display: block"
-                >
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="row multiple-cols">
-                        <div class="col-6">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WHITE"
-                                >
-                                  Whites</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_NEUT"
-                                >
-                                  Neutrals</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WOODS"
-                                >
-                                  Woodgrains</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_MINER"
-                                >
-                                  Minerals</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_BRBOL"
-                                >
-                                  Brights and Bolds</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_PASTL"
-                                >
-                                  Pastels</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                        <div class="col-6">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_PATTN"
-                                >
-                                  Patterns</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_METAL"
-                                >
-                                  Metallics</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  id="ADProductsByAppAULink"
-                  class="col-md-10 tab-content"
-                  style=""
-                >
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="row multiple-cols">
-                        <div class="col-6 col-sm-3">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BENCHTOP"
-                                >
-                                  Benchtops</a
-                                >
-                              </li>
-
-                              <li>
-                                <a href="#">
-                                  Cabinetry - Interiors &amp; Panels</a
-                                >
-                              </li>
-
-                              <li>
-                                <a href="#"> Cabinetry - Doors &amp; Drawers</a>
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SPLASHBACK"
-                                >
-                                  Splashback</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SHELVING"
-                                >
-                                  Shelving</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WARDROBE"
-                                >
-                                  Wardrobes</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-
-                        <div class="col-6 col-sm-3">
-                          <nav>
-                            <ul class="listing">
-                              <li><a href="#"> Desks and Tabletops</a></li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLPANEL"
-                                >
-                                  Wall Panels</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLLININGWA"
-                                >
-                                  Wall Panels - Wet Area</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_VANITIES"
-                                >
-                                  Vanities</a
-                                >
-                              </li>
-
-                              <li><a href="#"> Sinks and Basins</a></li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_PARTITIONTSC"
-                                >
-                                  Toilet &amp; Shower Partitioning</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-
-                        <div class="col-6 col-sm-3">
-                          <nav>
-                            <ul class="listing">
-                              <li><a href="#"> Lockers &amp; Seating</a></li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_FRP"
-                                >
-                                  Fire Rated Panels</a
-                                >
-                              </li>
-
-                              <li><a href="#"> Decorative Plywood</a></li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BUILDPROD"
-                                >
-                                  Building Products</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/product_application?categoryCode=product_application&amp;q=:relevance:allCategories:PA_FLOORSTRUC"
-                                >
-                                  Flooring - Structural</a
-                                >
-                              </li>
-
-                              <li><a href="#"> Outdoor - Covered Areas</a></li>
-                            </ul>
-                          </nav>
-                        </div>
-
-                        <div class="col-6 col-sm-3">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a href="#"> Outdoor - Uncovered Areas</a>
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  id="ADProductsByBrandAULink"
-                  class="col-md-10 tab-content"
-                  style=""
-                >
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="row multiple-cols">
-                        <div class="col-12">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a
-                                  href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LX"
-                                >
-                                  Laminex</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
-                                >
-                                  Formica</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/brand?categoryCode=range&amp;q=:relevance:allCategories:B_ES:allCategories:R_ESSASTONE"
-                                >
-                                  Essastone</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LG"
-                                >
-                                  HI-MACS</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_TE"
-                                >
-                                  Trade Essentials</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/about-laminex/brands/laminex-waterloo"
-                                >
-                                  Laminex Waterloo Partitioning</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-content collapse" id="ADSpecifierResourcesAULink">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-2">
-                  <nav>
-                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
-                    <ul class="primary listing tab-titles">
-                      <li class="has-child">
-                        <a
-                          data-target="#ADSpecificResourcesTechnicalLibraryAULink"
-                          href="#"
-                        >
-                          Technical Library</a
-                        >
-                      </li>
-
-                      <li class="has-child">
-                        <a
-                          data-target="#SpecificResourcesGalleryAULink"
-                          href="/specifier/gallery"
+                          data-target="#InspirationGalleryAULink"
+                          href="/for-your-home/gallery"
                         >
                           Gallery</a
                         >
@@ -756,34 +337,16 @@
 
                       <li class="has-child">
                         <a
-                          data-target="#SpecificResourcesSpecificNewsAULink"
-                          href="#"
+                          data-target="#InspirationDesignandInspirationAULink"
+                          href="/for-your-home/get-inspired/blog"
                         >
-                          Specific News</a
-                        >
-                      </li>
-
-                      <li class="has-child">
-                        <a
-                          data-target="#SpecificResourcesProjectsAULink"
-                          href="/specifier/get-inspired/building-and-renovating"
-                        >
-                          Projects</a
+                          Design and Inspiration</a
                         >
                       </li>
 
                       <li class="has-child">
                         <a
-                          data-target="#SpecifierResourcesSpecifierAccountsAULink"
-                          href="#"
-                        >
-                          Specifier Accounts</a
-                        >
-                      </li>
-
-                      <li class="has-child">
-                        <a
-                          data-target="#SpecifierResourcesCollaborationsAULink"
+                          data-target="#InspirationCollaborationAULink"
                           href="#"
                         >
                           Collaborations</a
@@ -794,19 +357,19 @@
                 </div>
 
                 <div
-                  id="SpecificResourcesGalleryAULink"
+                  id="InspirationGalleryAULink"
                   class="col-md-10 tab-content"
-                  style=""
+                  style="display: block"
                 >
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                       <div class="row multiple-cols">
-                        <div class="col-6">
+                        <div class="col-12">
                           <nav>
                             <ul class="listing">
                               <li>
                                 <a
-                                  href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3AKitchen"
+                                  href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3AKitchen"
                                 >
                                   Kitchen</a
                                 >
@@ -814,7 +377,7 @@
 
                               <li>
                                 <a
-                                  href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ABathroom"
+                                  href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3ABathroom"
                                 >
                                   Bathroom</a
                                 >
@@ -822,7 +385,7 @@
 
                               <li>
                                 <a
-                                  href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ABedroom"
+                                  href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3ABedroom"
                                 >
                                   Bedroom</a
                                 >
@@ -830,7 +393,7 @@
 
                               <li>
                                 <a
-                                  href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ALaundry"
+                                  href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3ALaundry"
                                 >
                                   Laundry</a
                                 >
@@ -838,28 +401,33 @@
 
                               <li>
                                 <a
-                                  href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3AStudy"
+                                  href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3AStudy"
                                 >
                                   Study</a
                                 >
                               </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ACommercial"
-                                >
-                                  Commercial</a
-                                >
-                              </li>
                             </ul>
                           </nav>
                         </div>
-                        <div class="col-6">
-                          <nav>
-                            <ul class="listing">
-                              <li><a href="/specifier/gallery"> All</a></li>
-                            </ul>
-                          </nav>
+                      </div>
+                    </div>
+
+                    <div class="col-md-8 d-flex">
+                      <div class="card">
+                        <div class="card-horizontal">
+                          <div class="card-img">
+                            <img
+                              class=""
+                              src="https://store.dev.laminex.com.au/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aGQ4L2g2OC84ODc2OTYzNTk0MjcwL2JyYW5kLXBsYWNlaG9sZGVyLmpwZ3wwYTkwYzM0ZjI2Y2I3YjlhNTRhMWVmOTA1N2M3NDVlYTMyYzQzNDVkZjgyNWQ4ZDNlYWRiOTg4M2U0MWNhODBl"
+                              alt="Gallaery1Image"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum1</h4>
+                            <a href="CMSLinkComponentModel (8797427958844@1)"
+                              >BrandName1</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -867,7 +435,7 @@
                 </div>
 
                 <div
-                  id="SpecificResourcesSpecificNewsAULink"
+                  id="InspirationDesignandInspirationAULink"
                   class="col-md-10 tab-content"
                   style=""
                 >
@@ -877,68 +445,20 @@
                         <div class="col-12">
                           <nav>
                             <ul class="listing">
-                              <li><a href="#"> The Latest</a></li>
+                              <li><a href="#"> Design</a></li>
 
-                              <li>
-                                <a href="#"> Architecture &amp; Design</a>
-                              </li>
+                              <li><a href="#"> Spaces</a></li>
 
                               <li>
                                 <a
-                                  href="/specifier/get-inspired/trends/colour-and-texture"
+                                  href="/for-your-home/get-inspired/blog/product"
                                 >
-                                  Colour and Texture</a
-                                >
-                              </li>
-
-                              <li>
-                                <a href="/specifier/get-inspired/blog/product">
                                   Products</a
                                 >
                               </li>
 
-                              <li><a href="#"> How it's Made</a></li>
-
                               <li>
-                                <a
-                                  href="/specifier/get-inspired/blog/commercial"
-                                >
-                                  Commercial</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  id="SpecificResourcesProjectsAULink"
-                  class="col-md-10 tab-content"
-                  style=""
-                >
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="row multiple-cols">
-                        <div class="col-12">
-                          <nav>
-                            <ul class="listing">
-                              <li><a href="#"> Residential</a></li>
-
-                              <li>
-                                <a
-                                  href="/specifier/get-inspired/blog/commercial"
-                                >
-                                  Commercial</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/get-inspired/building-and-renovating"
-                                >
+                                <a href="/for-your-home/get-inspired/blog">
                                   All</a
                                 >
                               </li>
@@ -947,37 +467,41 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <div
-                  id="SpecifierResourcesSpecifierAccountsAULink"
-                  class="col-md-10 tab-content"
-                  style=""
-                >
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="row multiple-cols">
-                        <div class="col-12">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a href="#"> Benefits of a Specifier Account</a>
-                              </li>
+                    <div class="col-md-8 d-flex">
+                      <div class="card">
+                        <div class="card-horizontal">
+                          <div class="card-img">
+                            <img
+                              class=""
+                              src="https://store.dev.laminex.com.au/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aGQ4L2g2OC84ODc2OTYzNTk0MjcwL2JyYW5kLXBsYWNlaG9sZGVyLmpwZ3wwYTkwYzM0ZjI2Y2I3YjlhNTRhMWVmOTA1N2M3NDVlYTMyYzQzNDVkZjgyNWQ4ZDNlYWRiOTg4M2U0MWNhODBl"
+                              alt="Gallaery1Image"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum1</h4>
+                            <a href="CMSLinkComponentModel (8797427958844@1)"
+                              >BrandName1</a
+                            >
+                          </div>
+                        </div>
+                      </div>
 
-                              <li>
-                                <a href="#">
-                                  How to Set up a Specifier Account</a
-                                >
-                              </li>
-
-                              <li>
-                                <a href="/get-inspired/inspiration-gallery">
-                                  Sign Up for a Specifier Account</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
+                      <div class="card">
+                        <div class="card-horizontal">
+                          <div class="card-img">
+                            <img
+                              class=""
+                              src="https://store.dev.laminex.com.au/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aDdmL2g2Yi84ODc2OTYzNjI3MDM4L2JyYW5kLXBsYWNlaG9sZGVyLmpwZ3w3YjNiZTRmMTZlMGJlODQ0ODMwMmE4MDRlNTg1YmQzNzczYTU1MWRlZjg4NWE3NjJjNjY5NDZmYjUyODk4MDQw"
+                              alt="Gallaery2Image"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum2</h4>
+                            <a href="CMSLinkComponentModel (8797427991612@1)"
+                              >BrandName2</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -985,7 +509,7 @@
                 </div>
 
                 <div
-                  id="SpecifierResourcesCollaborationsAULink"
+                  id="InspirationCollaborationAULink"
                   class="col-md-10 tab-content"
                   style=""
                 >
@@ -1001,7 +525,11 @@
                                 >
                               </li>
 
-                              <li><a href="#"> Laminex x Chris Connell</a></li>
+                              <li>
+                                <a href="/laminex-x-kennedy-nolan">
+                                  Laminex x Chris Connell</a
+                                >
+                              </li>
 
                               <li>
                                 <a
@@ -1021,7 +549,7 @@
             </div>
           </div>
 
-          <div class="menu-content collapse" id="ADBrandsAULink">
+          <div class="menu-content collapse" id="ConsumerHowToAULink">
             <div class="container">
               <div class="row">
                 <div class="col-md-2">
@@ -1030,7 +558,409 @@
                     <ul class="primary listing tab-titles">
                       <li class="has-child active">
                         <a
-                          data-target="#ADBrandsLaminexAULink"
+                          data-target="#HowToRenovationTipsAULink"
+                          href="/for-your-home/get-inspired/building-and-renovating"
+                        >
+                          Renovation Tips</a
+                        >
+                      </li>
+
+                      <li class="has-child">
+                        <a
+                          data-target="#BrowseProductsDesignPalettesAULink"
+                          href="/get-inspired/laminex-design-styles"
+                        >
+                          Design Palettes</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div
+                  id="HowToRenovationTipsAULink"
+                  class="col-md-10 tab-content"
+                  style="display: block"
+                >
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="row multiple-cols">
+                        <div class="col-12">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <div class="has-thumbnails">
+                                  <a
+                                    href="/for-your-home/get-inspired/building-and-renovating/budgeting"
+                                  >
+                                    <figure class="d-inline-block thumbnail">
+                                      <img
+                                        src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aGQ2L2g2Yi84ODc2OTYzNjU5ODA2L3RodW1ibmFpbC5qcGd8MmM0ZjY4N2VjMTBlOTg4MjQzYmZkMTIzY2E2MDE4YjMwZWZmYTJkOTJhMGU2OTFmYmNlMDdiNWViMjE2YjQzMQ"
+                                      />
+                                    </figure>
+                                    Budgeting</a
+                                  >
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="has-thumbnails">
+                                  <a
+                                    href="/get-inspired/building-and-renovating"
+                                  >
+                                    <figure class="d-inline-block thumbnail">
+                                      <img
+                                        src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aDQwL2g2Yy84ODc2OTYzNjkyNTc0L3RodW1ibmFpbC5qcGd8OTRjN2VjYTc1ZGQ2MWZmNTA2NjRkNDMzMGUxNDFlZWViYTkyYWVjYzc1ZmQ5ZDBlZDU4NGEzNjE4Njk2NmVjYw"
+                                      />
+                                    </figure>
+                                    Design</a
+                                  >
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="has-thumbnails">
+                                  <a
+                                    href="/for-your-home/get-inspired/building-and-renovating/tips-and-tricks"
+                                  >
+                                    <figure class="d-inline-block thumbnail">
+                                      <img
+                                        src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aDNlL2g2Zi84ODc2OTYzNzU4MTEwL3RodW1ibmFpbC5qcGd8ZDA2NjdhNTI5ZjNiNjRmOTMzMjI5NGFiZDkwNTBjYmU2Nzg1ZWRhNmI5ZTI1NTJkZmQyY2IxYWI3ODA4MTE2OA"
+                                      />
+                                    </figure>
+                                    Tips and Tricks</a
+                                  >
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="has-thumbnails">
+                                  <a
+                                    href="/get-inspired/building-and-renovating"
+                                  >
+                                    <figure class="d-inline-block thumbnail">
+                                      <img
+                                        src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aGU3L2g2ZS84ODc2OTYzNzI1MzQyL3RodW1ibmFpbC5qcGd8NzNmZDhiM2M5MTc1MDA0NTdlNDI3MDkwNjAxY2M0NjI0OWE1Y2QzYjJiMDRjZjA3NmE3ZmM4MzU2MTlmMWUzOA"
+                                      />
+                                    </figure>
+                                    Guides</a
+                                  >
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="has-thumbnails">
+                                  <a
+                                    href="/get-inspired/building-and-renovating"
+                                  >
+                                    <figure class="d-inline-block thumbnail">
+                                      <img
+                                        src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aGE4L2g2Zi84ODc2OTYzNzkwODc4L3RodW1ibmFpbC5qcGd8ZjBhOWRkZDEwMzRhMzY2ZTg0YjdhMmI0MWUyMDFjNWNjZjg3Yzc1N2FkY2U4OTZlNTZjYjZmZGRhMzBhYjg0ZA"
+                                      />
+                                    </figure>
+                                    Checklists</a
+                                  >
+                                </div>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="BrowseProductsDesignPalettesAULink"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="row multiple-cols">
+                        <div class="col-12">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="/get-inspired/laminex-design-styles/classic"
+                                >
+                                  Classic</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/laminex-design-styles/contemporary"
+                                >
+                                  Contemporary</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/laminex-design-styles/raw"
+                                >
+                                  Raw</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-content collapse" id="ConsumerProductsAULink">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2">
+                  <nav>
+                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
+                    <ul class="primary listing tab-titles">
+                      <li class="has-child active">
+                        <a
+                          data-target="#BrowseProductsByApplicationAULink"
+                          href="/browse/product_application"
+                        >
+                          By Application</a
+                        >
+                      </li>
+
+                      <li class="has-child">
+                        <a
+                          data-target="#BrowseProductsByGalleryAULink"
+                          href="/for-your-home/gallery"
+                        >
+                          By Gallery</a
+                        >
+                      </li>
+
+                      <li class="has-child">
+                        <a
+                          data-target="#BrowseProductsByDesignPalettesAULink"
+                          href="/get-inspired/laminex-design-styles"
+                        >
+                          Browse by Design Palettes</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div
+                  id="BrowseProductsByApplicationAULink"
+                  class="col-md-10 tab-content"
+                  style="display: block"
+                >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row multiple-cols">
+                        <div class="col-6 col-sm-4">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BENCHTOP"
+                                >
+                                  Benchtops</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_CABINETRY"
+                                >
+                                  Cabinetry</a
+                                >
+                              </li>
+
+                              <li><a href="#"> Desks and Tabletops</a></li>
+
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SHELVING"
+                                >
+                                  Shelving</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WARDROBE"
+                                >
+                                  Wardrobes</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLPANEL"
+                                >
+                                  Wall Panels</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLLININGWA"
+                                >
+                                  Wall Panels - Wet Area</a
+                                >
+                              </li>
+
+                              <li><a href="#"> Sinks &amp; Basins</a></li>
+
+                              <li>
+                                <a
+                                  href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SPLASHBACK"
+                                >
+                                  Splashback</a
+                                >
+                              </li>
+
+                              <li><a href="#"> Outdoor - Covered Areas</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="col-6 col-sm-4">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a href="#"> Outdoor - Uncovered Areas</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="BrowseProductsByGalleryAULink"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="row multiple-cols">
+                        <div class="col-12">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=kitchen"
+                                >
+                                  Kitchen</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=bathroom"
+                                >
+                                  Bathroom</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=bedroom"
+                                >
+                                  Bedroom</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=laundry"
+                                >
+                                  Laundry</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=study"
+                                >
+                                  Study</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="BrowseProductsByDesignPalettesAULink"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="row multiple-cols">
+                        <div class="col-12">
+                          <nav>
+                            <ul class="listing">
+                              <li>
+                                <a
+                                  href="/get-inspired/laminex-design-styles/classic"
+                                >
+                                  Classic</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/laminex-design-styles/contemporary"
+                                >
+                                  Contemporary</a
+                                >
+                              </li>
+
+                              <li>
+                                <a
+                                  href="/get-inspired/laminex-design-styles/raw"
+                                >
+                                  Raw</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-content collapse" id="ConsumerBrandsAULink">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2">
+                  <nav>
+                    <!-- this nav is for tabbing: use class tab-titles on ul and add the IDS on a and div tags -->
+                    <ul class="primary listing tab-titles">
+                      <li class="has-child active">
+                        <a
+                          data-target="#BrandsLaminexAULink"
                           href="/about-laminex/brands/laminex"
                         >
                           Laminex</a
@@ -1039,7 +969,7 @@
 
                       <li class="has-child">
                         <a
-                          data-target="#ADBrandsFormicaAULink"
+                          data-target="#BrandsFormicaAULink"
                           href="/about-laminex/brands/formica"
                         >
                           Formica</a
@@ -1048,7 +978,7 @@
 
                       <li class="has-child">
                         <a
-                          data-target="#ADBrandsEssastoneAULink"
+                          data-target="#BrandsEssastoneAULink"
                           href="/about-laminex/brands/essastone"
                         >
                           Essastone</a
@@ -1056,29 +986,17 @@
                       </li>
 
                       <li class="has-child">
-                        <a
-                          data-target="#ADBrandsHI-MACSAULink"
-                          href="/about-laminex/brands/hi-macs"
-                        >
-                          HI-MACS</a
-                        >
-                      </li>
-
-                      <li class="has-child">
-                        <a
-                          data-target="#ADBrandsTradeEssentialsAULink"
-                          href="#"
-                        >
+                        <a data-target="#BrandsTradeEssentialsAULink" href="#">
                           Trade Essentials</a
                         >
                       </li>
 
                       <li class="has-child">
                         <a
-                          data-target="#ADLaminexWaterlooPartitioningAULink"
-                          href="/about-laminex/brands/laminex-waterloo"
+                          data-target="#BrandsHI-MACSAULink"
+                          href="/about-laminex/brands/hi-macs"
                         >
-                          Laminex Waterloo Partitioning</a
+                          HI-MACS</a
                         >
                       </li>
                     </ul>
@@ -1086,7 +1004,7 @@
                 </div>
 
                 <div
-                  id="ADBrandsLaminexAULink"
+                  id="BrandsLaminexAULink"
                   class="col-md-10 tab-content"
                   style="display: block"
                 >
@@ -1105,7 +1023,11 @@
                               </li>
 
                               <li>
-                                <a href="/get-inspired/laminex-design-styles">
+                                <a
+                                  href="/get-inspired/                  
+                                                 
+    -styles"
+                                >
                                   Design Palettes</a
                                 >
                               </li>
@@ -1124,7 +1046,7 @@
                 </div>
 
                 <div
-                  id="ADBrandsFormicaAULink"
+                  id="BrandsFormicaAULink"
                   class="col-md-10 tab-content"
                   style=""
                 >
@@ -1135,8 +1057,14 @@
                           <nav>
                             <ul class="listing">
                               <li>
+                                <a href="/about-laminex/brands/formica">
+                                  About Formica</a
+                                >
+                              </li>
+
+                              <li>
                                 <a
-                                  href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
+                                  href="/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
                                 >
                                   Formica Product Ranges</a
                                 >
@@ -1145,12 +1073,6 @@
                               <li><a href="#"> Guide to Projects</a></li>
 
                               <li><a href="#"> Document Library</a></li>
-
-                              <li>
-                                <a href="/about-laminex/brands/formica">
-                                  About Formica</a
-                                >
-                              </li>
                             </ul>
                           </nav>
                         </div>
@@ -1160,7 +1082,7 @@
                 </div>
 
                 <div
-                  id="ADBrandsEssastoneAULink"
+                  id="BrandsEssastoneAULink"
                   class="col-md-10 tab-content"
                   style=""
                 >
@@ -1192,7 +1114,31 @@
                 </div>
 
                 <div
-                  id="ADBrandsHI-MACSAULink"
+                  id="BrandsTradeEssentialsAULink"
+                  class="col-md-10 tab-content"
+                  style=""
+                >
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="row multiple-cols">
+                        <div class="col-12">
+                          <nav>
+                            <ul class="listing">
+                              <li><a href="#"> About Trade Essentials</a></li>
+
+                              <li>
+                                <a href="#"> Trade Essentials Product Ranges</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  id="BrandsHI-MACSAULink"
                   class="col-md-10 tab-content"
                   style=""
                 >
@@ -1222,74 +1168,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div
-                  id="ADBrandsTradeEssentialsAULink"
-                  class="col-md-10 tab-content"
-                  style=""
-                >
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="row multiple-cols">
-                        <div class="col-12">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a
-                                  href="/about-laminex/brands/trade-essentials"
-                                >
-                                  About Trade Essentials</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  id="ADLaminexWaterlooPartitioningAULink"
-                  class="col-md-10 tab-content"
-                  style=""
-                >
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="row multiple-cols">
-                        <div class="col-12">
-                          <nav>
-                            <ul class="listing">
-                              <li>
-                                <a
-                                  href="/specifier/about-laminex/brands/laminex-waterloo"
-                                >
-                                  About Waterloo</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/specifier/about-laminex/brands/laminex-waterloo/waterloo-toilet-and-shower-partitioning"
-                                >
-                                  Toilet &amp; Shower Partitioning</a
-                                >
-                              </li>
-
-                              <li>
-                                <a
-                                  href="/about-laminex/brands/laminex-waterloo/waterloo-lockers-seating-vanities"
-                                >
-                                  Lockers, Seating and Vanities</a
-                                >
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1304,12 +1182,12 @@
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#ADBrowseProductsAULink-mobile"
+                      data-target="#ConsumerInspirationAULink-mobile"
                       aria-expanded="true"
-                      aria-controls="ADBrowseProductsAULink"
+                      aria-controls="ConsumerInspirationAULink"
                     >
                       <h5>
-                        <a href="/specifier/browse"> Browse Products</a>
+                        <a href="/get-inspired/"> Inspiration</a>
 
                         <span class="accord-expand"></span>
                       </h5>
@@ -1317,7 +1195,7 @@
 
                     <div
                       class="sub-content accordion-content custom-accordion-content"
-                      id="ADBrowseProductsAULink-mobile"
+                      id="ConsumerInspirationAULink-mobile"
                     >
                       <!--Sub accordion -->
                       <div class="accordion accordion-items" id="subaccordion">
@@ -1325,464 +1203,14 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#ADProductsBrowseByColourAULink-mobile"
+                            data-target="#InspirationGalleryAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="ADProductsBrowseByColourAULink"
+                            aria-controls="InspirationGalleryAULink"
                           >
                             <h6>
                               <a
-                                data-target="#ADProductsBrowseByColourAULink"
-                                href="/specifier/browse/color"
-                              >
-                                Browse by Colour</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="ADProductsBrowseByColourAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WHITE"
-                                          >
-                                            Whites</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_NEUT"
-                                          >
-                                            Neutrals</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_WOODS"
-                                          >
-                                            Woodgrains</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_MINER"
-                                          >
-                                            Minerals</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_BRBOL"
-                                          >
-                                            Brights and Bolds</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_PASTL"
-                                          >
-                                            Pastels</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_PATTN"
-                                          >
-                                            Patterns</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/color?categoryCode=decor_master_group&amp;q=%3arelevance%3aallCategories%3aDMG_METAL"
-                                          >
-                                            Metallics</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#ADProductsByAppAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="ADProductsByAppAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#ADProductsByAppAULink"
-                                href="/specifier/browse/product_application"
-                              >
-                                Browse by Application</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="ADProductsByAppAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div class="row multiple-cols">
-                                  <div class="col-6 col-sm-3">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BENCHTOP"
-                                          >
-                                            Benchtops</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a href="#">
-                                            Cabinetry - Interiors &amp;
-                                            Panels</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a href="#">
-                                            Cabinetry - Doors &amp; Drawers</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SPLASHBACK"
-                                          >
-                                            Splashback</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SHELVING"
-                                          >
-                                            Shelving</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WARDROBE"
-                                          >
-                                            Wardrobes</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-
-                                  <div class="col-6 col-sm-3">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a href="#"> Desks and Tabletops</a>
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLPANEL"
-                                          >
-                                            Wall Panels</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLLININGWA"
-                                          >
-                                            Wall Panels - Wet Area</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_VANITIES"
-                                          >
-                                            Vanities</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a href="#"> Sinks and Basins</a>
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_PARTITIONTSC"
-                                          >
-                                            Toilet &amp; Shower Partitioning</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-
-                                  <div class="col-6 col-sm-3">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a href="#"> Lockers &amp; Seating</a>
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_FRP"
-                                          >
-                                            Fire Rated Panels</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a href="#"> Decorative Plywood</a>
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BUILDPROD"
-                                          >
-                                            Building Products</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/product_application?categoryCode=product_application&amp;q=:relevance:allCategories:PA_FLOORSTRUC"
-                                          >
-                                            Flooring - Structural</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a href="#">
-                                            Outdoor - Covered Areas</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-
-                                  <div class="col-6 col-sm-3">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a href="#">
-                                            Outdoor - Uncovered Areas</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#ADProductsByBrandAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="ADProductsByBrandAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#ADProductsByBrandAULink"
-                                href="/specifier/browse/brand"
-                              >
-                                Browse by Brand</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="ADProductsByBrandAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LX"
-                                          >
-                                            Laminex</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
-                                          >
-                                            Formica</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/brand?categoryCode=range&amp;q=:relevance:allCategories:B_ES:allCategories:R_ESSASTONE"
-                                          >
-                                            Essastone</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_LG"
-                                          >
-                                            HI-MACS</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_TE"
-                                          >
-                                            Trade Essentials</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/about-laminex/brands/laminex-waterloo"
-                                          >
-                                            Laminex Waterloo Partitioning</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing"></ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="accordion-item">
-                    <div
-                      class="text-left accordion-title accordion-trigger"
-                      type="button"
-                      data-target="#ADSpecifierResourcesAULink-mobile"
-                      aria-expanded="true"
-                      aria-controls="ADSpecifierResourcesAULink"
-                    >
-                      <h5>
-                        <a href="#"> Specifier Resources</a>
-
-                        <span class="accord-expand"></span>
-                      </h5>
-                    </div>
-
-                    <div
-                      class="sub-content accordion-content custom-accordion-content"
-                      id="ADSpecifierResourcesAULink-mobile"
-                    >
-                      <!--Sub accordion -->
-                      <div class="accordion accordion-items" id="subaccordion">
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#ADSpecificResourcesTechnicalLibraryAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="ADSpecificResourcesTechnicalLibraryAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#ADSpecificResourcesTechnicalLibraryAULink"
-                                href="#"
-                              >
-                                Technical Library</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="ADSpecificResourcesTechnicalLibraryAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing"></ul>
-                                    </nav>
-                                  </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing"></ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#SpecificResourcesGalleryAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="SpecificResourcesGalleryAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#SpecificResourcesGalleryAULink"
-                                href="/specifier/gallery"
+                                data-target="#InspirationGalleryAULink"
+                                href="/for-your-home/gallery"
                               >
                                 Gallery</a
                               >
@@ -1793,7 +1221,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="SpecificResourcesGalleryAULink-mobile"
+                            id="InspirationGalleryAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -1803,7 +1231,7 @@
                                       <ul class="listing">
                                         <li>
                                           <a
-                                            href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3AKitchen"
+                                            href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3AKitchen"
                                           >
                                             Kitchen</a
                                           >
@@ -1811,7 +1239,7 @@
 
                                         <li>
                                           <a
-                                            href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ABathroom"
+                                            href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3ABathroom"
                                           >
                                             Bathroom</a
                                           >
@@ -1819,7 +1247,7 @@
 
                                         <li>
                                           <a
-                                            href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ABedroom"
+                                            href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3ABedroom"
                                           >
                                             Bedroom</a
                                           >
@@ -1827,7 +1255,7 @@
 
                                         <li>
                                           <a
-                                            href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ALaundry"
+                                            href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3ALaundry"
                                           >
                                             Laundry</a
                                           >
@@ -1835,98 +1263,9 @@
 
                                         <li>
                                           <a
-                                            href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3AStudy"
+                                            href="/for-your-home/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aconsumer%3Aspaces%3AStudy"
                                           >
                                             Study</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/gallery?q=%3Arelevance%3Aitemtype%3ALaminexGalleryPage%3AuserTypes%3Aspecifier%3Aspaces%3ACommercial"
-                                          >
-                                            Commercial</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a href="/specifier/gallery"> All</a>
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#SpecificResourcesSpecificNewsAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="SpecificResourcesSpecificNewsAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#SpecificResourcesSpecificNewsAULink"
-                                href="#"
-                              >
-                                Specific News</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="SpecificResourcesSpecificNewsAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li><a href="#"> The Latest</a></li>
-
-                                        <li>
-                                          <a href="#">
-                                            Architecture &amp; Design</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/get-inspired/trends/colour-and-texture"
-                                          >
-                                            Colour and Texture</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/get-inspired/blog/product"
-                                          >
-                                            Products</a
-                                          >
-                                        </li>
-
-                                        <li><a href="#"> How it's Made</a></li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/get-inspired/blog/commercial"
-                                          >
-                                            Commercial</a
                                           >
                                         </li>
                                       </ul>
@@ -1939,6 +1278,29 @@
                                   </div>
                                 </div>
                               </div>
+
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.com.au/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aGQ4L2g2OC84ODc2OTYzNTk0MjcwL2JyYW5kLXBsYWNlaG9sZGVyLmpwZ3wwYTkwYzM0ZjI2Y2I3YjlhNTRhMWVmOTA1N2M3NDVlYTMyYzQzNDVkZjgyNWQ4ZDNlYWRiOTg4M2U0MWNhODBl"
+                                          alt="Gallaery1Image"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum1</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797427958844@1)"
+                                          >BrandName1</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1947,16 +1309,16 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#SpecificResourcesProjectsAULink-mobile"
+                            data-target="#InspirationDesignandInspirationAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="SpecificResourcesProjectsAULink"
+                            aria-controls="InspirationDesignandInspirationAULink"
                           >
                             <h6>
                               <a
-                                data-target="#SpecificResourcesProjectsAULink"
-                                href="/specifier/get-inspired/building-and-renovating"
+                                data-target="#InspirationDesignandInspirationAULink"
+                                href="/for-your-home/get-inspired/blog"
                               >
-                                Projects</a
+                                Design and Inspiration</a
                               >
 
                               <span class="accord-expand"></span>
@@ -1965,7 +1327,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="SpecificResourcesProjectsAULink-mobile"
+                            id="InspirationDesignandInspirationAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -1973,19 +1335,21 @@
                                   <div class="col-6">
                                     <nav>
                                       <ul class="listing">
-                                        <li><a href="#"> Residential</a></li>
+                                        <li><a href="#"> Design</a></li>
+
+                                        <li><a href="#"> Spaces</a></li>
 
                                         <li>
                                           <a
-                                            href="/specifier/get-inspired/blog/commercial"
+                                            href="/for-your-home/get-inspired/blog/product"
                                           >
-                                            Commercial</a
+                                            Products</a
                                           >
                                         </li>
 
                                         <li>
                                           <a
-                                            href="/specifier/get-inspired/building-and-renovating"
+                                            href="/for-your-home/get-inspired/blog"
                                           >
                                             All</a
                                           >
@@ -2000,66 +1364,45 @@
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
 
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#SpecifierResourcesSpecifierAccountsAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="SpecifierResourcesSpecifierAccountsAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#SpecifierResourcesSpecifierAccountsAULink"
-                                href="#"
-                              >
-                                Specifier Accounts</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="SpecifierResourcesSpecifierAccountsAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a href="#">
-                                            Benefits of a Specifier Account</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a href="#">
-                                            How to Set up a Specifier Account</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/get-inspired/inspiration-gallery"
-                                          >
-                                            Sign Up for a Specifier Account</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
+                              <div class="content-others">
+                                <div class="row">
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.com.au/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aGQ4L2g2OC84ODc2OTYzNTk0MjcwL2JyYW5kLXBsYWNlaG9sZGVyLmpwZ3wwYTkwYzM0ZjI2Y2I3YjlhNTRhMWVmOTA1N2M3NDVlYTMyYzQzNDVkZjgyNWQ4ZDNlYWRiOTg4M2U0MWNhODBl"
+                                          alt="Gallaery1Image"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum1</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797427958844@1)"
+                                          >BrandName1</a
+                                        >
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing"></ul>
-                                    </nav>
+
+                                  <div class="card col-12 col-sm-6 mb-4">
+                                    <div class="card-horizontal">
+                                      <div class="card-img">
+                                        <img
+                                          class=""
+                                          src="https://store.dev.laminex.com.au/medias/brand-placeholder.jpg?context=bWFzdGVyfGltYWdlc3w3MzU0fGltYWdlL2pwZWd8aDdmL2g2Yi84ODc2OTYzNjI3MDM4L2JyYW5kLXBsYWNlaG9sZGVyLmpwZ3w3YjNiZTRmMTZlMGJlODQ0ODMwMmE4MDRlNTg1YmQzNzczYTU1MWRlZjg4NWE3NjJjNjY5NDZmYjUyODk4MDQw"
+                                          alt="Gallaery2Image"
+                                        />
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum2</h4>
+                                        <a
+                                          href="CMSLinkComponentModel (8797427991612@1)"
+                                          >BrandName2</a
+                                        >
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2071,13 +1414,13 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#SpecifierResourcesCollaborationsAULink-mobile"
+                            data-target="#InspirationCollaborationAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="SpecifierResourcesCollaborationsAULink"
+                            aria-controls="InspirationCollaborationAULink"
                           >
                             <h6>
                               <a
-                                data-target="#SpecifierResourcesCollaborationsAULink"
+                                data-target="#InspirationCollaborationAULink"
                                 href="#"
                               >
                                 Collaborations</a
@@ -2089,7 +1432,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="SpecifierResourcesCollaborationsAULink-mobile"
+                            id="InspirationCollaborationAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -2104,7 +1447,7 @@
                                         </li>
 
                                         <li>
-                                          <a href="#">
+                                          <a href="/laminex-x-kennedy-nolan">
                                             Laminex x Chris Connell</a
                                           >
                                         </li>
@@ -2126,6 +1469,10 @@
                                   </div>
                                 </div>
                               </div>
+
+                              <div class="content-others">
+                                <div class="row"></div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -2137,9 +1484,528 @@
                     <div
                       class="text-left accordion-title accordion-trigger"
                       type="button"
-                      data-target="#ADBrandsAULink-mobile"
+                      data-target="#ConsumerHowToAULink-mobile"
                       aria-expanded="true"
-                      aria-controls="ADBrandsAULink"
+                      aria-controls="ConsumerHowToAULink"
+                    >
+                      <h5>
+                        <a href="#"> How To</a>
+
+                        <span class="accord-expand"></span>
+                      </h5>
+                    </div>
+
+                    <div
+                      class="sub-content accordion-content custom-accordion-content"
+                      id="ConsumerHowToAULink-mobile"
+                    >
+                      <!--Sub accordion -->
+                      <div class="accordion accordion-items" id="subaccordion">
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#HowToRenovationTipsAULink-mobile"
+                            aria-expanded="true"
+                            aria-controls="HowToRenovationTipsAULink"
+                          >
+                            <h6>
+                              <a
+                                data-target="#HowToRenovationTipsAULink"
+                                href="/for-your-home/get-inspired/building-and-renovating"
+                              >
+                                Renovation Tips</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="HowToRenovationTipsAULink-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <div class="has-thumbnails">
+                                            <a
+                                              href="/for-your-home/get-inspired/building-and-renovating/budgeting"
+                                            >
+                                              <figure
+                                                class="d-inline-block thumbnail"
+                                              >
+                                                <img
+                                                  src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aGQ2L2g2Yi84ODc2OTYzNjU5ODA2L3RodW1ibmFpbC5qcGd8MmM0ZjY4N2VjMTBlOTg4MjQzYmZkMTIzY2E2MDE4YjMwZWZmYTJkOTJhMGU2OTFmYmNlMDdiNWViMjE2YjQzMQ"
+                                                />
+                                              </figure>
+                                              Budgeting</a
+                                            >
+                                          </div>
+                                        </li>
+
+                                        <li>
+                                          <div class="has-thumbnails">
+                                            <a
+                                              href="/get-inspired/building-and-renovating"
+                                            >
+                                              <figure
+                                                class="d-inline-block thumbnail"
+                                              >
+                                                <img
+                                                  src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aDQwL2g2Yy84ODc2OTYzNjkyNTc0L3RodW1ibmFpbC5qcGd8OTRjN2VjYTc1ZGQ2MWZmNTA2NjRkNDMzMGUxNDFlZWViYTkyYWVjYzc1ZmQ5ZDBlZDU4NGEzNjE4Njk2NmVjYw"
+                                                />
+                                              </figure>
+                                              Design</a
+                                            >
+                                          </div>
+                                        </li>
+
+                                        <li>
+                                          <div class="has-thumbnails">
+                                            <a
+                                              href="/for-your-home/get-inspired/building-and-renovating/tips-and-tricks"
+                                            >
+                                              <figure
+                                                class="d-inline-block thumbnail"
+                                              >
+                                                <img
+                                                  src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aDNlL2g2Zi84ODc2OTYzNzU4MTEwL3RodW1ibmFpbC5qcGd8ZDA2NjdhNTI5ZjNiNjRmOTMzMjI5NGFiZDkwNTBjYmU2Nzg1ZWRhNmI5ZTI1NTJkZmQyY2IxYWI3ODA4MTE2OA"
+                                                />
+                                              </figure>
+                                              Tips and Tricks</a
+                                            >
+                                          </div>
+                                        </li>
+
+                                        <li>
+                                          <div class="has-thumbnails">
+                                            <a
+                                              href="/get-inspired/building-and-renovating"
+                                            >
+                                              <figure
+                                                class="d-inline-block thumbnail"
+                                              >
+                                                <img
+                                                  src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aGU3L2g2ZS84ODc2OTYzNzI1MzQyL3RodW1ibmFpbC5qcGd8NzNmZDhiM2M5MTc1MDA0NTdlNDI3MDkwNjAxY2M0NjI0OWE1Y2QzYjJiMDRjZjA3NmE3ZmM4MzU2MTlmMWUzOA"
+                                                />
+                                              </figure>
+                                              Guides</a
+                                            >
+                                          </div>
+                                        </li>
+
+                                        <li>
+                                          <div class="has-thumbnails">
+                                            <a
+                                              href="/get-inspired/building-and-renovating"
+                                            >
+                                              <figure
+                                                class="d-inline-block thumbnail"
+                                              >
+                                                <img
+                                                  src="https://store.dev.laminex.com.au/medias/thumbnail.jpg?context=bWFzdGVyfGltYWdlc3w0MTc5fGltYWdlL2pwZWd8aGE4L2g2Zi84ODc2OTYzNzkwODc4L3RodW1ibmFpbC5qcGd8ZjBhOWRkZDEwMzRhMzY2ZTg0YjdhMmI0MWUyMDFjNWNjZjg3Yzc1N2FkY2U4OTZlNTZjYjZmZGRhMzBhYjg0ZA"
+                                                />
+                                              </figure>
+                                              Checklists</a
+                                            >
+                                          </div>
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#BrowseProductsDesignPalettesAULink-mobile"
+                            aria-expanded="true"
+                            aria-controls="BrowseProductsDesignPalettesAULink"
+                          >
+                            <h6>
+                              <a
+                                data-target="#BrowseProductsDesignPalettesAULink"
+                                href="/get-inspired/laminex-design-styles"
+                              >
+                                Design Palettes</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="BrowseProductsDesignPalettesAULink-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="/get-inspired/laminex-design-styles/classic"
+                                          >
+                                            Classic</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/laminex-design-styles/contemporary"
+                                          >
+                                            Contemporary</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/laminex-design-styles/raw"
+                                          >
+                                            Raw</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <div
+                      class="text-left accordion-title accordion-trigger"
+                      type="button"
+                      data-target="#ConsumerProductsAULink-mobile"
+                      aria-expanded="true"
+                      aria-controls="ConsumerProductsAULink"
+                    >
+                      <h5>
+                        <a href="/browse"> Browse Products</a>
+
+                        <span class="accord-expand"></span>
+                      </h5>
+                    </div>
+
+                    <div
+                      class="sub-content accordion-content custom-accordion-content"
+                      id="ConsumerProductsAULink-mobile"
+                    >
+                      <!--Sub accordion -->
+                      <div class="accordion accordion-items" id="subaccordion">
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#BrowseProductsByApplicationAULink-mobile"
+                            aria-expanded="true"
+                            aria-controls="BrowseProductsByApplicationAULink"
+                          >
+                            <h6>
+                              <a
+                                data-target="#BrowseProductsByApplicationAULink"
+                                href="/browse/product_application"
+                              >
+                                By Application</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="BrowseProductsByApplicationAULink-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="row multiple-cols">
+                                  <div class="col-6 col-sm-4">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_BENCHTOP"
+                                          >
+                                            Benchtops</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_CABINETRY"
+                                          >
+                                            Cabinetry</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a href="#"> Desks and Tabletops</a>
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SHELVING"
+                                          >
+                                            Shelving</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WARDROBE"
+                                          >
+                                            Wardrobes</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-4">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLPANEL"
+                                          >
+                                            Wall Panels</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_WALLLININGWA"
+                                          >
+                                            Wall Panels - Wet Area</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a href="#"> Sinks &amp; Basins</a>
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/browse/product_application?categoryCode=product_application&amp;q=%3arelevance%3aallCategories%3aPA_SPLASHBACK"
+                                          >
+                                            Splashback</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            Outdoor - Covered Areas</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+
+                                  <div class="col-6 col-sm-4">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a href="#">
+                                            Outdoor - Uncovered Areas</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#BrowseProductsByGalleryAULink-mobile"
+                            aria-expanded="true"
+                            aria-controls="BrowseProductsByGalleryAULink"
+                          >
+                            <h6>
+                              <a
+                                data-target="#BrowseProductsByGalleryAULink"
+                                href="/for-your-home/gallery"
+                              >
+                                By Gallery</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="BrowseProductsByGalleryAULink-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=kitchen"
+                                          >
+                                            Kitchen</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=bathroom"
+                                          >
+                                            Bathroom</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=bedroom"
+                                          >
+                                            Bedroom</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=laundry"
+                                          >
+                                            Laundry</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/inspiration-gallery#gallerysearch_gallery%20space=study"
+                                          >
+                                            Study</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#BrowseProductsByDesignPalettesAULink-mobile"
+                            aria-expanded="true"
+                            aria-controls="BrowseProductsByDesignPalettesAULink"
+                          >
+                            <h6>
+                              <a
+                                data-target="#BrowseProductsByDesignPalettesAULink"
+                                href="/get-inspired/laminex-design-styles"
+                              >
+                                Browse by Design Palettes</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="BrowseProductsByDesignPalettesAULink-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a
+                                            href="/get-inspired/laminex-design-styles/classic"
+                                          >
+                                            Classic</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/laminex-design-styles/contemporary"
+                                          >
+                                            Contemporary</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/get-inspired/laminex-design-styles/raw"
+                                          >
+                                            Raw</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <div
+                      class="text-left accordion-title accordion-trigger"
+                      type="button"
+                      data-target="#ConsumerBrandsAULink-mobile"
+                      aria-expanded="true"
+                      aria-controls="ConsumerBrandsAULink"
                     >
                       <h5>
                         <a href="/about-laminex/brands"> Brands</a>
@@ -2150,7 +2016,7 @@
 
                     <div
                       class="sub-content accordion-content custom-accordion-content"
-                      id="ADBrandsAULink-mobile"
+                      id="ConsumerBrandsAULink-mobile"
                     >
                       <!--Sub accordion -->
                       <div class="accordion accordion-items" id="subaccordion">
@@ -2158,13 +2024,13 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#ADBrandsLaminexAULink-mobile"
+                            data-target="#BrandsLaminexAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="ADBrandsLaminexAULink"
+                            aria-controls="BrandsLaminexAULink"
                           >
                             <h6>
                               <a
-                                data-target="#ADBrandsLaminexAULink"
+                                data-target="#BrandsLaminexAULink"
                                 href="/about-laminex/brands/laminex"
                               >
                                 Laminex</a
@@ -2176,7 +2042,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="ADBrandsLaminexAULink-mobile"
+                            id="BrandsLaminexAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -2200,7 +2066,9 @@
 
                                         <li>
                                           <a
-                                            href="/get-inspired/laminex-design-styles"
+                                            href="/get-inspired/                  
+                                                 
+    -styles"
                                           >
                                             Design Palettes</a
                                           >
@@ -2231,13 +2099,13 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#ADBrandsFormicaAULink-mobile"
+                            data-target="#BrandsFormicaAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="ADBrandsFormicaAULink"
+                            aria-controls="BrandsFormicaAULink"
                           >
                             <h6>
                               <a
-                                data-target="#ADBrandsFormicaAULink"
+                                data-target="#BrandsFormicaAULink"
                                 href="/about-laminex/brands/formica"
                               >
                                 Formica</a
@@ -2249,7 +2117,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="ADBrandsFormicaAULink-mobile"
+                            id="BrandsFormicaAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -2259,7 +2127,15 @@
                                       <ul class="listing">
                                         <li>
                                           <a
-                                            href="/specifier/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
+                                            href="/about-laminex/brands/formica"
+                                          >
+                                            About Formica</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a
+                                            href="/browse/brand?categoryCode=brand&amp;q=%3arelevance%3aallCategories%3aB_FM"
                                           >
                                             Formica Product Ranges</a
                                           >
@@ -2271,14 +2147,6 @@
 
                                         <li>
                                           <a href="#"> Document Library</a>
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/about-laminex/brands/formica"
-                                          >
-                                            About Formica</a
-                                          >
                                         </li>
                                       </ul>
                                     </nav>
@@ -2298,13 +2166,13 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#ADBrandsEssastoneAULink-mobile"
+                            data-target="#BrandsEssastoneAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="ADBrandsEssastoneAULink"
+                            aria-controls="BrandsEssastoneAULink"
                           >
                             <h6>
                               <a
-                                data-target="#ADBrandsEssastoneAULink"
+                                data-target="#BrandsEssastoneAULink"
                                 href="/about-laminex/brands/essastone"
                               >
                                 Essastone</a
@@ -2316,7 +2184,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="ADBrandsEssastoneAULink-mobile"
+                            id="BrandsEssastoneAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -2357,13 +2225,68 @@
                           <div
                             class="text-left accordion-title accordion-trigger"
                             type="button"
-                            data-target="#ADBrandsHI-MACSAULink-mobile"
+                            data-target="#BrandsTradeEssentialsAULink-mobile"
                             aria-expanded="true"
-                            aria-controls="ADBrandsHI-MACSAULink"
+                            aria-controls="BrandsTradeEssentialsAULink"
                           >
                             <h6>
                               <a
-                                data-target="#ADBrandsHI-MACSAULink"
+                                data-target="#BrandsTradeEssentialsAULink"
+                                href="#"
+                              >
+                                Trade Essentials</a
+                              >
+
+                              <span class="accord-expand"></span>
+                            </h6>
+                          </div>
+                          <!----if Entries-->
+                          <div
+                            class="accordion-content custom-accordion-content"
+                            id="BrandsTradeEssentialsAULink-mobile"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row multiple-cols">
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing">
+                                        <li>
+                                          <a href="#">
+                                            About Trade Essentials</a
+                                          >
+                                        </li>
+
+                                        <li>
+                                          <a href="#">
+                                            Trade Essentials Product Ranges</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="col-6">
+                                    <nav>
+                                      <ul class="listing"></ul>
+                                    </nav>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <div
+                            class="text-left accordion-title accordion-trigger"
+                            type="button"
+                            data-target="#BrandsHI-MACSAULink-mobile"
+                            aria-expanded="true"
+                            aria-controls="BrandsHI-MACSAULink"
+                          >
+                            <h6>
+                              <a
+                                data-target="#BrandsHI-MACSAULink"
                                 href="/about-laminex/brands/hi-macs"
                               >
                                 HI-MACS</a
@@ -2375,7 +2298,7 @@
                           <!----if Entries-->
                           <div
                             class="accordion-content custom-accordion-content"
-                            id="ADBrandsHI-MACSAULink-mobile"
+                            id="BrandsHI-MACSAULink-mobile"
                           >
                             <div class="row">
                               <div class="col-md-6">
@@ -2411,153 +2334,6 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#ADBrandsTradeEssentialsAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="ADBrandsTradeEssentialsAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#ADBrandsTradeEssentialsAULink"
-                                href="#"
-                              >
-                                Trade Essentials</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="ADBrandsTradeEssentialsAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a
-                                            href="/about-laminex/brands/trade-essentials"
-                                          >
-                                            About Trade Essentials</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing"></ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="accordion-item">
-                          <div
-                            class="text-left accordion-title accordion-trigger"
-                            type="button"
-                            data-target="#ADLaminexWaterlooPartitioningAULink-mobile"
-                            aria-expanded="true"
-                            aria-controls="ADLaminexWaterlooPartitioningAULink"
-                          >
-                            <h6>
-                              <a
-                                data-target="#ADLaminexWaterlooPartitioningAULink"
-                                href="/about-laminex/brands/laminex-waterloo"
-                              >
-                                Laminex Waterloo Partitioning</a
-                              >
-
-                              <span class="accord-expand"></span>
-                            </h6>
-                          </div>
-                          <!----if Entries-->
-                          <div
-                            class="accordion-content custom-accordion-content"
-                            id="ADLaminexWaterlooPartitioningAULink-mobile"
-                          >
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="row multiple-cols">
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing">
-                                        <li>
-                                          <a
-                                            href="/specifier/about-laminex/brands/laminex-waterloo"
-                                          >
-                                            About Waterloo</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/specifier/about-laminex/brands/laminex-waterloo/waterloo-toilet-and-shower-partitioning"
-                                          >
-                                            Toilet &amp; Shower Partitioning</a
-                                          >
-                                        </li>
-
-                                        <li>
-                                          <a
-                                            href="/about-laminex/brands/laminex-waterloo/waterloo-lockers-seating-vanities"
-                                          >
-                                            Lockers, Seating and Vanities</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </nav>
-                                  </div>
-                                  <div class="col-6">
-                                    <nav>
-                                      <ul class="listing"></ul>
-                                    </nav>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="accordion-item">
-                    <div
-                      class="text-left accordion-title accordion-trigger"
-                      type="button"
-                      data-target="#ADQuickOrderAULink-mobile"
-                      aria-expanded="true"
-                      aria-controls="ADQuickOrderAULink"
-                    >
-                      <h5>
-                        <a href="/my-account/sampleOrderHistory">
-                          Order Samples</a
-                        >
-
-                        <span class="accord-expand"></span>
-                      </h5>
-                    </div>
-
-                    <div
-                      class="accordion-content custom-accordion-content"
-                      id="ADQuickOrderAULink-mobile"
-                    >
-                      <div class="row">
-                        <div class="col-12">
-                          <ul class="listing"></ul>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -2582,10 +2358,9 @@
           function (event) {
             event.stopPropagation();
             var _this = this;
+            $(".menu-content").hide();
+            $(".menu-content").children(".container").fadeOut();
             timeout = setTimeout(function () {
-              console.log("Test");
-              // debugger;
-              $(".menu-content").stop(true, true).delay(100).slideUp();
               $(_this)
                 .parent(".nav-item")
                 .siblings()
@@ -2593,10 +2368,10 @@
                 .removeClass("show");
               var navContentId = $(_this).data("subnav");
               if ($("#" + navContentId).length > 0) {
+                $("#" + navContentId).show();
                 $("#" + navContentId)
-                  .stop(true, true)
-                  .delay(100)
-                  .slideDown();
+                  .children(".container")
+                  .fadeIn();
                 $(_this).addClass("show");
               }
             }, 500);
@@ -2611,10 +2386,7 @@
 
             if ($("#" + navContentId).length > 0) {
               if (!(currentMousePos.y >= $("#" + navContentId).offset().top)) {
-                $("#" + navContentId)
-                  .stop(true, true)
-                  .delay(100)
-                  .slideUp();
+                $("#" + navContentId).hide();
                 $(this).removeClass("show");
               }
             }
@@ -2625,7 +2397,7 @@
           "mouseleave",
           function (event) {
             event.preventDefault();
-            $(".menu-content").stop(true, true).delay(100).slideUp();
+            $(".menu-content").hide();
             $(
               ".header-right.prime-nav .navbar .navbar-nav .nav-item .nav-link"
             ).removeClass("show");
