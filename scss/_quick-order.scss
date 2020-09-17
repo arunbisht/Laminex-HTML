@@ -575,6 +575,9 @@
     }
 
     .product-detail-price-details3 {
+      .prod-price {
+        font-weight: bold !important;
+      }
       @media screen and (max-width: 1099.98px) and (min-width: 768px) {
         text-align: right;
         -ms-flex-order: 7;
@@ -590,19 +593,11 @@
           &:after {
             clear: both;
           }
-
-          .prod-price {
-            font-weight: bold !important;
-          }
         }
       }
       @media screen and (max-width: 767px) {
         -ms-flex-order: 6;
         order: 6;
-
-        .prod-price {
-          font-weight: bold !important;
-        }
       }
     }
 
