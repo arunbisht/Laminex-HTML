@@ -2357,21 +2357,20 @@
           event.preventDefault();
           event.stopPropagation();
           var _this = this,
-            navContentId = $(_this).data("subnav");
-          $(".menu-content").hide();
-          $(".menu-content").children(".container").hide();
-          $(".updated-search-products-outer").slideUp();
-          $(_this)
-            .parent(".nav-item")
-            .siblings()
-            .children()
-            .removeClass("show");
-          if ($("#" + navContentId).length > 0) {
-            $("#" + navContentId).show();
-            $("#" + navContentId)
-              .children(".container")
-              .fadeIn();
-            $(_this).addClass("show");
+            navContentId = "#" + $(_this).data("subnav");
+
+          if ($(navContentId).length > 0) {
+            $(".updated-search-products-outer").slideUp();
+            $(".menu-content").children(".container").hide();
+            $(navContentId).siblings().hide().children(".container").hide();
+            $(_this)
+              .parent(".nav-item")
+              .siblings()
+              .children()
+              .removeClass("show");
+
+            $(navContentId).toggle().children(".container").fadeIn();
+            $(_this).toggleClass("show");
           }
         });
 
