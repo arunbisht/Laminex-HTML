@@ -77,10 +77,33 @@
 }
 .company-banner {
   position: relative;
+  height: 235px;
+  overflow: hidden;
+  @media screen and (max-width: 959px) {
+    height: 95px;
+  }
+
+  figure {
+    margin: 0;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: auto;
+      width: 100%;
+      min-height: 235px;
+      // object-fit: contain;
+      // -webkit-transform: translate(-50%, -50%);
+      // transform: translate(-50%, -50%);
+    }
+  }
   .title {
     position: absolute;
     width: 100%;
     bottom: 0;
+    @media screen and (max-width: 959px) {
+      bottom: -1px;
+    }
   }
   h1 {
     font-size: 1.5rem;
