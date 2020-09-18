@@ -734,7 +734,9 @@
       $store-locator-map-popover-border-radius;
 
     p {
-      margin-bottom: 5px;
+      margin-bottom: 0;
+      font-size: 0.875rem;
+      line-height: 2.29;
     }
 
     .contact-info {
@@ -745,6 +747,7 @@
       li {
         margin: 0;
         padding: 0 !important;
+        font-size: 0.875rem;
         line-height: 2.29;
 
         a {
